@@ -1,0 +1,95 @@
+@media screen and (max-width: 1400px) {
+  .footer {
+    font-size: 8px; }
+    .footer-info__top:after {
+      top: -11rem;
+      right: 0; } }
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 9px; }
+  .footer {
+    font-size: 8px; }
+    .footer-info__top a,
+    .footer-info__top span {
+      font-size: 1.6rem; }
+  .header-banner__cover {
+    bottom: unset;
+    height: 33px; }
+  .header-video__cover {
+    height: 33px; } }
+
+@media screen and (max-width: 1060px) {
+  html {
+    font-size: 8px; } }
+
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 7px; }
+  .footer {
+    font-size: 6px; }
+    .footer-slider {
+      width: 60%; }
+      .footer-slider__nav-container-btn:first-child {
+        left: -30px;
+        top: 15px; }
+      .footer-slider__nav-container-btn:last-child {
+        right: -30px;
+        top: 15px; } }
+
+@media screen and (max-width: 768px) {
+  .footer-slider {
+    width: 80%; }
+  .footer-info .container {
+    padding: 0; }
+  .footer-info__top {
+    padding: 15px 15px; }
+    .footer-info__top div:nth-child(2), .footer-info__top div:nth-child(3) {
+      justify-content: flex-start; }
+  .footer-info__bottom {
+    flex-direction: column; }
+    .footer-info__bottom-item__container {
+      border-top: solid 1px #6f6f6e;
+      border-bottom: solid 1px #6f6f6e;
+      display: flex;
+      justify-content: center; }
+    .footer-info__bottom div span {
+      background-color: #000;
+      text-align: center;
+      font-size: 2.5rem;
+      padding: 1rem 0rem;
+      white-space: nowrap;
+      position: relative;
+      margin-bottom: 0; }
+      .footer-info__bottom div span:after {
+        content: '';
+        background-image: url(../img/mobile-footer-icon.svg);
+        height: 13px;
+        width: 7px;
+        background-size: cover;
+        position: absolute;
+        top: 50%;
+        margin-top: -6.5px;
+        right: -15px;
+        transition: all 0.3s ease-in-out; }
+      .footer-info__bottom div span:hover:after {
+        right: -23px; }
+    .footer-info__bottom div p {
+      padding: 10px 15px;
+      font-size: 1.6rem; }
+    .footer-info__bottom div a {
+      font-size: 1.6rem; }
+    .footer-info__bottom div:last-child p {
+      flex-direction: column;
+      display: flex; } }
+
+@media screen and (max-width: 767px) {
+  .footer-info__bottom-item:nth-child(2) span {
+    display: none; } }
+
+@media screen and (max-width: 568px) {
+  html,
+  .footer {
+    font-size: 10px; }
+  .footer-info__bottom div span {
+    font-size: 1.8rem; } }

@@ -56,6 +56,9 @@
         a {
             margin-right: 0.4rem;
         }
+        img {
+            max-width: 2.3rem;
+        }
     }
     &__language-selected {
         &:hover~.top-bar__language-menu {
@@ -75,6 +78,12 @@
             text-decoration: none !important;
             img {
                 transition: 0.3s ease;
+            }
+            img:nth-child(1) {
+                max-width: 2rem;
+            }
+            img:nth-child(2) {
+                max-width: 2rem;
             }
             &:hover {
                 img:last-child {

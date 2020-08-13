@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Google Sheet Database</title>
+</head>
+<body>
+<div id="searchtext">
+	<br>
+	<input id="keyWord" type="text" name="" placeholder="Enter key word">
+	<button id="submit">Search</button>
+	<p id="match"></p>
+    </div>
+</body>
+
+<style type="text/css">
+	#keyWord{
+			background-color: lightyellow;
+			width: 300px;
+	}
+
+	#searchtext span{
+    background-color:#FF9;
+    color:#555;
+}
+</style>
+
+    <script>
+/*-------------------------------------------------------------------------------------------------*/
+   		document.getElementById("submit").addEventListener("click", function(){
+        getMatches();});
+
+
+        document.getElementById("keyWord").addEventListener("keydown", function(e){
+         	if(e.keyCode === 13){
+         	getMatches()};
+     	});
+/*-------------------------------------------------------------------------------------------------*/
+        async function getMatches(){
+        		var keyWord=(document.getElementById("keyWord").value)
+        		var stringCheck=keyWord.replace(/\s/g,"")
+        	if(stringCheck.length>0){
+        		if(keyWord.length>0){
+        			var keyWord=keyWord.replace(/ +/g,"%20")
+        			document.getElementById("match").innerHTML="Searching for matches, please wait.....!"
+        			
+					var response=await fetch("https://script.google.com/macros/s/AKfycbwiGIYk_vbD03xOIbpQmF6GpQeoTTff5O8c1ewcxu6rzit__1U/exec"+"?"+keyWord)
+
+
+        			var data= await response.json()
+        			var matches=data.matches;
+
+	        		if(matches.length>0){
+
+	        			document.getElementById("match").innerHTML=""
+	        			for (var j=0;j<matches.length;j++){
+	        				for (var m=0;m<matches[j].length-1;m++){
+	        			document.getElementById("match").innerHTML +=matches[j][m]+"<br>";
+	        		}
+
+	        		var link=matches[j][matches[j].length-1];
+
+	        		document.getElementById("match").innerHTML +="<a href="+link+">"+link+"</a><br>"
+
+	        		if(matches.length !== 1){
+	        		document.getElementById("match").innerHTML +="<hr>"}
+	        		}
+
+					    var keyWord =document.getElementById("keyWord").value;
+					    var query = new RegExp("(\\b" + keyWord + "\\b)", "gim");
+					    var match = document.getElementById("match").innerHTML;
+					    var newMatch = match.replace(query, "<span>$1</span>");
+					    document.getElementById("match").innerHTML = newMatch;
+
+	        		}
+
+        			else{document.getElementById("match").innerHTML="Match not found !"}
+				}
+        	}
+
+        	else {document.getElementById("match").innerHTML="Please enter a valid key word !"}
+    	}
+/*-------------------------------------------------------------------------------------------------*/
+    </script>
+</html>

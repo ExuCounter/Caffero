@@ -1,24 +1,25 @@
 .footer {
+    font-size: 10px;
     &-slider {
         max-width: 930px;
         margin: 0 auto;
         position: relative;
         &__inner {
-            margin-left: 10px;
             &-title {
-                font-size: 3.8rem;
+                font-size: 3.8em;
                 font-weight: bold;
                 color: #fcc200;
                 text-align: center;
                 text-shadow: 2px 2.5px 0px rgba(0, 0, 0, 1);
                 font-style: italic;
-                margin: 2.9rem 0rem 3.2rem;
+                margin: 2.9rem 0em 3.2rem;
             }
             &-item {
                 cursor: pointer;
                 img {
-                    height: 8.8rem !important;
-                    width: auto;
+                    height: 8.8em !important;
+                    width: auto !important;
+                    margin: 0 auto;
                 }
             }
         }
@@ -32,11 +33,12 @@
                 background-color: transparent;
                 border: none;
                 outline: none !important;
+                background-color: transparent;
                 &:first-child {
-                    left: -32px;
+                    left: -3rem;
                 }
                 &:last-child {
-                    right: -22px;
+                    right: -2.7rem;
                 }
             }
         }
@@ -46,7 +48,7 @@
         position: relative;
         max-width: 850px;
         margin: 0 auto;
-        margin-top: 2rem;
+        margin-top: 2em;
         img {
             position: absolute;
             left: 0;
@@ -57,7 +59,7 @@
             span {
                 position: relative;
                 z-index: 1;
-                font-size: 3.3rem;
+                font-size: 3.3em;
                 font-weight: bold;
                 display: block;
                 color: #000;
@@ -76,7 +78,7 @@
             p {
                 position: relative;
                 z-index: 1;
-                font-size: 1.8rem;
+                font-size: 1.8em;
                 margin-left: 6.6rem;
                 margin-top: 1.9rem;
             }
@@ -84,7 +86,7 @@
         &-btn {
             position: relative;
             z-index: 1;
-            font-size: 2.8rem;
+            font-size: 2.8em;
             color: #1d1d1b !important;
             background-color: #fcc200;
             margin-left: 13rem;
@@ -119,7 +121,7 @@
         position: relative;
         &__top {
             position: relative;
-            padding: 1.4rem 0rem 3.4rem;
+            padding: 1.4rem 0em 3.4rem;
             div {
                 display: flex;
                 align-items: center;
@@ -131,7 +133,7 @@
                 }
             }
             span {
-                font-size: 1.9rem;
+                font-size: 1.9em;
                 font-style: italic;
                 letter-spacing: 0.37;
                 color: #FFF;
@@ -142,11 +144,14 @@
             }
             a {
                 color: #fcc200;
-                font-size: 1.7rem;
+                font-size: 1.7em;
             }
             &-socials {
+                img {
+                    width: 2rem;
+                }
                 a:nth-child(2) {
-                    margin: 0rem 1.3rem;
+                    margin: 0em 1.3rem;
                 }
             }
             &:after {
@@ -168,7 +173,7 @@
                 flex: 0 0 20%;
                 span {
                     color: #FFF;
-                    font-size: 1.9rem;
+                    font-size: 1.9em;
                     font-weight: bold;
                     font-style: italic;
                     text-transform: uppercase;
@@ -183,17 +188,19 @@
                 }
                 &:last-child img {
                     margin-top: 1rem;
+                    width: 16.3rem;
+                    height: auto;
                 }
             }
         }
         &__nav {
-            padding: 3.1rem 0rem 1.7rem 0rem;
+            padding: 3.1rem 0em 1.7rem 0em;
             ul {
                 display: flex;
                 justify-content: center;
                 li {
                     list-style-type: none;
-                    font-size: 1.3rem;
+                    font-size: 1.3em;
                     color: #FFF;
                     a {
                         color: #FFF;
@@ -201,7 +208,7 @@
                     }
                     &:nth-child(even) {
                         color: #fcc200;
-                        margin: 0rem 0.65rem;
+                        margin: 0em 0.65rem;
                     }
                 }
             }

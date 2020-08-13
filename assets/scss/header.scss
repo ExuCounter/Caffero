@@ -7,9 +7,12 @@
         &__logo {
             position: absolute;
             left: 50%;
-            bottom: -48px;
+            bottom: -4.8rem;
             transform: translate(-50%, 0%);
-            height: 97px;
+            img {
+                height: 9.7rem;
+                width: 9.7rem;
+            }
         }
     }
     &-menu {
