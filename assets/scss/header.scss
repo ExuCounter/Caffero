@@ -3,10 +3,11 @@
         background-color: #fcc200;
         position: relative;
         z-index: 1;
+        transition: 0.3s ease-in-out;
         &__logo {
             position: absolute;
             left: 50%;
-            bottom: -55%;
+            bottom: -48px;
             transform: translate(-50%, 0%);
             height: 97px;
         }
@@ -22,15 +23,46 @@
             color: #1d1d1b;
             text-decoration: none;
             text-transform: uppercase;
+            transition: 0.1s ease-in-out;
             &.active {
+                color: #FFF;
+            }
+            &:hover~.header-menu__sub {
+                max-height: 500px;
+                overflow: hidden;
+            }
+            &:hover {
                 color: #FFF;
             }
         }
         li {
             font-size: 1.9rem;
+            text-align: right;
+            cursor: pointer;
             &.header-menu__splitter {
                 margin: 0rem 1.1rem;
                 color: #FFF;
+            }
+        }
+        &__sub {
+            padding-left: 1rem;
+            list-style: none;
+            max-height: 0;
+            padding-top: 0.5rem;
+            overflow: hidden;
+            transition: 0.6s ease-in-out;
+            position: relative;
+            &:hover {
+                max-height: 500px;
+                a {
+                    transition: 0.1s ease-in-out;
+                    &:hover {
+                        color: #FFF;
+                    }
+                }
+            }
+            li {
+                position: relative;
             }
         }
     }

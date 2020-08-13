@@ -1,11 +1,12 @@
 .header-nav {
   background-color: #fcc200;
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  transition: 0.3s ease-in-out; }
   .header-nav__logo {
     position: absolute;
     left: 50%;
-    bottom: -55%;
+    bottom: -48px;
     transform: translate(-50%, 0%);
     height: 97px; }
 
@@ -19,14 +20,38 @@
   .header-menu a {
     color: #1d1d1b;
     text-decoration: none;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    transition: 0.1s ease-in-out; }
     .header-menu a.active {
       color: #FFF; }
+    .header-menu a:hover ~ .header-menu__sub {
+      max-height: 500px;
+      overflow: hidden; }
+    .header-menu a:hover {
+      color: #FFF; }
   .header-menu li {
-    font-size: 1.9rem; }
+    font-size: 1.9rem;
+    text-align: right;
+    cursor: pointer; }
     .header-menu li.header-menu__splitter {
       margin: 0rem 1.1rem;
       color: #FFF; }
+  .header-menu__sub {
+    padding-left: 1rem;
+    list-style: none;
+    max-height: 0;
+    padding-top: 0.5rem;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    position: relative; }
+    .header-menu__sub:hover {
+      max-height: 500px; }
+      .header-menu__sub:hover a {
+        transition: 0.1s ease-in-out; }
+        .header-menu__sub:hover a:hover {
+          color: #FFF; }
+    .header-menu__sub li {
+      position: relative; }
 
 .header-banner {
   padding: 6.4rem 0rem 0rem;
