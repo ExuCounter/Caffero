@@ -1,0 +1,22 @@
+body {
+  font-family: "Poppins", "Poppins", sans-serif; }
+
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif; }
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  position: relative; }
+
+html {
+  font-size: 10px; }
+
+body {
+  font-size: 100%; }
+
+button {
+  outline: none !important; }

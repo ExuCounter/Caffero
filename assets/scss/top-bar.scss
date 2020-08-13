@@ -1,0 +1,78 @@
+.top-bar {
+    background-color: #000;
+    padding: 0.8rem 0px 1rem 0px;
+    &__rate-img,
+    &__reviews-img {
+        max-height: 2.5rem;
+        width: auto;
+    }
+    &__reviews-link {
+        margin-left: 1.2rem;
+    }
+    &__center-text,
+    .typed-cursor {
+        font-size: 1.4rem;
+        color: #FFF;
+        text-align: center;
+    }
+    &__last-col {
+        display: flex;
+    }
+    &__language {
+        position: relative;
+        margin-left: 2.4rem;
+        &-menu {
+            padding-top: 0.5rem;
+            position: absolute;
+            display: none;
+            a {
+                margin: 0.8rem 0.5rem 0em 0.5rem;
+                &:last-child {
+                    margin-bottom: 0.7rem;
+                }
+            }
+            &__inner {
+                display: flex;
+                flex-direction: column;
+                background-color: #1d1d1d;
+                border-radius: 0.2rem;
+                top: 0;
+                left: 0;
+            }
+        }
+        &-selected {
+            cursor: pointer;
+            flex-direction: column;
+            display: flex;
+            height: 100%;
+            margin-top: 0.2rem;
+            &:hover~.top-bar__language-menu {
+                display: flex;
+                z-index: 2;
+            }
+        }
+    }
+    &__socials {
+        a {
+            margin-right: 0.4rem;
+        }
+    }
+    &__language-selected {
+        &:hover~.top-bar__language-menu {
+            display: flex
+        }
+    }
+    &__language-menu:hover {
+        display: flex;
+        z-index: 2;
+    }
+    &__login {
+        font-size: 1.4rem;
+        color: #FFF;
+        margin-left: 1.4rem;
+        a {
+            color: #FFF;
+            text-decoration: none !important;
+        }
+    }
+}
