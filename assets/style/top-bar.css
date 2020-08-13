@@ -54,3 +54,7 @@
     .top-bar__login a {
       color: #FFF;
       text-decoration: none !important; }
+      .top-bar__login a img {
+        transition: 0.3s ease; }
+      .top-bar__login a:hover img:last-child {
+        margin-left: 5px; }
