@@ -40,6 +40,10 @@
                 &:last-child {
                     right: -2.7rem;
                 }
+                img {
+                    width: 2.3rem;
+                    height: auto;
+                }
             }
         }
     }
@@ -52,7 +56,8 @@
         img {
             position: absolute;
             left: 0;
-            top: 0;
+            bottom: 0;
+            height: 26rem;
         }
         &__content {
             margin-left: auto;
@@ -102,9 +107,9 @@
                 position: absolute;
                 content: '';
                 background-image: url(../img/button-right-arrow.svg);
-                background-size: 22px 40px !important;
-                width: 22px;
-                height: 40px;
+                background-size: 2.2rem 4rem !important;
+                width: 2.2rem;
+                height: 4rem;
                 right: 1.4rem;
                 top: 50%;
                 transform: translate(0%, -50%);

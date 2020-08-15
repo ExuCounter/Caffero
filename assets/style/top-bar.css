@@ -40,10 +40,19 @@
       .top-bar__language-selected:hover ~ .top-bar__language-menu {
         display: flex;
         z-index: 2; }
-  .top-bar__socials a {
-    margin-right: 0.4rem; }
-  .top-bar__socials img {
-    max-width: 2.3rem; }
+  .top-bar__socials {
+    display: flex;
+    align-items: center; }
+    .top-bar__socials a {
+      margin-right: 0.4rem; }
+    .top-bar__socials img {
+      max-width: 2.3rem; }
+  .top-bar__language img {
+    max-width: 2.8rem; }
+  .top-bar__language-selected img {
+    max-width: 2.8rem;
+    margin-top: auto;
+    margin-bottom: auto; }
   .top-bar__language-selected:hover ~ .top-bar__language-menu {
     display: flex; }
   .top-bar__language-menu:hover {

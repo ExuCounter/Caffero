@@ -53,6 +53,8 @@
         }
     }
     &__socials {
+        display: flex;
+        align-items: center;
         a {
             margin-right: 0.4rem;
         }
@@ -60,9 +62,19 @@
             max-width: 2.3rem;
         }
     }
-    &__language-selected {
-        &:hover~.top-bar__language-menu {
-            display: flex
+    &__language {
+        img {
+            max-width: 2.8rem;
+        }
+        &-selected {
+            img {
+                max-width: 2.8rem;
+                margin-top: auto;
+                margin-bottom: auto;
+            }
+            &:hover~.top-bar__language-menu {
+                display: flex
+            }
         }
     }
     &__language-menu:hover {

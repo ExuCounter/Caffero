@@ -15,6 +15,10 @@
             }
         }
     }
+    &-mobile-nav {
+        padding: 16px 0px 20px 0px;
+        background-color: #fcc200;
+    }
     &-menu {
         list-style: none;
         padding-left: 0;
@@ -185,7 +189,7 @@
             bottom: 1.4rem;
             font-size: 1.2rem;
             color: #919191;
-            z-index: 11;
+            z-index: 3;
             a {
                 color: #919191;
             }

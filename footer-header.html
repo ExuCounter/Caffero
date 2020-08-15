@@ -27,23 +27,28 @@
     <header class="header">
         <div class="top-bar">
             <div class="container row">
-                <div class="col-4">
+                <div class="col-4 d-md-flex d-none">
                     <img src="assets/img/rate.png" alt="Rate" class='top-bar__rate-img'>
                     <a href='javascript:void(0)' class='top-bar__reviews-link' target='_blank'><img src="assets/img/reviews.png" alt="Reviews" class='top-bar__reviews-img'></a>
                 </div>
-                <div class="col-4 d-flex align-items-center justify-content-center">
+                <div class="col-4 d-md-flex d-none align-items-center justify-content-center">
                     <div class="top-bar__center-text">
 
                     </div>
                 </div>
-                <div class="col-4 top-bar__last-col">
-                    <div class="top-bar__socials">
+                <div class="col-md-4 col-12 top-bar__last-col">
+                    <div class="top-bar__socials d-none d-md-flex align-items-center">
                         <a href='javascript:void(0)' target='_blank'><img src="assets/img/youtube-icon.svg" alt="Youtube"></a>
                         <a href='javascript:void(0)' target='_blank'><img src="assets/img/instagram-icon.svg" alt="Instagram"></a>
                         <a href='javascript:void(0)' target='_blank'><img src="assets/img/facebook-icon.svg" alt="Facebook"></a>
                         <a href='javascript:void(0)' target='_blank'><img src="assets/img/email.svg" alt="Email"></a>
                     </div>
-                    <div class="top-bar__language">
+                    <div class="top-bar__socials-mobile d-flex d-md-none">
+                        <a href='tel: +0 000 000 000' target='_blank'><img src="assets/img/mobile-call.svg" alt="Call"></a>
+                        <a href='mailto: mail@gmail.com' target='_blank'><img src="assets/img/mobile-email.svg" alt="Email"></a>
+                        <a href='javascript:void(0)' target='_blank'><img src="assets/img/mobile-message.svg" alt="Message"></a>
+                    </div>
+                    <div class="top-bar__language d-none d-md-flex">
                         <div class='top-bar__language-selected'><img src="assets/img/france-flag-icon.svg" alt="France Language"></div>
                         <div class="top-bar__language-menu">
                             <div class='top-bar__language-menu__inner'>
@@ -135,6 +140,28 @@
                 </div>
             </div>
         </nav>
+        <div class="header-mobile-nav d-none">
+            <div class='container row justify-content-between'>
+                <div class='header-mobile-nav__menu'>
+                    <button class="burger-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <p>MENU</p>
+                </div>
+                <div class="top-bar__language d-md-none d-flex">
+                    <div class='top-bar__language-selected'><img src="assets/img/france-flag-icon.svg" alt="France Language"></div>
+                    <div class="top-bar__language-menu">
+                        <div class='top-bar__language-menu__inner'>
+                            <a href='/'><img src="assets/img/france-flag-icon.svg" alt="France Language"></a>
+                            <a href='/'><img src="assets/img/france-flag-icon.svg" alt="France Language"></a>
+                            <a href='/'><img src="assets/img/france-flag-icon.svg" alt="France Language"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- HEADER BANNER -->
         <div class="header-banner" style='background: url(assets/img/vuurwerk-header-bg.jpg)'>
             <div class='container'>

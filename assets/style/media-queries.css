@@ -115,7 +115,21 @@
       font-size: 1.6rem; }
     .footer-info__bottom div:last-child p {
       flex-direction: column;
-      display: flex; } }
+      display: flex; }
+  .top-bar {
+    padding: 0; }
+    .top-bar .container {
+      padding: 0; }
+    .top-bar__last-col {
+      padding: 0px 19px 0px 0px;
+      align-items: center;
+      justify-content: space-between; }
+  .header-mobile-nav {
+    display: flex !important; }
+    .header-mobile-nav .top-bar__language {
+      display: flex !important; }
+    .header-mobile-nav .burger-menu {
+      display: block; } }
 
 @media screen and (max-width: 568px) {
   html,
@@ -149,4 +163,12 @@
       width: 5.6rem;
       height: 5.6rem; }
   .footer-info__bottom div span {
-    font-size: 1.8rem; } }
+    font-size: 1.8rem; }
+  .footer-slider__inner-item img {
+    height: 6rem !important; }
+  .footer h3 {
+    font-size: 3rem; } }
+
+@media screen and (max-width: 480px) {
+  .footer-slider__inner-item img {
+    height: 4.5rem !important; } }
