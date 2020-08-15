@@ -61,8 +61,7 @@
   background-position: center center !important;
   position: relative;
   overflow: hidden;
-  background-repeat: no-repeat !important;
-  margin-bottom: -0.5rem; }
+  background-repeat: no-repeat !important; }
   .header-banner__name {
     font-size: 3.5rem;
     text-transform: uppercase;
@@ -99,8 +98,9 @@
     width: 100%;
     background-size: cover;
     position: absolute;
-    bottom: 0px;
-    left: 0; }
+    bottom: -5px;
+    left: 0;
+    background-position: center; }
     .header-banner__cover:after {
       content: '';
       width: 10000px;
@@ -172,9 +172,9 @@
     width: 100%;
     background-size: cover;
     position: absolute;
-    bottom: 3px;
+    bottom: 2.5px;
     left: 0;
-    background-position: center center !important; }
+    background-position: center bottom; }
     .header-video__cover:after {
       content: '';
       width: 10000px;

@@ -226,7 +226,7 @@
                                 09.00 - 21.00 uur
                             </a>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-12 pl-md-0 pr-md-0">
+                        <div class="col-lg-3 col-12 pl-md-0 pr-md-0">
                             <span>
                                 Tel 
                             </span>
@@ -234,7 +234,7 @@
                                 +3130 320 0420
                             </a>
                         </div>
-                        <div class="col-lg-3 col-6 pl-md-0">
+                        <div class="col-lg-3 col-12 pl-md-0">
                             <span>
                                 Email   
                             </span>
@@ -242,7 +242,7 @@
                                 info@caffero.com
                             </a>
                         </div>
-                        <div class="col-lg-3 col-6">
+                        <div class="col-lg-3 col-12">
                             <span>
                                 Social media 
                             </span>
@@ -256,7 +256,7 @@
                 </div>
                 <div class="footer-info__bottom">
                     <div class="footer-info__bottom-item">
-                        <div class='footer-info__bottom-item__container'>
+                        <div class='footer-info__bottom-item__container' data-id='1'>
                             <span class="footer-info__bottem-item__title">
                                 Niderland
                             </span>
@@ -267,12 +267,12 @@
                         </p>
                     </div>
                     <div class="footer-info__bottom-item">
-                        <div class='footer-info__bottom-item__container'>
+                        <div class='footer-info__bottom-item__container' data-id='2'>
                             <span class="footer-info__bottem-item__title">
                                 Nevenvestigingen<br>
                                 Nederland
                             </span>
-                            <span class="footer-info__bottem-item__title">
+                            <span class="footer-info__bottem-item__title d-md-none">
                                 Nevenvestigingen Nederland
                             </span>
                         </div>
@@ -282,7 +282,7 @@
                         </p>
                     </div>
                     <div class="footer-info__bottom-item">
-                        <div class='footer-info__bottom-item__container'>
+                        <div class='footer-info__bottom-item__container' data-id='3'>
                             <span class="footer-info__bottem-item__title">
                                 Duitsland
                             </span>
@@ -294,7 +294,7 @@
                         </p>
                     </div>
                     <div class="footer-info__bottom-item">
-                        <div class='footer-info__bottom-item__container'>
+                        <div class='footer-info__bottom-item__container' data-id='4'>
                             <span class="footer-info__bottem-item__title">
                                 België
                             </span>
@@ -306,7 +306,7 @@
                         </p>
                     </div>
                     <div class="footer-info__bottom-item">
-                        <div class='footer-info__bottom-item__container'>
+                        <div class='footer-info__bottom-item__container' data-id='5'>
                             <span class="footer-info__bottem-item__title">
                                 Klanttevredenheid
                             </span>
@@ -397,6 +397,26 @@
         $('.footer-slider__nav-container__next').click(function() {
             footerSlider.trigger('next.owl.carousel');
         })
+    </script>
+
+    <script>
+        let mobileFooterAccords = document.querySelectorAll('.footer-info__bottom-item__container');
+
+        if (document.documentElement.offsetWidth < 768) {
+            mobileFooterAccords.forEach(accord => {
+                accord.addEventListener('click', (e) => {
+                    let clickedAccord = e.target.dataset.id || e.target.closest('div').dataset.id;
+
+                    mobileFooterAccords.forEach(item => {
+                        if (item.dataset.id == clickedAccord && !(item.classList.contains('active'))) {
+                            item.classList.add('active');
+                        } else {
+                            item.classList.remove('active');
+                        }
+                    })
+                })
+            })
+        }
     </script>
 </body>
 

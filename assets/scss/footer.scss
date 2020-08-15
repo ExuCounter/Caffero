@@ -186,10 +186,19 @@
                     color: #FFF;
                     font-size: 1.7rem;
                 }
-                &:last-child img {
-                    margin-top: 1rem;
-                    width: 16.3rem;
-                    height: auto;
+                &:last-child {
+                    img {
+                        margin-top: 1rem;
+                        width: 16.3rem;
+                        height: auto;
+                        max-height: 0px;
+                        transition: 0.5s ease-in-out;
+                    }
+                    &.active {
+                        img {
+                            max-height: 500px;
+                        }
+                    }
                 }
             }
         }
