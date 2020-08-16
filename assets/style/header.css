@@ -102,7 +102,7 @@
     text-transform: uppercase; }
   .header-banner__breadcrumbs {
     position: absolute;
-    left: 0;
+    left: 15px;
     bottom: 1.2rem;
     font-size: 1.2rem;
     color: #919191;
@@ -176,7 +176,7 @@
     text-transform: uppercase; }
   .header-video__breadcrumbs {
     position: absolute;
-    left: 0;
+    left: 15px;
     bottom: 1.4rem;
     font-size: 1.2rem;
     color: #919191;

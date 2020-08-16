@@ -77,10 +77,10 @@
                     padding: 0px 15px 3px 15px !important;
                 }
                 &:after {
-                    height: 53px;
-                    width: 53px;
-                    right: 22px;
-                    top: -25px;
+                    height: 5.3rem;
+                    width: 5.3rem;
+                    right: 2.2rem;
+                    top: -2.5rem;
                     background-size: cover !important;
                 }
             }
@@ -197,7 +197,8 @@
         }
     }
     .top-bar {
-        padding: 0;
+        padding-left: 0;
+        padding-right: 0;
         .container {
             padding: 0;
         }
@@ -263,6 +264,12 @@
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .top-bar {
+        padding: 0;
     }
 }
 
@@ -462,5 +469,44 @@
     html,
     footer {
         font-size: 7px;
+    }
+    .header {
+        &-banner {
+            &__name {
+                padding-bottom: 2.6rem;
+            }
+        }
+        &-video {
+            &__title {
+                top: 10.2rem;
+            }
+        }
+    }
+    .top-bar {
+        &__socials {
+            &-mobile {
+                width: 5rem;
+            }
+        }
+    }
+    .footer {
+        &-slider {
+            width: 80%;
+            &__nav-container {
+                &-btn {
+                    img {
+                        width: 1.8rem;
+                    }
+                    &:first-child {
+                        left: -30px;
+                        top: 38px;
+                    }
+                    &:last-child {
+                        right: -30px;
+                        top: 38px;
+                    }
+                }
+            }
+        }
     }
 }
