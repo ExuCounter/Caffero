@@ -70,6 +70,10 @@
         font-size: 1.8em;
         margin-left: 6.6rem;
         margin-top: 1.9rem; }
+      .footer-reviews__content.mobile {
+        display: none; }
+        .footer-reviews__content.mobile span {
+          margin-left: 0rem; }
     .footer-reviews-btn {
       position: relative;
       z-index: 1;

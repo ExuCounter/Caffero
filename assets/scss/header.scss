@@ -16,8 +16,30 @@
         }
     }
     &-mobile-nav {
-        padding: 16px 0px 20px 0px;
+        padding: 16px 0px 16px 0px;
         background-color: #fcc200;
+        display: flex;
+        position: relative;
+        &__menu {
+            display: flex;
+            align-items: center;
+            font-size: 1.9rem;
+            p {
+                margin-bottom: 0;
+                margin-left: 1rem;
+            }
+        }
+        &__logo {
+            position: absolute;
+            left: 50%;
+            bottom: -2.5rem;
+            transform: translate(-50%, 0%);
+            z-index: 111;
+            img {
+                height: 5rem;
+                width: 5rem;
+            }
+        }
     }
     &-menu {
         list-style: none;

@@ -5,11 +5,11 @@
     position: relative;
     top: 0;
     right: 0;
-    z-index: 11;
+    z-index: 11111;
     cursor: pointer;
     border: none;
-    width: 6.7rem;
-    height: 6.7rem;
+    width: 3.6rem;
+    height: 2.2rem;
     border-radius: 50%;
     transition: 1s;
     opacity: 1;
@@ -18,7 +18,7 @@
     display: none;
     span {
         transition: all 0.3s ease-in-out;
-        margin-top: -0.9rem;
+        margin-top: 0rem;
         z-index: 111;
         @extend %burger-menu--span;
         &:nth-child(1) {
@@ -40,7 +40,6 @@
                 animation: top-span 0.15s ease-in-out;
                 animation-fill-mode: forwards;
                 animation-delay: 0.25s;
-                background-color: #FFF;
                 left: 0 !important;
             }
             &:nth-child(2) {
@@ -52,13 +51,12 @@
                 animation: bottom-span 0.15s ease-in-out;
                 animation-fill-mode: forwards;
                 animation-delay: 0.25s;
-                background-color: #FFF;
             }
         }
     }
     &__inner {
         position: absolute;
-        left: 25%;
+        left: 0%;
         top: 50%;
     }
 }
@@ -66,6 +64,7 @@
 %burger-menu--span {
     position: absolute;
     top: 0;
+    left: 0;
     content: '';
     width: 3.6rem;
     height: 0.3rem;

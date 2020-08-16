@@ -13,8 +13,26 @@
       width: 9.7rem; }
 
 .header-mobile-nav {
-  padding: 16px 0px 20px 0px;
-  background-color: #fcc200; }
+  padding: 16px 0px 16px 0px;
+  background-color: #fcc200;
+  display: flex;
+  position: relative; }
+  .header-mobile-nav__menu {
+    display: flex;
+    align-items: center;
+    font-size: 1.9rem; }
+    .header-mobile-nav__menu p {
+      margin-bottom: 0;
+      margin-left: 1rem; }
+  .header-mobile-nav__logo {
+    position: absolute;
+    left: 50%;
+    bottom: -2.5rem;
+    transform: translate(-50%, 0%);
+    z-index: 111; }
+    .header-mobile-nav__logo img {
+      height: 5rem;
+      width: 5rem; }
 
 .header-menu {
   list-style: none;

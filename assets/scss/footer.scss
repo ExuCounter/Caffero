@@ -87,6 +87,12 @@
                 margin-left: 6.6rem;
                 margin-top: 1.9rem;
             }
+            &.mobile {
+                display: none;
+                span {
+                    margin-left: 0rem;
+                }
+            }
         }
         &-btn {
             position: relative;

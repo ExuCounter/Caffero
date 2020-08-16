@@ -32,10 +32,10 @@
       width: 60%; }
       .footer-slider__nav-container-btn:first-child {
         left: -30px;
-        top: 15px; }
+        top: 22px; }
       .footer-slider__nav-container-btn:last-child {
         right: -30px;
-        top: 15px; }
+        top: 22px; }
     .footer-info__top .col-12 {
       display: flex;
       justify-content: flex-start !important;
@@ -45,7 +45,9 @@
       width: 53px;
       right: 22px;
       top: -25px;
-      background-size: cover !important; } }
+      background-size: cover !important; }
+  .footer-reviews {
+    max-width: 550px; } }
 
 @media screen and (max-width: 768px) {
   .footer-slider {
@@ -124,12 +126,43 @@
       padding: 0px 19px 0px 0px;
       align-items: center;
       justify-content: space-between; }
+  .header-nav {
+    position: fixed;
+    left: 0;
+    top: 40px;
+    background-color: #fcc200;
+    width: 100vw;
+    height: 100vh;
+    z-index: 555;
+    transform: translateX(-110%);
+    transition: 0.6s ease;
+    align-items: center;
+    display: flex; }
+    .header-nav.active {
+      transform: translateX(0); }
+  .header .header-menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
   .header-mobile-nav {
     display: flex !important; }
     .header-mobile-nav .top-bar__language {
       display: flex !important; }
     .header-mobile-nav .burger-menu {
-      display: block; } }
+      display: block; }
+      .header-mobile-nav .burger-menu.scroll-top {
+        transition: 0.1s ease;
+        top: 30px; }
+    .header-mobile-nav-nav__logo {
+      transition: 0.3s; }
+      .header-mobile-nav-nav__logo.active {
+        opacity: 0; }
+  .footer-slider__nav-container-btn:first-child {
+    left: -30px;
+    top: 25px; }
+  .footer-slider__nav-container-btn:last-child {
+    right: -30px;
+    top: 25px; } }
 
 @media screen and (max-width: 568px) {
   html,
@@ -158,17 +191,87 @@
   .header-video__breadcrumbs {
     display: none; }
   .header-nav__logo {
-    bottom: -2.8rem; }
+    bottom: -2.8rem;
+    display: none; }
     .header-nav__logo img {
       width: 5.6rem;
       height: 5.6rem; }
   .footer-info__bottom div span {
     font-size: 1.8rem; }
+  .footer-info__nav ul li {
+    font-size: 1.3rem; }
+  .footer-reviews img {
+    position: absolute;
+    left: -8rem;
+    bottom: 0;
+    height: 23.3rem; }
+  .footer-reviews__content {
+    display: none;
+    width: auto; }
+    .footer-reviews__content span {
+      font-size: 2.2rem;
+      line-height: 1; }
+      .footer-reviews__content span:nth-child(1) {
+        margin-left: 0.4rem;
+        margin-top: 2.3rem; }
+      .footer-reviews__content span:nth-child(2) {
+        margin-left: 3.6rem; }
+      .footer-reviews__content span:nth-child(3) {
+        margin-left: 2.9rem; }
+      .footer-reviews__content span:nth-child(4) {
+        margin-left: 3.7rem; }
+      .footer-reviews__content span:nth-child(5) {
+        margin-left: 10.2rem; }
+    .footer-reviews__content p {
+      margin: 1rem 0rem 0rem 5.3rem;
+      font-size: 1.1rem; }
+    .footer-reviews__content.mobile {
+      display: block; }
+  .footer-reviews-btn {
+    font-size: 1.5rem;
+    margin-left: 3.5rem;
+    padding: 0.4rem 3.5rem 0.4rem 1.3rem;
+    margin-bottom: 3.8rem; }
+    .footer-reviews-btn:after {
+      width: 100%;
+      height: 2.1rem;
+      width: 3rem;
+      background-size: 3rem 2.1rem !important;
+      right: 5px; }
+    .footer-reviews-btn:hover:after {
+      right: 0px; }
   .footer-slider__inner-item img {
     height: 6rem !important; }
+  .footer-slider__nav-container-btn img {
+    width: 1.8rem; }
+  .footer-slider__nav-container-btn:first-child {
+    left: -30px;
+    top: 15px; }
+  .footer-slider__nav-container-btn:last-child {
+    right: -30px;
+    top: 15px; }
   .footer h3 {
     font-size: 3rem; } }
 
 @media screen and (max-width: 480px) {
   .footer-slider__inner-item img {
-    height: 4.5rem !important; } }
+    height: 4.5rem !important; }
+  .footer-slider__nav-container-btn img {
+    width: 1.5rem; }
+  .footer-slider__nav-container-btn:first-child {
+    left: -40px;
+    top: 30px; }
+  .footer-slider__nav-container-btn:last-child {
+    right: -40px;
+    top: 30px; }
+  .footer-reviews__content {
+    width: auto; }
+    .footer-reviews__content span {
+      font-size: 1.8rem !important; }
+    .footer-reviews__content p {
+      font-size: 1.1rem !important; } }
+
+@media screen and (max-width: 360px) {
+  html,
+  footer {
+    font-size: 7px; } }
