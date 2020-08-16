@@ -194,7 +194,7 @@
     width: 100%;
     background-size: cover;
     position: absolute;
-    bottom: 2.5px;
+    bottom: 2px;
     left: 0;
     background-position: center bottom; }
     .header-video__cover:after {

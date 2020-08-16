@@ -50,7 +50,7 @@
 
 @media screen and (max-width: 992px) {
     html {
-        font-size: 7px;
+        font-size: 6.5px;
     }
     .footer {
         font-size: 6px;
@@ -88,6 +88,14 @@
     }
     .footer-reviews {
         max-width: 550px;
+    }
+    .header {
+        &-video {
+            &__cover {
+                height: 28px;
+                bottom: 1.5px;
+            }
+        }
     }
 }
 
@@ -206,6 +214,14 @@
             padding: 0px 19px 0px 0px;
             align-items: center;
             justify-content: space-between;
+        }
+        &__socials-mobile {
+            a {
+                &:nth-child(1),
+                &:nth-child(2) {
+                    margin-right: -1px;
+                }
+            }
         }
     }
     .header {
@@ -477,6 +493,9 @@
             }
         }
         &-video {
+            &__cover {
+                height: 17px;
+            }
             &__title {
                 top: 10.2rem;
             }

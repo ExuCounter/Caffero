@@ -25,7 +25,7 @@
 
 @media screen and (max-width: 992px) {
   html {
-    font-size: 7px; }
+    font-size: 6.5px; }
   .footer {
     font-size: 6px; }
     .footer-slider {
@@ -47,7 +47,10 @@
       top: -2.5rem;
       background-size: cover !important; }
   .footer-reviews {
-    max-width: 550px; } }
+    max-width: 550px; }
+  .header-video__cover {
+    height: 28px;
+    bottom: 1.5px; } }
 
 @media screen and (max-width: 768px) {
   .footer-slider {
@@ -127,6 +130,8 @@
       padding: 0px 19px 0px 0px;
       align-items: center;
       justify-content: space-between; }
+    .top-bar__socials-mobile a:nth-child(1), .top-bar__socials-mobile a:nth-child(2) {
+      margin-right: -1px; }
   .header-nav {
     position: fixed;
     left: 0;
@@ -280,6 +285,8 @@
     font-size: 7px; }
   .header-banner__name {
     padding-bottom: 2.6rem; }
+  .header-video__cover {
+    height: 17px; }
   .header-video__title {
     top: 10.2rem; }
   .top-bar__socials-mobile {
