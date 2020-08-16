@@ -11,12 +11,12 @@ burgerMenu.addEventListener('click', () => {
     if (!(menu.classList.contains('active'))) {
         menu.classList.add('active');
         burgerMenu.classList.add('active');
-        document.body.style.overflow = 'hidden';
+        document.body.style.overflowY = 'hidden';
         headerMobileNav.classList.add('active');
     } else {
         menu.classList.remove('active');
         burgerMenu.classList.remove('active');
-        document.body.style.overflow = 'scroll';
+        document.body.style.overflowY = 'scroll';
         headerMobileNav.classList.remove('active');
     }
 })

@@ -588,6 +588,14 @@ button {
     .footer-info__top a,
     .footer-info__top span {
       font-size: 1.6rem; }
+    .footer-slider__nav-container-btn img {
+      width: 1.8rem; }
+    .footer-slider__nav-container-btn:first-child {
+      left: -30px;
+      top: 15px; }
+    .footer-slider__nav-container-btn:last-child {
+      right: -30px;
+      top: 15px; }
   .header-banner__cover {
     bottom: unset;
     height: 33px; }
@@ -607,10 +615,10 @@ button {
       width: 60%; }
       .footer-slider__nav-container-btn:first-child {
         left: -30px;
-        top: 22px; }
+        top: 26px; }
       .footer-slider__nav-container-btn:last-child {
         right: -30px;
-        top: 22px; }
+        top: 26px; }
     .footer-info__top .col-12 {
       display: flex;
       justify-content: flex-start !important;
@@ -710,10 +718,9 @@ button {
   .header-nav {
     position: fixed;
     left: 0;
-    top: -20px;
+    top: 0px;
     background-color: #fcc200;
     width: 100vw;
-    height: calc(100vh + 60px);
     z-index: 555;
     transform: translateX(-110%);
     transition: 0.6s ease;
@@ -721,10 +728,26 @@ button {
     display: flex; }
     .header-nav.active {
       transform: translateX(0); }
+      .header-nav.active img {
+        display: none; }
   .header-menu {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center; }
+    .header-menu__splitter {
+      margin: 0 !important; }
+    .header-menu li {
+      text-align: left; }
+    .header-menu__sub {
+      max-height: 1500px;
+      opacity: 1;
+      padding-left: 2rem; }
+    .header-menu__container {
+      overflow-y: scroll;
+      height: calc(100vh - 100px);
+      margin-top: 100px; }
+      .header-menu__container::-webkit-scrollbar {
+        display: none; }
   .header-mobile-nav {
     display: flex !important;
     z-index: 1111111 !important; }
@@ -857,15 +880,15 @@ button {
 @media screen and (max-width: 360px) {
   html,
   footer {
-    font-size: 7px; }
+    font-size: 8.3px; }
   .header-banner__name {
     padding-bottom: 2.6rem; }
   .header-video__cover {
-    height: 17px; }
+    height: 20px; }
   .header-video__title {
     top: 10.2rem; }
-  .top-bar__socials-mobile {
-    width: 5rem; }
+  .top-bar__socials-mobile img {
+    width: 4.5rem; }
   .footer-slider {
     width: 80%; }
     .footer-slider__nav-container-btn img {
