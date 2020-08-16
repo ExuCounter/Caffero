@@ -72,6 +72,8 @@ button {
       margin-right: 0.4rem; }
     .top-bar__socials img {
       max-width: 2.3rem; }
+    .top-bar__socials-mobile img {
+      max-width: 4.5rem; }
   .top-bar__language img {
     max-width: 2.8rem; }
   .top-bar__language-selected img {
