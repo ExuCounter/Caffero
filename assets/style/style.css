@@ -23,7 +23,9 @@ button {
 
 .top-bar {
   background-color: #000;
-  padding: 0.8rem 0px 1rem 0px; }
+  padding: 0.8rem 0px 1rem 0px;
+  position: relative;
+  z-index: 111111; }
   .top-bar__rate-img, .top-bar__reviews-img {
     max-height: 2.5rem;
     width: auto; }
@@ -702,10 +704,10 @@ button {
   .header-nav {
     position: fixed;
     left: 0;
-    top: 40px;
+    top: -20px;
     background-color: #fcc200;
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh + 60px);
     z-index: 555;
     transform: translateX(-110%);
     transition: 0.6s ease;
@@ -713,23 +715,21 @@ button {
     display: flex; }
     .header-nav.active {
       transform: translateX(0); }
-  .header .header-menu {
+  .header-menu {
     flex-direction: column;
     align-items: center;
     justify-content: center; }
   .header-mobile-nav {
-    display: flex !important; }
+    display: flex !important;
+    z-index: 1111111 !important; }
     .header-mobile-nav .top-bar__language {
       display: flex !important; }
     .header-mobile-nav .burger-menu {
       display: block; }
-      .header-mobile-nav .burger-menu.scroll-top {
-        transition: 0.1s ease;
-        top: 30px; }
-    .header-mobile-nav-nav__logo {
-      transition: 0.3s; }
-      .header-mobile-nav-nav__logo.active {
-        opacity: 0; }
+    .header-mobile-nav a {
+      transition: 0.5s; }
+    .header-mobile-nav.active a {
+      opacity: 0; }
   .footer-slider__nav-container-btn:first-child {
     left: -30px;
     top: 25px; }

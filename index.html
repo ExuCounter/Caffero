@@ -18,6 +18,7 @@
     <!-- OWL CAROUSEL-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
 </head>
 
 <body>
@@ -27,23 +28,28 @@
     <header class="header">
         <div class="top-bar">
             <div class="container row">
-                <div class="col-4">
+                <div class="col-4 d-md-flex d-none">
                     <img src="assets/img/rate.png" alt="Rate" class='top-bar__rate-img'>
                     <a href='javascript:void(0)' class='top-bar__reviews-link' target='_blank'><img src="assets/img/reviews.png" alt="Reviews" class='top-bar__reviews-img'></a>
                 </div>
-                <div class="col-4 d-flex align-items-center justify-content-center">
+                <div class="col-4 d-md-flex d-none align-items-center justify-content-center">
                     <div class="top-bar__center-text">
 
                     </div>
                 </div>
-                <div class="col-4 top-bar__last-col">
-                    <div class="top-bar__socials">
+                <div class="col-md-4 col-12 top-bar__last-col">
+                    <div class="top-bar__socials d-none d-md-flex align-items-center">
                         <a href='javascript:void(0)' target='_blank'><img src="assets/img/youtube-icon.svg" alt="Youtube"></a>
                         <a href='javascript:void(0)' target='_blank'><img src="assets/img/instagram-icon.svg" alt="Instagram"></a>
                         <a href='javascript:void(0)' target='_blank'><img src="assets/img/facebook-icon.svg" alt="Facebook"></a>
                         <a href='javascript:void(0)' target='_blank'><img src="assets/img/email.svg" alt="Email"></a>
                     </div>
-                    <div class="top-bar__language">
+                    <div class="top-bar__socials-mobile d-flex d-md-none">
+                        <a href='tel: +0 000 000 000' target='_blank'><img src="assets/img/mobile-call.svg" alt="Call"></a>
+                        <a href='mailto: mail@gmail.com' target='_blank'><img src="assets/img/mobile-email.svg" alt="Email"></a>
+                        <a href='javascript:void(0)' target='_blank'><img src="assets/img/mobile-message.svg" alt="Message"></a>
+                    </div>
+                    <div class="top-bar__language d-none d-md-flex">
                         <div class='top-bar__language-selected'><img src="assets/img/france-flag-icon.svg" alt="France Language"></div>
                         <div class="top-bar__language-menu">
                             <div class='top-bar__language-menu__inner'>
@@ -135,6 +141,33 @@
                 </div>
             </div>
         </nav>
+        <div class="header-mobile-nav d-none">
+            <div class='container row justify-content-between'>
+                <div class='header-mobile-nav__menu'>
+                    <button class="burger-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <p>MENU</p>
+                </div>
+                <div class="top-bar__language d-md-none d-flex">
+                    <div class='top-bar__language-selected'><img src="assets/img/france-flag-icon.svg" alt="France Language"></div>
+                    <div class="top-bar__language-menu">
+                        <div class='top-bar__language-menu__inner'>
+                            <a href='/'><img src="assets/img/france-flag-icon.svg" alt="France Language"></a>
+                            <a href='/'><img src="assets/img/france-flag-icon.svg" alt="France Language"></a>
+                            <a href='/'><img src="assets/img/france-flag-icon.svg" alt="France Language"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-mobile-nav__logo">
+                <a href="/">
+                    <img src="assets/img/caffero-logo.svg" alt="Caffero">
+                </a>
+            </div>
+        </div>
         <!-- HEADER BANNER -->
         <div class="header-banner" style='background: url(assets/img/vuurwerk-header-bg.jpg)'>
             <div class='container'>
@@ -212,6 +245,22 @@
                         </a>
                     </div>
                 </div>
+
+                <div class="footer-reviews__content mobile">
+                    <span>”GEWELDIGE SHOW,</span>
+                    <span>ONZE RELATIES WAREN</span>
+                    <span>ERG ONDER DE INDRUK.</span>
+                    <span>HET BLEEF MAAR </span>
+                    <span>KNALLEN!”</span>
+                    <p>
+                        Pluk - directeur van de Petteflet
+                    </p>
+                    <div class='d-flex '>
+                        <a href='/javascript:void(0)' class="footer-reviews-btn">
+                            CHECK ONZE RECENSIES
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="footer-info">
@@ -226,7 +275,7 @@
                                 09.00 - 21.00 uur
                             </a>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-12 pl-md-0 pr-md-0">
+                        <div class="col-lg-3 col-12 pl-md-0 pr-md-0">
                             <span>
                                 Tel 
                             </span>
@@ -234,7 +283,7 @@
                                 +3130 320 0420
                             </a>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-12 pl-md-0">
+                        <div class="col-lg-3 col-12 pl-md-0">
                             <span>
                                 Email   
                             </span>
@@ -242,7 +291,7 @@
                                 info@caffero.com
                             </a>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-12">
+                        <div class="col-lg-3 col-12">
                             <span>
                                 Social media 
                             </span>
@@ -256,28 +305,37 @@
                 </div>
                 <div class="footer-info__bottom">
                     <div class="footer-info__bottom-item">
-                        <span class="footer-info__bottem-item__title">
-                            Niderland
-                        </span>
+                        <div class='footer-info__bottom-item__container' data-id='1'>
+                            <span class="footer-info__bottem-item__title">
+                                Niderland
+                            </span>
+                        </div>
                         <p>
                             Postbus 13,<br> 5258 ZG Berlicum<br> Nederland
                             <br> T: <a href='tel:+3130 320 0420'>+3130 320 0420</a><br> M: <a href='tel:+316 53 49 17 75'>+316 53 49 17 75</a><br>
                         </p>
                     </div>
                     <div class="footer-info__bottom-item">
-                        <span class="footer-info__bottem-item__title">
-                            Nevenvestigingen<br>
-                            Nederland
-                        </span>
+                        <div class='footer-info__bottom-item__container' data-id='2'>
+                            <span class="footer-info__bottem-item__title">
+                                Nevenvestigingen<br>
+                                Nederland
+                            </span>
+                            <span class="footer-info__bottem-item__title d-md-none">
+                                Nevenvestigingen Nederland
+                            </span>
+                        </div>
                         <p>
                             Sittard<br> Haarlem
                             <br> Mappel
                         </p>
                     </div>
                     <div class="footer-info__bottom-item">
-                        <span class="footer-info__bottem-item__title">
-                            Duitsland
-                        </span>
+                        <div class='footer-info__bottom-item__container' data-id='3'>
+                            <span class="footer-info__bottem-item__title">
+                                Duitsland
+                            </span>
+                        </div>
                         <p>
                             Wasserstrasse 18<br> 47533 Kleve<br> Nordrhein-Westfalen
                             <br> Duitsland
@@ -285,9 +343,11 @@
                         </p>
                     </div>
                     <div class="footer-info__bottom-item">
-                        <span class="footer-info__bottem-item__title">
-                            België
-                        </span>
+                        <div class='footer-info__bottom-item__container' data-id='4'>
+                            <span class="footer-info__bottem-item__title">
+                                België
+                            </span>
+                        </div>
                         <p>
                             Kapelseseenweg 292<br> 2930 Brasschaat
                             <br> België
@@ -295,12 +355,14 @@
                         </p>
                     </div>
                     <div class="footer-info__bottom-item">
-                        <span class="footer-info__bottem-item__title">
-                            Klanttevredenheid
-                        </span>
+                        <div class='footer-info__bottom-item__container' data-id='5'>
+                            <span class="footer-info__bottem-item__title">
+                                Klanttevredenheid
+                            </span>
+                        </div>
                         <p>
                             Beoordeel ons op <br>The Feedback Company
-                            <a href='/'><img src="assets/img/reviews-rate-footer.svg" alt=""></a>
+                            <a href='/'><img src="assets/img/reviews-rate-footer.svg" class='reviews-rate-img' alt=""></a>
                         </p>
                     </div>
                 </div>
@@ -385,6 +447,28 @@
             footerSlider.trigger('next.owl.carousel');
         })
     </script>
+
+    <script>
+        let mobileFooterAccords = document.querySelectorAll('.footer-info__bottom-item__container');
+
+        if (document.documentElement.offsetWidth < 768) {
+            mobileFooterAccords.forEach(accord => {
+                accord.addEventListener('click', (e) => {
+                    let clickedAccord = e.target.dataset.id || e.target.closest('div').dataset.id;
+
+                    mobileFooterAccords.forEach(item => {
+                        if (item.dataset.id == clickedAccord && !(item.classList.contains('active'))) {
+                            item.classList.add('active');
+                        } else {
+                            item.classList.remove('active');
+                        }
+                    })
+                })
+            })
+        }
+    </script>
+
+    <script src='assets/js/menu.js'></script>
 </body>
 
 </html>
