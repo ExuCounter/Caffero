@@ -3,25 +3,25 @@
   top: 38.8rem;
   right: 10.1rem;
   z-index: 11;
-  width: 247px;
-  height: 284px; }
+  width: 24.7rem;
+  height: 28.4rem; }
   .float-buttons__btn {
-    border: solid 12px #FFF;
+    border: solid 1.2rem #FFF;
     transform: rotate(45deg);
     display: block; }
     .float-buttons__btn-container {
       transform: rotate(0deg);
       background-color: black;
-      width: 83px;
-      height: 83px;
-      margin: -1px;
+      width: 8.3rem;
+      height: 8.3rem;
+      margin: -0.1rem;
       display: block; }
       .float-buttons__btn-container svg {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-55%, -55%) rotate(-45deg);
-        max-width: 56px; }
+        max-width: 5.6rem; }
     .float-buttons__btn tspan {
       font-weight: bold !important; }
     .float-buttons__btn:nth-child(1) {
@@ -29,25 +29,25 @@
       left: 0; }
     .float-buttons__btn:nth-child(2) {
       position: absolute;
-      right: 37px;
-      top: -30px;
-      border-width: 12px 12px 5px 12px;
+      right: 3.7rem;
+      top: -3rem;
+      border-width: 1.2rem 1.2rem 0.5rem 1.2rem;
       border-style: solid;
       border-color: #FFF; }
       .float-buttons__btn:nth-child(2) .float-buttons__btn-container svg {
-        max-width: 90px;
+        max-width: 9rem;
         top: 55%;
         left: 55%; }
     .float-buttons__btn:nth-child(3) {
       position: absolute;
-      bottom: 73px;
-      left: 49px;
-      border-width: 12px 12px 12px 12px;
+      bottom: 7.3rem;
+      left: 4.9rem;
+      border-width: 1.2rem;
       border-style: solid;
       border-color: #FFF; }
       .float-buttons__btn:nth-child(3) .float-buttons__btn-container {
         background-color: #00a700;
-        width: 117px;
-        height: 115px; }
+        width: 11.7rem;
+        height: 11.5rem; }
         .float-buttons__btn:nth-child(3) .float-buttons__btn-container svg {
-          max-width: 114px; }
+          max-width: 11.4rem; }
