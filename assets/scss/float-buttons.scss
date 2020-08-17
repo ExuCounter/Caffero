@@ -1,0 +1,66 @@
+.float-buttons {
+    position: fixed;
+    top: 38.8rem;
+    right: 10.1rem;
+    z-index: 11;
+    width: 247px;
+    height: 284px;
+    &__btn {
+        border: solid 12px #FFF;
+        transform: rotate(45deg);
+        display: block;
+        &-container {
+            transform: rotate(0deg);
+            background-color: black;
+            width: 83px;
+            height: 83px;
+            margin: -1px;
+            display: block;
+            svg {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-55%, -55%) rotate(-45deg);
+                max-width: 56px;
+            }
+        }
+        tspan {
+            font-weight: bold !important;
+        }
+        &:nth-child(1) {
+            position: absolute;
+            left: 0;
+        }
+        &:nth-child(2) {
+            position: absolute;
+            right: 37px;
+            top: -30px;
+            border-width: 12px 12px 5px 12px;
+            border-style: solid;
+            border-color: #FFF;
+            .float-buttons__btn-container {
+                svg {
+                    max-width: 90px;
+                    top: 55%;
+                    left: 55%;
+                }
+            }
+        }
+        &:nth-child(3) {
+            position: absolute;
+            bottom: 73px;
+            left: 49px;
+            border-width: 12px 12px 12px 12px;
+            border-style: solid;
+            border-color: #FFF;
+            .float-buttons__btn-container {
+                background-color: #00a700;
+                width: 117px;
+                height: 115px;
+                svg {
+                    max-width: 114px;
+                }
+            }
+        }
+    }
+}
