@@ -6,6 +6,8 @@
   .top-bar__rate-img, .top-bar__reviews-img {
     max-height: 2.5rem;
     width: auto; }
+  .top-bar__rate-star {
+    max-height: 2.3rem; }
   .top-bar__reviews-link {
     margin-left: 1.2rem; }
   .top-bar__center-text,
