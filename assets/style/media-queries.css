@@ -1,3 +1,22 @@
 @media screen and (max-width: 768px) {
   .float-buttons {
-    display: none; } }
+    display: none; }
+  .home-modal__content {
+    width: 90%; }
+    .home-modal__content-inner form {
+      flex: 0 1 100%; }
+    .home-modal__content-inner__right {
+      display: none; }
+  .home-modal__thanks {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 1.6rem; }
+    .home-modal__thanks img {
+      position: relative;
+      top: 1rem;
+      right: 0; } }
+
+@media screen and (max-width: 480px) {
+  .home-modal__content {
+    padding: 0.8rem 1.5rem 3rem 1.5rem; } }

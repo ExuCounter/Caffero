@@ -2,4 +2,36 @@
     .float-buttons {
         display: none;
     }
+    .home-modal {
+        &__content {
+            width: 90%;
+            &-inner {
+                form {
+                    flex: 0 1 100%;
+                }
+                &__right {
+                    display: none;
+                }
+            }
+        }
+        &__thanks {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            font-size: 1.6rem;
+            img {
+                position: relative;
+                top: 1rem;
+                right: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .home-modal {
+        &__content {
+            padding: 0.8rem 1.5rem 3rem 1.5rem;
+        }
+    }
 }

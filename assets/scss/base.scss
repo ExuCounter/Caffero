@@ -36,6 +36,25 @@ body {
     font-size: 100%;
 }
 
-button {
+button,
+input,
+select {
     outline: none !important;
+}
+
+.body-cover {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+    &.active {
+        z-index: 5555555;
+        opacity: 1;
+        transition: 0.5s ease-in-out;
+    }
 }
