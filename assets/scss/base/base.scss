@@ -1,0 +1,97 @@
+$light-gray: #626262;
+$lighter-gray: #f8f9fb;
+$blue: #1565ea;
+$nav-links: #87858f;
+$gray: #6a6c75;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+$main-font: 'Poppins',
+sans-serif;
+;
+body {
+    font-family: 'Poppins', $main-font;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-family: $main-font;
+}
+
+.container {
+    max-width: 1230px;
+    margin: 0 auto;
+    position: relative;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+    outline: none !important;
+}
+
+.body-cover {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+    &.active {
+        z-index: 5555555;
+        opacity: 1;
+        transition: 0.5s ease-in-out;
+    }
+}
+
+%default-btn {
+    position: relative;
+    z-index: 1;
+    font-size: 2.8em;
+    color: #1d1d1b !important;
+    background-color: #fcc200;
+    border: none;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0.7rem 6.5rem 0.7rem 1.3rem;
+    text-decoration: none !important;
+    display: block;
+    &:after {
+        position: absolute;
+        content: '';
+        background-image: url(../img/button-right-arrow.svg);
+        background-size: 2.2rem 4rem !important;
+        width: 2.2rem;
+        height: 4rem;
+        right: 1.4rem;
+        top: 50%;
+        transform: translate(0%, -50%);
+        transition: all 0.3s;
+    }
+    &:hover:after {
+        right: 0.8rem;
+    }
+}
+
+.contact-btn {
+    margin-top: 3.5rem;
+    width: 100%;
+    text-align: left;
+    @extend %default-btn;
+}

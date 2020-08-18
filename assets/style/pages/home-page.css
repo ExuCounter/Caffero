@@ -1,0 +1,107 @@
+.home-header {
+  background: url(../../img/home-header-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  .home-header__title {
+    font-size: 3.5rem;
+    color: #FFF;
+    text-align: center;
+    padding-top: 6.5rem;
+    text-transform: uppercase; }
+  .home-header__welcome {
+    padding-top: 7.6rem;
+    font-size: 5rem;
+    color: #fcc200;
+    text-align: center;
+    text-shadow: 3px 3px 0px black; }
+  .home-header__text {
+    font-size: 6rem;
+    color: #FFF;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+    text-shadow: 3px 3px 0px black;
+    margin-top: 1rem;
+    margin-bottom: 2.8rem; }
+    .home-header__text span {
+      color: #fcc200; }
+  .home-header__speaker {
+    text-align: center;
+    font-size: 2.4rem;
+    color: #fcc200;
+    padding-bottom: 18.2rem; }
+  .home-header__img {
+    position: absolute;
+    left: 0;
+    bottom: -18rem; }
+
+.how-section {
+  padding-top: 3rem;
+  margin-bottom: 12.5rem; }
+  .how-section__left {
+    flex: 0 0 315px;
+    padding-top: 15.4rem; }
+    .how-section__left button {
+      color: #FFF;
+      font-style: italic;
+      font-size: 1.6rem;
+      background-color: #4d4d4d;
+      border: none;
+      margin-bottom: 1.3rem;
+      padding: 0.6rem 2.1rem 0.8rem 2.1rem;
+      font-weight: bold;
+      width: 100%;
+      cursor: pointer; }
+      .how-section__left button.active {
+        font-size: 2.6rem;
+        background: #000; }
+  .how-section__right {
+    flex: 0 1 auto;
+    margin-left: 4.7rem; }
+  .how-section__right-title {
+    font-weight: bold;
+    font-size: 3.8rem;
+    color: #000;
+    text-shadow: 3px 3px 0px #FFF;
+    font-style: italic; }
+  .how-section__right-text {
+    font-size: 1.6rem;
+    margin-bottom: 5rem; }
+  .how-section__right-media {
+    display: flex; }
+    .how-section__right-media > div:nth-child(1) {
+      flex: 0 0 66.51%; }
+    .how-section__right-media > div:nth-child(2) {
+      flex: 0 0 33.49%; }
+  .how-section__sm-block {
+    margin-left: 2.5rem;
+    text-decoration: none !important;
+    padding: 3.1rem 2.5rem 3.8rem 2.5rem;
+    line-height: 1.3;
+    background-size: cover !important;
+    position: relative; }
+    .how-section__sm-block:nth-child(1) {
+      margin-bottom: 2.5rem;
+      background: url(../../img/how-section-sm-vuurwerk.png); }
+    .how-section__sm-block:nth-child(2) {
+      background: url(../../img/how-section-sm-vuurwerk.png); }
+    .how-section__sm-block span {
+      color: #FFF;
+      font-weight: bold;
+      font-size: 2.8rem;
+      font-style: italic; }
+    .how-section__sm-block:after {
+      position: absolute;
+      content: '';
+      background-image: url(../../img/sm-block-arrow.svg);
+      background-size: 2.2rem 4rem !important;
+      width: 2.2rem;
+      height: 4rem;
+      right: 1.4rem;
+      top: 70%;
+      transform: translate(0%, -50%);
+      transition: all 0.3s; }
+    .how-section__sm-block:hover:after {
+      right: 0.8rem; }

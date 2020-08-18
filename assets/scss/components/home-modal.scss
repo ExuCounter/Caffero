@@ -2,7 +2,7 @@
     &__content {
         opacity: 0;
         transition: 0.5s ease-in-out;
-        transform: translate(-50%, -100%);
+        transform: translate(-50%, -250%);
         max-width: 86.4rem;
         width: 100%;
         background-color: white;
@@ -56,6 +56,13 @@
             &::placeholder {
                 color: #000;
             }
+        }
+        textarea {
+            padding: 1.1rem 1rem 1.1rem 1.5rem;
+            background-color: #ececec;
+            font-size: 1.6rem;
+            color: #000;
+            border: none;
         }
         select {
             background-color: #ececec !important;

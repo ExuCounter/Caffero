@@ -1,10 +1,19 @@
-@import 'base.scss';
-@import 'top-bar.scss';
-@import 'header.scss';
-@import 'burger-menu.scss';
-@import 'footer.scss';
-@import 'float-buttons.scss';
-@import 'header-footer-media-queries.scss';
-@import 'home-modal.scss';
-@import 'inputs.scss';
-@import 'media-queries.scss'
+/* BASE */
+
+@import 'base/base.scss';
+
+/* COMPONENTS */
+
+@import 'components/top-bar.scss';
+@import 'components/header.scss';
+@import 'components/burger-menu.scss';
+@import 'components/footer.scss';
+@import 'components/float-buttons.scss';
+@import 'components/home-modal.scss';
+@import 'components/inputs.scss';
+@import 'components/content.scss';
+
+/* MEDIA QUERIES */
+
+@import 'media-queries/header-footer-media-queries.scss';
+@import 'media-queries/media-queries.scss';
