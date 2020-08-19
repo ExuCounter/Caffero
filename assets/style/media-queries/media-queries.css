@@ -24,6 +24,8 @@
     right: 7em;
     top: 25em;
     font-size: 5px; }
+  .contact-btn {
+    display: none; }
   .home-modal__content {
     width: 90%; }
     .home-modal__content-inner form {
@@ -68,6 +70,10 @@
     bottom: -1em;
     font-size: 6px;
     top: unset; }
+  .how-section {
+    margin-bottom: 5rem; }
+    .how-section__right-text {
+      font-size: 1.3rem; }
   .content {
     margin-left: 0px;
     margin-right: 0px; }
@@ -81,6 +87,8 @@
         max-width: 80%;
         margin-left: auto;
         margin-right: auto; }
+    .content .col-md-8 {
+      padding-right: 0; }
     .content-left-col {
       flex: 0 0 100%;
       margin-right: 0; }
@@ -110,4 +118,8 @@
 
 @media screen and (max-width: 480px) {
   .home-modal__content {
-    padding: 0.8rem 1.5rem 3rem 1.5rem; } }
+    padding: 0.8rem 1.5rem 3rem 1.5rem; }
+  .content-title {
+    font-size: 3rem; }
+  .content-text, .content-span {
+    font-size: 1.3rem; } }

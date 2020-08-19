@@ -35,6 +35,9 @@
         top: 25em;
         font-size: 5px;
     }
+    .contact-btn {
+        display: none;
+    }
     .home-modal {
         &__content {
             width: 90%;
@@ -107,6 +110,14 @@
         font-size: 6px;
         top: unset;
     }
+    .how-section {
+        margin-bottom: 5rem;
+        &__right {
+            &-text {
+                font-size: 1.3rem;
+            }
+        }
+    }
     .content {
         margin-left: 0px;
         margin-right: 0px;
@@ -126,6 +137,9 @@
                     margin-right: auto;
                 }
             }
+        }
+        .col-md-8 {
+            padding-right: 0;
         }
         &-left-col {
             flex: 0 0 100%;
@@ -173,6 +187,15 @@
     .home-modal {
         &__content {
             padding: 0.8rem 1.5rem 3rem 1.5rem;
+        }
+    }
+    .content {
+        &-title {
+            font-size: 3rem;
+        }
+        &-text,
+        &-span {
+            font-size: 1.3rem;
         }
     }
 }
