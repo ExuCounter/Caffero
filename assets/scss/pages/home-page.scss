@@ -1,8 +1,10 @@
 .home-header {
-    background: url(../../img/home-header-bg.png);
+    background: url(../../img/wedding.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    position: relative;
+    z-index: 11;
     &__title {
         font-size: 3.5rem;
         color: #FFF;
@@ -56,6 +58,7 @@
         color: #fcc200;
         padding-bottom: 18.2rem;
         text-shadow: 1px 1px 0px black;
+        margin-bottom: 0;
     }
     &__img {
         position: absolute;
@@ -67,6 +70,11 @@
 .how-section {
     padding-top: 3rem;
     margin-bottom: 12.5rem;
+    position: relative;
+    .container {
+        position: relative;
+        z-index: 2;
+    }
     &__left {
         flex: 0 0 315px;
         padding-top: 15.4rem;
@@ -160,6 +168,23 @@
             background-color: rgba(0, 0, 0, 0.3);
         }
     }
+    // &__bg {
+    //     position: absolute;
+    //     z-index: 1;
+    //     left: 0;
+    //     top: 0;
+    //     right: 0;
+    //     bottom: 0;
+    //     height: 91.4%;
+    //     background-color: #fcc200;
+    //     &:after {
+    //         background-image: url(../../img/romb.svg);
+    //         content: '';
+    //         position: absolute;
+    //         width: 100%;
+    //         height: 100%;
+    //     }
+    // }
 }
 
 .video {

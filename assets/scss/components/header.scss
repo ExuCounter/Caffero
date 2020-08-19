@@ -2,7 +2,7 @@
     &-nav {
         background-color: #fcc200;
         position: relative;
-        z-index: 1;
+        z-index: 12;
         transition: 0.3s ease-in-out;
         &__logo {
             position: absolute;
@@ -20,6 +20,7 @@
         background-color: #fcc200;
         display: flex;
         position: relative;
+        z-index: 11;
         &__menu {
             display: flex;
             align-items: center;

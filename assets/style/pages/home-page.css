@@ -1,8 +1,10 @@
 .home-header {
-  background: url(../../img/home-header-bg.png);
+  background: url(../../img/wedding.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  position: relative;
+  z-index: 11; }
   .home-header__title {
     font-size: 3.5rem;
     color: #FFF;
@@ -48,7 +50,8 @@
     font-size: 2.4rem;
     color: #fcc200;
     padding-bottom: 18.2rem;
-    text-shadow: 1px 1px 0px black; }
+    text-shadow: 1px 1px 0px black;
+    margin-bottom: 0; }
   .home-header__img {
     position: absolute;
     left: 0;
@@ -56,7 +59,11 @@
 
 .how-section {
   padding-top: 3rem;
-  margin-bottom: 12.5rem; }
+  margin-bottom: 12.5rem;
+  position: relative; }
+  .how-section .container {
+    position: relative;
+    z-index: 2; }
   .how-section__left {
     flex: 0 0 315px;
     padding-top: 15.4rem; }
