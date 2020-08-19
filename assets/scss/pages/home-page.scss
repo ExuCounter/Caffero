@@ -1,5 +1,5 @@
 .home-header {
-    background: url(../../img/wedding.png);
+    background: url(../../img/wedding.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -168,23 +168,23 @@
             background-color: rgba(0, 0, 0, 0.3);
         }
     }
-    // &__bg {
-    //     position: absolute;
-    //     z-index: 1;
-    //     left: 0;
-    //     top: 0;
-    //     right: 0;
-    //     bottom: 0;
-    //     height: 91.4%;
-    //     background-color: #fcc200;
-    //     &:after {
-    //         background-image: url(../../img/romb.svg);
-    //         content: '';
-    //         position: absolute;
-    //         width: 100%;
-    //         height: 100%;
-    //     }
-    // }
+    &__bg {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        height: 91.4%;
+        background-color: #fcc200;
+        // &:after {
+        //     background-image: url(../../img/romb.svg);
+        //     content: '';
+        //     position: absolute;
+        //     width: 100%;
+        //     height: 100%;
+        // }
+    }
 }
 
 .video {

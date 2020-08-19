@@ -30,7 +30,8 @@
   .float-buttons {
     right: 7em;
     top: 25em;
-    font-size: 5px; }
+    font-size: 5px;
+    z-index: 555; }
   .contact-btn {
     display: none; }
   .home-modal__content {
@@ -50,15 +51,15 @@
       right: 0; }
   .content-text, .content-span {
     font-size: 2.1rem; }
-  .how-section {
+  .how-section__inner {
     margin-left: 25px;
     margin-right: 25px; }
-    .how-section__left {
-      display: none; }
-    .how-section__right {
-      margin-left: 0; }
-      .how-section__right-text {
-        font-size: 2.1rem; }
+  .how-section__left {
+    display: none; }
+  .how-section__right {
+    margin-left: 0; }
+    .how-section__right-text {
+      font-size: 2.1rem; }
   .home-header {
     padding-bottom: 8rem; }
     .home-header__buttons {
@@ -121,27 +122,27 @@
     .content-left-col {
       flex: 0 0 100%;
       margin-right: 0; }
-  .how-section {
+  .how-section__inner {
     margin-left: 0px;
     margin-right: 0px; }
-    .how-section__right-media {
-      flex-direction: column; }
-      .how-section__right-media > .d-flex {
-        flex-direction: row !important; }
-    .how-section__sm-block {
-      margin-left: 0;
-      margin-bottom: 0 !important;
-      margin-top: 17px !important;
-      padding: 1.6rem 1.2rem 2.1rem 1.2rem;
-      width: 100%; }
-      .how-section__sm-block:nth-child(1) {
-        margin-right: 2rem !important; }
-      .how-section__sm-block span {
-        font-size: 1.5rem; }
-      .how-section__sm-block:after {
-        background-size: 1.2rem 2.6rem !important;
-        width: 1.2rem;
-        height: 2.6rem; }
+  .how-section__right-media {
+    flex-direction: column; }
+    .how-section__right-media > .d-flex {
+      flex-direction: row !important; }
+  .how-section__sm-block {
+    margin-left: 0;
+    margin-bottom: 0 !important;
+    margin-top: 17px !important;
+    padding: 1.6rem 1.2rem 2.1rem 1.2rem;
+    width: 100%; }
+    .how-section__sm-block:nth-child(1) {
+      margin-right: 2rem !important; }
+    .how-section__sm-block span {
+      font-size: 1.5rem; }
+    .how-section__sm-block:after {
+      background-size: 1.2rem 2.6rem !important;
+      width: 1.2rem;
+      height: 2.6rem; }
   .home-header__welcome {
     font-size: 2.2rem;
     padding-top: 3.3rem; }

@@ -203,18 +203,24 @@ textarea {
     color: #1d1d1b;
     text-decoration: none;
     text-transform: uppercase;
-    transition: 0.1s ease-in-out; }
+    transition: 0.1s ease-in-out;
+    white-space: nowrap; }
     .header-menu a.active {
       color: #FFF; }
     .header-menu a:hover ~ .header-menu__sub {
       max-height: 500px;
       overflow: hidden; }
+      .header-menu a:hover ~ .header-menu__sub li:nth-child(1) {
+        padding-top: 10px; }
+      .header-menu a:hover ~ .header-menu__sub li:last-child {
+        padding-bottom: 10px; }
     .header-menu a:hover {
       color: #FFF; }
   .header-menu li {
+    transition: 0.2s ease-in-out;
     font-size: 1.9rem;
-    text-align: right;
-    cursor: pointer; }
+    cursor: pointer;
+    position: relative; }
     .header-menu li.header-menu__splitter {
       margin: 0rem 1.1rem;
       color: #FFF; }
@@ -225,7 +231,12 @@ textarea {
     padding-top: 0.5rem;
     overflow: hidden;
     transition: 0.6s ease-in-out;
-    position: relative; }
+    position: absolute;
+    padding: 0px 20px 0px 20px;
+    background-color: #fcc200;
+    z-index: 13;
+    border-radius: 5px;
+    left: -10px; }
     .header-menu__sub:hover {
       max-height: 500px; }
       .header-menu__sub:hover a {
@@ -636,7 +647,7 @@ textarea {
   font-size: 10px;
   top: 38.8em;
   right: 10.1em;
-  z-index: 11;
+  z-index: 12;
   width: 24.7em;
   height: 28.4em; }
   .float-buttons__btn {
@@ -1049,7 +1060,9 @@ textarea {
     .header-menu__sub {
       max-height: 1500px;
       opacity: 1;
-      padding-left: 2rem; }
+      padding-left: 2rem;
+      position: relative;
+      padding: 5px 20px 0px 20px; }
     .header-menu__container {
       overflow-y: scroll;
       height: calc(100vh - 100px);
@@ -1241,7 +1254,8 @@ textarea {
   .float-buttons {
     right: 7em;
     top: 25em;
-    font-size: 5px; }
+    font-size: 5px;
+    z-index: 555; }
   .contact-btn {
     display: none; }
   .home-modal__content {
@@ -1261,15 +1275,15 @@ textarea {
       right: 0; }
   .content-text, .content-span {
     font-size: 2.1rem; }
-  .how-section {
+  .how-section__inner {
     margin-left: 25px;
     margin-right: 25px; }
-    .how-section__left {
-      display: none; }
-    .how-section__right {
-      margin-left: 0; }
-      .how-section__right-text {
-        font-size: 2.1rem; }
+  .how-section__left {
+    display: none; }
+  .how-section__right {
+    margin-left: 0; }
+    .how-section__right-text {
+      font-size: 2.1rem; }
   .home-header {
     padding-bottom: 8rem; }
     .home-header__buttons {
@@ -1332,27 +1346,27 @@ textarea {
     .content-left-col {
       flex: 0 0 100%;
       margin-right: 0; }
-  .how-section {
+  .how-section__inner {
     margin-left: 0px;
     margin-right: 0px; }
-    .how-section__right-media {
-      flex-direction: column; }
-      .how-section__right-media > .d-flex {
-        flex-direction: row !important; }
-    .how-section__sm-block {
-      margin-left: 0;
-      margin-bottom: 0 !important;
-      margin-top: 17px !important;
-      padding: 1.6rem 1.2rem 2.1rem 1.2rem;
-      width: 100%; }
-      .how-section__sm-block:nth-child(1) {
-        margin-right: 2rem !important; }
-      .how-section__sm-block span {
-        font-size: 1.5rem; }
-      .how-section__sm-block:after {
-        background-size: 1.2rem 2.6rem !important;
-        width: 1.2rem;
-        height: 2.6rem; }
+  .how-section__right-media {
+    flex-direction: column; }
+    .how-section__right-media > .d-flex {
+      flex-direction: row !important; }
+  .how-section__sm-block {
+    margin-left: 0;
+    margin-bottom: 0 !important;
+    margin-top: 17px !important;
+    padding: 1.6rem 1.2rem 2.1rem 1.2rem;
+    width: 100%; }
+    .how-section__sm-block:nth-child(1) {
+      margin-right: 2rem !important; }
+    .how-section__sm-block span {
+      font-size: 1.5rem; }
+    .how-section__sm-block:after {
+      background-size: 1.2rem 2.6rem !important;
+      width: 1.2rem;
+      height: 2.6rem; }
   .home-header__welcome {
     font-size: 2.2rem;
     padding-top: 3.3rem; }

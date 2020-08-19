@@ -46,6 +46,7 @@
         right: 7em;
         top: 25em;
         font-size: 5px;
+        z-index: 555;
     }
     .contact-btn {
         display: none;
@@ -81,8 +82,10 @@
         }
     }
     .how-section {
-        margin-left: 25px;
-        margin-right: 25px;
+        &__inner {
+            margin-left: 25px;
+            margin-right: 25px;
+        }
         &__left {
             display: none;
         }
@@ -189,8 +192,10 @@
         }
     }
     .how-section {
-        margin-left: 0px;
-        margin-right: 0px;
+        &__inner {
+            margin-left: 0px;
+            margin-right: 0px;
+        }
         &__right {
             &-media {
                 flex-direction: column;
