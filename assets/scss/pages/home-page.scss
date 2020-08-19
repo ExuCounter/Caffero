@@ -17,6 +17,25 @@
         text-align: center;
         text-shadow: 3px 3px 0px black;
     }
+    &__buttons {
+        display: none;
+        button {
+            color: #FFF;
+            font-style: italic;
+            font-size: 1.6rem;
+            background-color: #4d4d4d;
+            border: none;
+            margin-bottom: 1.3rem;
+            padding: 1rem 2.1rem 1.2rem 2.1rem;
+            font-weight: bold;
+            width: 100%;
+            cursor: pointer;
+            &.active {
+                font-size: 2.6rem;
+                background: #000;
+            }
+        }
+    }
     &__text {
         font-size: 6rem;
         color: #FFF;
@@ -36,6 +55,7 @@
         font-size: 2.4rem;
         color: #fcc200;
         padding-bottom: 18.2rem;
+        text-shadow: 1px 1px 0px black;
     }
     &__img {
         position: absolute;
@@ -102,16 +122,18 @@
         position: relative;
         &:nth-child(1) {
             margin-bottom: 2.5rem;
-            background: url(../../img/how-section-sm-vuurwerk.png);
+            background: url(../../img/home-page-sm-1.jpg);
         }
         &:nth-child(2) {
-            background: url(../../img/how-section-sm-vuurwerk.png);
+            background: url(../../img/home-page-sm-2.jpg);
         }
         span {
             color: #FFF;
             font-weight: bold;
             font-size: 2.8rem;
             font-style: italic;
+            position: relative;
+            z-index: 4;
         }
         &:after {
             position: absolute;
@@ -127,6 +149,15 @@
         }
         &:hover:after {
             right: 0.8rem;
+        }
+        &__bg {
+            position: absolute !important;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            z-index: 3 !important;
+            background-color: rgba(0, 0, 0, 0.3);
         }
     }
 }

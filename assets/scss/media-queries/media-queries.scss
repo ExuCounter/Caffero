@@ -27,6 +27,18 @@
         top: 22em;
         font-size: 6px;
     }
+    .home-header__img {
+        bottom: 0;
+        left: 5%;
+        img {
+            max-height: 62rem;
+        }
+    }
+    .how-section {
+        &__left {
+            padding-top: 0rem;
+        }
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -83,8 +95,38 @@
     }
     .home {
         &-header {
+            padding-bottom: 8rem;
+            &__buttons {
+                display: block;
+            }
+            .container {
+                display: flex;
+            }
             &__img {
-                bottom: 0;
+                flex: 0 1 35%;
+                img {
+                    max-height: 72rem;
+                }
+            }
+            &__content {
+                flex: 0 1 65%;
+                margin-left: auto;
+            }
+            &__speaker {
+                padding-bottom: 4rem;
+                text-align: left;
+            }
+            &__text {
+                text-align: left;
+            }
+            &__welcome {
+                text-align: left;
+            }
+            &__title {
+                text-align: left;
+            }
+            &__img {
+                bottom: -5rem;
             }
         }
     }
@@ -177,8 +219,37 @@
         }
     }
     .home-header {
-        &__text {
+        &__welcome {
             font-size: 2.2rem;
+            padding-top: 3.3rem;
+        }
+        &__title {
+            font-size: 2.6rem;
+        }
+        &__speaker {
+            font-size: 1.5rem;
+            padding-bottom: 1rem;
+        }
+        &__text {
+            font-size: 2.4rem;
+        }
+        &__buttons {
+            margin-right: 2rem;
+            button {
+                padding: 0.5rem 1.2rem;
+                text-align: left;
+                font-size: 0.9rem;
+                &.active {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        &__img {
+            left: -4rem;
+            img {
+                bottom: -8rem;
+                max-height: 51rem;
+            }
         }
     }
 }
@@ -196,6 +267,17 @@
         &-text,
         &-span {
             font-size: 1.3rem;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .home-header {
+        &__img {
+            left: -6rem;
+            img {
+                max-height: 54rem;
+            }
         }
     }
 }

@@ -17,7 +17,14 @@
 @media screen and (max-width: 992px) {
   .float-buttons {
     top: 22em;
-    font-size: 6px; } }
+    font-size: 6px; }
+  .home-header__img {
+    bottom: 0;
+    left: 5%; }
+    .home-header__img img {
+      max-height: 62rem; }
+  .how-section__left {
+    padding-top: 0rem; } }
 
 @media screen and (max-width: 768px) {
   .float-buttons {
@@ -52,8 +59,30 @@
       margin-left: 0; }
       .how-section__right-text {
         font-size: 2.1rem; }
-  .home-header__img {
-    bottom: 0; }
+  .home-header {
+    padding-bottom: 8rem; }
+    .home-header__buttons {
+      display: block; }
+    .home-header .container {
+      display: flex; }
+    .home-header__img {
+      flex: 0 1 35%; }
+      .home-header__img img {
+        max-height: 72rem; }
+    .home-header__content {
+      flex: 0 1 65%;
+      margin-left: auto; }
+    .home-header__speaker {
+      padding-bottom: 4rem;
+      text-align: left; }
+    .home-header__text {
+      text-align: left; }
+    .home-header__welcome {
+      text-align: left; }
+    .home-header__title {
+      text-align: left; }
+    .home-header__img {
+      bottom: -5rem; }
   .content {
     margin: 0px 25px; }
     .content-left-col {
@@ -113,8 +142,29 @@
         background-size: 1.2rem 2.6rem !important;
         width: 1.2rem;
         height: 2.6rem; }
+  .home-header__welcome {
+    font-size: 2.2rem;
+    padding-top: 3.3rem; }
+  .home-header__title {
+    font-size: 2.6rem; }
+  .home-header__speaker {
+    font-size: 1.5rem;
+    padding-bottom: 1rem; }
   .home-header__text {
-    font-size: 2.2rem; } }
+    font-size: 2.4rem; }
+  .home-header__buttons {
+    margin-right: 2rem; }
+    .home-header__buttons button {
+      padding: 0.5rem 1.2rem;
+      text-align: left;
+      font-size: 0.9rem; }
+      .home-header__buttons button.active {
+        font-size: 1.5rem; }
+  .home-header__img {
+    left: -4rem; }
+    .home-header__img img {
+      bottom: -8rem;
+      max-height: 51rem; } }
 
 @media screen and (max-width: 480px) {
   .home-modal__content {
@@ -123,3 +173,9 @@
     font-size: 3rem; }
   .content-text, .content-span {
     font-size: 1.3rem; } }
+
+@media screen and (max-width: 375px) {
+  .home-header__img {
+    left: -6rem; }
+    .home-header__img img {
+      max-height: 54rem; } }
