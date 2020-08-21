@@ -71,6 +71,33 @@ textarea {
   width: 100%;
   text-align: left; }
 
+.default-shadow {
+  box-shadow: 8px 7px 0px 1px #fcc200; }
+
+.big-btn-arrow {
+  background-color: #000;
+  color: #FFF;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 2.8rem;
+  padding: 2.3rem 6rem 2.3rem 2.3rem;
+  border: none;
+  text-align: left;
+  position: relative; }
+  .big-btn-arrow:after {
+    position: absolute;
+    content: '';
+    background-image: url(../img/arrow-right.svg);
+    background-size: 2.2rem 4rem !important;
+    width: 2.2rem;
+    height: 4rem;
+    right: 2rem;
+    top: 68%;
+    transform: translate(0%, -50%);
+    transition: all 0.3s; }
+  .big-btn-arrow:hover:after {
+    right: 1.4rem; }
+
 /* COMPONENTS */
 .top-bar {
   background-color: #000;
@@ -209,11 +236,13 @@ textarea {
       color: #FFF; }
     .header-menu a:hover ~ .header-menu__sub {
       max-height: 500px;
-      overflow: hidden; }
+      position: absolute; }
       .header-menu a:hover ~ .header-menu__sub li:nth-child(1) {
         padding-top: 10px; }
       .header-menu a:hover ~ .header-menu__sub li:last-child {
         padding-bottom: 10px; }
+      .header-menu a:hover ~ .header-menu__sub:after {
+        height: 100%; }
     .header-menu a:hover {
       color: #FFF; }
   .header-menu li {
@@ -891,6 +920,27 @@ textarea {
     .content-right-col img:nth-child(1) {
       margin-bottom: 4.2rem; }
 
+.content-yellow {
+  position: relative; }
+  .content-yellow .container {
+    position: relative;
+    z-index: 111; }
+  .content-yellow__block {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center; }
+    .content-yellow__block img {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 100%; }
+    .content-yellow__block-title {
+      padding: 15rem 0rem;
+      display: block; }
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 1400px) {
   .footer {
@@ -1222,6 +1272,7 @@ textarea {
       right: -30px;
       top: 38px; } }
 
+/* COMMON MEDIA QUERIES */
 @media screen and (max-width: 1400px) {
   .float-buttons {
     font-size: 8px;
@@ -1229,11 +1280,6 @@ textarea {
     z-index: 111111; } }
 
 @media screen and (max-width: 1200px) {
-  .content-left-col {
-    margin-right: 5.5rem;
-    flex: 0 1 80%; }
-  .content-right-col {
-    flex: 0 1 20%; }
   .float-buttons {
     top: 20em;
     font-size: 7px; } }
@@ -1241,14 +1287,7 @@ textarea {
 @media screen and (max-width: 992px) {
   .float-buttons {
     top: 22em;
-    font-size: 6px; }
-  .home-header__img {
-    bottom: 0;
-    left: 5%; }
-    .home-header__img img {
-      max-height: 62rem; }
-  .how-section__left {
-    padding-top: 0rem; } }
+    font-size: 6px; } }
 
 @media screen and (max-width: 768px) {
   .float-buttons {
@@ -1258,6 +1297,7 @@ textarea {
     z-index: 555; }
   .contact-btn {
     display: none; }
+  /* HOME MODAL FOR ALL PAGES /* NOT MENTIONED HOME PAGE */
   .home-modal__content {
     width: 90%; }
     .home-modal__content-inner form {
@@ -1273,50 +1313,10 @@ textarea {
       position: relative;
       top: 1rem;
       right: 0; }
-  .content-text, .content-span {
-    font-size: 2.1rem; }
-  .how-section__inner {
-    margin-left: 25px;
-    margin-right: 25px; }
-  .how-section__left {
-    display: none; }
-  .how-section__right {
-    margin-left: 0; }
-    .how-section__right-text {
-      font-size: 2.1rem; }
-  .home-header {
-    padding-bottom: 8rem; }
-    .home-header__buttons {
-      display: block; }
-    .home-header .container {
-      display: flex; }
-    .home-header__img {
-      flex: 0 1 35%; }
-      .home-header__img img {
-        max-height: 72rem; }
-    .home-header__content {
-      flex: 0 1 65%;
-      margin-left: auto; }
-    .home-header__speaker {
-      padding-bottom: 4rem;
-      text-align: left; }
-    .home-header__text {
-      text-align: left; }
-    .home-header__welcome {
-      text-align: left; }
-    .home-header__title {
-      text-align: left; }
-    .home-header__img {
-      bottom: -5rem; }
   .content {
     margin: 0px 25px; }
-    .content-left-col {
-      margin-right: 5.5rem;
-      flex: 0 1 76%; }
-    .content-right-col {
-      flex: 0 1 24%; }
-    .content-title {
-      margin-bottom: 4rem; } }
+    .content-text, .content-span {
+      font-size: 2.1rem; } }
 
 @media screen and (max-width: 568px) {
   .float-buttons {
@@ -1324,72 +1324,13 @@ textarea {
     bottom: -1em;
     font-size: 6px;
     top: unset; }
-  .how-section {
-    margin-bottom: 5rem; }
-    .how-section__right-text {
-      font-size: 1.3rem; }
   .content {
     margin-left: 0px;
     margin-right: 0px; }
     .content-title {
       font-size: 3rem; }
     .content-text, .content-span {
-      font-size: 1.6rem; }
-    .content__inner {
-      flex-direction: column; }
-      .content__inner div:nth-child(2) {
-        max-width: 80%;
-        margin-left: auto;
-        margin-right: auto; }
-    .content .col-md-8 {
-      padding-right: 0; }
-    .content-left-col {
-      flex: 0 0 100%;
-      margin-right: 0; }
-  .how-section__inner {
-    margin-left: 0px;
-    margin-right: 0px; }
-  .how-section__right-media {
-    flex-direction: column; }
-    .how-section__right-media > .d-flex {
-      flex-direction: row !important; }
-  .how-section__sm-block {
-    margin-left: 0;
-    margin-bottom: 0 !important;
-    margin-top: 17px !important;
-    padding: 1.6rem 1.2rem 2.1rem 1.2rem;
-    width: 100%; }
-    .how-section__sm-block:nth-child(1) {
-      margin-right: 2rem !important; }
-    .how-section__sm-block span {
-      font-size: 1.5rem; }
-    .how-section__sm-block:after {
-      background-size: 1.2rem 2.6rem !important;
-      width: 1.2rem;
-      height: 2.6rem; }
-  .home-header__welcome {
-    font-size: 2.2rem;
-    padding-top: 3.3rem; }
-  .home-header__title {
-    font-size: 2.6rem; }
-  .home-header__speaker {
-    font-size: 1.5rem;
-    padding-bottom: 1rem; }
-  .home-header__text {
-    font-size: 2.4rem; }
-  .home-header__buttons {
-    margin-right: 2rem; }
-    .home-header__buttons button {
-      padding: 0.5rem 1.2rem;
-      text-align: left;
-      font-size: 0.9rem; }
-      .home-header__buttons button.active {
-        font-size: 1.5rem; }
-  .home-header__img {
-    left: -4rem; }
-    .home-header__img img {
-      bottom: -8rem;
-      max-height: 51rem; } }
+      font-size: 1.6rem; } }
 
 @media screen and (max-width: 480px) {
   .home-modal__content {
@@ -1398,9 +1339,3 @@ textarea {
     font-size: 3rem; }
   .content-text, .content-span {
     font-size: 1.3rem; } }
-
-@media screen and (max-width: 375px) {
-  .home-header__img {
-    left: -6rem; }
-    .home-header__img img {
-      max-height: 54rem; } }

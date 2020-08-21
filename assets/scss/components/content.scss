@@ -33,4 +33,29 @@
             }
         }
     }
+    &-yellow {
+        position: relative;
+        .container {
+            position: relative;
+            z-index: 111;
+        }
+        &__block {
+            display: flex;
+            align-items: center;
+            position: relative;
+            justify-content: center;
+            img {
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                width: 100%;
+            }
+            &-title {
+                padding: 15rem 0rem;
+                display: block;
+            }
+        }
+    }
 }

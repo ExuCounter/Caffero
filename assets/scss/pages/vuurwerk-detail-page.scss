@@ -1,0 +1,124 @@
+.content {
+    &-title {
+        max-width: 72rem;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 2rem;
+    }
+    &-text {
+        max-width: 82rem;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 2.1rem;
+        margin-bottom: 4.6rem !important;
+    }
+    &-yellow {
+        &__col {
+            display: flex;
+            justify-content: center;
+            @for $i from 1 through 8 {
+                &:nth-child(#{$i}) {
+                    .content-yellow__block {
+                        &:nth-child(1) {
+                            background-image: url(../../img/vuurwerk-yellow-#{$i}.png);
+                        }
+                    }
+                }
+            }
+            &:last-child {
+                .content-yellow__block {
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    cursor: unset !important;
+                }
+            }
+        }
+        &__block {
+            background-size: cover;
+            background-position: center center !important;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            max-height: 34rem;
+            max-width: 34rem;
+            width: 100%;
+            margin-bottom: 7.5rem;
+            &-title {
+                font-size: 2.8rem;
+                color: #FFF;
+                font-weight: bold;
+                font-style: italic;
+                position: relative;
+                z-index: 1;
+                text-align: center;
+                text-shadow: 1px 0px 5px black;
+            }
+            &-link {
+                z-index: 1;
+                font-size: 2.2rem;
+                color: #000 !important;
+                font-weight: bold;
+                font-style: italic;
+                position: absolute;
+                padding: 0.5rem 4rem 0.5rem 1.2rem;
+                right: 2.5rem;
+                bottom: -7.5rem;
+                background-color: #fcc200;
+                text-decoration: none !important;
+                text-transform: uppercase;
+                transition: 0.3s ease-in-out;
+                &:after {
+                    position: absolute;
+                    content: '';
+                    background-image: url(../../img/button-right-arrow.svg);
+                    background-size: 2.2rem 3rem !important;
+                    width: 2.2rem;
+                    height: 3rem;
+                    right: 0.9rem;
+                    top: 50%;
+                    transform: translate(0%, -50%);
+                    transition: all 0.3s;
+                }
+                &:hover:after {
+                    right: 0.4rem;
+                }
+            }
+            &-dark {
+                position: absolute;
+                top: 0;
+                left: 0px;
+                right: 0px;
+                bottom: 0;
+                background-color: rgba(0, 0, 0, 0.3);
+                opacity: 0;
+                transition: 0.3s ease-in-out;
+            }
+            &:hover {
+                .content-yellow__block-link {
+                    bottom: 2.5rem;
+                }
+                .content-yellow__block-dark {
+                    opacity: 1;
+                }
+            }
+        }
+        &__bg {
+            position: absolute;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            right: 0;
+            height: calc(100% - 35rem);
+            top: 50%;
+            transform: translate(0, -50%);
+            background-color: #fcc200;
+            &:after {
+                background-image: url(../../img/romb.jpg);
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

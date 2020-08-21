@@ -95,3 +95,34 @@ textarea {
     text-align: left;
     @extend %default-btn;
 }
+
+.default-shadow {
+    box-shadow: 8px 7px 0px 1px #fcc200;
+}
+
+.big-btn-arrow {
+    background-color: #000;
+    color: #FFF;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 2.8rem;
+    padding: 2.3rem 6rem 2.3rem 2.3rem;
+    border: none;
+    text-align: left;
+    position: relative;
+    &:after {
+        position: absolute;
+        content: '';
+        background-image: url(../img/arrow-right.svg);
+        background-size: 2.2rem 4rem !important;
+        width: 2.2rem;
+        height: 4rem;
+        right: 2rem;
+        top: 68%;
+        transform: translate(0%, -50%);
+        transition: all 0.3s;
+    }
+    &:hover:after {
+        right: 1.4rem;
+    }
+}

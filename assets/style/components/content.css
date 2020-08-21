@@ -28,3 +28,24 @@
     width: 100%; }
     .content-right-col img:nth-child(1) {
       margin-bottom: 4.2rem; }
+
+.content-yellow {
+  position: relative; }
+  .content-yellow .container {
+    position: relative;
+    z-index: 111; }
+  .content-yellow__block {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center; }
+    .content-yellow__block img {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 100%; }
+    .content-yellow__block-title {
+      padding: 15rem 0rem;
+      display: block; }

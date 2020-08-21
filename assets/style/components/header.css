@@ -52,11 +52,13 @@
       color: #FFF; }
     .header-menu a:hover ~ .header-menu__sub {
       max-height: 500px;
-      overflow: hidden; }
+      position: absolute; }
       .header-menu a:hover ~ .header-menu__sub li:nth-child(1) {
         padding-top: 10px; }
       .header-menu a:hover ~ .header-menu__sub li:last-child {
         padding-bottom: 10px; }
+      .header-menu a:hover ~ .header-menu__sub:after {
+        height: 100%; }
     .header-menu a:hover {
       color: #FFF; }
   .header-menu li {

@@ -1,0 +1,113 @@
+.content-title {
+  max-width: 72rem;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 2rem; }
+
+.content-text {
+  max-width: 82rem;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 2.1rem;
+  margin-bottom: 4.6rem !important; }
+
+.content-yellow__col {
+  display: flex;
+  justify-content: center; }
+  .content-yellow__col:nth-child(1) .content-yellow__block:nth-child(1) {
+    background-image: url(../../img/vuurwerk-yellow-1.png); }
+  .content-yellow__col:nth-child(2) .content-yellow__block:nth-child(1) {
+    background-image: url(../../img/vuurwerk-yellow-2.png); }
+  .content-yellow__col:nth-child(3) .content-yellow__block:nth-child(1) {
+    background-image: url(../../img/vuurwerk-yellow-3.png); }
+  .content-yellow__col:nth-child(4) .content-yellow__block:nth-child(1) {
+    background-image: url(../../img/vuurwerk-yellow-4.png); }
+  .content-yellow__col:nth-child(5) .content-yellow__block:nth-child(1) {
+    background-image: url(../../img/vuurwerk-yellow-5.png); }
+  .content-yellow__col:nth-child(6) .content-yellow__block:nth-child(1) {
+    background-image: url(../../img/vuurwerk-yellow-6.png); }
+  .content-yellow__col:nth-child(7) .content-yellow__block:nth-child(1) {
+    background-image: url(../../img/vuurwerk-yellow-7.png); }
+  .content-yellow__col:nth-child(8) .content-yellow__block:nth-child(1) {
+    background-image: url(../../img/vuurwerk-yellow-8.png); }
+  .content-yellow__col:last-child .content-yellow__block {
+    align-items: flex-start;
+    justify-content: flex-start;
+    cursor: unset !important; }
+
+.content-yellow__block {
+  background-size: cover;
+  background-position: center center !important;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  max-height: 34rem;
+  max-width: 34rem;
+  width: 100%;
+  margin-bottom: 7.5rem; }
+  .content-yellow__block-title {
+    font-size: 2.8rem;
+    color: #FFF;
+    font-weight: bold;
+    font-style: italic;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    text-shadow: 1px 0px 5px black; }
+  .content-yellow__block-link {
+    z-index: 1;
+    font-size: 2.2rem;
+    color: #000 !important;
+    font-weight: bold;
+    font-style: italic;
+    position: absolute;
+    padding: 0.5rem 4rem 0.5rem 1.2rem;
+    right: 2.5rem;
+    bottom: -7.5rem;
+    background-color: #fcc200;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    transition: 0.3s ease-in-out; }
+    .content-yellow__block-link:after {
+      position: absolute;
+      content: '';
+      background-image: url(../../img/button-right-arrow.svg);
+      background-size: 2.2rem 3rem !important;
+      width: 2.2rem;
+      height: 3rem;
+      right: 0.9rem;
+      top: 50%;
+      transform: translate(0%, -50%);
+      transition: all 0.3s; }
+    .content-yellow__block-link:hover:after {
+      right: 0.4rem; }
+  .content-yellow__block-dark {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    right: 0px;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: 0.3s ease-in-out; }
+  .content-yellow__block:hover .content-yellow__block-link {
+    bottom: 2.5rem; }
+  .content-yellow__block:hover .content-yellow__block-dark {
+    opacity: 1; }
+
+.content-yellow__bg {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: calc(100% - 35rem);
+  top: 50%;
+  transform: translate(0, -50%);
+  background-color: #fcc200; }
+  .content-yellow__bg:after {
+    background-image: url(../../img/romb.jpg);
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%; }

@@ -69,3 +69,30 @@ textarea {
   margin-top: 3.5rem;
   width: 100%;
   text-align: left; }
+
+.default-shadow {
+  box-shadow: 8px 7px 0px 1px #fcc200; }
+
+.big-btn-arrow {
+  background-color: #000;
+  color: #FFF;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 2.8rem;
+  padding: 2.3rem 6rem 2.3rem 2.3rem;
+  border: none;
+  text-align: left;
+  position: relative; }
+  .big-btn-arrow:after {
+    position: absolute;
+    content: '';
+    background-image: url(../img/arrow-right.svg);
+    background-size: 2.2rem 4rem !important;
+    width: 2.2rem;
+    height: 4rem;
+    right: 2rem;
+    top: 68%;
+    transform: translate(0%, -50%);
+    transition: all 0.3s; }
+  .big-btn-arrow:hover:after {
+    right: 1.4rem; }
