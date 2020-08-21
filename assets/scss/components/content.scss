@@ -21,6 +21,11 @@
             color: #fcc200;
         }
     }
+    &-sub-title {
+        font-size: 2rem;
+        font-weight: bold;
+        font-style: italic;
+    }
     &-left-col {
         flex: 0 1 818px;
     }

@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="assets/style/pages/vuurwerk-page.css">
     <!-- COMMON STYLES -->
     <link rel="stylesheet" href="assets/style/style.css">
+    <!-- VUURWERK QUERIES -->
+    <link rel="stylesheet" href="assets/style/media-queries/vuurwerk-page-queries.css">
 
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
@@ -25,11 +27,11 @@
 
 <body>
 
-    <div class="content">
+    <div class="content mt-5">
         <div class="container">
-            <div class='row'>
-                <div class='col-12 col-md-6'>
-                    <h4 class='content-title'>BRUILOFT VUURWERK</h4>
+            <div class='row justify-content-between'>
+                <div class='col-12 col-md-5 pr-md-0'>
+                    <h4 class='content-title yellow-title'>BRUILOFT VUURWERK</h4>
                     <h5 class="content-sub-title">
                         EEN VUURWERKSPEKTAKEL ALS AFSLUITING OP JULLIE BRUILOFT
                     </h5>
@@ -46,24 +48,24 @@
                         van Caffero.
                     </p>
                 </div>
-                <div class="col-12 col-md-6">
-                    <div class="video__wrapper">
-                        <video src="assets/video/sample-video.mp4" id='home-video' style="object-fit: cover; cursor: pointer; width: 100%; height: 100%;" poster="assets/img/home-page-video.png "></video>
+                <div class="col-12 col-md-6 pl-md-0">
+                    <div class="video__wrapper vuurwerk-video__wrapper">
+                        <video class='default-shadow' src="assets/video/sample-video.mp4" id='home-video' style="object-fit: cover; cursor: pointer; width: 100%; height: 100%;" controls poster="assets/img/home-page-video.png "></video>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="content">
+    <div class="content vuurwerk-main-content">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-6">
-                    <img src="assets/img/vuurwerk-content-1.png" alt="">
-                    <img src="assets/img/vuurwerk-content-2.png" alt="">
+                    <img src="assets/img/vuurwerk-content-1.png" alt="Vuurwerk image">
+                    <img src="assets/img/vuurwerk-content-2.png" alt="Vuurwerk image">
                 </div>
                 <div class="col-12 col-md-6">
-                    <h4 class='content-title'>BRUILOFT VUURWERK DOOR PROFESSIONALS GEHEEL ZOALS U DAT WIL</h4>
+                    <h5 class='content-sub-title'>BRUILOFT VUURWERK DOOR PROFESSIONALS GEHEEL ZOALS U DAT WIL</h5>
                     <p class='content-text'>
                         Het team van Caffero beschikt over de ervaring en middelen om jullie een topdag te bezorgen, van begin tot eind. Voor bruiloften hebben wij speciale vuurwerk bruiloft arrangementen. Wij kunnen alle genoemde shows volledig naar wens aanpassen voor uw bruiloft
                         of gelegenheid. Denk bijvoorbeeld aan hartvormige vuurwerkef- fecten, letters, initialen, sierlijke fonteinen, vlammen en confetti.
@@ -77,24 +79,16 @@
                         geheel vrijblijvend contact met ons op, of laat uw telefoonnummer achter via het ‘bel me terug’ <strong>formulier</strong>.
                     </p>
                     <button class="big-btn-arrow">
-                        INTERESSE GEWEKT? NEEM DAN CONTACT MET ONS OP.
+                        INTERESSE GEWEKT? NEEM<br> DAN CONTACT MET ONS OP.
                     </button>
                 </div>
             </div>
         </div>
+        <div class="vuurwerk-main-content__bg">
+
+        </div>
     </div>
 
-    <script>
-        const homeVideo = document.getElementById('home-video');
-
-        homeVideo.addEventListener('click', function() {
-            if (!(homeVideo.currentTime > 0 && !homeVideo.paused && !homeVideo.ended && homeVideo.readyState > 2)) {
-                homeVideo.play();
-            } else {
-                homeVideo.pause();
-            }
-        });
-    </script>
 </body>
 
 </html>

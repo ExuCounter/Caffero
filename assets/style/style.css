@@ -80,7 +80,7 @@ textarea {
   font-weight: bold;
   font-style: italic;
   font-size: 2.8rem;
-  padding: 2.3rem 6rem 2.3rem 2.3rem;
+  padding: 2rem 6rem 2.3rem 2rem;
   border: none;
   text-align: left;
   position: relative; }
@@ -910,6 +910,11 @@ textarea {
   .content-title.yellow-title {
     color: #fcc200; }
 
+.content-sub-title {
+  font-size: 2rem;
+  font-weight: bold;
+  font-style: italic; }
+
 .content-left-col {
   flex: 0 1 818px; }
 
@@ -1330,7 +1335,10 @@ textarea {
     .content-title {
       font-size: 3rem; }
     .content-text, .content-span {
-      font-size: 1.6rem; } }
+      font-size: 1.6rem; }
+  .big-btn-arrow {
+    font-size: 1.8rem;
+    width: 100% !important; } }
 
 @media screen and (max-width: 480px) {
   .home-modal__content {
@@ -1338,4 +1346,14 @@ textarea {
   .content-title {
     font-size: 3rem; }
   .content-text, .content-span {
-    font-size: 1.3rem; } }
+    font-size: 1.3rem; }
+  .big-btn-arrow {
+    font-size: 1.6rem;
+    width: 100% !important;
+    padding: 1rem 5rem 1.3rem 2rem; }
+    .big-btn-arrow:after {
+      background-size: 2.2rem 3rem !important;
+      width: 2.2rem;
+      height: 3rem;
+      right: 2rem;
+      top: 58%; } }

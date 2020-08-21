@@ -19,6 +19,11 @@
   .content-title.yellow-title {
     color: #fcc200; }
 
+.content-sub-title {
+  font-size: 2rem;
+  font-weight: bold;
+  font-style: italic; }
+
 .content-left-col {
   flex: 0 1 818px; }
 

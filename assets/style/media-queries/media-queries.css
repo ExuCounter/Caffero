@@ -56,7 +56,10 @@
     .content-title {
       font-size: 3rem; }
     .content-text, .content-span {
-      font-size: 1.6rem; } }
+      font-size: 1.6rem; }
+  .big-btn-arrow {
+    font-size: 1.8rem;
+    width: 100% !important; } }
 
 @media screen and (max-width: 480px) {
   .home-modal__content {
@@ -64,4 +67,14 @@
   .content-title {
     font-size: 3rem; }
   .content-text, .content-span {
-    font-size: 1.3rem; } }
+    font-size: 1.3rem; }
+  .big-btn-arrow {
+    font-size: 1.6rem;
+    width: 100% !important;
+    padding: 1rem 5rem 1.3rem 2rem; }
+    .big-btn-arrow:after {
+      background-size: 2.2rem 3rem !important;
+      width: 2.2rem;
+      height: 3rem;
+      right: 2rem;
+      top: 58%; } }

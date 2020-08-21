@@ -1,0 +1,21 @@
+@media screen and (max-width: 768px) {
+    .vuurwerk-video__wrapper {
+        margin-bottom: 6rem;
+    }
+    .vuurwerk {
+        &-main {
+            &-content {
+                img {
+                    margin: 0 auto 4rem auto;
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .vuurwerk-video__wrapper {
+        margin-bottom: 5rem;
+    }
+}
