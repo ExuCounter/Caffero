@@ -1,0 +1,13 @@
+@media screen and (max-width: 578px) {
+  .werkwijze-main-content .col-md-6 {
+    padding-left: 0;
+    padding-right: 0; }
+    .werkwijze-main-content .col-md-6 img {
+      width: 10rem;
+      margin-right: 1rem; }
+  .werkwijze-text {
+    text-align: left !important; }
+  .werkwijze-video__wrapper {
+    margin-top: 20rem; }
+    .werkwijze-video__wrapper video {
+      margin-top: -15.5rem; } }

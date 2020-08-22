@@ -4,7 +4,7 @@
   left: 0;
   top: 0;
   right: 0;
-  height: calc(100% - 5rem);
+  height: 100%;
   background-color: #fcc200; }
   .content-yellow__bg:after {
     background-image: url(../../img/romb.jpg);
@@ -16,18 +16,22 @@
 .werkwijze-video__wrapper {
   max-width: 820px;
   margin: 0 auto;
-  position: relative; }
+  position: relative;
+  margin-top: 28rem; }
+  .werkwijze-video__wrapper video {
+    margin-top: -24.5rem; }
 
 .werkwijze-main-content .row {
   max-width: 1030px;
-  margin: 5.2rem auto 0rem 5.2rem; }
+  margin: 5.2rem auto 0rem auto; }
 
 .werkwijze-main-content .col-md-6 {
-  margin-bottom: 4.7rem;
+  padding-bottom: 4.7rem;
   display: flex;
-  align-items: center; }
+  align-items: flex-start; }
   .werkwijze-main-content .col-md-6 img {
-    margin-right: 2.5rem; }
+    margin-right: 2.5rem;
+    width: 16rem; }
   .werkwijze-main-content .col-md-6 .content-title {
     color: #1d1d1b;
     margin-bottom: 0; }

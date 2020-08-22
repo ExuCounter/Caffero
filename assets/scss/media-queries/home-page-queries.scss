@@ -103,6 +103,8 @@
         }
     }
     .content {
+        margin-left: 0;
+        margin-right: 0;
         &__inner {
             flex-direction: column;
             div {
