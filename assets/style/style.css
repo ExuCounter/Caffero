@@ -45,7 +45,7 @@ textarea {
   z-index: 1;
   font-size: 2.8em;
   color: #1d1d1b !important;
-  background-color: #fcc200;
+  background-color: #fcc200 !important;
   border: none;
   font-weight: bold;
   font-style: italic;
@@ -97,6 +97,13 @@ textarea {
     transition: all 0.3s; }
   .big-btn-arrow:hover:after {
     right: 1.4rem; }
+
+.video__wrapper iframe,
+.video__wrapper video {
+  width: 100%;
+  height: 100%;
+  border: none !important;
+  outline: none !important; }
 
 /* COMPONENTS */
 .top-bar {

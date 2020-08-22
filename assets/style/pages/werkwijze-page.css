@@ -18,8 +18,9 @@
   margin: 0 auto;
   position: relative;
   margin-top: 28rem; }
-  .werkwijze-video__wrapper video {
-    margin-top: -24.5rem; }
+  .werkwijze-video__wrapper iframe {
+    margin-top: -24.5rem;
+    height: 50rem !important; }
 
 .werkwijze-main-content .row {
   max-width: 1030px;

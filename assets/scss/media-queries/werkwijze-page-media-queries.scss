@@ -14,8 +14,9 @@
     }
     .werkwijze-video__wrapper {
         margin-top: 20rem;
-        video {
-            margin-top: -15.5rem;
+        iframe {
+            margin-top: -15.5rem !important;
+            height: 25rem !important;
         }
     }
 }

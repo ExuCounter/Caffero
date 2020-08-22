@@ -9,5 +9,6 @@
     text-align: left !important; }
   .werkwijze-video__wrapper {
     margin-top: 20rem; }
-    .werkwijze-video__wrapper video {
-      margin-top: -15.5rem; } }
+    .werkwijze-video__wrapper iframe {
+      margin-top: -15.5rem !important;
+      height: 25rem !important; } }

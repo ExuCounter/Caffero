@@ -16,6 +16,9 @@
 
 @media screen and (max-width: 568px) {
     .vuurwerk-video__wrapper {
-        margin-bottom: 5rem;
+        margin-bottom: 0rem;
+        iframe {
+            height: 33rem;
+        }
     }
 }
