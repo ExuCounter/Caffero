@@ -19,6 +19,9 @@
         position: relative;
         z-index: 2;
     }
+    .video__wrapper {
+        width: 100%;
+    }
     .contact-btn {
         margin: 0;
         text-transform: uppercase;
@@ -47,13 +50,15 @@
     }
     &__right {
         flex: 0 1 auto;
+        width: 100%;
         margin-left: 2.7rem;
     }
     &__right-media {
         display: flex;
+        width: 100%;
         >div {
             &:nth-child(1) {
-                flex: 0 0 100%;
+                flex: 0 0 66.51%;
             }
             &:nth-child(2) {
                 flex: 0 0 33.49%;

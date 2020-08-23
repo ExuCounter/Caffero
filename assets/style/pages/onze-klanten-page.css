@@ -16,6 +16,8 @@
   .how-section .container {
     position: relative;
     z-index: 2; }
+  .how-section .video__wrapper {
+    width: 100%; }
   .how-section .contact-btn {
     margin: 0;
     text-transform: uppercase;
@@ -40,11 +42,13 @@
         background: #000; }
   .how-section__right {
     flex: 0 1 auto;
+    width: 100%;
     margin-left: 2.7rem; }
   .how-section__right-media {
-    display: flex; }
+    display: flex;
+    width: 100%; }
     .how-section__right-media > div:nth-child(1) {
-      flex: 0 0 100%; }
+      flex: 0 0 66.51%; }
     .how-section__right-media > div:nth-child(2) {
       flex: 0 0 33.49%; }
   .how-section__sm-block {
