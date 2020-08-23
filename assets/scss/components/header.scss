@@ -78,7 +78,7 @@
         }
         li {
             transition: 0.2s ease-in-out;
-            font-size: 1.9em;
+            font-size: 1.9rem;
             cursor: pointer;
             position: relative;
             &.header-menu__splitter {
@@ -99,6 +99,9 @@
             z-index: 13;
             border-radius: 5px;
             left: -10px;
+            a {
+                font-size: 1em;
+            }
             &:hover {
                 max-height: 500px;
                 a {

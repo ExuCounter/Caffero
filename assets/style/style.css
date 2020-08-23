@@ -255,7 +255,7 @@ textarea {
         color: #FFF; }
     .header-menu li {
       transition: 0.2s ease-in-out;
-      font-size: 1.9em;
+      font-size: 1.9rem;
       cursor: pointer;
       position: relative; }
       .header-menu li.header-menu__splitter {
@@ -274,6 +274,8 @@ textarea {
       z-index: 13;
       border-radius: 5px;
       left: -10px; }
+      .header-menu__sub a {
+        font-size: 1em; }
       .header-menu__sub:hover {
         max-height: 500px; }
         .header-menu__sub:hover a {
@@ -951,6 +953,33 @@ textarea {
     .content-yellow__block-title {
       padding: 15rem 0rem;
       display: block; }
+
+.banner__inner {
+  padding: 14.6rem 0rem 10rem 0rem; }
+
+.banner-title {
+  font-size: 4.9rem;
+  color: #FFF;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  display: block; }
+
+.banner-text {
+  color: #FFF;
+  text-align: center; }
+
+.banner-link {
+  color: #000;
+  background-color: #f4ba00;
+  font-size: 2.8rem;
+  font-weight: bold;
+  font-style: italic; }
+
+.portfolio-banner .banner__inner {
+  background: url(../img/portfolio-banner-bg.png);
+  background-position: center center !important;
+  background-repeat: no-repeat; }
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 1400px) {
