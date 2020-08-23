@@ -1,0 +1,11 @@
+@media screen and (max-width: 768px) {
+  .portfolio-gallery {
+    flex-direction: column; }
+    .portfolio-gallery div {
+      margin-bottom: 0; }
+    .portfolio-gallery img {
+      margin-bottom: 4rem; }
+    .portfolio-gallery__right {
+      margin-left: 0; }
+  .portfolio-video__wrapper iframe {
+    height: 30rem !important; } }
