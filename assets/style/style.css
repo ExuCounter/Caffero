@@ -5,6 +5,7 @@
 /* FONTS STYLES */
 /* MAIN FONT FAMILY */
 /* TEXT POSITIONS */
+/* ELEMENT POSITION */
 /* POSITIONS */
 /* PROPERTIES */
 /* BREAKPOINTS */
@@ -19,6 +20,9 @@
 /* COLOR WITH BACKGROUND */
 /* MARGIN PADDING */
 /* SHADOWS */
+/* MARGIN HORIZONTAL CENTER ALIGN */
+/* BORDER RADIUS */
+/* TRANSITION */
 /* BASE */
 /* <-- BASE --> */
 body {
@@ -55,6 +59,7 @@ textarea {
   right: 0;
   bottom: 0;
   left: 0;
+  z-index: unset;
   transition: all 0.5s ease-in-out;
   z-index: -1;
   opacity: 0; }
@@ -75,6 +80,7 @@ textarea {
     right: 1.4rem;
     bottom: unset;
     left: unset;
+    z-index: unset;
     width: 2.2rem;
     height: 4rem;
     transform: translate(0%, -50%);
@@ -95,6 +101,8 @@ textarea {
   text-decoration: none !important;
   border: none;
   text-align: left;
+  cursor: pointer;
+  position: relative;
   position: relative;
   display: block;
   z-index: 1; }
@@ -122,7 +130,9 @@ textarea {
   margin: 0;
   text-decoration: none !important;
   border: none;
-  text-align: left; }
+  text-align: left;
+  cursor: pointer;
+  position: relative; }
 
 .video__wrapper iframe,
 .video__wrapper video {
@@ -446,26 +456,38 @@ textarea {
         background-color: #FFF; }
 
 .burger-menu {
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  position: relative;
+  content: '';
+  position: fixed;
   top: 0;
   right: 0;
+  bottom: 0;
+  left: 0;
   z-index: 11111;
-  cursor: pointer;
+  font-size: inherit;
+  background-color: transparent;
+  color: #000;
+  padding: 0.8rem 1.2rem;
+  margin: 0;
+  text-decoration: none !important;
   border: none;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
   width: 3.6rem;
   height: 2.2rem;
   border-radius: 50%;
-  transition: 1s;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
   opacity: 1;
-  transition: 0.2s ease-in-out;
-  background-color: transparent;
   display: none; }
   .burger-menu span {
     transition: all 0.3s ease-in-out;
-    margin-top: 0rem;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    margin-top: 0;
     z-index: 111; }
     .burger-menu span:nth-child(1) {
       top: 0em; }
@@ -476,30 +498,27 @@ textarea {
   .burger-menu.active {
     animation-duration: 1s;
     animation-fill-mode: forwards; }
+    .burger-menu.active span:nth-child(1), .burger-menu.active span:nth-child(3) {
+      top: 0.85rem !important;
+      animation-delay: 0.25s !important;
+      animation-fill-mode: forwards !important; }
     .burger-menu.active span:nth-child(1) {
-      top: 0.85rem;
       animation: top-span 0.15s ease-in-out;
-      animation-fill-mode: forwards;
-      animation-delay: 0.25s;
       left: 0 !important; }
     .burger-menu.active span:nth-child(2) {
       height: 0;
       top: 0.85rem; }
     .burger-menu.active span:nth-child(3) {
-      top: 0.85rem;
-      animation: bottom-span 0.15s ease-in-out;
-      animation-fill-mode: forwards;
-      animation-delay: 0.25s; }
-  .burger-menu__inner {
-    position: absolute;
-    left: 0%;
-    top: 50%; }
+      animation: bottom-span 0.15s ease-in-out; }
 
 .burger-menu span {
+  content: '';
   position: absolute;
   top: 0;
+  right: 0;
+  bottom: 0;
   left: 0;
-  content: '';
+  z-index: unset;
   width: 3.6rem;
   height: 0.3rem;
   border-radius: 0.1rem;
@@ -983,25 +1002,32 @@ textarea {
   padding: 14.6rem 0rem 10rem 0rem; }
 
 .banner-title {
-  text-align: center;
-  display: block;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-style: italic;
   font-size: 4.9rem;
-  color: #FFF; }
+  color: #FFF;
+  text-align: left;
+  display: block;
+  text-align: center;
+  margin: 0 auto; }
 
 .banner-text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: inherit;
   color: #FFF;
   text-align: center; }
 
 .banner-link {
-  background-color: #f4ba00;
+  background-color: #fcc200;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-style: italic;
   font-size: 2.8rem;
-  color: #000; }
+  color: #000;
+  text-align: left; }
 
 .portfolio-banner .banner__inner {
   background: url(../img/portfolio-banner-bg.png);

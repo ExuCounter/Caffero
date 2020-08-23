@@ -21,12 +21,13 @@
 
 /* FONT STYLE */
 
-@mixin font-style($size: 1.6rem, $color: #000, $weight: $regular, $style: normal, $family: $main-font) {
+@mixin font-style($size: 1.6rem, $color: #000, $weight: $regular, $style: normal, $align: left, $family: $main-font) {
     font-family: $family;
     font-weight: $weight;
     font-style: $style;
     font-size: $size;
     color: $color;
+    text-align: $align;
 }
 
 
@@ -42,7 +43,7 @@
 
 /* ELEMENT FLOAT POSITION */
 
-@mixin float-position($position: absolute, $top: unset, $right: unset, $bottom: unset, $left: unset, $pseudo: false) {
+@mixin float-position($position: absolute, $top: unset, $right: unset, $bottom: unset, $left: unset, $pseudo: false, $z-index: unset) {
     @if $pseudo {
         content: '';
     }
@@ -51,6 +52,7 @@
     right: $right;
     bottom: $bottom;
     left: $left;
+    z-index: $z-index;
 }
 
 
@@ -92,6 +94,8 @@
     text-decoration: $text-decoration !important;
     border: $border;
     text-align: $align;
+    cursor: pointer;
+    position: relative;
 }
 
 
@@ -124,4 +128,39 @@
         -moz-box-shadow: $top $left $blur $color;
         box-shadow: $top $left $blur $color;
     }
+}
+
+
+/* MARGIN HORIZONTAL CENTER ALIGN */
+
+@mixin margin-position($position: center, $text-position: left) {
+    display: block;
+    text-align: $text-position;
+    @if $position==center {
+        margin: 0 auto;
+    }
+    @else if $position=left {
+        margin: 0 auto 0 0;
+    }
+    @else if $position=right {
+        margin: 0 0 0 auto;
+    }
+}
+
+
+/* BORDER RADIUS */
+
+@mixin border-radius($radius) {
+    border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+}
+
+
+/* TRANSITION */
+
+@mixin transition($property, $duration, $easing: linear) {
+    transition: $property $duration $easing;
+    -webkit-transition: $property $duration $easing;
+    -moz-transition: $property $duration $easing;
 }

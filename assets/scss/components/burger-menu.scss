@@ -1,26 +1,16 @@
 .burger-menu {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    position: relative;
-    top: 0;
-    right: 0;
-    z-index: 11111;
-    cursor: pointer;
-    border: none;
-    width: 3.6rem;
-    height: 2.2rem;
-    border-radius: 50%;
-    transition: 1s;
+    @include float-position($fixed, 0, 0, 0, 0, 0, 11111);
+    @include button(inherit, transparent, $black);
+    @include size(3.6rem, 2.2rem);
+    @include border-radius(50%);
+    @include transition(all, 0.2s, ease-in-out);
     opacity: 1;
-    transition: 0.2s ease-in-out;
-    background-color: transparent;
     display: none;
     span {
-        transition: all 0.3s ease-in-out;
-        margin-top: 0rem;
-        z-index: 111;
+        @include transition(all, 0.3s, ease-in-out);
         @extend %burger-menu--span;
+        margin-top: 0;
+        z-index: 111;
         &:nth-child(1) {
             top: 0em;
         }
@@ -34,12 +24,18 @@
     &.active {
         animation-duration: 1s;
         animation-fill-mode: forwards;
+        %side-span-anim {
+            top: 0.85rem !important;
+            animation-delay: 0.25s !important;
+            animation-fill-mode: forwards !important;
+        }
         span {
+            &:nth-child(1),
+            &:nth-child(3) {
+                @extend %side-span-anim;
+            }
             &:nth-child(1) {
-                top: 0.85rem;
                 animation: top-span 0.15s ease-in-out;
-                animation-fill-mode: forwards;
-                animation-delay: 0.25s;
                 left: 0 !important;
             }
             &:nth-child(2) {
@@ -47,29 +43,17 @@
                 top: 0.85rem;
             }
             &:nth-child(3) {
-                top: 0.85rem;
                 animation: bottom-span 0.15s ease-in-out;
-                animation-fill-mode: forwards;
-                animation-delay: 0.25s;
             }
         }
-    }
-    &__inner {
-        position: absolute;
-        left: 0%;
-        top: 50%;
     }
 }
 
 %burger-menu--span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: '';
-    width: 3.6rem;
-    height: 0.3rem;
+    @include float-position($absolute, 0, 0, 0, 0, true);
+    @include size(3.6rem, 0.3rem);
     border-radius: 0.1rem;
-    background-color: #000;
+    background-color: $black;
 }
 
 @keyframes top-span {
