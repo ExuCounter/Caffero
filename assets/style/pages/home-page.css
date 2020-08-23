@@ -1,3 +1,12 @@
+/* ABSTRACTS USE FOR NON-COMMON COMPONENTS */
+/* IMPORT ABSTRACTS */
+/* PREFIXES */
+/* COLORS */
+/* FONTS WEIGHT */
+/* MAIN FONT FAMILY */
+/* BREAKPOINTS */
+/* IMPORT SASS FEATURES */
+/* PAGE STYLING */
 .home-header {
   background: url(../../img/wedding.jpg);
   background-repeat: no-repeat;
@@ -48,10 +57,10 @@
   .home-header__speaker {
     text-align: center;
     font-size: 2.4rem;
-    color: #fcc200;
     padding-bottom: 18.2rem;
     text-shadow: 1px 1px 0px black;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    color: #fcc200; }
   .home-header__img {
     position: absolute;
     left: 0;
@@ -128,7 +137,8 @@
       right: 1.4rem;
       top: 70%;
       transform: translate(0%, -50%);
-      transition: all 0.3s; }
+      transition: all 0.3s;
+      z-index: 11; }
     .how-section__sm-block:hover:after {
       right: 0.8rem; }
     .how-section__sm-block__bg {
@@ -147,7 +157,8 @@
     right: 0;
     bottom: 0;
     height: 91.4%;
-    background-color: #fcc200; }
+    background-color: #fcc200;
+    box-shadow: 3px 3px 6px 3px #e2e2e2; }
     .how-section__bg:after {
       background-image: url(../../img/romb.jpg);
       content: '';

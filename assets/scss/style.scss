@@ -1,20 +1,26 @@
+/* ABSTRACTS */
+
+@import 'abstracts/_mixins';
+@import 'abstracts/_functions';
+@import 'abstracts/_variables';
+
 /* BASE */
 
-@import 'base/base.scss';
+@import 'base/base';
 
 /* COMPONENTS */
 
-@import 'components/top-bar.scss';
-@import 'components/header.scss';
-@import 'components/burger-menu.scss';
-@import 'components/footer.scss';
-@import 'components/float-buttons.scss';
-@import 'components/home-modal.scss';
-@import 'components/inputs.scss';
-@import 'components/content.scss';
-@import 'components/banner.scss';
+@import 'components/top-bar';
+@import 'components/header';
+@import 'components/burger-menu';
+@import 'components/footer';
+@import 'components/float-buttons';
+@import 'components/home-modal';
+@import 'components/inputs';
+@import 'components/content';
+@import 'components/banner';
 
 /* MEDIA QUERIES */
 
-@import 'media-queries/header-footer.scss';
-@import 'media-queries/main.scss';
+@import 'media-queries/header-footer';
+@import 'media-queries/main';

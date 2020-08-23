@@ -1,3 +1,9 @@
+/* ABSTRACTS USE */
+
+@import '../abstracts/_use';
+
+/* PAGE STYLING */
+
 .logo-row {
     display: flex;
     justify-content: space-between;
@@ -21,6 +27,9 @@
     }
     .video__wrapper {
         width: 100%;
+        iframe {
+            height: 45rem;
+        }
     }
     .contact-btn {
         margin: 0;
@@ -66,6 +75,10 @@
         }
     }
     &__sm-block {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
         margin-left: 2.5rem;
         text-decoration: none !important;
         padding: 3.1rem 2.5rem 3.8rem 2.5rem;
@@ -86,6 +99,7 @@
             font-style: italic;
             position: relative;
             z-index: 4;
+            line-height: 1;
         }
         &:after {
             position: absolute;
@@ -98,6 +112,7 @@
             top: 70%;
             transform: translate(0%, -50%);
             transition: all 0.3s;
+            z-index: 11;
         }
         &:hover:after {
             right: 0.8rem;
@@ -121,6 +136,7 @@
         bottom: 0;
         height: 73.3%;
         background-color: #fcc200;
+        box-shadow: 3px 3px 6px 3px #e2e2e2;
         &:after {
             background-image: url(../../img/romb.jpg);
             content: '';

@@ -1,18 +1,7 @@
-$light-gray: #626262;
-$lighter-gray: #f8f9fb;
-$blue: #1565ea;
-$nav-links: #87858f;
-$gray: #6a6c75;
-$light: 300;
-$regular: 400;
-$medium: 500;
-$semibold: 600;
-$bold: 700;
-$main-font: 'Poppins',
-sans-serif;
-;
+/* <-- BASE --> */
+
 body {
-    font-family: 'Poppins', $main-font;
+    font-family: $main-font, sans-serif;
 }
 
 * {
@@ -101,8 +90,8 @@ textarea {
 }
 
 .big-btn-arrow {
-    background-color: #000;
-    color: #FFF !important;
+    background-color: $black;
+    color: $white !important;
     font-weight: bold;
     font-style: italic;
     font-size: 2.8rem;
