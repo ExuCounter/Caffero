@@ -102,7 +102,7 @@ textarea {
 
 .big-btn-arrow {
     background-color: #000;
-    color: #FFF;
+    color: #FFF !important;
     font-weight: bold;
     font-style: italic;
     font-size: 2.8rem;
@@ -110,6 +110,7 @@ textarea {
     border: none;
     text-align: left;
     position: relative;
+    text-decoration: none !important;
     &:after {
         position: absolute;
         content: '';

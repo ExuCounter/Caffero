@@ -75,14 +75,15 @@ textarea {
 
 .big-btn-arrow {
   background-color: #000;
-  color: #FFF;
+  color: #FFF !important;
   font-weight: bold;
   font-style: italic;
   font-size: 2.8rem;
   padding: 2rem 6rem 2.3rem 2rem;
   border: none;
   text-align: left;
-  position: relative; }
+  position: relative;
+  text-decoration: none !important; }
   .big-btn-arrow:after {
     position: absolute;
     content: '';
