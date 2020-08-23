@@ -21,22 +21,26 @@
 
 /* FONT STYLE */
 
-@mixin font-style($family: $main-font, $weight: 400, $style: normal, $color: #000) {
+@mixin font-style($size: 1.6rem, $color: #000, $weight: 400, $style: normal, $family: $main-font) {
     font-family: $family;
     font-weight: $weight;
     font-style: $style;
+    font-size: $size;
     color: $color;
 }
 
 
 /* ELEMENT FLOAT POSITION */
 
-@mixin float-position($position: absolute, $top: unset, $right: unset, $bottom: unset, $left: unset) {
+@mixin float-position($position: absolute, $top: unset, $right: unset, $bottom: unset, $left: unset, $pseudo: false) {
+    @if $pseudo {
+        content: '';
+    }
     position: $position;
     top: $top;
-    $right: $right;
-    $bottom: $bottom;
-    $left: $left;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
 }
 
 
@@ -50,7 +54,7 @@
 
 /* BACKGROUND */
 
-@mixin background($url, $size, $position: unset, $repeat: no-repeat) {
+@mixin background($url, $size: auto, $position: unset, $repeat: no-repeat) {
     background: url(#{$base-path}#{$url});
     background-size: $size;
     background-position: $position;
@@ -64,4 +68,17 @@
     border-style: $style;
     border-color: $color;
     border-width: $width;
+}
+
+
+/* BUTTON */
+
+@mixin button($font-size: 1.6rem, $background-color: $main-color, $color: $black, $padding: 0.8rem 1.2rem, $margin: 0, $text-decoration: none, $border: none) {
+    font-size: $font-size;
+    background-color: $background-color;
+    color: $color;
+    padding: $padding;
+    margin: $margin;
+    text-decoration: $text-decoration !important;
+    border: $border;
 }

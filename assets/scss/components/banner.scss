@@ -3,10 +3,7 @@
         padding: 14.6rem 0rem 10rem 0rem;
     }
     &-title {
-        font-size: 4.9rem;
-        color: $white;
-        font-weight: bold;
-        font-style: italic;
+        @include font-style(4.9rem, $white, $bold, $italic);
         text-align: center;
         display: block;
     }
@@ -15,20 +12,15 @@
         text-align: center;
     }
     &-link {
-        color: #000;
+        @include font-style(2.8rem, $black, $bold, $italic);
         background-color: #f4ba00;
-        font-size: 2.8rem;
-        font-weight: bold;
-        font-style: italic;
     }
 }
 
 .portfolio-banner {
     .banner {
         &__inner {
-            background: url(../img/portfolio-banner-bg.png);
-            background-position: center center !important;
-            background-repeat: no-repeat;
+            @include background('img/portfolio-banner-bg.png', auto, center center !important)
         }
     }
 }

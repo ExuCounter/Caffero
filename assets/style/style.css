@@ -4,6 +4,7 @@
 /* FONTS WEIGHT */
 /* FONTS STYLES */
 /* MAIN FONT FAMILY */
+/* POSITIONS */
 /* BREAKPOINTS */
 /* PREFIXES */
 /* FONT STYLE */
@@ -11,6 +12,7 @@
 /* SIZE */
 /* BACKGROUND */
 /* BORDER */
+/* BUTTON */
 /* BASE */
 /* <-- BASE --> */
 body {
@@ -42,26 +44,25 @@ textarea {
 .body-cover {
   background-color: rgba(0, 0, 0, 0.6);
   position: fixed;
-  left: 0;
   top: 0;
   right: 0;
   bottom: 0;
+  left: 0;
+  transition: all 0.5s ease-in-out;
   z-index: -1;
-  opacity: 0;
-  transition: 0.5s ease-in-out; }
+  opacity: 0; }
   .body-cover.active {
     z-index: 5555555;
-    opacity: 1;
-    transition: 0.5s ease-in-out; }
+    opacity: 1; }
 
 .contact-btn {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-style: italic;
-  color: #000;
+  font-size: 3rem;
+  color: #1d1d1b;
   position: relative;
   z-index: 1;
-  font-size: 2.8em;
   color: #1d1d1b !important;
   background-color: #fcc200 !important;
   border: none;
@@ -92,9 +93,10 @@ textarea {
 
 .big-btn-arrow {
   font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-  color: #FFF;
+  font-weight: italic;
+  font-style: #FFF;
+  font-size: "Poppins", sans-serif;
+  color: 700;
   background-color: #000;
   font-size: 2.8rem;
   padding: 2rem 6rem 2.3rem 2rem;
@@ -103,14 +105,18 @@ textarea {
   position: relative;
   text-decoration: none !important; }
   .big-btn-arrow:after {
-    position: absolute;
-    content: '';
-    background-image: url(../img/arrow-right.svg);
+    background: url(../img/arrow-right.svg);
     background-size: 2.2rem 4rem !important;
+    background-position: unset;
+    background-repeat: no-repeat;
+    content: '';
+    position: absolute;
+    top: 68%;
+    right: 2rem;
+    bottom: unset;
+    left: unset;
     width: 2.2rem;
     height: 4rem;
-    right: 2rem;
-    top: 68%;
     transform: translate(0%, -50%);
     transition: all 0.3s; }
   .big-btn-arrow:hover:after {
@@ -975,10 +981,11 @@ textarea {
   padding: 14.6rem 0rem 10rem 0rem; }
 
 .banner-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
   font-size: 4.9rem;
   color: #FFF;
-  font-weight: bold;
-  font-style: italic;
   text-align: center;
   display: block; }
 
@@ -987,14 +994,16 @@ textarea {
   text-align: center; }
 
 .banner-link {
-  color: #000;
-  background-color: #f4ba00;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
   font-size: 2.8rem;
-  font-weight: bold;
-  font-style: italic; }
+  color: #000;
+  background-color: #f4ba00; }
 
 .portfolio-banner .banner__inner {
   background: url(../img/portfolio-banner-bg.png);
+  background-size: auto;
   background-position: center center !important;
   background-repeat: no-repeat; }
 
