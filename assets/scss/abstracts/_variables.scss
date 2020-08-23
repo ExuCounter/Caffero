@@ -53,5 +53,8 @@ $fixed: fixed;
 /* PROPERTIES */
 
 $inherit: inherit;
+$unset: unset;
 
 /* BREAKPOINTS */
+
+$breakpoints: ( $xl: 1200px, $lg: 992px, $md: 768px, $sm: 578px, $huge-mobile: 480px, $lg-mobile: 420px, $md-mobile: 375px, $sm-mobile: 360px)

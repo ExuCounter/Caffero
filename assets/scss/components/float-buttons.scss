@@ -1,63 +1,44 @@
 .float-buttons {
-    position: fixed;
+    @include float-position($fixed, 38.8em, 10.1em, unset, unset, 0, 111);
+    @include size(24.7em, 28.4em);
     font-size: 10px;
-    top: 38.8em;
-    right: 10.1em;
-    z-index: 12;
-    width: 24.7em;
-    height: 28.4em;
     &__btn {
-        border: solid 1.2em $white;
+        @include border(solid, 1.2em, $white);
         transform: rotate(45deg);
         display: block;
         &-container {
+            @include size(8.3em, 8.3em);
+            @include margin(-0.1em);
             transform: rotate(0deg);
             background-color: $black;
-            width: 8.3em;
-            height: 8.3em;
-            margin: -0.1em;
-            display: block;
             svg {
-                position: absolute;
-                top: 50%;
-                left: 50%;
+                @include float-position($absolute, 50%, 0%, 0%, 50%);
                 transform: translate(-55%, -55%) rotate(-45deg);
                 max-width: 5.6em;
             }
         }
         tspan {
-            font-weight: bold !important;
+            font-weight: $bold !important;
         }
         &:nth-child(1) {
-            position: absolute;
-            left: 0;
+            @include float-position($absolute);
         }
         &:nth-child(2) {
-            position: absolute;
-            right: 3.7em;
-            top: -3em;
-            border-width: 1.2em 1.2em 0.5em 1.2em;
-            border-style: solid;
-            border-color: $white;
+            @include float-position($absolute, -3em, 3.7em);
+            @include border(solid, 1.2em 1.2em 0.5em 1.2em, $white);
             .float-buttons__btn-container {
                 svg {
+                    @include float-position($absolute, 55%, $unset, $unset, 55%);
                     max-width: 9em;
-                    top: 55%;
-                    left: 55%;
                 }
             }
         }
         &:nth-child(3) {
-            position: absolute;
-            bottom: 7.3em;
-            left: 4.9em;
-            border-width: 1.2em;
-            border-style: solid;
-            border-color: $white;
+            @include float-position($absolute, $unset, $unset, 7.3em, 4.9em);
+            @include border(solid, 1.2em 1.2em 1.2em 1.2em, $white);
             .float-buttons__btn-container {
-                background-color: #00a700;
-                width: 11.7em;
-                height: 11.5em;
+                @include size(11.7em, 11.5em);
+                @include color(transparent, #00a700);
                 svg {
                     max-width: 11.4em;
                 }

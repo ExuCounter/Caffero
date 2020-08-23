@@ -726,57 +726,80 @@ textarea {
             margin: 0em 0.65rem; }
 
 .float-buttons {
+  content: '';
   position: fixed;
-  font-size: 10px;
   top: 38.8em;
   right: 10.1em;
-  z-index: 12;
+  bottom: unset;
+  left: unset;
+  z-index: 111;
   width: 24.7em;
-  height: 28.4em; }
+  height: 28.4em;
+  font-size: 10px; }
   .float-buttons__btn {
-    border: solid 1.2em #FFF;
+    border-style: solid;
+    border-color: #FFF;
+    border-width: 1.2em;
     transform: rotate(45deg);
     display: block; }
     .float-buttons__btn-container {
-      transform: rotate(0deg);
-      background-color: #000;
       width: 8.3em;
       height: 8.3em;
+      display: block;
       margin: -0.1em;
-      display: block; }
+      transform: rotate(0deg);
+      background-color: #000; }
       .float-buttons__btn-container svg {
         position: absolute;
         top: 50%;
+        right: 0%;
+        bottom: 0%;
         left: 50%;
+        z-index: unset;
         transform: translate(-55%, -55%) rotate(-45deg);
         max-width: 5.6em; }
     .float-buttons__btn tspan {
-      font-weight: bold !important; }
+      font-weight: 700 !important; }
     .float-buttons__btn:nth-child(1) {
       position: absolute;
-      left: 0; }
+      top: unset;
+      right: unset;
+      bottom: unset;
+      left: unset;
+      z-index: unset; }
     .float-buttons__btn:nth-child(2) {
       position: absolute;
-      right: 3.7em;
       top: -3em;
-      border-width: 1.2em 1.2em 0.5em 1.2em;
+      right: 3.7em;
+      bottom: unset;
+      left: unset;
+      z-index: unset;
       border-style: solid;
-      border-color: #FFF; }
+      border-color: #FFF;
+      border-width: 1.2em 1.2em 0.5em 1.2em; }
       .float-buttons__btn:nth-child(2) .float-buttons__btn-container svg {
-        max-width: 9em;
+        position: absolute;
         top: 55%;
-        left: 55%; }
+        right: unset;
+        bottom: unset;
+        left: 55%;
+        z-index: unset;
+        max-width: 9em; }
     .float-buttons__btn:nth-child(3) {
       position: absolute;
+      top: unset;
+      right: unset;
       bottom: 7.3em;
       left: 4.9em;
-      border-width: 1.2em;
+      z-index: unset;
       border-style: solid;
-      border-color: #FFF; }
+      border-color: #FFF;
+      border-width: 1.2em 1.2em 1.2em 1.2em; }
       .float-buttons__btn:nth-child(3) .float-buttons__btn-container {
-        background-color: #00a700;
         width: 11.7em;
-        height: 11.5em; }
+        height: 11.5em;
+        color: transparent;
+        background-color: #00a700; }
         .float-buttons__btn:nth-child(3) .float-buttons__btn-container svg {
           max-width: 11.4em; }
 

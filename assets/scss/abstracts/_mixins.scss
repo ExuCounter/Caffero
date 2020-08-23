@@ -149,6 +149,11 @@
     }
 }
 
+@mixin margin($margin: 0px) {
+    display: block;
+    margin: $margin;
+}
+
 
 /* BORDER RADIUS */
 
