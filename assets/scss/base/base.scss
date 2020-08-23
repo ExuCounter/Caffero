@@ -5,16 +5,15 @@ body {
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    font-weight: 400;
+    @include padding-margin(0, 0);
+    font-weight: $regular;
     font-family: $main-font;
 }
 
 .container {
     max-width: 1230px;
     margin: 0 auto;
-    position: relative;
+    position: $relative;
 }
 
 html {
@@ -33,7 +32,7 @@ textarea {
 }
 
 .body-cover {
-    background-color: rgba(0, 0, 0, 0.6);
+    @include color(transparent, rgba(0, 0, 0, 0.6));
     @include float-position($fixed, 0, 0, 0, 0);
     transition: all 0.5s ease-in-out;
     z-index: -1;
@@ -44,15 +43,8 @@ textarea {
     }
 }
 
-%default-btn {
-    @include font-style(3rem, #1d1d1b, $bold, $italic);
-    @include color(#1d1d1b !important, #fcc200 !important);
+%default-btn-arrow {
     position: relative;
-    z-index: 1;
-    border: none;
-    padding: 0.7rem 6.5rem 0.7rem 1.3rem;
-    text-decoration: none !important;
-    display: block;
     &:after {
         @include background('img/button-right-arrow.svg', 2.2rem 4rem !important);
         @include float-position($absolute, 50%, 1.4rem, unset, unset, true);
@@ -60,36 +52,37 @@ textarea {
         transform: translate(0%, -50%);
         transition: all 0.3s;
     }
-    &:hover:after {
-        right: 0.8rem;
+    &:hover {
+        &:after {
+            right: 0.8rem;
+        }
     }
 }
 
+%default-btn {
+    @include font-sm-style($inherit, $bold, $italic, $text-left);
+    @include button(3rem, #1d1d1b, $main-color, 0.7rem 6.5rem 0.7rem 1.3rem);
+    position: relative;
+    display: block;
+    z-index: 1;
+}
+
 .contact-btn {
+    @extend %default-btn;
+    @extend %default-btn-arrow;
+    @include color($black, $main-color);
     margin-top: 3.5rem;
     width: 100%;
-    text-align: left;
-    @extend %default-btn;
 }
 
 .default-shadow {
-    box-shadow: 8px 7px 0px 1px #fcc200;
+    @include box-shadow(8px, 7px, 0px, 1px $main-color);
 }
 
 .big-btn-arrow {
     @include font-sm-style($inherit, $bold, $italic, $text-left);
     @include button(2.8rem, $black, $white, 2rem 6rem 2.3rem 2rem);
-    position: relative;
-    &:after {
-        @include background('img/arrow-right.svg', 2.2rem 4rem !important);
-        @include float-position($absolute, 68%, 2rem, unset, unset, true);
-        @include size(2.2rem, 4rem);
-        transform: translate(0%, -50%);
-        transition: all 0.3s;
-    }
-    &:hover:after {
-        right: 1.4rem;
-    }
+    @extend %default-btn-arrow;
 }
 
 .video__wrapper {

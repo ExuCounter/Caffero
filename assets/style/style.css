@@ -17,14 +17,16 @@
 /* BORDER */
 /* BUTTON */
 /* COLOR WITH BACKGROUND */
+/* MARGIN PADDING */
+/* SHADOWS */
 /* BASE */
 /* <-- BASE --> */
 body {
   font-family: "Poppins", sans-serif, sans-serif; }
 
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   font-weight: 400;
   font-family: "Poppins", sans-serif; }
 
@@ -46,6 +48,7 @@ textarea {
   outline: none !important; }
 
 .body-cover {
+  color: transparent;
   background-color: rgba(0, 0, 0, 0.6);
   position: fixed;
   top: 0;
@@ -59,21 +62,9 @@ textarea {
     z-index: 5555555;
     opacity: 1; }
 
-.contact-btn {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-  font-size: 3rem;
-  color: #1d1d1b;
-  color: #1d1d1b !important;
-  background-color: #fcc200 !important;
-  position: relative;
-  z-index: 1;
-  border: none;
-  padding: 0.7rem 6.5rem 0.7rem 1.3rem;
-  text-decoration: none !important;
-  display: block; }
-  .contact-btn:after {
+.contact-btn, .big-btn-arrow {
+  position: relative; }
+  .contact-btn:after, .big-btn-arrow:after {
     background: url(../img/button-right-arrow.svg);
     background-size: 2.2rem 4rem !important;
     background-position: unset;
@@ -88,15 +79,35 @@ textarea {
     height: 4rem;
     transform: translate(0%, -50%);
     transition: all 0.3s; }
-  .contact-btn:hover:after {
+  .contact-btn:hover:after, .big-btn-arrow:hover:after {
     right: 0.8rem; }
 
 .contact-btn {
+  font-size: inherit;
+  font-weight: 700;
+  font-style: italic;
+  text-align: left;
+  font-size: 3rem;
+  background-color: #1d1d1b;
+  color: #fcc200;
+  padding: 0.7rem 6.5rem 0.7rem 1.3rem;
+  margin: 0;
+  text-decoration: none !important;
+  border: none;
+  text-align: left;
+  position: relative;
+  display: block;
+  z-index: 1; }
+
+.contact-btn {
+  color: #000;
+  background-color: #fcc200;
   margin-top: 3.5rem;
-  width: 100%;
-  text-align: left; }
+  width: 100%; }
 
 .default-shadow {
+  -webkit-box-shadow: 8px 7px 0px 1px #fcc200;
+  -moz-box-shadow: 8px 7px 0px 1px #fcc200;
   box-shadow: 8px 7px 0px 1px #fcc200; }
 
 .big-btn-arrow {
@@ -111,25 +122,7 @@ textarea {
   margin: 0;
   text-decoration: none !important;
   border: none;
-  text-align: left;
-  position: relative; }
-  .big-btn-arrow:after {
-    background: url(../img/arrow-right.svg);
-    background-size: 2.2rem 4rem !important;
-    background-position: unset;
-    background-repeat: no-repeat;
-    content: '';
-    position: absolute;
-    top: 68%;
-    right: 2rem;
-    bottom: unset;
-    left: unset;
-    width: 2.2rem;
-    height: 4rem;
-    transform: translate(0%, -50%);
-    transition: all 0.3s; }
-  .big-btn-arrow:hover:after {
-    right: 1.4rem; }
+  text-align: left; }
 
 .video__wrapper iframe,
 .video__wrapper video {
