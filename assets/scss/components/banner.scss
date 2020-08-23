@@ -3,17 +3,17 @@
         padding: 14.6rem 0rem 10rem 0rem;
     }
     &-title {
-        @include font-style(4.9rem, $white, $bold, $italic);
         text-align: center;
         display: block;
+        @include font-style(4.9rem, $white, $bold, $italic);
     }
     &-text {
         color: $white;
         text-align: center;
     }
     &-link {
-        @include font-style(2.8rem, $black, $bold, $italic);
         background-color: #f4ba00;
+        @include font-style(2.8rem, $black, $bold, $italic);
     }
 }
 

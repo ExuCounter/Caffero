@@ -46,23 +46,17 @@ textarea {
 
 %default-btn {
     @include font-style(3rem, #1d1d1b, $bold, $italic);
+    @include color(#1d1d1b !important, #fcc200 !important);
     position: relative;
     z-index: 1;
-    color: #1d1d1b !important;
-    background-color: #fcc200 !important;
     border: none;
     padding: 0.7rem 6.5rem 0.7rem 1.3rem;
     text-decoration: none !important;
     display: block;
     &:after {
-        position: absolute;
-        content: '';
-        background-image: url(../img/button-right-arrow.svg);
-        background-size: 2.2rem 4rem !important;
-        width: 2.2rem;
-        height: 4rem;
-        right: 1.4rem;
-        top: 50%;
+        @include background('img/button-right-arrow.svg', 2.2rem 4rem !important);
+        @include float-position($absolute, 50%, 1.4rem, unset, unset, true);
+        @include size(2.2rem, 4rem);
         transform: translate(0%, -50%);
         transition: all 0.3s;
     }
@@ -83,14 +77,9 @@ textarea {
 }
 
 .big-btn-arrow {
-    @include font-style($main-font, $bold, $italic, $white);
-    background-color: $black;
-    font-size: 2.8rem;
-    padding: 2rem 6rem 2.3rem 2rem;
-    border: none;
-    text-align: left;
+    @include font-sm-style($inherit, $bold, $italic, $text-left);
+    @include button(2.8rem, $black, $white, 2rem 6rem 2.3rem 2rem);
     position: relative;
-    text-decoration: none !important;
     &:after {
         @include background('img/arrow-right.svg', 2.2rem 4rem !important);
         @include float-position($absolute, 68%, 2rem, unset, unset, true);

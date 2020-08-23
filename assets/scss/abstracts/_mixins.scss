@@ -21,12 +21,22 @@
 
 /* FONT STYLE */
 
-@mixin font-style($size: 1.6rem, $color: #000, $weight: 400, $style: normal, $family: $main-font) {
+@mixin font-style($size: 1.6rem, $color: #000, $weight: $regular, $style: normal, $family: $main-font) {
     font-family: $family;
     font-weight: $weight;
     font-style: $style;
     font-size: $size;
     color: $color;
+}
+
+
+/* FONTS DISPLAY */
+
+@mixin font-sm-style($size: $inherit, $weight: $regular, $style: $normal, $align: unset) {
+    font-size: $size;
+    font-weight: $weight;
+    font-style: $style;
+    text-align: $align;
 }
 
 
@@ -73,7 +83,7 @@
 
 /* BUTTON */
 
-@mixin button($font-size: 1.6rem, $background-color: $main-color, $color: $black, $padding: 0.8rem 1.2rem, $margin: 0, $text-decoration: none, $border: none) {
+@mixin button($font-size: 1.6rem, $background-color: $main-color, $color: $black, $padding: 0.8rem 1.2rem, $margin: 0, $text-decoration: none, $border: none, $align: left) {
     font-size: $font-size;
     background-color: $background-color;
     color: $color;
@@ -81,4 +91,13 @@
     margin: $margin;
     text-decoration: $text-decoration !important;
     border: $border;
+    text-align: $align;
+}
+
+
+/* COLOR WITH BACKGROUND */
+
+@mixin color($color: unset, $background-color: unset) {
+    color: $color;
+    background-color: $background-color;
 }

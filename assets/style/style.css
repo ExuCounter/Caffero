@@ -4,15 +4,19 @@
 /* FONTS WEIGHT */
 /* FONTS STYLES */
 /* MAIN FONT FAMILY */
+/* TEXT POSITIONS */
 /* POSITIONS */
+/* PROPERTIES */
 /* BREAKPOINTS */
 /* PREFIXES */
 /* FONT STYLE */
+/* FONTS DISPLAY */
 /* ELEMENT FLOAT POSITION */
 /* SIZE */
 /* BACKGROUND */
 /* BORDER */
 /* BUTTON */
+/* COLOR WITH BACKGROUND */
 /* BASE */
 /* <-- BASE --> */
 body {
@@ -61,23 +65,27 @@ textarea {
   font-style: italic;
   font-size: 3rem;
   color: #1d1d1b;
-  position: relative;
-  z-index: 1;
   color: #1d1d1b !important;
   background-color: #fcc200 !important;
+  position: relative;
+  z-index: 1;
   border: none;
   padding: 0.7rem 6.5rem 0.7rem 1.3rem;
   text-decoration: none !important;
   display: block; }
   .contact-btn:after {
-    position: absolute;
-    content: '';
-    background-image: url(../img/button-right-arrow.svg);
+    background: url(../img/button-right-arrow.svg);
     background-size: 2.2rem 4rem !important;
+    background-position: unset;
+    background-repeat: no-repeat;
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 1.4rem;
+    bottom: unset;
+    left: unset;
     width: 2.2rem;
     height: 4rem;
-    right: 1.4rem;
-    top: 50%;
     transform: translate(0%, -50%);
     transition: all 0.3s; }
   .contact-btn:hover:after {
@@ -92,18 +100,19 @@ textarea {
   box-shadow: 8px 7px 0px 1px #fcc200; }
 
 .big-btn-arrow {
-  font-family: "Poppins", sans-serif;
-  font-weight: italic;
-  font-style: #FFF;
-  font-size: "Poppins", sans-serif;
-  color: 700;
-  background-color: #000;
+  font-size: inherit;
+  font-weight: 700;
+  font-style: italic;
+  text-align: left;
   font-size: 2.8rem;
+  background-color: #000;
+  color: #FFF;
   padding: 2rem 6rem 2.3rem 2rem;
+  margin: 0;
+  text-decoration: none !important;
   border: none;
   text-align: left;
-  position: relative;
-  text-decoration: none !important; }
+  position: relative; }
   .big-btn-arrow:after {
     background: url(../img/arrow-right.svg);
     background-size: 2.2rem 4rem !important;
@@ -981,25 +990,25 @@ textarea {
   padding: 14.6rem 0rem 10rem 0rem; }
 
 .banner-title {
+  text-align: center;
+  display: block;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-style: italic;
   font-size: 4.9rem;
-  color: #FFF;
-  text-align: center;
-  display: block; }
+  color: #FFF; }
 
 .banner-text {
   color: #FFF;
   text-align: center; }
 
 .banner-link {
+  background-color: #f4ba00;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-style: italic;
   font-size: 2.8rem;
-  color: #000;
-  background-color: #f4ba00; }
+  color: #000; }
 
 .portfolio-banner .banner__inner {
   background: url(../img/portfolio-banner-bg.png);

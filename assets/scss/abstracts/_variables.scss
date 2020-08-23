@@ -30,6 +30,12 @@ $normal: normal;
 $main-font: 'Poppins',
 sans-serif;
 
+/* TEXT POSITIONS */
+
+$text-left: left;
+$text-right: right;
+$text-center: center;
+
 /* POSITIONS */
 
 $absolute: absolute;
@@ -37,5 +43,9 @@ $relative: relative;
 $static: static;
 $sticky: sticky;
 $fixed: fixed;
+
+/* PROPERTIES */
+
+$inherit: inherit;
 
 /* BREAKPOINTS */
