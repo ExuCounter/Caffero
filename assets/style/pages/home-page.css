@@ -1,8 +1,15 @@
 /* ABSTRACTS USE FOR NON-COMMON COMPONENTS */
 /* IMPORT ABSTRACTS */
 /* PREFIXES */
+/* FONT STYLE */
+/* ELEMENT FLOAT POSITION */
+/* SIZE */
+/* BACKGROUND */
+/* BORDER */
+/* BASE PATH */
 /* COLORS */
 /* FONTS WEIGHT */
+/* FONTS STYLES */
 /* MAIN FONT FAMILY */
 /* BREAKPOINTS */
 /* IMPORT SASS FEATURES */
@@ -29,7 +36,7 @@
   .home-header__buttons {
     display: none; }
     .home-header__buttons button {
-      color: #FFF;
+      color: #FFF !important;
       font-style: italic;
       font-size: 1.6rem;
       background-color: #4d4d4d;
@@ -44,7 +51,7 @@
         background: #000; }
   .home-header__text {
     font-size: 6rem;
-    color: #FFF;
+    color: #FFF !important;
     font-style: italic;
     font-weight: bold;
     line-height: 1;
@@ -77,7 +84,7 @@
     flex: 0 0 315px;
     padding-top: 15.4rem; }
     .how-section__left button {
-      color: #FFF;
+      color: #FFF !important;
       font-style: italic;
       font-size: 1.6rem;
       background-color: #4d4d4d;
@@ -121,7 +128,7 @@
     .how-section__sm-block:nth-child(2) {
       background: url(../../img/home-page-sm-2.jpg); }
     .how-section__sm-block span {
-      color: #FFF;
+      color: #FFF !important;
       font-weight: bold;
       font-size: 2.8rem;
       font-style: italic;

@@ -1,8 +1,15 @@
 /* ABSTRACTS USE */
 /* IMPORT ABSTRACTS */
 /* PREFIXES */
+/* FONT STYLE */
+/* ELEMENT FLOAT POSITION */
+/* SIZE */
+/* BACKGROUND */
+/* BORDER */
+/* BASE PATH */
 /* COLORS */
 /* FONTS WEIGHT */
+/* FONTS STYLES */
 /* MAIN FONT FAMILY */
 /* BREAKPOINTS */
 /* IMPORT SASS FEATURES */
@@ -79,7 +86,7 @@
     .how-section__sm-block:nth-child(2) {
       background: url(../../img/home-page-sm-2.jpg); }
     .how-section__sm-block span {
-      color: #FFF;
+      color: #FFF !important;
       font-weight: bold;
       font-size: 2.8rem;
       font-style: italic;

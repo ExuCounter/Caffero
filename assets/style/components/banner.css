@@ -1,26 +1,31 @@
 .banner__inner {
-  padding: 14.6rem 0rem 10rem 0rem; }
+    padding: 14.6rem 0rem 10rem 0rem;
+}
 
 .banner-title {
-  font-size: 4.9rem;
-  color: #FFF;
-  font-weight: bold;
-  font-style: italic;
-  text-align: center;
-  display: block; }
+    font-size: 4.9rem;
+    $white;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    display: block;
+}
 
 .banner-text {
-  color: #FFF;
-  text-align: center; }
+    $white;
+    text-align: center;
+}
 
 .banner-link {
-  color: #000;
-  background-color: #f4ba00;
-  font-size: 2.8rem;
-  font-weight: bold;
-  font-style: italic; }
+    color: #000;
+    background-color: #f4ba00;
+    font-size: 2.8rem;
+    font-weight: bold;
+    font-style: italic;
+}
 
 .portfolio-banner .banner__inner {
-  background: url(../img/portfolio-banner-bg.png);
-  background-position: center center !important;
-  background-repeat: no-repeat; }
+    background: url(../img/portfolio-banner-bg.png);
+    background-position: center center !important;
+    background-repeat: no-repeat;
+}

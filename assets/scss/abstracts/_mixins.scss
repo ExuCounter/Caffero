@@ -17,3 +17,51 @@
     }
     #{$property}: $value;
 }
+
+
+/* FONT STYLE */
+
+@mixin font-style($family: $main-font, $weight: 400, $style: normal, $color: #000) {
+    font-family: $family;
+    font-weight: $weight;
+    font-style: $style;
+    color: $color;
+}
+
+
+/* ELEMENT FLOAT POSITION */
+
+@mixin float-position($position: absolute, $top: unset, $right: unset, $bottom: unset, $left: unset) {
+    position: $position;
+    top: $top;
+    $right: $right;
+    $bottom: $bottom;
+    $left: $left;
+}
+
+
+/* SIZE */
+
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+
+/* BACKGROUND */
+
+@mixin background($url, $size, $position: unset, $repeat: no-repeat) {
+    background: url(#{$base-path}#{$url});
+    background-size: $size;
+    background-position: $position;
+    background-repeat: $repeat;
+}
+
+
+/* BORDER */
+
+@mixin border($style: solid, $width: 0, $color: transparent) {
+    border-style: $style;
+    border-color: $color;
+    border-width: $width;
+}

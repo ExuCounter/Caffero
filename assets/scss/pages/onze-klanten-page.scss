@@ -40,7 +40,7 @@
     &__left {
         flex: 0 0 300px;
         button {
-            color: #FFF;
+            color: $white;
             font-style: italic;
             font-size: 1.6rem;
             background-color: #4d4d4d;
@@ -93,7 +93,7 @@
             background: url(../../img/home-page-sm-2.jpg);
         }
         span {
-            color: #FFF;
+            color: $white !important;
             font-weight: bold;
             font-size: 2.8rem;
             font-style: italic;

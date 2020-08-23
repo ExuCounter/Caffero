@@ -4,14 +4,14 @@
     }
     &-title {
         font-size: 4.9rem;
-        color: #FFF;
+        color: $white;
         font-weight: bold;
         font-style: italic;
         text-align: center;
         display: block;
     }
     &-text {
-        color: #FFF;
+        color: $white;
         text-align: center;
     }
     &-link {

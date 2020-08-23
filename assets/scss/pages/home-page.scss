@@ -13,7 +13,7 @@
     z-index: 11;
     &__title {
         font-size: 3.5rem;
-        color: #FFF;
+        color: $white;
         text-align: center;
         padding-top: 6.5rem;
         text-transform: uppercase;
@@ -28,7 +28,7 @@
     &__buttons {
         display: none;
         button {
-            color: #FFF;
+            color: $white !important;
             font-style: italic;
             font-size: 1.6rem;
             background-color: #4d4d4d;
@@ -46,7 +46,7 @@
     }
     &__text {
         font-size: 6rem;
-        color: #FFF;
+        color: $white !important;
         font-style: italic;
         font-weight: bold;
         line-height: 1;
@@ -85,7 +85,7 @@
         flex: 0 0 315px;
         padding-top: 15.4rem;
         button {
-            color: #FFF;
+            color: $white !important;
             font-style: italic;
             font-size: 1.6rem;
             background-color: #4d4d4d;
@@ -142,7 +142,7 @@
             background: url(../../img/home-page-sm-2.jpg);
         }
         span {
-            color: #FFF;
+            color: $white !important;
             font-weight: bold;
             font-size: 2.8rem;
             font-style: italic;

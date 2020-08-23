@@ -8,11 +8,3 @@
 @function image($file) {
     @return asset('img', $file);
 }
-
-@function icon($file) {
-    @return asset('img/icons', $file);
-}
-
-@function font($file) {
-    @return asset('fonts', $file);
-}

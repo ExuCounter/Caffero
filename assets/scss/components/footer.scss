@@ -112,7 +112,7 @@
             &:after {
                 position: absolute;
                 content: '';
-                background-image: url(../img/button-right-arrow.svg);
+                background-image: url(#{$base-path}/img/button-right-arrow.svg);
                 background-size: 2.2rem 4rem !important;
                 width: 2.2rem;
                 height: 4rem;
@@ -147,7 +147,7 @@
                 font-size: 1.9em;
                 font-style: italic;
                 letter-spacing: 0.37;
-                color: #FFF;
+                color: $white;
                 font-weight: bold;
                 text-transform: uppercase;
                 margin-right: 0.9rem;
@@ -184,7 +184,7 @@
                 flex: 0 0 20%;
                 z-index: 1;
                 span {
-                    color: #FFF;
+                    color: $white;
                     font-size: 1.9em;
                     font-weight: bold;
                     font-style: italic;
@@ -195,7 +195,7 @@
                 }
                 a,
                 p {
-                    color: #FFF;
+                    color: $white;
                     font-size: 1.7rem;
                 }
                 &:last-child {
@@ -222,9 +222,9 @@
                 li {
                     list-style-type: none;
                     font-size: 1.3em;
-                    color: #FFF;
+                    color: $white;
                     a {
-                        color: #FFF;
+                        color: $white;
                         text-decoration: none;
                     }
                     &:nth-child(even) {

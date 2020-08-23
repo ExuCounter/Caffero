@@ -57,7 +57,7 @@
             transition: 0.1s ease-in-out;
             white-space: nowrap;
             &.active {
-                color: #FFF;
+                color: $white !important;
             }
             &:hover~.header-menu__sub {
                 max-height: 500px;
@@ -73,7 +73,7 @@
                 }
             }
             &:hover {
-                color: #FFF;
+                color: $white !important;
             }
         }
         li {
@@ -83,7 +83,7 @@
             position: relative;
             &.header-menu__splitter {
                 margin: 0rem 1.1rem;
-                color: #FFF;
+                color: $white !important;
             }
         }
         &__sub {
@@ -107,7 +107,7 @@
                 a {
                     transition: 0.1s ease-in-out;
                     &:hover {
-                        color: #FFF;
+                        color: $white !important;
                     }
                 }
             }
@@ -135,7 +135,7 @@
         &__name {
             font-size: 3.5em;
             text-transform: uppercase;
-            color: #FFF;
+            color: $white;
             text-align: center;
             padding-bottom: 4.6rem;
             display: block;
@@ -145,7 +145,7 @@
             padding-bottom: 9.1rem;
             text-align: center;
             font-weight: bold;
-            color: #FFF;
+            color: $white;
             text-shadow: 3px 3px 0px rgba(0, 0, 0, 1);
             font-style: italic;
             text-transform: uppercase;
@@ -184,7 +184,7 @@
                 left: -9992px;
                 top: 0;
                 position: absolute;
-                background-color: #FFF;
+                background-color: $white;
             }
             &::before {
                 content: '';
@@ -193,7 +193,7 @@
                 right: -9992px;
                 top: 0;
                 position: absolute;
-                background-color: #FFF;
+                background-color: $white;
             }
         }
     }
@@ -219,7 +219,7 @@
             transform: translate(-50%, 0%);
             font-size: 3.5em;
             text-transform: uppercase;
-            color: #FFF;
+            color: $white;
             z-index: 1;
         }
         &__title {
@@ -230,7 +230,7 @@
             font-size: 6em;
             padding-bottom: 9.1rem;
             font-weight: bold;
-            color: #FFF;
+            color: $white;
             text-shadow: 3px 3px 0px rgba(0, 0, 0, 1);
             font-style: italic;
             text-transform: uppercase;
@@ -269,7 +269,7 @@
                 left: -9992px;
                 top: 0;
                 position: absolute;
-                background-color: #FFF;
+                background-color: $white;
             }
             &::before {
                 content: '';
@@ -278,7 +278,7 @@
                 right: -9992px;
                 top: 0;
                 position: absolute;
-                background-color: #FFF;
+                background-color: $white;
             }
         }
     }

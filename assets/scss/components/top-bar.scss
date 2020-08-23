@@ -17,7 +17,7 @@
     &__center-text,
     .typed-cursor {
         font-size: 1.4rem;
-        color: #FFF;
+        color: $white;
         text-align: center;
     }
     &__last-col {
@@ -94,10 +94,10 @@
     }
     &__login {
         font-size: 1.4rem;
-        color: #FFF;
+        color: $white;
         margin-left: 1.4rem;
         a {
-            color: #FFF;
+            color: $white;
             text-decoration: none !important;
             img {
                 transition: 0.3s ease;

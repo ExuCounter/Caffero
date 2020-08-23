@@ -50,14 +50,13 @@ textarea {
 }
 
 %default-btn {
+    @include font-style($main-font, $bold, $italic);
     position: relative;
     z-index: 1;
     font-size: 2.8em;
     color: #1d1d1b !important;
     background-color: #fcc200 !important;
     border: none;
-    font-weight: bold;
-    font-style: italic;
     padding: 0.7rem 6.5rem 0.7rem 1.3rem;
     text-decoration: none !important;
     display: block;
@@ -90,10 +89,8 @@ textarea {
 }
 
 .big-btn-arrow {
+    @include font-style($main-font, $bold, $italic, $white);
     background-color: $black;
-    color: $white !important;
-    font-weight: bold;
-    font-style: italic;
     font-size: 2.8rem;
     padding: 2rem 6rem 2.3rem 2rem;
     border: none;
