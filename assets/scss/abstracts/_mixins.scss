@@ -21,23 +21,25 @@
 
 /* FONT STYLE */
 
-@mixin font-style($size: 1.6rem, $color: #000, $weight: $regular, $style: normal, $align: left, $family: $main-font) {
+@mixin font-style($size: 1.6rem, $color: #000, $weight: $regular, $style: normal, $align: left, $line-height: unset, $family: $main-font) {
     font-family: $family;
     font-weight: $weight;
     font-style: $style;
     font-size: $size;
     color: $color;
     text-align: $align;
+    line-height: $line-height;
 }
 
 
 /* FONTS DISPLAY */
 
-@mixin font-sm-style($size: $inherit, $weight: $regular, $style: $normal, $align: unset) {
+@mixin font-sm-style($size: $inherit, $weight: $regular, $style: $normal, $align: unset, $line-height: unset) {
     font-size: $size;
     font-weight: $weight;
     font-style: $style;
     text-align: $align;
+    line-height: $line-height;
 }
 
 
@@ -58,7 +60,7 @@
 
 /* SIZE */
 
-@mixin size($width, $height) {
+@mixin size($width: unset, $height: unset) {
     width: $width;
     height: $height;
 }

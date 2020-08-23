@@ -1,30 +1,20 @@
 .content {
     &-text {
-        color: #000;
-        font-size: 1.6rem;
-        margin-bottom: 3.1rem;
-        line-height: 1.67;
+        @include font-sm-style(1.6rem, $regular, $normal, unset, 1.67);
     }
     &-span {
-        font-size: 1.6rem;
-        font-weight: bold;
+        @include font-sm-style(1.6rem, $bold, $normal);
         padding-bottom: 0.3rem;
     }
     &-title {
-        color: #000;
-        font-size: 3.8rem;
-        font-weight: bold;
-        font-style: italic;
-        line-height: 1;
+        @include font-style(3.8rem, $black, $bold, $italic, $text-left, 1);
         margin-bottom: 2rem;
         &.yellow-title {
-            color: #fcc200;
+            color: $main-color;
         }
     }
     &-sub-title {
-        font-size: 2rem;
-        font-weight: bold;
-        font-style: italic;
+        @include font-sm-style(2rem, $bold, $italic);
     }
     &-left-col {
         flex: 0 1 818px;
@@ -39,23 +29,17 @@
         }
     }
     &-yellow {
-        position: relative;
+        position: $relative;
         .container {
-            position: relative;
+            position: $relative;
             z-index: 111;
         }
         &__block {
-            display: flex;
-            align-items: center;
-            position: relative;
-            justify-content: center;
+            @include flex(row, center, center);
+            position: $relative;
             img {
-                position: absolute;
-                left: 0;
-                right: 0;
-                top: 0;
-                bottom: 0;
-                width: 100%;
+                @include float-position(absolute);
+                @include size(100%);
             }
             &-title {
                 padding: 15rem 0rem;
