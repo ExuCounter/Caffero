@@ -8,21 +8,21 @@
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: map-get($breakpoints, 'large-desktop')) {
     .float-buttons {
         top: 20em;
         font-size: 7px;
     }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: map-get($breakpoints, 'small-desktop')) {
     .float-buttons {
         top: 22em;
         font-size: 6px;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: map-get($breakpoints, 'default-tablet')) {
     .float-buttons {
         right: 7em;
         top: 25em;
@@ -65,7 +65,7 @@
     }
 }
 
-@media screen and (max-width: 568px) {
+@media screen and (max-width: map-get($breakpoints, 'small-tablet')) {
     .float-buttons {
         right: 2em;
         bottom: -1em;
@@ -89,7 +89,7 @@
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: map-get($breakpoints, 'huge-mobile')) {
     .home-modal {
         &__content {
             padding: 0.8rem 1.5rem 3rem 1.5rem;

@@ -1,3 +1,33 @@
+/* ABSTRACTS USE */
+/* IMPORT ABSTRACTS */
+/* PREFIXES */
+/* FONT STYLE */
+/* FONTS DISPLAY */
+/* ELEMENT FLOAT POSITION */
+/* SIZE */
+/* BACKGROUND */
+/* BORDER */
+/* BUTTON */
+/* COLOR WITH BACKGROUND */
+/* MARGIN PADDING */
+/* SHADOWS */
+/* MARGIN HORIZONTAL CENTER ALIGN */
+/* MARGIN */
+/* PADDING */
+/* BORDER RADIUS */
+/* TRANSITION */
+/* BASE PATH */
+/* COLORS */
+/* FONTS WEIGHT */
+/* FONTS STYLES */
+/* MAIN FONT FAMILY */
+/* TEXT POSITIONS */
+/* ELEMENT POSITION */
+/* POSITIONS */
+/* PROPERTIES */
+/* BREAKPOINTS */
+/* IMPORT SASS FEATURES */
+/* PAGE STYLING */
 @media screen and (max-width: 768px) {
   .vuurwerk-video__wrapper {
     margin-bottom: 6rem; }
@@ -5,7 +35,7 @@
     margin: 0 auto 4rem auto;
     display: block; } }
 
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 578px) {
   .vuurwerk-video__wrapper {
     margin-bottom: 0rem; }
     .vuurwerk-video__wrapper iframe {

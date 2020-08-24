@@ -21,6 +21,8 @@
 /* MARGIN PADDING */
 /* SHADOWS */
 /* MARGIN HORIZONTAL CENTER ALIGN */
+/* MARGIN */
+/* PADDING */
 /* BORDER RADIUS */
 /* TRANSITION */
 /* BASE */
@@ -745,7 +747,7 @@ textarea {
     .float-buttons__btn-container {
       width: 8.3em;
       height: 8.3em;
-      display: block;
+      display: flex;
       margin: -0.1em;
       transform: rotate(0deg);
       background-color: #000; }
@@ -1104,11 +1106,6 @@ textarea {
   .header-video__cover {
     height: 33px; } }
 
-/* UNEXPECTED FOR DEFAULT BREAKPOINTS MEDIA QUERIES */
-@media screen and (max-width: 1060px) {
-  html {
-    font-size: 8px; } }
-
 /* *** */
 @media screen and (max-width: 992px) {
   html {
@@ -1407,6 +1404,11 @@ textarea {
       right: -30px;
       top: 38px; } }
 
+/* UNEXPECTED FOR DEFAULT BREAKPOINTS MEDIA QUERIES */
+@media screen and (max-width: 1060px) {
+  html {
+    font-size: 8px; } }
+
 /* COMMON MEDIA QUERIES */
 @media screen and (max-width: 1400px) {
   .float-buttons {
@@ -1414,7 +1416,7 @@ textarea {
     top: 25em;
     z-index: 111111; } }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
   .float-buttons {
     top: 20em;
     font-size: 7px; } }
@@ -1451,7 +1453,7 @@ textarea {
   .content-text, .content-span {
     font-size: 2.1rem; } }
 
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 578px) {
   .float-buttons {
     right: 2em;
     bottom: -1em;

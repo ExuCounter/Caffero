@@ -1,4 +1,10 @@
-@media screen and (max-width: 768px) {
+/* ABSTRACTS USE */
+
+@import '../abstracts/_use';
+
+/* PAGE STYLING */
+
+@media screen and (max-width: map-get($breakpoints, 'default-tablet')) {
     .portfolio-gallery {
         flex-direction: column;
         div {

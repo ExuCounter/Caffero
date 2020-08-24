@@ -149,9 +149,19 @@
     }
 }
 
+
+/* MARGIN */
+
 @mixin margin($margin: 0px) {
-    display: block;
+    display: flex;
     margin: $margin;
+}
+
+
+/* PADDING */
+
+@mixin padding($padding: 0px) {
+    padding: $padding;
 }
 
 

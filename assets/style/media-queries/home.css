@@ -1,3 +1,33 @@
+/* ABSTRACTS USE */
+/* IMPORT ABSTRACTS */
+/* PREFIXES */
+/* FONT STYLE */
+/* FONTS DISPLAY */
+/* ELEMENT FLOAT POSITION */
+/* SIZE */
+/* BACKGROUND */
+/* BORDER */
+/* BUTTON */
+/* COLOR WITH BACKGROUND */
+/* MARGIN PADDING */
+/* SHADOWS */
+/* MARGIN HORIZONTAL CENTER ALIGN */
+/* MARGIN */
+/* PADDING */
+/* BORDER RADIUS */
+/* TRANSITION */
+/* BASE PATH */
+/* COLORS */
+/* FONTS WEIGHT */
+/* FONTS STYLES */
+/* MAIN FONT FAMILY */
+/* TEXT POSITIONS */
+/* ELEMENT POSITION */
+/* POSITIONS */
+/* PROPERTIES */
+/* BREAKPOINTS */
+/* IMPORT SASS FEATURES */
+/* PAGE STYLING */
 @media screen and (max-width: 1200px) {
   .content-left-col {
     margin-right: 5.5rem;
@@ -38,13 +68,8 @@
       flex: 0 1 65%;
       margin-left: auto; }
     .home-header__speaker {
-      padding-bottom: 4rem;
-      text-align: left; }
-    .home-header__text {
-      text-align: left; }
-    .home-header__welcome {
-      text-align: left; }
-    .home-header__title {
+      padding-bottom: 4rem; }
+    .home-header__text, .home-header__welcome, .home-header__title {
       text-align: left; }
     .home-header__img {
       bottom: -5rem; }

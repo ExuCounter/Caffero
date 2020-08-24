@@ -1,4 +1,10 @@
-@media screen and (max-width: 1200px) {
+/* ABSTRACTS USE */
+
+@import '../abstracts/_use';
+
+/* PAGE STYLING */
+
+@media screen and (max-width: map-get($breakpoints, 'default-desktop')) {
     .content {
         &-left-col {
             margin-right: 5.5rem;
@@ -10,7 +16,7 @@
     }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: map-get($breakpoints, 'small-desktop')) {
     .home-header__img {
         bottom: 0;
         left: 5%;
@@ -25,7 +31,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: map-get($breakpoints, 'default-tablet')) {
     .how-section {
         &__inner {
             margin-left: 25px;
@@ -62,16 +68,11 @@
             }
             &__speaker {
                 padding-bottom: 4rem;
-                text-align: left;
             }
-            &__text {
-                text-align: left;
-            }
-            &__welcome {
-                text-align: left;
-            }
+            &__text,
+            &__welcome,
             &__title {
-                text-align: left;
+                text-align: $text-left;
             }
             &__img {
                 bottom: -5rem;
@@ -93,7 +94,7 @@
     }
 }
 
-@media screen and (max-width: 578px) {
+@media screen and (max-width: map-get($breakpoints, 'small-tablet')) {
     .how-section {
         margin-bottom: 5rem;
         &__right {
@@ -174,7 +175,7 @@
             margin-right: 2rem;
             button {
                 padding: 0.5rem 1.2rem;
-                text-align: left;
+                text-align: $text-left;
                 font-size: 0.9rem;
                 &.active {
                     font-size: 1.5rem;
@@ -191,7 +192,7 @@
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: map-get($breakpoints, 'default-mobile')) {
     .home-header {
         &__img {
             left: -6rem;

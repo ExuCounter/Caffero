@@ -1,4 +1,10 @@
-@media screen and (max-width: 768px) {
+/* ABSTRACTS USE */
+
+@import '../abstracts/_use';
+
+/* PAGE STYLING */
+
+@media screen and (max-width: map-get($breakpoints, 'default-tablet')) {
     .vuurwerk-video__wrapper {
         margin-bottom: 6rem;
     }
@@ -14,7 +20,7 @@
     }
 }
 
-@media screen and (max-width: 568px) {
+@media screen and (max-width: map-get($breakpoints, 'small-tablet')) {
     .vuurwerk-video__wrapper {
         margin-bottom: 0rem;
         iframe {
