@@ -34,62 +34,90 @@
 /* PAGE STYLING */
 .home-header {
   background: url(../../img/wedding.jpg);
-  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   position: relative;
   z-index: 11; }
   .home-header__title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 3.5rem;
     color: #FFF;
     text-align: center;
+    line-height: unset;
     padding-top: 6.5rem;
     text-transform: uppercase; }
   .home-header__welcome {
     padding-top: 7.6rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 5rem;
     color: #fcc200;
     text-align: center;
+    line-height: unset;
     text-shadow: 3px 3px 0px black; }
   .home-header__buttons {
     display: none; }
     .home-header__buttons button {
-      color: #FFF !important;
-      font-style: italic;
       font-size: 1.6rem;
       background-color: #4d4d4d;
-      border: none;
-      margin-bottom: 1.3rem;
+      color: #FFF;
       padding: 1rem 2.1rem 1.2rem 2.1rem;
-      font-weight: bold;
+      margin: 0;
+      text-decoration: none !important;
+      border: none;
+      text-align: left;
+      cursor: pointer;
+      position: relative;
+      font-size: 1.6rem;
+      font-weight: 700;
+      font-style: italic;
+      text-align: unset;
+      line-height: unset;
+      margin-bottom: 1.3rem;
       width: 100%;
+      height: unset;
       cursor: pointer; }
       .home-header__buttons button.active {
         font-size: 2.6rem;
         background: #000; }
   .home-header__text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
     font-size: 6rem;
     color: #FFF !important;
-    font-style: italic;
-    font-weight: bold;
-    line-height: 1;
     text-align: center;
-    text-shadow: 3px 3px 0px black;
+    line-height: 1;
     margin-top: 1rem;
-    margin-bottom: 2.8rem; }
+    margin-bottom: 2.8rem;
+    text-shadow: 3px 3px 0px #000; }
     .home-header__text span {
       color: #fcc200; }
   .home-header__speaker {
-    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 2.4rem;
+    color: #fcc200;
+    text-align: center;
+    line-height: 1;
     padding-bottom: 18.2rem;
-    text-shadow: 1px 1px 0px black;
-    margin-bottom: 0;
-    color: #fcc200; }
+    margin-bottom: 0rem;
+    text-shadow: 1px 1px 0px #000; }
   .home-header__img {
     position: absolute;
+    top: unset;
+    right: unset;
+    bottom: -18rem;
     left: 0;
-    bottom: -18rem; }
+    z-index: unset; }
+    .home-header__img img {
+      width: auto;
+      height: 80rem; }
 
 .how-section__left {
   flex: 0 0 315px;

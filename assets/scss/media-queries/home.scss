@@ -25,10 +25,10 @@
 @media screen and (max-width: map-get($breakpoints, 'small-desktop')) {
     .home-header {
         &__img {
-            bottom: 0;
+            bottom: -14rem;
             left: 3%;
             img {
-                max-height: 62rem;
+                max-height: 75rem;
             }
         }
     }

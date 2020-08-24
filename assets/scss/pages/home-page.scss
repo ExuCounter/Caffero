@@ -5,71 +5,53 @@
 /* PAGE STYLING */
 
 .home-header {
-    background: url(../../img/wedding.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
+    @include background('../img/wedding.jpg', cover, center);
+    position: $relative;
     z-index: 11;
     &__title {
-        font-size: 3.5rem;
-        color: $white;
-        text-align: center;
-        padding-top: 6.5rem;
+        @include font-style(3.5rem, $white, $regular, $normal, $text-center);
+        @include padding-top(6.5rem);
         text-transform: uppercase;
     }
     &__welcome {
-        padding-top: 7.6rem;
-        font-size: 5rem;
-        color: #fcc200;
-        text-align: center;
+        @include padding-top(7.6rem);
+        @include font-style(5rem, $main-color, $regular, $normal, $text-center);
         text-shadow: 3px 3px 0px black;
     }
     &__buttons {
         display: none;
         button {
-            color: $white !important;
-            font-style: italic;
-            font-size: 1.6rem;
-            background-color: #4d4d4d;
-            border: none;
-            margin-bottom: 1.3rem;
-            padding: 1rem 2.1rem 1.2rem 2.1rem;
-            font-weight: bold;
-            width: 100%;
+            @include button(1.6rem, #4d4d4d, $white, 1rem 2.1rem 1.2rem 2.1rem);
+            @include font-sm-style(1.6rem, $bold, $italic);
+            @include margin-bottom(1.3rem);
+            @include size(100%);
             cursor: pointer;
             &.active {
                 font-size: 2.6rem;
-                background: #000;
+                background: $black;
             }
         }
     }
     &__text {
-        font-size: 6rem;
-        color: $white !important;
-        font-style: italic;
-        font-weight: bold;
-        line-height: 1;
-        text-align: center;
-        text-shadow: 3px 3px 0px black;
-        margin-top: 1rem;
-        margin-bottom: 2.8rem;
+        @include font-style(6rem, $white !important, $bold, $italic, $text-center, 1);
+        @include margin-top(1rem);
+        @include margin-bottom(2.8rem);
+        text-shadow: 3px 3px 0px $black;
         span {
-            color: #fcc200;
+            color: $main-color;
         }
     }
     &__speaker {
-        text-align: center;
-        font-size: 2.4rem;
-        padding-bottom: 18.2rem;
-        text-shadow: 1px 1px 0px black;
-        margin-bottom: 0;
-        color: $main-color;
+        @include font-style(2.4rem, $main-color, $regular, $normal, $text-center, 1);
+        @include padding-bottom(18.2rem);
+        @include margin-bottom(0rem);
+        text-shadow: 1px 1px 0px $black;
     }
     &__img {
-        position: absolute;
-        left: 0;
-        bottom: -18rem;
+        @include float-position($absolute, $unset, $unset, -18rem, 0);
+        img {
+            @include size(auto, 80rem);
+        }
     }
 }
 

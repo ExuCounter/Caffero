@@ -43,10 +43,10 @@
 /* 992PX - SMALL DESKTOP */
 @media screen and (max-width: 992px) {
   .home-header__img {
-    bottom: 0;
+    bottom: -14rem;
     left: 3%; }
     .home-header__img img {
-      max-height: 62rem; }
+      max-height: 75rem; }
   .how-section .video__wrapper iframe {
     width: 100%;
     height: 100%; } }
