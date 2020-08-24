@@ -4,45 +4,31 @@
 
 /* PAGE STYLING */
 
-.vuurwerk {
-    &-main {
-        &-content {
-            position: relative;
-            padding-top: 3.2rem;
-            .container {
-                z-index: 11;
-            }
-            img {
-                width: 100%;
-                max-width: 400px;
-                margin-bottom: 4.7rem;
-            }
-            &__bg {
-                position: absolute;
-                z-index: 1;
-                left: 0;
-                top: 0;
-                right: 0;
-                height: calc(100% - 5rem);
-                background-color: #fcc200;
-                &:after {
-                    background-image: url(../../img/romb.jpg);
-                    content: '';
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                }
-            }
-            .content-sub-title {
-                margin-bottom: 2.9rem;
-            }
-            .big-btn-arrow {
-                width: 85%;
-                padding: 1.5rem;
-            }
+.content {
+    &-yellow {
+        position: $relative;
+        padding-top: 3.2rem;
+        .container {
+            z-index: 11;
+        }
+        img {
+            width: 100%;
+            max-width: 400px;
+            margin-bottom: 4.7rem;
+        }
+        .content-sub-title {
+            margin-bottom: 2.9rem;
+        }
+        .big-btn-arrow {
+            width: 85%;
+            padding: 1.5rem;
+        }
+        &__bg {
+            /* CHANGE SPACE FOR YELLOW BG HERE */
+            @include yellow-bg-gaps(0rem, 2.5rem);
         }
     }
-    &-video {
+    .video {
         &__wrapper {
             height: 40rem;
         }

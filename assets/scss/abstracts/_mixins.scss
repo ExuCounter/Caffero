@@ -236,3 +236,12 @@
         font-size: $footer-size;
     }
 }
+
+
+/* YELLOW BACKGROUND GAPS */
+
+@mixin yellow-bg-gaps($top: 0, $bottom: 0, $transform: unset) {
+    top: $top;
+    transform: $transform;
+    @include size(auto, calc(100% - #{$bottom}*2));
+}

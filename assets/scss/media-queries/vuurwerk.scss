@@ -5,33 +5,39 @@
 /* PAGE STYLING */
 
 
-/* 768PX - TABLETS */
+/* 1200PX - DESKTOP */
 
-@media screen and (max-width: map-get($breakpoints, 'default-tablet')) {
+@media screen and (max-width: map-get($breakpoints, 'default-desktop')) {
     .content {
         &-yellow {
+            @include padding-top(5rem);
+            @include padding-bottom(1rem);
             &__bg {
                 @include size(100%, 100%);
             }
         }
     }
-    .vuurwerk {
-        &-video {
+    .big-btn-arrow {
+        @include margin-top(2rem);
+    }
+}
+
+
+/* 768PX - TABLETS */
+
+@media screen and (max-width: map-get($breakpoints, 'default-tablet')) {
+    .content-yellow {
+        .video {
             &__wrapper {
                 @include margin-bottom(6rem);
             }
         }
-        &-main {
-            &-content {
-                @include padding-bottom(4rem);
-                img {
-                    margin: 0rem auto 4rem auto !important;
-                    display: $block;
-                }
-                &__bg {
-                    @include size(100%, 100%);
-                }
-            }
+        img {
+            margin: 0rem auto 4rem auto !important;
+            display: $block;
+        }
+        &__bg {
+            @include size(100%, 100%);
         }
     }
 }
@@ -45,6 +51,12 @@
         @include margin-top(2rem);
         iframe {
             @include size(100%, 33rem);
+        }
+    }
+    .content-yellow {
+        .big-btn-arrow {
+            width: 100%;
+            margin-top: 1rem;
         }
     }
 }

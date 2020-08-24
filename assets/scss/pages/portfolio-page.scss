@@ -3,3 +3,13 @@
 @import '../abstracts/_use';
 
 /* PAGE STYLING */
+
+.content {
+    &-yellow {
+        margin-top: 4.7rem;
+        &__bg {
+            /* CHANGE SPACE FOR YELLOW BG HERE */
+            @include yellow-bg-gaps(5rem, 5rem);
+        }
+    }
+}

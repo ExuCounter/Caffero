@@ -6,14 +6,8 @@
 
 .content-yellow {
     &__bg {
-        @include float-position($absolute, 0, 0, 0, 0, 0, 1);
-        @include size(auto, 100%);
-        @include color(transparent, $main-color);
-        &:after {
-            @include background('../img/romb.jpg', auto, $unset, repeat);
-            @include float-position($absolute, $unset, $unset, $unset, $unset, 1);
-            @include size(100%, 100%);
-        }
+        /* CHANGE SPACE FOR YELLOW BG HERE */
+        @include yellow-bg-gaps(0rem, 0rem);
     }
 }
 

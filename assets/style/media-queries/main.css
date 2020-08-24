@@ -18,6 +18,7 @@
 /* BORDER RADIUS */
 /* TRANSITION */
 /* RESPONSIVNESS MIXIN */
+/* YELLOW BACKGROUND GAPS */
 /* BASE PATH */
 /* COLORS */
 /* FONT-SIZE (EM/REM) */
@@ -30,6 +31,7 @@
 /* PROPERTIES */
 /* DISPLAY */
 /* BREAKPOINTS */
+/* YELLOW BACKGROUND GLOBAL VARIABLE FOR ALL PAGES */
 /* IMPORT SASS FEATURES */
 /* COMMON MEDIA QUERIES */
 /* 1400px - LARGE DESKTOP */
@@ -190,6 +192,9 @@
     display: none; }
   .top-bar {
     padding: 1rem 0rem; }
+  .big-btn-arrow {
+    font-size: 2.1rem;
+    max-width: 50rem; }
   /* HOME MODAL FOR ALL PAGES /* NOT MENTIONED HOME PAGE */
   .home-modal__content {
     width: 90%;
@@ -262,7 +267,8 @@
     .content-title, .content-text {
       text-align: left !important; }
   .big-btn-arrow {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+    max-width: none;
     width: 100%;
     height: unset; }
   .how-section__right {
@@ -313,7 +319,7 @@
   .home-modal__content {
     padding: 0.8rem 1.5rem 3rem 1.5rem; }
   .big-btn-arrow {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     padding: 1rem 5rem 1.3rem 2rem;
     width: 100%;
     height: unset; }

@@ -11,6 +11,7 @@
 /* PROPERTIES */
 /* DISPLAY */
 /* BREAKPOINTS */
+/* YELLOW BACKGROUND GLOBAL VARIABLE FOR ALL PAGES */
 /* PREFIXES */
 /* FONT STYLE */
 /* FONTS DISPLAY */
@@ -29,6 +30,7 @@
 /* BORDER RADIUS */
 /* TRANSITION */
 /* RESPONSIVNESS MIXIN */
+/* YELLOW BACKGROUND GAPS */
 /* BASE */
 /* <-- BASE --> */
 body {
@@ -83,9 +85,9 @@ textarea {
 .header-banner__breadcrumbs span, .header-video__breadcrumbs span {
   color: #f4ba00; }
 
-.contact-btn, .big-btn-arrow {
+.contact-btn, .big-btn-arrow, .banner-link {
   position: relative; }
-  .contact-btn:after, .big-btn-arrow:after {
+  .contact-btn:after, .big-btn-arrow:after, .banner-link:after {
     background: url(../img/button-right-arrow.svg);
     background-size: 2.2rem 4rem !important;
     background-position: unset;
@@ -101,7 +103,7 @@ textarea {
     height: 4rem;
     transform: translate(0%, -50%);
     transition: all 0.3s; }
-  .contact-btn:hover:after, .big-btn-arrow:hover:after {
+  .contact-btn:hover:after, .big-btn-arrow:hover:after, .banner-link:hover:after {
     right: 0.8rem; }
 
 .contact-btn {
@@ -1243,11 +1245,39 @@ textarea {
     .content-yellow__block-title {
       padding: 15rem 0rem;
       display: block; }
+  .content-yellow__bg {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: auto;
+    height: calc(100% - 0*2);
+    color: transparent;
+    background-color: #fcc200; }
+    .content-yellow__bg:after {
+      background: url(../img/romb.jpg);
+      background-size: auto;
+      background-position: unset;
+      background-repeat: repeat;
+      content: '';
+      position: absolute;
+      top: unset;
+      right: unset;
+      bottom: unset;
+      left: unset;
+      z-index: unset;
+      width: 100%;
+      height: 100%; }
 
 .banner__inner {
-  padding: 14.6rem 0rem 10rem 0rem; }
+  padding-top: 14.6rem;
+  padding-bottom: 10rem; }
 
 .banner-title {
+  display: flex;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-style: italic;
@@ -1263,26 +1293,58 @@ textarea {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: inherit;
+  font-size: 2.1rem;
   color: #FFF;
-  text-align: center;
-  line-height: unset; }
+  text-align: center !important;
+  line-height: unset;
+  padding-top: 1.1rem;
+  padding-bottom: 3.3rem;
+  display: block;
+  text-align: left;
+  margin: 0 auto; }
 
 .banner-link {
+  font-size: 2.8rem;
   background-color: #fcc200;
+  color: #000;
+  padding: 0.4rem 6.5rem 0.4rem 3.2rem;
+  margin: 0;
+  text-decoration: none !important;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-style: italic;
   font-size: 2.8rem;
-  color: #000;
+  color: #000 !important;
   text-align: left;
   line-height: unset; }
 
-.portfolio-banner .banner__inner {
-  background: url(../img/portfolio-banner-bg.png);
-  background-size: auto;
-  background-position: center center !important;
-  background-repeat: no-repeat; }
+.portfolio-banner {
+  margin-top: 3rem; }
+  .portfolio-banner .banner__inner {
+    position: relative;
+    background: url(../img/portfolio-banner-bg.png);
+    background-size: cover;
+    background-position: center center !important;
+    background-repeat: no-repeat; }
+    .portfolio-banner .banner__inner-dark {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: unset;
+      background: url(../);
+      background-size: cover;
+      background-position: unset;
+      background-repeat: no-repeat;
+      background: rgba(0, 0, 0, 0.6); }
+    .portfolio-banner .banner__inner-content {
+      position: relative;
+      z-index: 1; }
 
 /* ABSTRACTS USE FOR NON-COMMON COMPONENTS */
 /* IMPORT ABSTRACTS */
@@ -1304,6 +1366,7 @@ textarea {
 /* BORDER RADIUS */
 /* TRANSITION */
 /* RESPONSIVNESS MIXIN */
+/* YELLOW BACKGROUND GAPS */
 /* BASE PATH */
 /* COLORS */
 /* FONT-SIZE (EM/REM) */
@@ -1316,6 +1379,7 @@ textarea {
 /* PROPERTIES */
 /* DISPLAY */
 /* BREAKPOINTS */
+/* YELLOW BACKGROUND GLOBAL VARIABLE FOR ALL PAGES */
 /* IMPORT SASS FEATURES */
 /* STYLING */
 .how-section {
@@ -1781,6 +1845,7 @@ textarea {
 /* BORDER RADIUS */
 /* TRANSITION */
 /* RESPONSIVNESS MIXIN */
+/* YELLOW BACKGROUND GAPS */
 /* BASE PATH */
 /* COLORS */
 /* FONT-SIZE (EM/REM) */
@@ -1793,6 +1858,7 @@ textarea {
 /* PROPERTIES */
 /* DISPLAY */
 /* BREAKPOINTS */
+/* YELLOW BACKGROUND GLOBAL VARIABLE FOR ALL PAGES */
 /* IMPORT SASS FEATURES */
 /* COMMON MEDIA QUERIES */
 /* 1400px - LARGE DESKTOP */
@@ -1953,6 +2019,9 @@ textarea {
     display: none; }
   .top-bar {
     padding: 1rem 0rem; }
+  .big-btn-arrow {
+    font-size: 2.1rem;
+    max-width: 50rem; }
   /* HOME MODAL FOR ALL PAGES /* NOT MENTIONED HOME PAGE */
   .home-modal__content {
     width: 90%;
@@ -2025,7 +2094,8 @@ textarea {
     .content-title, .content-text {
       text-align: left !important; }
   .big-btn-arrow {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+    max-width: none;
     width: 100%;
     height: unset; }
   .how-section__right {
@@ -2076,7 +2146,7 @@ textarea {
   .home-modal__content {
     padding: 0.8rem 1.5rem 3rem 1.5rem; }
   .big-btn-arrow {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     padding: 1rem 5rem 1.3rem 2rem;
     width: 100%;
     height: unset; }

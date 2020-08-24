@@ -58,7 +58,7 @@ textarea {
 }
 
 %default-btn-arrow {
-    position: relative;
+    position: $relative;
     &:after {
         @include background('img/button-right-arrow.svg', 2.2rem 4rem !important);
         @include float-position($absolute, 50%, 1.4rem, unset, unset, true);

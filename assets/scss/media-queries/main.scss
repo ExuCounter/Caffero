@@ -113,6 +113,10 @@
     .top-bar {
         padding: 1rem 0rem;
     }
+    .big-btn-arrow {
+        font-size: 2.1rem;
+        max-width: 50rem;
+    }
     /* HOME MODAL FOR ALL PAGES /* NOT MENTIONED HOME PAGE */
     .home-modal {
         &__content {
@@ -181,7 +185,8 @@
         }
     }
     .big-btn-arrow {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+        max-width: none;
         @include size(100%);
     }
     .how-section {
@@ -231,7 +236,7 @@
         }
     }
     .big-btn-arrow {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         padding: 1rem 5rem 1.3rem 2rem;
         @include size(100%);
         &:after {

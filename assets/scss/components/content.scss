@@ -38,12 +38,22 @@
             @include flex(row, center, center);
             position: $relative;
             img {
-                @include float-position(absolute);
+                @include float-position($absolute);
                 @include size(100%);
             }
             &-title {
                 padding: 15rem 0rem;
-                display: block;
+                display: $block;
+            }
+        }
+        &__bg {
+            @include float-position($absolute, $yellow-bg-space-top, 0, 0, 0, 0, 1);
+            @include size(auto, calc(100% - #{$yellow-bg-space-bottom}*2));
+            @include color(transparent, $main-color);
+            &:after {
+                @include background('img/romb.jpg', auto, $unset, repeat);
+                @include float-position($absolute, $unset, $unset, $unset, $unset, 1);
+                @include size(100%, 100%);
             }
         }
     }
