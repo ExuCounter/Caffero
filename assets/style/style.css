@@ -748,7 +748,7 @@ textarea {
       width: 8.3em;
       height: 8.3em;
       display: flex;
-      margin: -0.1em;
+      margin: -0.1em -0.1em -0.1em -0.1em;
       transform: rotate(0deg);
       background-color: #000; }
       .float-buttons__btn-container svg {

@@ -61,7 +61,7 @@ textarea {
 
 %default-btn {
     @include font-sm-style($inherit, $bold, $italic, $text-left);
-    @include button(3rem, #1d1d1b, $main-color, 0.7rem 6.5rem 0.7rem 1.3rem);
+    @include button(3rem, $second-color, $main-color, 0.7rem 6.5rem 0.7rem 1.3rem);
     position: relative;
     display: block;
     z-index: 1;

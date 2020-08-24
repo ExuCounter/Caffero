@@ -6,54 +6,45 @@
 
 .content-yellow {
     &__bg {
-        position: absolute;
-        z-index: 1;
-        left: 0;
-        top: 0;
-        right: 0;
-        height: 100%;
-        background-color: #fcc200;
+        @include float-position($absolute, 0, 0, 0, 0, 0, 1);
+        @include size(auto, 100%);
+        @include color(transparent, $main-color);
         &:after {
-            background-image: url(../../img/romb.jpg);
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 100%;
+            @include background('../img/romb.jpg', auto, $unset, repeat);
+            @include float-position($absolute, $unset, $unset, $unset, $unset, 1);
+            @include size(100%, 100%);
         }
     }
 }
 
 .werkwijze-video__wrapper {
     max-width: 820px;
-    margin: 0 auto;
-    position: relative;
-    margin-top: 28rem;
+    @include margin(28rem, auto, 0, auto);
+    position: $relative;
     iframe {
-        margin-top: -24.5rem;
-        height: 50rem !important;
+        @include margin(-24.5rem);
+        @include size(100%, 50rem !important);
     }
 }
 
 .werkwijze-main-content {
     .row {
         max-width: 1030px;
-        margin: 5.2rem auto 0rem auto;
+        @include margin(5.2rem, $unset, 0rem, auto);
     }
     .col-md-6 {
-        padding-bottom: 4.7rem;
-        display: flex;
-        align-items: flex-start;
+        @include margin(4.3rem, auto, 4.7rem, auto);
+        @include flex(row);
         img {
             margin-right: 2.5rem;
-            width: 16rem;
+            @include size(16rem, auto);
         }
         .content-title {
-            color: #1d1d1b;
+            @include font-style(3.6rem, $second-color, $bold, $italic, $unset, 1.1);
             margin-bottom: 0;
         }
         p {
-            color: #1d1d1b;
-            font-size: 1.6rem;
+            @include font-style(1.6rem, $second-color);
         }
     }
 }

@@ -8,7 +8,7 @@
         display: block;
         &-container {
             @include size(8.3em, 8.3em);
-            @include margin(-0.1em);
+            @include margin(-0.1em, -0.1em, -0.1em, -0.1em);
             transform: rotate(0deg);
             background-color: $black;
             svg {

@@ -152,16 +152,16 @@
 
 /* MARGIN */
 
-@mixin margin($margin: 0px) {
+@mixin margin($top: 0, $right: 0, $bottom: 0, $left: 0) {
     display: flex;
-    margin: $margin;
+    margin: $top $right $bottom $left;
 }
 
 
 /* PADDING */
 
-@mixin padding($padding: 0px) {
-    padding: $padding;
+@mixin padding($top: 0, $right: 0, $bottom: 0, $left: 0) {
+    padding: $top $right $bottom $left;
 }
 
 
