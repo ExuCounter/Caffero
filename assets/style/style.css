@@ -1104,10 +1104,12 @@ textarea {
   .header-video__cover {
     height: 33px; } }
 
+/* UNEXPECTED FOR DEFAULT BREAKPOINTS MEDIA QUERIES */
 @media screen and (max-width: 1060px) {
   html {
     font-size: 8px; } }
 
+/* *** */
 @media screen and (max-width: 992px) {
   html {
     font-size: 6.5px; }

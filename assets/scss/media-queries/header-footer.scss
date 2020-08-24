@@ -1,4 +1,4 @@
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: map-get($breakpoints, 'large-desktop')) {
     .footer {
         font-size: 8px;
         &-info {
@@ -12,7 +12,7 @@
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: map-get($breakpoints, 'default-desktop')) {
     html {
         font-size: 9px;
     }
@@ -59,13 +59,19 @@
     }
 }
 
+
+/* UNEXPECTED FOR DEFAULT BREAKPOINTS MEDIA QUERIES */
+
 @media screen and (max-width: 1060px) {
     html {
         font-size: 8px;
     }
 }
 
-@media screen and (max-width: 992px) {
+
+/* *** */
+
+@media screen and (max-width: map-get($breakpoints, 'small-desktop')) {
     html {
         font-size: 6.5px;
     }

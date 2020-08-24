@@ -57,4 +57,4 @@ $unset: unset;
 
 /* BREAKPOINTS */
 
-$breakpoints: ( $xl: 1200px, $lg: 992px, $md: 768px, $sm: 578px, $huge-mobile: 480px, $lg-mobile: 420px, $md-mobile: 375px, $sm-mobile: 360px)
+$breakpoints: ( "large-desktop": 1400px, "default-desktop": 1200px, "small-desktop": 992px, 'default-tablet': 768px, 'small-tablet': 578px, 'huge-mobile': 480px, 'large-mobile': 420px, 'default-mobile': 375px, 'small-mobile': 360px)
