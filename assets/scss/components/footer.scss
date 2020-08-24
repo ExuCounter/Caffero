@@ -6,34 +6,24 @@
         position: $relative;
         &__inner {
             &-title {
-                @include font-style(3.8rem, $main-color, $bold, $italic, $unset, 1.67);
-                font-size: 3.8rem;
-                font-weight: bold;
-                color: #fcc200;
-                text-align: center;
+                @include font-style(3.8rem, $main-color, $bold, $italic, $text-center, 1.67);
                 text-shadow: 2px 2.5px 0px rgba(0, 0, 0, 1);
-                font-style: italic;
                 margin: 2.9rem 0em 3.2rem;
             }
             &-item {
                 cursor: pointer;
                 img {
-                    height: 8.8rem !important;
-                    width: auto !important;
-                    margin: 0 auto;
+                    @include size(auto !important, 8.8rem !important);
+                    @include margin-position($element-center);
                 }
             }
         }
         &__nav-container {
-            position: absolute;
-            width: 100%;
-            bottom: 65px;
-            z-index: 1;
+            @include float-position($absolute, $unset, $unset, 65px, $unset, 0, 1);
+            @include size(100%);
             &-btn {
-                position: absolute;
-                background-color: transparent;
+                @include float-position($absolute);
                 border: none;
-                outline: none !important;
                 background-color: transparent;
                 &:first-child {
                     left: -3rem;
@@ -42,85 +32,68 @@
                     right: -2.7rem;
                 }
                 img {
-                    width: 2.3rem;
-                    height: auto;
+                    @include size(2.3rem, auto);
                 }
             }
         }
     }
     &-reviews {
-        display: flex;
-        position: relative;
+        @include margin-position(center);
+        @include margin-top(2rem);
+        display: $flex;
+        position: $relative;
         max-width: 87rem;
-        margin: 0 auto;
-        margin-top: 2em;
         img {
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            height: 28rem;
+            @include float-position($absolute, $unset, $unset, 0, 0);
+            @include size(auto, 28rem);
         }
         &__content {
-            margin-left: auto;
-            span {
-                position: relative;
+            @include margin-left(auto);
+            span,
+            p {
                 z-index: 1;
-                font-size: 3.3rem;
-                font-weight: bold;
-                display: block;
-                color: #000;
-                line-height: 1.2;
-                font-style: italic;
+            }
+            span {
+                position: $relative;
+                display: $block;
+                @include font-style(3.3rem, $black, $bold, $italic, $text-left, 1.2);
                 &:nth-child(1) {
-                    margin-top: 2.6rem;
+                    @include margin-top(2.6rem);
                 }
                 &:nth-child(2) {
-                    margin-left: 11.5rem;
+                    @include margin-left(11.5rem);
                 }
                 &:nth-child(3) {
-                    margin-left: 6rem;
+                    @include margin-left(6rem);
                 }
             }
             p {
-                position: relative;
-                z-index: 1;
+                position: $relative;
                 font-size: 1.8em;
-                margin-left: 6.6rem;
-                margin-top: 1.9rem;
+                @include margin-left(6.6rem);
+                @include margin-top(1.9rem);
             }
             &.mobile {
                 display: none;
                 span {
-                    margin-left: 0rem;
+                    @include margin-left(0rem);
                 }
             }
         }
         &-btn {
-            position: relative;
+            position: $relative;
+            display: $block;
+            @include button(2.8rem, $main-color, $second-color !important, 0.7rem 6.5rem 0.7rem 1.3rem);
+            @include font-sm-style(2.8rem, $bold, $italic);
+            margin: 1rem 0rem 3.2rem 13rem;
             z-index: 1;
-            font-size: 2.8rem;
-            color: $second-color !important;
-            background-color: #fcc200;
-            margin-left: 13rem;
-            border: none;
-            font-weight: bold;
-            font-style: italic;
-            padding: 0.7rem 6.5rem 0.7rem 1.3rem;
-            text-decoration: none !important;
-            margin-bottom: 3.2rem;
-            margin-top: 1rem;
-            display: block;
             &:after {
-                position: absolute;
-                content: '';
-                background-image: url(#{$base-path}/img/button-right-arrow.svg);
+                @include float-position($absolute, 50%, 1.4rem, $unset, $unset, 1);
+                @include background('/img/button-right-arrow.svg', cover);
+                @include transition(all, 0.3s, ease-in-out);
+                @include size(2.2rem, 4rem);
                 background-size: 2.2rem 4rem !important;
-                width: 2.2rem;
-                height: 4rem;
-                right: 1.4rem;
-                top: 50%;
                 transform: translate(0%, -50%);
-                transition: all 0.3s;
             }
             &:hover:after {
                 right: 0.8rem;
@@ -128,84 +101,66 @@
         }
     }
     &-info {
-        background-color: #000;
+        background-color: $black;
+        position: $relative;
         z-index: 2;
-        position: relative;
         &__top {
-            position: relative;
+            position: $relative;
             padding: 1.4rem 0em 3.4rem;
             div {
-                display: flex;
-                align-items: center;
-                &:nth-child(2) {
-                    justify-content: center;
-                }
+                @include flex(row, center);
+                &:nth-child(2),
                 &:nth-child(3) {
                     justify-content: center;
                 }
             }
             span {
-                font-size: 1.9em;
-                font-style: italic;
+                @include font-style(1.9rem, $white, $bold, $italic);
+                @include margin-right(0.9rem);
+                display: $flex;
                 letter-spacing: 0.37;
-                color: $white;
-                font-weight: bold;
                 text-transform: uppercase;
-                margin-right: 0.9rem;
-                display: flex;
             }
             a {
-                color: #fcc200;
-                font-size: 1.7em;
+                @include font-style(1.7rem, $main-color);
             }
             &-socials {
                 img {
-                    width: 2rem;
+                    @include size(2rem);
                 }
                 a:nth-child(2) {
                     margin: 0em 1.3rem;
                 }
             }
             &:after {
-                position: absolute;
-                content: '';
-                background-image: url(../img/eco-friendly.svg);
-                background-size: 80px !important;
-                width: 80px;
-                height: 80px;
-                right: -11rem;
-                top: -1.4rem;
-                transition: all 0.3s;
+                @include float-position($absolute, -1.4rem, -11rem, $unset, $unset, 1);
+                @include size(80px, 80px);
+                @include transition(all, 0.3s, ease-in-out);
+                @include background('img/eco-friendly.svg', cover);
             }
         }
         &__bottom {
-            display: flex;
-            justify-content: space-between;
+            @include flex(row, flex-start, space-between);
             &-item {
+                @include size(100%);
                 flex: 0 0 20%;
                 z-index: 1;
                 span {
-                    color: $white;
-                    font-size: 1.9rem;
-                    font-weight: bold;
-                    font-style: italic;
+                    @include font-style(1.9rem, $white, $bold, $italic, $text-left, 1);
+                    @include margin-bottom(0.5rem);
                     text-transform: uppercase;
-                    line-height: 1;
-                    margin-bottom: 0.5rem;
-                    display: block;
+                    display: $block;
                 }
                 a,
                 p {
-                    color: $white;
-                    font-size: 1.7rem;
+                    @include font-style(1.7rem, $white);
                 }
                 &:last-child {
                     img {
-                        margin-top: 1rem;
-                        width: 16.3rem;
-                        height: auto;
+                        @include size(16.3rem, auto);
+                        @include margin-top(1rem);
+                        @include transition(all, 0.5s, ease-in-out);
                         max-height: 0px;
-                        transition: 0.5s ease-in-out;
                     }
                     &.active {
                         img {
@@ -218,18 +173,16 @@
         &__nav {
             padding: 3.1rem 0em 1.7rem 0em;
             ul {
-                display: flex;
-                justify-content: center;
+                @include flex(row, flex-start, center);
                 li {
+                    @include font-style(1.3rem, $white);
                     list-style-type: none;
-                    font-size: 1.3rem;
-                    color: $white;
                     a {
                         color: $white;
                         text-decoration: none;
                     }
                     &:nth-child(even) {
-                        color: #fcc200;
+                        color: $main-color;
                         margin: 0em 0.65rem;
                     }
                 }
