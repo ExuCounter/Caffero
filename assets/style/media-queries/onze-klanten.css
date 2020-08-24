@@ -9,7 +9,8 @@
 /* BORDER */
 /* BUTTON */
 /* COLOR WITH BACKGROUND */
-/* MARGIN PADDING */
+/* MARGINS */
+/* PADDINGS */
 /* SHADOWS */
 /* MARGIN HORIZONTAL CENTER ALIGN */
 /* MARGIN */
@@ -30,49 +31,33 @@
 /* DISPLAY */
 /* BREAKPOINTS */
 /* IMPORT SASS FEATURES */
-/* PAGE STYLING */
-/* 768PX - TABLETS */
+/* 992PX - SMALL DESKTOP */
+@media screen and (max-width: 992px) {
+  .how-section {
+    margin-bottom: 0rem;
+    padding-bottom: 2rem; }
+    .how-section__bg {
+      height: 100%; } }
+
+/* 768PX - DEFAULT TABLET */
 @media screen and (max-width: 768px) {
   .how-section__inner {
     flex-direction: column; }
-  .how-section__left {
-    flex: 0 1 100%; }
   .how-section__right {
-    flex: 1 1 100%;
-    margin-left: 0;
-    margin-top: 4rem; } }
+    margin-left: 0rem; }
+  .how-section__left {
+    flex: 0 0 auto;
+    margin-bottom: 2rem; } }
 
 /* 578PX - SMALL TABLETS */
 @media screen and (max-width: 578px) {
   .logo-row div {
     flex: 0 1 25%;
     margin-bottom: 4.6rem; }
-  .how-section {
-    padding-top: 0rem; }
-    .how-section__inner {
-      margin-left: 0px;
-      margin-right: 0px; }
-    .how-section__right-media {
-      flex-direction: column; }
-      .how-section__right-media > .d-flex {
-        flex-direction: row !important; }
-    .how-section__sm-block {
-      margin-left: 0;
-      margin-bottom: 0 !important;
-      margin-top: 17px !important;
-      padding: 1.6rem 1.2rem 2.1rem 1.2rem;
-      width: 100%; }
-      .how-section__sm-block:nth-child(1) {
-        margin-right: 2rem !important; }
-      .how-section__sm-block span {
-        font-size: 1.5rem; }
-      .how-section__sm-block:after {
-        background-size: 1.2rem 2.6rem !important;
-        width: 1.2rem;
-        height: 2.6rem; }
-    .how-section__bg {
-      top: 4rem;
-      height: calc(100% - 8.5rem); } }
+  .how-section__bg {
+    top: 9.25rem;
+    width: 100%;
+    height: calc(100% - 8.5rem); } }
 
 @media screen and (max-width: 480px) {
   .logo-row div {

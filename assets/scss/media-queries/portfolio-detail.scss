@@ -11,13 +11,13 @@
     .portfolio-gallery {
         @include flex(column);
         div {
-            margin-bottom: 0rem;
+            @include margin-bottom(0rem);
         }
         img {
-            margin-bottom: 4rem;
+            @include margin-bottom(4rem);
         }
         &__right {
-            margin-left: 0rem;
+            @include margin-left(0rem);
         }
     }
     .video__wrapper {

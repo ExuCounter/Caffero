@@ -109,11 +109,41 @@
 }
 
 
-/* MARGIN PADDING */
+/* MARGINS */
 
-@mixin padding-margin($padding: 0, $margin: 0) {
-    padding: $padding;
-    margin: $margin;
+@mixin margin-top($space) {
+    margin-top: $space;
+}
+
+@mixin margin-right($space) {
+    margin-right: $space;
+}
+
+@mixin margin-bottom($space) {
+    margin-bottom: $space;
+}
+
+@mixin margin-left($space) {
+    margin-left: $space;
+}
+
+
+/* PADDINGS */
+
+@mixin padding-top($space) {
+    padding-top: $space;
+}
+
+@mixin padding-right($space) {
+    padding-right: $space;
+}
+
+@mixin padding-bottom($space) {
+    padding-bottom: $space;
+}
+
+@mixin padding-left($space) {
+    padding-left: $space;
 }
 
 
@@ -192,7 +222,7 @@
     }
     .float-buttons {
         font-size: $html-size;
-        @media screen and (max-width: map-get($breakpoints, 'huge-mobile')) {
+        @media screen and (max-width: map-get($breakpoints, 'small-tablet')) {
             font-size: calc(#{$html-size} - 30%) !important;
         }
     }

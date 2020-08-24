@@ -74,122 +74,19 @@
 }
 
 .how-section {
-    padding-top: 3rem;
-    margin-bottom: 12.5rem;
-    position: relative;
-    .container {
-        position: relative;
-        z-index: 2;
-    }
     &__left {
         flex: 0 0 315px;
-        padding-top: 15.4rem;
-        button {
-            color: $white !important;
-            font-style: italic;
-            font-size: 1.6rem;
-            background-color: #4d4d4d;
-            border: none;
-            margin-bottom: 1.3rem;
-            padding: 0.6rem 2.1rem 0.8rem 2.1rem;
-            font-weight: bold;
-            width: 100%;
-            cursor: pointer;
-            &.active {
-                font-size: 2.6rem;
-                background: #000;
-            }
-        }
+        @include padding-top(17rem);
     }
     &__right {
         flex: 0 1 auto;
-        margin-left: 4.7rem;
-    }
-    &__right-title {
-        font-weight: bold;
-        font-size: 3.8rem;
-        color: #000;
-        text-shadow: 3px 3px 0px #FFF;
-        font-style: italic;
-    }
-    &__right-text {
-        margin-bottom: 5rem;
-    }
-    &__right-media {
-        display: flex;
-        >div {
-            &:nth-child(1) {
-                flex: 0 1 66.51%;
-            }
-            &:nth-child(2) {
-                flex: 0 0 33.49%;
-            }
-        }
     }
     &__sm-block {
-        margin-left: 2.5rem;
-        text-decoration: none !important;
-        padding: 3.1rem 2.5rem 3.8rem 2.5rem;
-        line-height: 1.3;
-        background-size: cover !important;
-        position: relative;
         &:nth-child(1) {
-            margin-bottom: 2.5rem;
-            background: url(../../img/home-page-sm-1.jpg);
+            @include background('../img/home-page-sm-1.jpg', cover, auto);
         }
         &:nth-child(2) {
-            background: url(../../img/home-page-sm-2.jpg);
-        }
-        span {
-            color: $white !important;
-            font-weight: bold;
-            font-size: 2.8rem;
-            font-style: italic;
-            position: relative;
-            z-index: 4;
-        }
-        &:after {
-            position: absolute;
-            content: '';
-            background-image: url(../../img/sm-block-arrow.svg);
-            background-size: 2.2rem 4rem !important;
-            width: 2.2rem;
-            height: 4rem;
-            right: 1.4rem;
-            top: 70%;
-            transform: translate(0%, -50%);
-            transition: all 0.3s;
-            z-index: 11;
-        }
-        &:hover:after {
-            right: 0.8rem;
-        }
-        &__bg {
-            position: absolute !important;
-            top: 0;
-            right: 0;
-            left: 0;
-            bottom: 0;
-            z-index: 3 !important;
-            background-color: rgba(0, 0, 0, 0.3);
-        }
-    }
-    &__bg {
-        position: absolute;
-        z-index: 1;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        height: 91.4%;
-        background-color: #fcc200;
-        box-shadow: 3px 3px 6px 3px #e2e2e2;
-        &:after {
-            background-image: url(../../img/romb.jpg);
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 100%;
+            @include background('../img/home-page-sm-2.jpg', cover, auto);
         }
     }
 }

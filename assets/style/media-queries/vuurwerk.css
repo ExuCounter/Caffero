@@ -9,7 +9,8 @@
 /* BORDER */
 /* BUTTON */
 /* COLOR WITH BACKGROUND */
-/* MARGIN PADDING */
+/* MARGINS */
+/* PADDINGS */
 /* SHADOWS */
 /* MARGIN HORIZONTAL CENTER ALIGN */
 /* MARGIN */
@@ -50,7 +51,8 @@
 /* 578PX - SMALL TABLETS */
 @media screen and (max-width: 578px) {
   .video__wrapper {
-    margin-bottom: -1.5rem; }
+    margin-bottom: -5.5rem;
+    margin-top: 2rem; }
     .video__wrapper iframe {
       width: 100%;
       height: 33rem; } }

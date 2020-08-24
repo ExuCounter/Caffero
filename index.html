@@ -9,12 +9,14 @@
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 
-    <!-- HOME STYLES -->
-    <link rel="stylesheet" href="assets/style/pages/home-page.css">
     <!-- COMMON STYLES -->
     <link rel="stylesheet" href="assets/style/style.css">
+    <!-- HOME STYLES -->
+    <link rel="stylesheet" href="assets/style/pages/home-page.css">
     <!-- HOME PAGE QUERIES -->
     <link rel="stylesheet" href="assets/style/media-queries/home.css">
+    <!-- COMMON MEDIA QUERIES -->
+    <link rel="stylesheet" href="assets/style/media-queries/main.css">
 
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
@@ -877,17 +879,6 @@
 
     <script src='assets/js/menu.js'></script>
 
-    <script>
-        const homeVideo = document.getElementById('home-video');
-
-        homeVideo.addEventListener('click', function() {
-            if (!(homeVideo.currentTime > 0 && !homeVideo.paused && !homeVideo.ended && homeVideo.readyState > 2)) {
-                homeVideo.play();
-            } else {
-                homeVideo.pause();
-            }
-        });
-    </script>
 </body>
 
 </html>

@@ -1,78 +1,355 @@
+/* ABSTRACTS USE */
+/* IMPORT ABSTRACTS */
+/* PREFIXES */
+/* FONT STYLE */
+/* FONTS DISPLAY */
+/* ELEMENT FLOAT POSITION */
+/* SIZE */
+/* BACKGROUND */
+/* BORDER */
+/* BUTTON */
+/* COLOR WITH BACKGROUND */
+/* MARGINS */
+/* PADDINGS */
+/* SHADOWS */
+/* MARGIN HORIZONTAL CENTER ALIGN */
+/* MARGIN */
+/* PADDING */
+/* BORDER RADIUS */
+/* TRANSITION */
+/* RESPONSIVNESS MIXIN */
+/* BASE PATH */
+/* COLORS */
+/* FONT-SIZE (EM/REM) */
+/* FONTS WEIGHT */
+/* FONTS STYLES */
+/* MAIN FONT FAMILY */
+/* TEXT POSITIONS */
+/* ELEMENT POSITION */
+/* POSITIONS */
+/* PROPERTIES */
+/* DISPLAY */
+/* BREAKPOINTS */
+/* IMPORT SASS FEATURES */
 /* COMMON MEDIA QUERIES */
+/* 1400px - LARGE DESKTOP */
 @media screen and (max-width: 1400px) {
+  /* DECREASE EM/REM UNITS */
+  /* 
+    */
+  html {
+    font-size: 10px; }
   .float-buttons {
-    font-size: 8px;
+    font-size: 10px; } }
+  @media screen and (max-width: 1400px) and (max-width: 578px) {
+    .float-buttons {
+      font-size: calc(10px - 30%) !important; } }
+
+@media screen and (max-width: 1400px) {
+  .top-bar {
+    font-size: 8px; }
+  .header {
+    font-size: 9px; }
+  .footer {
+    font-size: 8px; }
+  /* 
+    */
+  /* DECREASE EM/REM UNITS END */
+  .float-buttons {
+    content: '';
+    position: fixed;
     top: 25em;
+    right: 5em;
+    bottom: unset;
+    left: unset;
     z-index: 111111; } }
 
+/* 1200px - DEFAULT DESKTOP */
 @media screen and (max-width: 1200px) {
+  /* DECREASE EM/REM UNITS */
+  /* 
+    */
+  html {
+    font-size: 9px; }
   .float-buttons {
-    top: 20em;
-    font-size: 7px; } }
+    font-size: 9px; } }
+  @media screen and (max-width: 1200px) and (max-width: 578px) {
+    .float-buttons {
+      font-size: calc(9px - 30%) !important; } }
+
+@media screen and (max-width: 1200px) {
+  .top-bar {
+    font-size: 8px; }
+  .header {
+    font-size: 8px; }
+  .footer {
+    font-size: 9px; }
+  /* 
+    */
+  /* DECREASE EM/REM UNITS END */
+  .float-buttons {
+    content: '';
+    position: fixed;
+    top: unset;
+    right: 5em;
+    bottom: 0em;
+    left: unset;
+    z-index: 111111; } }
+
+/* UNEXPECTED FOR DEFAULT BREAKPOINTS MEDIA QUERIES */
+@media screen and (max-width: 1060px) {
+  html {
+    font-size: 8px; }
+  .float-buttons {
+    font-size: 8px; } }
+  @media screen and (max-width: 1060px) and (max-width: 578px) {
+    .float-buttons {
+      font-size: calc(8px - 30%) !important; } }
+
+@media screen and (max-width: 1060px) {
+  .top-bar {
+    font-size: 6.5px; }
+  .header {
+    font-size: 8px; }
+  .footer {
+    font-size: 8px; } }
+
+/* 992px - SMALL DESKTOP */
+@media screen and (max-width: 992px) {
+  /* DECREASE EM/REM UNITS */
+  /* 
+    */
+  html {
+    font-size: 6.5px; }
+  .float-buttons {
+    font-size: 6.5px; } }
+  @media screen and (max-width: 992px) and (max-width: 578px) {
+    .float-buttons {
+      font-size: calc(6.5px - 30%) !important; } }
 
 @media screen and (max-width: 992px) {
+  .top-bar {
+    font-size: 6px; }
+  .header {
+    font-size: 7px; }
+  .footer {
+    font-size: 10px; }
+  /* 
+    */
+  .content-text, .content-span {
+    font-size: 2rem; }
+  .how-section__left {
+    padding-top: 0rem; }
+    .how-section__left button {
+      padding-top: 1.35rem;
+      padding-bottom: 1.35rem; }
+  .how-section__right-media {
+    flex-direction: column; }
+    .how-section__right-media > .d-flex {
+      flex-direction: row !important; }
+  .how-section .video__wrapper iframe {
+    width: 100%;
+    height: 40rem; }
+  .how-section__sm-block:nth-child(1) {
+    margin: 2rem 2.5rem 0rem 0rem; }
+  .how-section__sm-block:nth-child(2) {
+    margin: 2rem 0rem 0rem 0rem; } }
+
+/* 768PX - TABLETS */
+@media screen and (max-width: 768px) {
+  /* DECREASE EM/REM UNITS */
+  /* 
+    */
+  html {
+    font-size: 7px; }
   .float-buttons {
-    top: 22em;
-    font-size: 6px; } }
+    font-size: 7px; } }
+  @media screen and (max-width: 768px) and (max-width: 578px) {
+    .float-buttons {
+      font-size: calc(7px - 30%) !important; } }
 
 @media screen and (max-width: 768px) {
+  .top-bar {
+    font-size: 7px; }
+  .header {
+    font-size: 8px; }
+  .footer {
+    font-size: 10px; }
+  /* 
+    */
+  /* DECREASE EM/REM UNITS END */
   .float-buttons {
-    right: 7em;
-    top: 25em;
-    font-size: 5px;
+    content: '';
+    position: fixed;
+    top: unset;
+    right: 3em;
+    bottom: 1em;
+    left: unset;
     z-index: 555; }
   .contact-btn {
     display: none; }
+  .top-bar {
+    padding: 1rem 0rem; }
   /* HOME MODAL FOR ALL PAGES /* NOT MENTIONED HOME PAGE */
   .home-modal__content {
-    width: 90%; }
+    width: 90%;
+    height: unset; }
     .home-modal__content-inner form {
       flex: 0 1 100%; }
     .home-modal__content-inner__right {
       display: none; }
   .home-modal__thanks {
     display: flex;
-    width: 100%;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    height: unset;
     font-size: 1.6rem; }
     .home-modal__thanks img {
       position: relative;
       top: 1rem;
-      right: 0; }
-  .content-text, .content-span {
-    font-size: 2.1rem; } }
-
-@media screen and (max-width: 568px) {
-  .float-buttons {
-    right: 2em;
-    bottom: -1em;
-    font-size: 6px;
-    top: unset; }
-  .content {
-    margin-left: 0px;
-    margin-right: 0px; }
-    .content-title {
-      font-size: 3rem; }
-    .content-text, .content-span {
-      font-size: 1.6rem; }
-  .big-btn-arrow {
-    font-size: 1.8rem;
-    width: 100% !important; } }
-
-@media screen and (max-width: 480px) {
-  .home-modal__content {
-    padding: 0.8rem 1.5rem 3rem 1.5rem; }
+      right: 0rem;
+      bottom: unset;
+      left: unset;
+      z-index: unset; }
   .content-title {
     font-size: 3rem; }
   .content-text, .content-span {
-    font-size: 1.3rem; }
+    font-size: 1.6rem !important; } }
+
+/* 767PX -1PX IPAD */
+@media screen and (max-width: 768px) {
+  .top-bar {
+    padding: 0rem; } }
+
+/* 578PX - SMALL TABLETS */
+@media screen and (max-width: 578px) {
+  /* DECREASE EM/REM UNITS */
+  /* 
+    */
+  html {
+    font-size: 9px; }
+  .float-buttons {
+    font-size: 9px; } }
+  @media screen and (max-width: 578px) and (max-width: 578px) {
+    .float-buttons {
+      font-size: calc(9px - 30%) !important; } }
+
+@media screen and (max-width: 578px) {
+  .top-bar {
+    font-size: unset; }
+  .header {
+    font-size: 8px; }
+  .footer {
+    font-size: unset; }
+  /* 
+    */
+  /* DECREASE EM/REM UNITS END */
+  .float-buttons {
+    content: '';
+    position: fixed;
+    top: unset;
+    right: 2em;
+    bottom: 0em;
+    left: unset;
+    z-index: 111; }
+  .content {
+    margin-left: 0rem;
+    margin-right: 0rem; }
+    .content-title {
+      font-size: 3rem; }
+    .content-title, .content-text {
+      text-align: left !important; }
   .big-btn-arrow {
-    font-size: 1.6rem;
-    width: 100% !important;
-    padding: 1rem 5rem 1.3rem 2rem; }
+    font-size: 2.5rem;
+    width: 100%;
+    height: unset; }
+  .how-section__right {
+    margin-left: 0rem !important; }
+    .how-section__right-media {
+      flex-direction: column; }
+      .how-section__right-media > .d-flex {
+        flex-direction: row !important; }
+  .how-section__sm-block {
+    margin: 17px 0px 0px 0px;
+    padding: 2rem 1.2rem 2.6rem 1.7rem !important;
+    width: 100%;
+    height: unset; }
+    .how-section__sm-block:nth-child(1) {
+      margin-right: 2rem !important; }
+    .how-section__sm-block span {
+      font-size: 2.2rem; }
+    .how-section__sm-block:after {
+      background-size: 1.8rem 3.2rem !important;
+      width: 1.8rem;
+      height: 3.2rem; }
+  .video__wrapper iframe {
+    width: 100%;
+    height: 30rem !important; } }
+
+@media screen and (max-width: 480px) {
+  /* DECREASE EM/REM UNITS */
+  /* 
+    */
+  html {
+    font-size: 8px; }
+  .float-buttons {
+    font-size: 8px; } }
+  @media screen and (max-width: 480px) and (max-width: 578px) {
+    .float-buttons {
+      font-size: calc(8px - 30%) !important; } }
+
+@media screen and (max-width: 480px) {
+  .top-bar {
+    font-size: inherit; }
+  .header {
+    font-size: inherit; }
+  .footer {
+    font-size: inherit; }
+  /* 
+    */
+  /* DECREASE EM/REM UNITS END */
+  .home-modal__content {
+    padding: 0.8rem 1.5rem 3rem 1.5rem; }
+  .big-btn-arrow {
+    font-size: 2.5rem;
+    padding: 1rem 5rem 1.3rem 2rem;
+    width: 100%;
+    height: unset; }
     .big-btn-arrow:after {
       background-size: 2.2rem 3rem !important;
       width: 2.2rem;
       height: 3rem;
+      position: absolute;
+      top: 58%;
       right: 2rem;
-      top: 58%; } }
+      bottom: unset;
+      left: unset;
+      z-index: unset; } }
+
+/* 360px - SMALL MOBILE */
+@media screen and (max-width: 360px) {
+  /* DECREASE EM/REM UNITS */
+  /* 
+    */
+  html {
+    font-size: 7px; }
+  .float-buttons {
+    font-size: 7px; } }
+  @media screen and (max-width: 360px) and (max-width: 578px) {
+    .float-buttons {
+      font-size: calc(7px - 30%) !important; } }
+
+@media screen and (max-width: 360px) {
+  .top-bar {
+    font-size: inherit; }
+  .header {
+    font-size: inherit; }
+  .footer {
+    font-size: inherit; }
+  /* 
+    */
+  /* DECREASE EM/REM UNITS END */
+  .content-text, .content-span {
+    font-size: 1.85rem; } }

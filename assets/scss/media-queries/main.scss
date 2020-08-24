@@ -1,3 +1,7 @@
+/* ABSTRACTS USE */
+
+@import '../abstracts/_use';
+
 /* COMMON MEDIA QUERIES */
 
 
@@ -12,9 +16,7 @@
     */
     /* DECREASE EM/REM UNITS END */
     .float-buttons {
-        font-size: 8px;
-        top: 25em;
-        z-index: 111111;
+        @include float-position($fixed, 25em, 5em, $unset, $unset, 0, 111111);
     }
 }
 
@@ -30,8 +32,7 @@
     */
     /* DECREASE EM/REM UNITS END */
     .float-buttons {
-        top: 20em;
-        font-size: 7px;
+        @include float-position($fixed, $unset, 5em, 0em, $unset, 0, 111111);
     }
 }
 
@@ -52,21 +53,42 @@
     @include responsive-font-size(6.5px, 10px, 7px, 6px);
     /* 
     */
-    /* DECREASE EM/REM UNITS END */
-    .float-buttons {
-        top: 22em;
-        font-size: 6px;
-    }
-}
-
-
-/* 992px - SMALL DESKTOP <=> 768PX - TABLETS */
-
-@media screen and (min-width: map-get($breakpoints, 'default-tablet')) and (max-width: map-get($breakpoints, 'small-desktop')) {
     .content {
         &-text,
         &-span {
             font-size: 2rem;
+        }
+    }
+    .how-section {
+        &__left {
+            @include padding-top(0rem);
+            button {
+                @include padding-top(1.35rem);
+                @include padding-bottom(1.35rem);
+            }
+        }
+        &__right {
+            &-media {
+                flex-direction: column;
+                >.d-flex {
+                    flex-direction: row !important;
+                }
+            }
+        }
+        .video {
+            &__wrapper {
+                iframe {
+                    @include size(100%, 40rem);
+                }
+            }
+        }
+        &__sm-block {
+            &:nth-child(1) {
+                margin: 2rem 2.5rem 0rem 0rem;
+            }
+            &:nth-child(2) {
+                margin: 2rem 0rem 0rem 0rem;
+            }
         }
     }
 }
@@ -78,7 +100,7 @@
     /* DECREASE EM/REM UNITS */
     /* 
     */
-    @include responsive-font-size(7px, 10px, 8px, 8px);
+    @include responsive-font-size(7px, 10px, 8px, 7px);
     /* 
     */
     /* DECREASE EM/REM UNITS END */
@@ -88,10 +110,13 @@
     .contact-btn {
         display: none;
     }
+    .top-bar {
+        padding: 1rem 0rem;
+    }
     /* HOME MODAL FOR ALL PAGES /* NOT MENTIONED HOME PAGE */
     .home-modal {
         &__content {
-            width: 90%;
+            @include size(90%);
             &-inner {
                 form {
                     flex: 0 1 100%;
@@ -102,22 +127,31 @@
             }
         }
         &__thanks {
-            display: flex;
-            width: 100%;
-            justify-content: space-between;
+            @include flex(row, flex-start, space-between);
+            @include size(100%);
             font-size: 1.6rem;
             img {
-                position: relative;
-                top: 1rem;
-                right: 0;
+                @include float-position($relative, 1rem, 0rem);
             }
         }
     }
     .content {
+        &-title {
+            font-size: 3rem;
+        }
         &-text,
         &-span {
-            font-size: 2rem;
+            font-size: 1.6rem !important;
         }
+    }
+}
+
+
+/* 767PX -1PX IPAD */
+
+@media screen and (max-width: map-get($breakpoints, 'default-tablet')) {
+    .top-bar {
+        padding: 0rem;
     }
 }
 
@@ -133,26 +167,53 @@
     */
     /* DECREASE EM/REM UNITS END */
     .float-buttons {
-        right: 2em;
-        bottom: -1em;
-        font-size: 6px;
-        top: unset;
+        @include float-position($fixed, $unset, 2em, 0em, $unset, 0, 111);
     }
     .content {
-        margin-left: 0px;
-        margin-right: 0px;
+        @include margin-left(0rem);
+        @include margin-right(0rem);
         &-title {
             font-size: 3rem;
         }
-        .video__wrapper {
-            iframe {
-                @include size(100%, 35rem);
-            }
+        &-title,
+        &-text {
+            text-align: $text-left !important;
         }
     }
     .big-btn-arrow {
         font-size: 2.5rem;
-        @include size(100% !important);
+        @include size(100%);
+    }
+    .how-section {
+        &__right {
+            @include margin-left(0rem !important);
+            &-media {
+                flex-direction: column;
+                >.d-flex {
+                    flex-direction: row !important;
+                }
+            }
+        }
+        &__sm-block {
+            margin: 17px 0px 0px 0px;
+            padding: 2rem 1.2rem 2.6rem 1.7rem !important;
+            @include size(100%);
+            &:nth-child(1) {
+                @include margin-right(2rem !important);
+            }
+            span {
+                font-size: 2.2rem;
+            }
+            &:after {
+                background-size: 1.8rem 3.2rem !important;
+                @include size(1.8rem, 3.2rem);
+            }
+        }
+    }
+    .video__wrapper {
+        iframe {
+            @include size(100%, 30rem !important);
+        }
     }
 }
 
@@ -169,28 +230,14 @@
             padding: 0.8rem 1.5rem 3rem 1.5rem;
         }
     }
-    .float-buttons {
-        font-size: 6px;
-    }
-    .content {
-        &-title {
-            font-size: 3rem;
-        }
-        &-text,
-        &-span {
-            font-size: 1.6rem;
-        }
-    }
     .big-btn-arrow {
         font-size: 2.5rem;
-        width: 100% !important;
         padding: 1rem 5rem 1.3rem 2rem;
+        @include size(100%);
         &:after {
             background-size: 2.2rem 3rem !important;
-            width: 2.2rem;
-            height: 3rem;
-            right: 2rem;
-            top: 58%;
+            @include size(2.2rem, 3rem);
+            @include float-position($absolute, 58%, 2rem);
         }
     }
 }

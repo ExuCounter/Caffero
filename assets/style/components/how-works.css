@@ -1,4 +1,4 @@
-/* ABSTRACTS USE */
+/* ABSTRACTS USE FOR NON-COMMON COMPONENTS */
 /* IMPORT ABSTRACTS */
 /* PREFIXES */
 /* FONT STYLE */
@@ -9,8 +9,7 @@
 /* BORDER */
 /* BUTTON */
 /* COLOR WITH BACKGROUND */
-/* MARGINS */
-/* PADDINGS */
+/* MARGIN PADDING */
 /* SHADOWS */
 /* MARGIN HORIZONTAL CENTER ALIGN */
 /* MARGIN */
@@ -31,4 +30,7 @@
 /* DISPLAY */
 /* BREAKPOINTS */
 /* IMPORT SASS FEATURES */
-/* PAGE STYLING */
+/* STYLING */
+.how-works__right .video__wrapper iframe {
+  width: 100%;
+  height: 40rem; }

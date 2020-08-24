@@ -1,0 +1,95 @@
+/* ABSTRACTS USE FOR NON-COMMON COMPONENTS */
+
+@import '../abstracts/_use';
+
+/* STYLING */
+
+.how-section {
+    @include padding-top(3rem);
+    @include margin-bottom(12.5rem);
+    position: $relative;
+    &__left {
+        button {
+            @include button(1.6rem, #4d4d4d, $white, 0.3rem 2.1rem 0.5rem 2.1rem, 0rem 0rem 1.3rem 0rem);
+            @include size(100%);
+            @include font-sm-style(1.6rem, $bold, $italic);
+            cursor: pointer;
+            &.active {
+                font-size: 2.6rem;
+                background-color: $black;
+            }
+        }
+    }
+    &__right {
+        @include margin-left(4.7rem);
+        &-title {
+            @include font-style(3.8rem, $black, $bold, $italic);
+            text-shadow: 0.3rem 0.3rem 0rem $white;
+        }
+        &-text {
+            @include margin-bottom(5rem);
+        }
+        &-media {
+            display: $flex;
+            >div {
+                &:nth-child(1) {
+                    flex: 0 1 66.51%;
+                }
+                &:nth-child(2) {
+                    flex: 0 0 33.49%;
+                }
+            }
+        }
+        .video {
+            &__wrapper {
+                iframe {
+                    @include size(100%, 100%);
+                }
+            }
+        }
+    }
+    &__sm-block {
+        @include margin-left(2.5rem);
+        @include flex(column, $unset, $element-center);
+        text-decoration: none !important;
+        padding: 3.1rem 2.5rem 3.8rem 2.5rem;
+        position: $relative;
+        flex-grow: 1;
+        &:nth-child(1) {
+            @include margin-bottom(2.5rem);
+        }
+        span {
+            @include font-style(2.8rem, $white, $bold, $italic, $text-left, 1);
+            text-shadow: 1px 1px 1px #4d4d4d;
+            position: $relative;
+            z-index: 5;
+        }
+        &:after {
+            @include float-position($absolute, 70%, 1.4rem, $unset, $unset, 1, 11);
+            @include background('img/sm-block-arrow.svg', cover, auto);
+            @include size(2.2rem, 4rem);
+            @include transition(all, 0.3s, ease-in-out);
+            transform: translate(0%, -50%);
+            z-index: 11;
+        }
+        &:hover:after {
+            right: 0.8rem;
+        }
+        &__bg {
+            @include float-position($absolute !important, 0, 0, 0, 0, 0, 3 !important);
+            @include color(transparent, rgba(0, 0, 0, 0.3));
+        }
+    }
+    &__bg {
+        @include float-position($absolute, 0, 0, 0, 0, 0, 1);
+        @include size(100%, 91.4%);
+        @include color(transparent, $main-color);
+        @include box-shadow(3px, 3px, 3px, #e2e2e2, $inset: false);
+        &:after {
+            @include background('img/romb.jpg', auto, center, repeat);
+            @include size(100%, 100%);
+            content: '';
+            position: $absolute;
+        }
+    }
+}

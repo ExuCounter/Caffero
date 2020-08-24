@@ -1,68 +1,60 @@
 .top-bar {
-    background-color: #000;
+    background-color: $black;
     padding: 0.8rem 0px 1rem 0px;
-    position: relative;
+    position: $relative;
     z-index: 111111;
     &__rate-img,
     &__reviews-img {
         max-height: 2.5em;
-        width: auto;
+        @include size(auto);
     }
     &__rate-star {
         max-height: 2.3em;
     }
     &__reviews-link {
-        margin-left: 1.2em;
+        @include margin-left(1.2rem)
     }
     &__center-text,
     .typed-cursor {
-        font-size: 1.4em;
-        color: $white;
-        text-align: center;
+        @include font-style(1.4em, $white, $regular, $normal, $text-center);
     }
     &__last-col {
-        display: flex;
+        display: $flex;
     }
     &__language {
-        position: relative;
-        margin-left: 2.4em;
+        position: $relative;
+        @include margin-left(2.4rem);
         &-menu {
-            padding-top: 0.5em;
-            position: absolute;
+            @include padding-top(0.5em);
+            @include float-position($absolute, 2.8em);
             display: none;
-            top: 2.8em;
             a {
                 margin: 0.8em 0.5em 0em 0.5em;
                 &:last-child {
-                    margin-bottom: 0.7em;
+                    @include margin-bottom(0.7em);
                 }
             }
             &__inner {
-                display: flex;
-                flex-direction: column;
-                background-color: #1d1d1d;
-                border-radius: 0.2em;
-                top: 0;
-                left: 0;
+                background-color: $second-color;
+                @include border-radius(0.2em);
+                @include flex(column);
             }
         }
         &-selected {
             cursor: pointer;
-            flex-direction: column;
-            display: flex;
-            height: 100%;
-            margin-top: 0.2em;
+            @include flex(column);
+            @include size(100%, 100%);
+            @include margin-top(0.2em);
             &:hover~.top-bar__language-menu {
-                display: flex;
+                display: $flex;
                 z-index: 2;
             }
         }
     }
     &__socials {
-        display: flex;
-        align-items: center;
+        @include flex(row, center);
         a {
-            margin-right: 0.4em;
+            @include margin-right(0.4em);
         }
         img {
             max-width: 2.3em;
@@ -80,11 +72,11 @@
         &-selected {
             img {
                 max-width: 2.8em;
-                margin-top: auto;
-                margin-bottom: auto;
+                @include margin-top(auto);
+                @include margin-bottom(auto);
             }
             &:hover~.top-bar__language-menu {
-                display: flex
+                display: $flex
             }
         }
     }
@@ -95,12 +87,12 @@
     &__login {
         font-size: 1.4em;
         color: $white;
-        margin-left: 1.4rem;
+        @include margin-left(1.4rem);
         a {
             color: $white;
             text-decoration: none !important;
             img {
-                transition: 0.3s ease;
+                @include transition(all, 0.3s, ease-in-out);
             }
             img:nth-child(1) {
                 max-width: 2rem;
@@ -110,7 +102,7 @@
             }
             &:hover {
                 img:last-child {
-                    margin-left: 5px;
+                    @include margin-left(5px);
                 }
             }
         }

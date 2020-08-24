@@ -5,57 +5,34 @@
 /* PAGE STYLING */
 
 
-/* 1400PX - DESKTOP */
+/* 1200PX - DESKTOP */
 
 @media screen and (max-width: map-get($breakpoints, 'default-desktop')) {
     .content {
         &-left-col {
             margin-right: 5.5rem;
-            flex: 0 1 80%;
+            flex: 0 1 70%;
         }
         &-right-col {
-            flex: 0 1 20%;
+            flex: 0 1 30%;
         }
     }
 }
 
 
-/* 1200PX - SMALL DESKTOP */
+/* 992PX - SMALL DESKTOP */
 
 @media screen and (max-width: map-get($breakpoints, 'small-desktop')) {
-    .home-header__img {
-        bottom: 0;
-        left: 5%;
-        img {
-            max-height: 62rem;
+    .home-header {
+        &__img {
+            bottom: 0;
+            left: 3%;
+            img {
+                max-height: 62rem;
+            }
         }
     }
     .how-section {
-        &__left {
-            padding-top: 0rem;
-        }
-        &__right {
-            &-media {
-                flex-direction: column;
-                >.d-flex {
-                    flex-direction: row !important;
-                }
-            }
-        }
-        &__sm-block {
-            width: 100%;
-            margin-left: 0;
-            margin-top: 2rem;
-            margin-bottom: 0 !important;
-            &:nth-child(1) {
-                margin-right: 2rem !important;
-            }
-            &:after {
-                background-size: 1.2rem 2.6rem !important;
-                width: 1.2rem;
-                height: 2.6rem;
-            }
-        }
         .video__wrapper {
             iframe {
                 @include size(100%, 100%);
@@ -68,31 +45,6 @@
 /* 768PX - TABLETS */
 
 @media screen and (max-width: map-get($breakpoints, 'default-tablet')) {
-    .how-section {
-        margin-bottom: 6rem;
-        &__inner {
-            margin-left: 25px;
-            margin-right: 25px;
-        }
-        &__left {
-            display: none;
-        }
-        &__right {
-            margin-left: 0;
-        }
-        &__bg {
-            @include size(100%, 94%);
-        }
-        &__right {
-            &-media {
-                >div {
-                    &:nth-child(1) {
-                        flex: 1 1 100%;
-                    }
-                }
-            }
-        }
-    }
     .home {
         &-header {
             padding-bottom: 8rem;
@@ -141,6 +93,37 @@
 }
 
 
+/* 767PX -1PX IPAD */
+
+@media screen and (max-width: 767px) {
+    .how-section {
+        margin-bottom: 6rem;
+        &__inner {
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+        &__left {
+            display: none;
+        }
+        &__right {
+            margin-left: 0;
+        }
+        &__bg {
+            @include size(100%, 91%);
+        }
+        &__right {
+            &-media {
+                >div {
+                    &:nth-child(1) {
+                        flex: 1 1 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 /* 578PX - SMALL TABLETS */
 
 @media screen and (max-width: map-get($breakpoints, 'small-tablet')) {
@@ -169,32 +152,6 @@
         &__inner {
             margin-left: 0px;
             margin-right: 0px;
-        }
-        &__right {
-            &-media {
-                flex-direction: column;
-                >.d-flex {
-                    flex-direction: row !important;
-                }
-            }
-        }
-        &__sm-block {
-            margin-left: 0;
-            margin-bottom: 0 !important;
-            margin-top: 17px !important;
-            padding: 2rem 1.2rem 2.6rem 1.7rem;
-            width: 100%;
-            &:nth-child(1) {
-                margin-right: 2rem !important;
-            }
-            span {
-                font-size: 2.2rem;
-            }
-            &:after {
-                background-size: 1.2rem 2.6rem !important;
-                width: 1.2rem;
-                height: 2.6rem;
-            }
         }
     }
     .home-header {

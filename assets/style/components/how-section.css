@@ -1,0 +1,160 @@
+/* ABSTRACTS USE FOR NON-COMMON COMPONENTS */
+/* IMPORT ABSTRACTS */
+/* PREFIXES */
+/* FONT STYLE */
+/* FONTS DISPLAY */
+/* ELEMENT FLOAT POSITION */
+/* SIZE */
+/* BACKGROUND */
+/* BORDER */
+/* BUTTON */
+/* COLOR WITH BACKGROUND */
+/* MARGINS */
+/* PADDINGS */
+/* SHADOWS */
+/* MARGIN HORIZONTAL CENTER ALIGN */
+/* MARGIN */
+/* PADDING */
+/* BORDER RADIUS */
+/* TRANSITION */
+/* RESPONSIVNESS MIXIN */
+/* BASE PATH */
+/* COLORS */
+/* FONT-SIZE (EM/REM) */
+/* FONTS WEIGHT */
+/* FONTS STYLES */
+/* MAIN FONT FAMILY */
+/* TEXT POSITIONS */
+/* ELEMENT POSITION */
+/* POSITIONS */
+/* PROPERTIES */
+/* DISPLAY */
+/* BREAKPOINTS */
+/* IMPORT SASS FEATURES */
+/* STYLING */
+.how-section {
+  padding-top: 3rem;
+  margin-bottom: 12.5rem;
+  position: relative; }
+  .how-section__left button {
+    font-size: 1.6rem;
+    background-color: #4d4d4d;
+    color: #FFF;
+    padding: 0.3rem 2.1rem 0.5rem 2.1rem;
+    margin: 0rem 0rem 1.3rem 0rem;
+    text-decoration: none !important;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    height: unset;
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-style: italic;
+    text-align: unset;
+    line-height: unset;
+    cursor: pointer; }
+    .how-section__left button.active {
+      font-size: 2.6rem;
+      background-color: #000; }
+  .how-section__right {
+    margin-left: 4.7rem; }
+    .how-section__right-title {
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
+      font-style: italic;
+      font-size: 3.8rem;
+      color: #000;
+      text-align: left;
+      line-height: unset;
+      text-shadow: 0.3rem 0.3rem 0rem #FFF; }
+    .how-section__right-text {
+      margin-bottom: 5rem; }
+    .how-section__right-media {
+      display: flex; }
+      .how-section__right-media > div:nth-child(1) {
+        flex: 0 1 66.51%; }
+      .how-section__right-media > div:nth-child(2) {
+        flex: 0 0 33.49%; }
+    .how-section__right .video__wrapper iframe {
+      width: 100%;
+      height: 100%; }
+  .how-section__sm-block {
+    margin-left: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: unset;
+    text-decoration: none !important;
+    padding: 3.1rem 2.5rem 3.8rem 2.5rem;
+    position: relative;
+    flex-grow: 1; }
+    .how-section__sm-block:nth-child(1) {
+      margin-bottom: 2.5rem; }
+    .how-section__sm-block span {
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
+      font-style: italic;
+      font-size: 2.8rem;
+      color: #FFF;
+      text-align: left;
+      line-height: 1;
+      text-shadow: 1px 1px 1px #4d4d4d;
+      position: relative;
+      z-index: 5; }
+    .how-section__sm-block:after {
+      content: '';
+      position: absolute;
+      top: 70%;
+      right: 1.4rem;
+      bottom: unset;
+      left: unset;
+      z-index: 11;
+      background: url(../img/sm-block-arrow.svg);
+      background-size: cover;
+      background-position: auto;
+      background-repeat: no-repeat;
+      width: 2.2rem;
+      height: 4rem;
+      transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      transform: translate(0%, -50%);
+      z-index: 11; }
+    .how-section__sm-block:hover:after {
+      right: 0.8rem; }
+    .how-section__sm-block__bg {
+      content: '';
+      position: absolute !important;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 3 !important;
+      color: transparent;
+      background-color: rgba(0, 0, 0, 0.3); }
+  .how-section__bg {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 91.4%;
+    color: transparent;
+    background-color: #fcc200;
+    -webkit-box-shadow: 3px 3px 3px #e2e2e2;
+    -moz-box-shadow: 3px 3px 3px #e2e2e2;
+    box-shadow: 3px 3px 3px #e2e2e2; }
+    .how-section__bg:after {
+      background: url(../img/romb.jpg);
+      background-size: auto;
+      background-position: center;
+      background-repeat: repeat;
+      width: 100%;
+      height: 100%;
+      content: '';
+      position: absolute; }
