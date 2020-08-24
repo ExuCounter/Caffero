@@ -16,8 +16,10 @@
 /* PADDING */
 /* BORDER RADIUS */
 /* TRANSITION */
+/* RESPONSIVNESS MIXIN */
 /* BASE PATH */
 /* COLORS */
+/* FONT-SIZE (EM/REM) */
 /* FONTS WEIGHT */
 /* FONTS STYLES */
 /* MAIN FONT FAMILY */
@@ -25,6 +27,7 @@
 /* ELEMENT POSITION */
 /* POSITIONS */
 /* PROPERTIES */
+/* DISPLAY */
 /* BREAKPOINTS */
 /* IMPORT SASS FEATURES */
 /* PAGE STYLING */
@@ -54,7 +57,8 @@
   .vuurwerk-main-content .content-sub-title {
     margin-bottom: 2.9rem; }
   .vuurwerk-main-content .big-btn-arrow {
-    width: 90%; }
+    width: 85%;
+    padding: 1.5rem; }
 
 .vuurwerk-video__wrapper {
   height: 40rem; }

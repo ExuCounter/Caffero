@@ -16,8 +16,10 @@
 /* PADDING */
 /* BORDER RADIUS */
 /* TRANSITION */
+/* RESPONSIVNESS MIXIN */
 /* BASE PATH */
 /* COLORS */
+/* FONT-SIZE (EM/REM) */
 /* FONTS WEIGHT */
 /* FONTS STYLES */
 /* MAIN FONT FAMILY */
@@ -25,9 +27,11 @@
 /* ELEMENT POSITION */
 /* POSITIONS */
 /* PROPERTIES */
+/* DISPLAY */
 /* BREAKPOINTS */
 /* IMPORT SASS FEATURES */
 /* PAGE STYLING */
+/* 768PX - TABLETS */
 @media screen and (max-width: 768px) {
   .how-section__inner {
     flex-direction: column; }
@@ -38,6 +42,7 @@
     margin-left: 0;
     margin-top: 4rem; } }
 
+/* 578PX - SMALL TABLETS */
 @media screen and (max-width: 578px) {
   .logo-row div {
     flex: 0 1 25%;

@@ -154,6 +154,7 @@
 
 @mixin margin($top: 0, $right: 0, $bottom: 0, $left: 0) {
     display: flex;
+    flex-direction: column;
     margin: $top $right $bottom $left;
 }
 
@@ -180,4 +181,28 @@
     transition: $property $duration $easing;
     -webkit-transition: $property $duration $easing;
     -moz-transition: $property $duration $easing;
+}
+
+
+/* RESPONSIVNESS MIXIN */
+
+@mixin responsive-font-size($html-size: $inherit, $footer-size: $inherit, $header-size: $inherit, $top-bar-size: $inherit) {
+    html {
+        font-size: $html-size;
+    }
+    .float-buttons {
+        font-size: $html-size;
+        @media screen and (max-width: map-get($breakpoints, 'huge-mobile')) {
+            font-size: calc(#{$html-size} - 30%) !important;
+        }
+    }
+    .top-bar {
+        font-size: $top-bar-size;
+    }
+    .header {
+        font-size: $header-size;
+    }
+    .footer {
+        font-size: $footer-size;
+    }
 }

@@ -1,7 +1,8 @@
 .float-buttons {
     @include float-position($fixed, 38.8em, 10.1em, unset, unset, 0, 111);
     @include size(24.7em, 28.4em);
-    font-size: 10px;
+    /* TEMPORARY FONT SIZE UNSET */
+    font-size: $unset;
     &__btn {
         @include border(solid, 1.2em, $white);
         transform: rotate(45deg);

@@ -4,25 +4,51 @@
 
 /* PAGE STYLING */
 
+
+/* 578PX - SMALL TABLETS */
+
 @media screen and (max-width: map-get($breakpoints, 'small-tablet')) {
     .werkwijze-main-content {
         .col-md-6 {
-            @include padding(0);
+            padding: 0rem 15px;
+            margin: 3.3rem auto 3.7rem auto;
             img {
-                @include width(10rem);
-                margin-right: 1rem;
+                @include size(10rem);
+                margin-right: 2rem;
+            }
+            &:first-child {
+                margin-top: 4.5rem;
+            }
+        }
+    }
+    .content {
+        &-yellow {
+            &__bg {
+                top: 3rem;
             }
         }
     }
     .werkwijze-text {
         text-align: $text-left !important;
     }
-    .werkwijze-video__wrapper {
+    .video__wrapper {
         margin-top: 20rem;
         iframe {
-            margin-top: -15.5rem !important;
-            height: 25rem !important;
-            @include size(auto, 25rem !important);
+            margin-top: -14.5rem !important;
+            @include size(auto, 25rem);
+        }
+    }
+}
+
+
+/* 480PX - HUGE MOBILE */
+
+@media screen and (max-width: map-get($breakpoints, 'huge-mobile')) {
+    .content-yellow {
+        .col-md-6 {
+            img {
+                @include size(11rem);
+            }
         }
     }
 }

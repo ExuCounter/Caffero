@@ -17,13 +17,13 @@
     }
 }
 
-.werkwijze-video__wrapper {
+.video__wrapper {
     max-width: 820px;
     @include margin(28rem, auto, 0, auto);
     position: $relative;
     iframe {
         @include margin(-24.5rem);
-        @include size(100%, 50rem !important);
+        @include size(100%, 50rem);
     }
 }
 

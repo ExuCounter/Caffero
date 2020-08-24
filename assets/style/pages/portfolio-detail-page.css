@@ -16,8 +16,10 @@
 /* PADDING */
 /* BORDER RADIUS */
 /* TRANSITION */
+/* RESPONSIVNESS MIXIN */
 /* BASE PATH */
 /* COLORS */
+/* FONT-SIZE (EM/REM) */
 /* FONTS WEIGHT */
 /* FONTS STYLES */
 /* MAIN FONT FAMILY */
@@ -25,23 +27,27 @@
 /* ELEMENT POSITION */
 /* POSITIONS */
 /* PROPERTIES */
+/* DISPLAY */
 /* BREAKPOINTS */
 /* IMPORT SASS FEATURES */
 /* PAGE STYLING */
 .portfolio-gallery {
-  margin-top: 5rem;
-  display: flex; }
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 5rem; }
   .portfolio-gallery img {
-    width: 100%; }
-  .portfolio-gallery__left > div {
+    width: 100%;
+    height: unset; }
+  .portfolio-gallery__left > div, .portfolio-gallery__right > div {
     margin-bottom: 5rem; }
   .portfolio-gallery__right {
     margin-left: 5rem; }
-    .portfolio-gallery__right > div {
-      margin-bottom: 5rem; }
 
 .portfolio-video__wrapper iframe {
-  height: 50rem !important; }
+  width: 100%;
+  height: 50rem; }
 
 .content-yellow__bg {
   position: absolute;

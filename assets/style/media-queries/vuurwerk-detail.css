@@ -35,17 +35,21 @@
 @media screen and (max-width: 768px) {
   .content-yellow__bg {
     width: 100%;
-    height: 100%; }
-  .vuurwerk-video__wrapper {
-    margin-bottom: 6rem; }
-  .vuurwerk-main-content {
-    padding-bottom: 4rem; }
-    .vuurwerk-main-content img {
-      margin: 0rem auto 4rem auto !important;
-      display: block; }
-    .vuurwerk-main-content__bg {
-      width: 100%;
-      height: 100%; } }
+    height: calc(100% - 17.5rem);
+    top: 17.5rem;
+    transform: translate(0); }
+  .content-yellow__block {
+    max-width: 39rem; }
+  .content-yellow__col:last-child > div {
+    display: block;
+    margin-bottom: 0rem;
+    max-width: none; }
+    .content-yellow__col:last-child > div button {
+      width: 80%;
+      height: unset;
+      display: block;
+      text-align: left;
+      margin: 0 auto; } }
 
 /* 578PX - SMALL TABLETS */
 @media screen and (max-width: 578px) {
@@ -54,3 +58,12 @@
     .video__wrapper iframe {
       width: 100%;
       height: 33rem; } }
+
+/* 420PX - LARGE MOBILES */
+@media screen and (max-width: 420px) {
+  .content-yellow {
+    padding: 0px 15px; }
+    .content-yellow__col div {
+      max-width: none; }
+    .content-yellow__block {
+      margin-bottom: 4rem; } }

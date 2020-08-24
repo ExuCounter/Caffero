@@ -2,24 +2,27 @@
 
 @import '../abstracts/_use';
 
-/* PAGE STYLING */
+/* <!---- ----> */
+
+
+/* 768PX - TABLETS */
 
 @media screen and (max-width: map-get($breakpoints, 'default-tablet')) {
     .portfolio-gallery {
-        flex-direction: column;
+        @include flex(column);
         div {
-            margin-bottom: 0;
+            margin-bottom: 0rem;
         }
         img {
             margin-bottom: 4rem;
         }
         &__right {
-            margin-left: 0;
+            margin-left: 0rem;
         }
     }
-    .portfolio-video__wrapper {
+    .video__wrapper {
         iframe {
-            height: 30rem !important;
+            @include size(100%, 30rem);
         }
     }
 }

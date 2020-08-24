@@ -1,12 +1,13 @@
 .footer {
-    font-size: 10px;
+    font-size: $footer-font-size; // EM => MEASURE OF CHILD ELEMENTS
     &-slider {
         max-width: 930px;
-        margin: 0 auto;
-        position: relative;
+        @include margin-position($element-center);
+        position: $relative;
         &__inner {
             &-title {
-                font-size: 3.8em;
+                @include font-style(3.8rem, $main-color, $bold, $italic, $unset, 1.67);
+                font-size: 3.8rem;
                 font-weight: bold;
                 color: #fcc200;
                 text-align: center;
@@ -17,7 +18,7 @@
             &-item {
                 cursor: pointer;
                 img {
-                    height: 8.8em !important;
+                    height: 8.8rem !important;
                     width: auto !important;
                     margin: 0 auto;
                 }
@@ -50,21 +51,21 @@
     &-reviews {
         display: flex;
         position: relative;
-        max-width: 850px;
+        max-width: 87rem;
         margin: 0 auto;
         margin-top: 2em;
         img {
             position: absolute;
             left: 0;
             bottom: 0;
-            height: 26rem;
+            height: 28rem;
         }
         &__content {
             margin-left: auto;
             span {
                 position: relative;
                 z-index: 1;
-                font-size: 3.3em;
+                font-size: 3.3rem;
                 font-weight: bold;
                 display: block;
                 color: #000;
@@ -97,7 +98,7 @@
         &-btn {
             position: relative;
             z-index: 1;
-            font-size: 2.8em;
+            font-size: 2.8rem;
             color: $second-color !important;
             background-color: #fcc200;
             margin-left: 13rem;
@@ -185,7 +186,7 @@
                 z-index: 1;
                 span {
                     color: $white;
-                    font-size: 1.9em;
+                    font-size: 1.9rem;
                     font-weight: bold;
                     font-style: italic;
                     text-transform: uppercase;

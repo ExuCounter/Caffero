@@ -4,27 +4,46 @@
 
 /* PAGE STYLING */
 
+
+/* 768PX - TABLETS */
+
 @media screen and (max-width: map-get($breakpoints, 'default-tablet')) {
-    .vuurwerk-video__wrapper {
-        margin-bottom: 6rem;
+    .content {
+        &-yellow {
+            &__bg {
+                @include size(100%, 100%);
+            }
+        }
     }
     .vuurwerk {
+        &-video {
+            &__wrapper {
+                margin-bottom: 6rem;
+            }
+        }
         &-main {
             &-content {
+                padding-bottom: 4rem;
                 img {
-                    margin: 0 auto 4rem auto;
-                    display: block;
+                    margin: 0rem auto 4rem auto !important;
+                    display: $block;
+                }
+                &__bg {
+                    @include size(100%, 100%);
                 }
             }
         }
     }
 }
 
+
+/* 578PX - SMALL TABLETS */
+
 @media screen and (max-width: map-get($breakpoints, 'small-tablet')) {
-    .vuurwerk-video__wrapper {
-        margin-bottom: 0rem;
+    .video__wrapper {
+        margin-bottom: -1.5rem;
         iframe {
-            height: 33rem;
+            @include size(100%, 33rem);
         }
     }
 }

@@ -4,6 +4,9 @@
 
 /* PAGE STYLING */
 
+
+/* 768PX - TABLETS */
+
 @media screen and (max-width: map-get($breakpoints, 'default-tablet')) {
     .how-section {
         &__inner {
@@ -19,6 +22,9 @@
         }
     }
 }
+
+
+/* 578PX - SMALL TABLETS */
 
 @media screen and (max-width: map-get($breakpoints, 'small-tablet')) {
     .logo-row {

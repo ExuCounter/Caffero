@@ -5,18 +5,18 @@
     z-index: 111111;
     &__rate-img,
     &__reviews-img {
-        max-height: 2.5rem;
+        max-height: 2.5em;
         width: auto;
     }
     &__rate-star {
-        max-height: 2.3rem;
+        max-height: 2.3em;
     }
     &__reviews-link {
-        margin-left: 1.2rem;
+        margin-left: 1.2em;
     }
     &__center-text,
     .typed-cursor {
-        font-size: 1.4rem;
+        font-size: 1.4em;
         color: $white;
         text-align: center;
     }
@@ -25,23 +25,23 @@
     }
     &__language {
         position: relative;
-        margin-left: 2.4rem;
+        margin-left: 2.4em;
         &-menu {
-            padding-top: 0.5rem;
+            padding-top: 0.5em;
             position: absolute;
             display: none;
-            top: 2.8rem;
+            top: 2.8em;
             a {
-                margin: 0.8rem 0.5rem 0em 0.5rem;
+                margin: 0.8em 0.5em 0em 0.5em;
                 &:last-child {
-                    margin-bottom: 0.7rem;
+                    margin-bottom: 0.7em;
                 }
             }
             &__inner {
                 display: flex;
                 flex-direction: column;
                 background-color: #1d1d1d;
-                border-radius: 0.2rem;
+                border-radius: 0.2em;
                 top: 0;
                 left: 0;
             }
@@ -51,7 +51,7 @@
             flex-direction: column;
             display: flex;
             height: 100%;
-            margin-top: 0.2rem;
+            margin-top: 0.2em;
             &:hover~.top-bar__language-menu {
                 display: flex;
                 z-index: 2;
@@ -62,24 +62,24 @@
         display: flex;
         align-items: center;
         a {
-            margin-right: 0.4rem;
+            margin-right: 0.4em;
         }
         img {
-            max-width: 2.3rem;
+            max-width: 2.3em;
         }
         &-mobile {
             img {
-                max-width: 4.5rem;
+                max-width: 4.5em;
             }
         }
     }
     &__language {
         img {
-            max-width: 2.8rem;
+            max-width: 2.8em;
         }
         &-selected {
             img {
-                max-width: 2.8rem;
+                max-width: 2.8em;
                 margin-top: auto;
                 margin-bottom: auto;
             }
@@ -89,11 +89,11 @@
         }
     }
     &__language-menu:hover {
-        display: flex;
+        @include flex();
         z-index: 2;
     }
     &__login {
-        font-size: 1.4rem;
+        font-size: 1.4em;
         color: $white;
         margin-left: 1.4rem;
         a {

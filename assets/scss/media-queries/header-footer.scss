@@ -1,6 +1,5 @@
 @media screen and (max-width: map-get($breakpoints, 'large-desktop')) {
     .footer {
-        font-size: 8px;
         &-info {
             &__top {
                 &:after {
@@ -12,12 +11,11 @@
     }
 }
 
+
+/* 1400PX - DESKTOP */
+
 @media screen and (max-width: map-get($breakpoints, 'default-desktop')) {
-    html {
-        font-size: 9px;
-    }
     .footer {
-        font-size: 8px;
         &-info {
             &__top {
                 a,
@@ -62,12 +60,11 @@
 
 /* *** */
 
+
+/* 1200PX - SMALL DESKTOP */
+
 @media screen and (max-width: map-get($breakpoints, 'small-desktop')) {
-    html {
-        font-size: 6.5px;
-    }
     .footer {
-        font-size: 6px;
         &-slider {
             width: 60%;
             &__nav-container {
@@ -100,9 +97,6 @@
             }
         }
     }
-    .footer-reviews {
-        max-width: 550px;
-    }
     .header {
         &-video {
             &__cover {
@@ -112,6 +106,9 @@
         }
     }
 }
+
+
+/* 768PX - TABLETS */
 
 @media screen and (max-width: map-get($breakpoints, 'default-tablet')) {
     .footer {
@@ -319,19 +316,12 @@
             }
         }
     }
-}
-
-@media screen and (max-width: 767px) {
     .top-bar {
-        padding: 0;
+        padding: 0rem;
     }
 }
 
-@media screen and (max-width: 568px) {
-    html,
-    .footer {
-        font-size: 10px;
-    }
+@media screen and (max-width: map-get($breakpoints, 'small-tablet')) {
     .header {
         &-banner {
             padding-top: 3.6rem;
@@ -399,13 +389,13 @@
                 position: absolute;
                 left: -8rem;
                 bottom: 0;
-                height: 23.3rem;
+                height: 26rem;
             }
             &__content {
                 display: none;
                 width: auto;
                 span {
-                    font-size: 2.2rem;
+                    font-size: 2.5rem;
                     line-height: 1;
                     &:nth-child(1) {
                         margin-left: 0.4rem;
@@ -425,16 +415,16 @@
                     }
                 }
                 p {
-                    margin: 1rem 0rem 0rem 5.3rem;
-                    font-size: 1.1rem;
+                    margin: 1rem 0rem 0rem 3.3rem;
+                    font-size: 1.6rem;
                 }
                 &.mobile {
                     display: block;
                 }
             }
             &-btn {
-                font-size: 1.5rem;
-                margin-left: 3.5rem;
+                font-size: 1.8rem;
+                margin-left: 2rem;
                 padding: 0.4rem 3.5rem 0.4rem 1.3rem;
                 margin-bottom: 3.8rem;
                 &:after {
@@ -509,21 +499,20 @@
             &__content {
                 width: auto;
                 span {
-                    font-size: 1.8rem !important;
+                    font-size: 2.2rem !important;
                 }
                 p {
-                    font-size: 1.1rem !important;
+                    font-size: 1.7rem !important;
                 }
             }
         }
     }
 }
 
+
+/* 360px - SMALL MOBILE */
+
 @media screen and (max-width: map-get($breakpoints, 'small-mobile')) {
-    html,
-    footer {
-        font-size: 8.3px;
-    }
     .header {
         &-banner {
             &__name {
@@ -567,14 +556,5 @@
                 }
             }
         }
-    }
-}
-
-
-/* UNEXPECTED FOR DEFAULT BREAKPOINTS MEDIA QUERIES */
-
-@media screen and (max-width: 1060px) {
-    html {
-        font-size: 8px;
     }
 }

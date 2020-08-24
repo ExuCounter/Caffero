@@ -6,27 +6,25 @@
 
 .portfolio {
     &-gallery {
+        @include flex();
         margin-top: 5rem;
-        display: flex;
         img {
-            width: 100%;
+            @include size(100%);
         }
-        &__left {
+        &__left,
+        &__right {
             >div {
                 margin-bottom: 5rem;
             }
         }
         &__right {
             margin-left: 5rem;
-            >div {
-                margin-bottom: 5rem;
-            }
         }
     }
     &-video {
         &__wrapper {
             iframe {
-                height: 50rem !important;
+                @include size(100%, 50rem);
             }
         }
     }

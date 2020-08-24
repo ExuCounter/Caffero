@@ -1,6 +1,7 @@
 /* ABSTRACTS */
 /* BASE PATH */
 /* COLORS */
+/* FONT-SIZE (EM/REM) */
 /* FONTS WEIGHT */
 /* FONTS STYLES */
 /* MAIN FONT FAMILY */
@@ -8,6 +9,7 @@
 /* ELEMENT POSITION */
 /* POSITIONS */
 /* PROPERTIES */
+/* DISPLAY */
 /* BREAKPOINTS */
 /* PREFIXES */
 /* FONT STYLE */
@@ -25,6 +27,7 @@
 /* PADDING */
 /* BORDER RADIUS */
 /* TRANSITION */
+/* RESPONSIVNESS MIXIN */
 /* BASE */
 /* <-- BASE --> */
 body {
@@ -113,8 +116,9 @@ textarea {
 .contact-btn {
   color: #000;
   background-color: #fcc200;
-  margin-top: 3.5rem;
-  width: 100%; }
+  width: 100%;
+  height: unset;
+  margin-top: 3.5rem; }
 
 .default-shadow {
   -webkit-box-shadow: 8px 7px 0px 1px #fcc200;
@@ -137,13 +141,21 @@ textarea {
   text-align: left;
   cursor: pointer;
   position: relative; }
+  .big-btn-arrow:after {
+    background: url(../img/arrow-right.svg);
+    background-size: cover;
+    background-position: unset;
+    background-repeat: no-repeat; }
+  .big-btn-arrow:hover {
+    color: #FFF; }
 
 .video__wrapper iframe,
 .video__wrapper video {
   width: 100%;
   height: 100%;
   border: none !important;
-  outline: none !important; }
+  outline: none !important;
+  font-size: 1rem; }
 
 /* COMPONENTS */
 .top-bar {
@@ -152,36 +164,36 @@ textarea {
   position: relative;
   z-index: 111111; }
   .top-bar__rate-img, .top-bar__reviews-img {
-    max-height: 2.5rem;
+    max-height: 2.5em;
     width: auto; }
   .top-bar__rate-star {
-    max-height: 2.3rem; }
+    max-height: 2.3em; }
   .top-bar__reviews-link {
-    margin-left: 1.2rem; }
+    margin-left: 1.2em; }
   .top-bar__center-text,
   .top-bar .typed-cursor {
-    font-size: 1.4rem;
+    font-size: 1.4em;
     color: #FFF;
     text-align: center; }
   .top-bar__last-col {
     display: flex; }
   .top-bar__language {
     position: relative;
-    margin-left: 2.4rem; }
+    margin-left: 2.4em; }
     .top-bar__language-menu {
-      padding-top: 0.5rem;
+      padding-top: 0.5em;
       position: absolute;
       display: none;
-      top: 2.8rem; }
+      top: 2.8em; }
       .top-bar__language-menu a {
-        margin: 0.8rem 0.5rem 0em 0.5rem; }
+        margin: 0.8em 0.5em 0em 0.5em; }
         .top-bar__language-menu a:last-child {
-          margin-bottom: 0.7rem; }
+          margin-bottom: 0.7em; }
       .top-bar__language-menu__inner {
         display: flex;
         flex-direction: column;
         background-color: #1d1d1d;
-        border-radius: 0.2rem;
+        border-radius: 0.2em;
         top: 0;
         left: 0; }
     .top-bar__language-selected {
@@ -189,7 +201,7 @@ textarea {
       flex-direction: column;
       display: flex;
       height: 100%;
-      margin-top: 0.2rem; }
+      margin-top: 0.2em; }
       .top-bar__language-selected:hover ~ .top-bar__language-menu {
         display: flex;
         z-index: 2; }
@@ -197,24 +209,27 @@ textarea {
     display: flex;
     align-items: center; }
     .top-bar__socials a {
-      margin-right: 0.4rem; }
+      margin-right: 0.4em; }
     .top-bar__socials img {
-      max-width: 2.3rem; }
+      max-width: 2.3em; }
     .top-bar__socials-mobile img {
-      max-width: 4.5rem; }
+      max-width: 4.5em; }
   .top-bar__language img {
-    max-width: 2.8rem; }
+    max-width: 2.8em; }
   .top-bar__language-selected img {
-    max-width: 2.8rem;
+    max-width: 2.8em;
     margin-top: auto;
     margin-bottom: auto; }
   .top-bar__language-selected:hover ~ .top-bar__language-menu {
     display: flex; }
   .top-bar__language-menu:hover {
     display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
     z-index: 2; }
   .top-bar__login {
-    font-size: 1.4rem;
+    font-size: 1.4em;
     color: #FFF;
     margin-left: 1.4rem; }
     .top-bar__login a {
@@ -544,10 +559,19 @@ textarea {
   font-size: 10px; }
   .footer-slider {
     max-width: 930px;
+    display: block;
+    text-align: left;
     margin: 0 auto;
     position: relative; }
     .footer-slider__inner-title {
-      font-size: 3.8em;
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
+      font-style: italic;
+      font-size: 3.8rem;
+      color: #fcc200;
+      text-align: unset;
+      line-height: 1.67;
+      font-size: 3.8rem;
       font-weight: bold;
       color: #fcc200;
       text-align: center;
@@ -557,7 +581,7 @@ textarea {
     .footer-slider__inner-item {
       cursor: pointer; }
       .footer-slider__inner-item img {
-        height: 8.8em !important;
+        height: 8.8rem !important;
         width: auto !important;
         margin: 0 auto; }
     .footer-slider__nav-container {
@@ -581,20 +605,20 @@ textarea {
   .footer-reviews {
     display: flex;
     position: relative;
-    max-width: 850px;
+    max-width: 87rem;
     margin: 0 auto;
     margin-top: 2em; }
     .footer-reviews img {
       position: absolute;
       left: 0;
       bottom: 0;
-      height: 26rem; }
+      height: 28rem; }
     .footer-reviews__content {
       margin-left: auto; }
       .footer-reviews__content span {
         position: relative;
         z-index: 1;
-        font-size: 3.3em;
+        font-size: 3.3rem;
         font-weight: bold;
         display: block;
         color: #000;
@@ -619,7 +643,7 @@ textarea {
     .footer-reviews-btn {
       position: relative;
       z-index: 1;
-      font-size: 2.8em;
+      font-size: 2.8rem;
       color: #1d1d1b !important;
       background-color: #fcc200;
       margin-left: 13rem;
@@ -692,7 +716,7 @@ textarea {
         z-index: 1; }
         .footer-info__bottom-item span {
           color: #FFF;
-          font-size: 1.9em;
+          font-size: 1.9rem;
           font-weight: bold;
           font-style: italic;
           text-transform: uppercase;
@@ -737,7 +761,8 @@ textarea {
   z-index: 111;
   width: 24.7em;
   height: 28.4em;
-  font-size: 10px; }
+  /* TEMPORARY FONT SIZE UNSET */
+  font-size: unset; }
   .float-buttons__btn {
     border-style: solid;
     border-color: #FFF;
@@ -748,6 +773,7 @@ textarea {
       width: 8.3em;
       height: 8.3em;
       display: flex;
+      flex-direction: column;
       margin: -0.1em -0.1em -0.1em -0.1em;
       transform: rotate(0deg);
       background-color: #000; }
@@ -1078,28 +1104,23 @@ textarea {
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 1400px) {
-  .footer {
-    font-size: 8px; }
-    .footer-info__top:after {
-      top: -11rem;
-      right: 0; } }
+  .footer-info__top:after {
+    top: -11rem;
+    right: 0; } }
 
+/* 1400PX - DESKTOP */
 @media screen and (max-width: 1200px) {
-  html {
-    font-size: 9px; }
-  .footer {
-    font-size: 8px; }
-    .footer-info__top a,
-    .footer-info__top span {
-      font-size: 1.6rem; }
-    .footer-slider__nav-container-btn img {
-      width: 1.8rem; }
-    .footer-slider__nav-container-btn:first-child {
-      left: -30px;
-      top: 15px; }
-    .footer-slider__nav-container-btn:last-child {
-      right: -30px;
-      top: 15px; }
+  .footer-info__top a,
+  .footer-info__top span {
+    font-size: 1.6rem; }
+  .footer-slider__nav-container-btn img {
+    width: 1.8rem; }
+  .footer-slider__nav-container-btn:first-child {
+    left: -30px;
+    top: 15px; }
+  .footer-slider__nav-container-btn:last-child {
+    right: -30px;
+    top: 15px; }
   .header-banner__cover {
     bottom: unset;
     height: 33px; }
@@ -1107,35 +1128,31 @@ textarea {
     height: 33px; } }
 
 /* *** */
+/* 1200PX - SMALL DESKTOP */
 @media screen and (max-width: 992px) {
-  html {
-    font-size: 6.5px; }
-  .footer {
-    font-size: 6px; }
-    .footer-slider {
-      width: 60%; }
-      .footer-slider__nav-container-btn:first-child {
-        left: -30px;
-        top: 26px; }
-      .footer-slider__nav-container-btn:last-child {
-        right: -30px;
-        top: 26px; }
-    .footer-info__top .col-12 {
-      display: flex;
-      justify-content: flex-start !important;
-      padding: 0px 15px 3px 15px !important; }
-    .footer-info__top:after {
-      height: 5.3rem;
-      width: 5.3rem;
-      right: 2.2rem;
-      top: -2.5rem;
-      background-size: cover !important; }
-  .footer-reviews {
-    max-width: 550px; }
+  .footer-slider {
+    width: 60%; }
+    .footer-slider__nav-container-btn:first-child {
+      left: -30px;
+      top: 26px; }
+    .footer-slider__nav-container-btn:last-child {
+      right: -30px;
+      top: 26px; }
+  .footer-info__top .col-12 {
+    display: flex;
+    justify-content: flex-start !important;
+    padding: 0px 15px 3px 15px !important; }
+  .footer-info__top:after {
+    height: 5.3rem;
+    width: 5.3rem;
+    right: 2.2rem;
+    top: -2.5rem;
+    background-size: cover !important; }
   .header-video__cover {
     height: 28px;
     bottom: 1.5px; } }
 
+/* 768PX - TABLETS */
 @media screen and (max-width: 768px) {
   .footer-slider {
     width: 80%; }
@@ -1268,16 +1285,11 @@ textarea {
     top: 25px; }
   .footer-slider__nav-container-btn:last-child {
     right: -30px;
-    top: 25px; } }
-
-@media screen and (max-width: 767px) {
+    top: 25px; }
   .top-bar {
-    padding: 0; } }
+    padding: 0rem; } }
 
-@media screen and (max-width: 568px) {
-  html,
-  .footer {
-    font-size: 10px; }
+@media screen and (max-width: 578px) {
   .header-banner {
     padding-top: 3.6rem; }
     .header-banner__title {
@@ -1314,12 +1326,12 @@ textarea {
     position: absolute;
     left: -8rem;
     bottom: 0;
-    height: 23.3rem; }
+    height: 26rem; }
   .footer-reviews__content {
     display: none;
     width: auto; }
     .footer-reviews__content span {
-      font-size: 2.2rem;
+      font-size: 2.5rem;
       line-height: 1; }
       .footer-reviews__content span:nth-child(1) {
         margin-left: 0.4rem;
@@ -1333,13 +1345,13 @@ textarea {
       .footer-reviews__content span:nth-child(5) {
         margin-left: 10.2rem; }
     .footer-reviews__content p {
-      margin: 1rem 0rem 0rem 5.3rem;
-      font-size: 1.1rem; }
+      margin: 1rem 0rem 0rem 3.3rem;
+      font-size: 1.6rem; }
     .footer-reviews__content.mobile {
       display: block; }
   .footer-reviews-btn {
-    font-size: 1.5rem;
-    margin-left: 3.5rem;
+    font-size: 1.8rem;
+    margin-left: 2rem;
     padding: 0.4rem 3.5rem 0.4rem 1.3rem;
     margin-bottom: 3.8rem; }
     .footer-reviews-btn:after {
@@ -1377,14 +1389,12 @@ textarea {
   .footer-reviews__content {
     width: auto; }
     .footer-reviews__content span {
-      font-size: 1.8rem !important; }
+      font-size: 2.2rem !important; }
     .footer-reviews__content p {
-      font-size: 1.1rem !important; } }
+      font-size: 1.7rem !important; } }
 
+/* 360px - SMALL MOBILE */
 @media screen and (max-width: 360px) {
-  html,
-  footer {
-    font-size: 8.3px; }
   .header-banner__name {
     padding-bottom: 2.6rem; }
   .header-video__cover {
@@ -1404,33 +1414,137 @@ textarea {
       right: -30px;
       top: 38px; } }
 
-/* UNEXPECTED FOR DEFAULT BREAKPOINTS MEDIA QUERIES */
-@media screen and (max-width: 1060px) {
-  html {
-    font-size: 8px; } }
-
 /* COMMON MEDIA QUERIES */
+/* 1400px - LARGE DESKTOP */
 @media screen and (max-width: 1400px) {
+  /* DECREASE EM/REM UNITS */
+  /* 
+    */
+  html {
+    font-size: 10px; }
+  .float-buttons {
+    font-size: 10px; } }
+  @media screen and (max-width: 1400px) and (max-width: 480px) {
+    .float-buttons {
+      font-size: calc(10px - 30%) !important; } }
+
+@media screen and (max-width: 1400px) {
+  .top-bar {
+    font-size: 8px; }
+  .header {
+    font-size: 9px; }
+  .footer {
+    font-size: 8px; }
+  /* 
+    */
+  /* DECREASE EM/REM UNITS END */
   .float-buttons {
     font-size: 8px;
     top: 25em;
     z-index: 111111; } }
 
-@media screen and (max-width: 1400px) {
+/* 1200px - DEFAULT DESKTOP */
+@media screen and (max-width: 1200px) {
+  /* DECREASE EM/REM UNITS */
+  /* 
+    */
+  html {
+    font-size: 9px; }
+  .float-buttons {
+    font-size: 9px; } }
+  @media screen and (max-width: 1200px) and (max-width: 480px) {
+    .float-buttons {
+      font-size: calc(9px - 30%) !important; } }
+
+@media screen and (max-width: 1200px) {
+  .top-bar {
+    font-size: 8px; }
+  .header {
+    font-size: 8px; }
+  .footer {
+    font-size: 9px; }
+  /* 
+    */
+  /* DECREASE EM/REM UNITS END */
   .float-buttons {
     top: 20em;
     font-size: 7px; } }
 
+/* UNEXPECTED FOR DEFAULT BREAKPOINTS MEDIA QUERIES */
+@media screen and (max-width: 1060px) {
+  html {
+    font-size: 8px; }
+  .float-buttons {
+    font-size: 8px; } }
+  @media screen and (max-width: 1060px) and (max-width: 480px) {
+    .float-buttons {
+      font-size: calc(8px - 30%) !important; } }
+
+@media screen and (max-width: 1060px) {
+  .top-bar {
+    font-size: 6.5px; }
+  .header {
+    font-size: 8px; }
+  .footer {
+    font-size: 8px; } }
+
+/* 992px - SMALL DESKTOP */
 @media screen and (max-width: 992px) {
+  /* DECREASE EM/REM UNITS */
+  /* 
+    */
+  html {
+    font-size: 6.5px; }
+  .float-buttons {
+    font-size: 6.5px; } }
+  @media screen and (max-width: 992px) and (max-width: 480px) {
+    .float-buttons {
+      font-size: calc(6.5px - 30%) !important; } }
+
+@media screen and (max-width: 992px) {
+  .top-bar {
+    font-size: 6px; }
+  .header {
+    font-size: 7px; }
+  .footer {
+    font-size: 10px; }
+  /* 
+    */
+  /* DECREASE EM/REM UNITS END */
   .float-buttons {
     top: 22em;
     font-size: 6px; } }
 
+/* 768PX - TABLETS */
 @media screen and (max-width: 768px) {
+  /* DECREASE EM/REM UNITS */
+  /* 
+    */
+  html {
+    font-size: 7px; }
   .float-buttons {
-    right: 7em;
-    top: 25em;
-    font-size: 5px;
+    font-size: 7px; } }
+  @media screen and (max-width: 768px) and (max-width: 480px) {
+    .float-buttons {
+      font-size: calc(7px - 30%) !important; } }
+
+@media screen and (max-width: 768px) {
+  .top-bar {
+    font-size: 8px; }
+  .header {
+    font-size: 8px; }
+  .footer {
+    font-size: 10px; }
+  /* 
+    */
+  /* DECREASE EM/REM UNITS END */
+  .float-buttons {
+    content: '';
+    position: fixed;
+    top: unset;
+    right: 3em;
+    bottom: 1em;
+    left: unset;
     z-index: 555; }
   .contact-btn {
     display: none; }
@@ -1453,7 +1567,29 @@ textarea {
   .content-text, .content-span {
     font-size: 2.1rem; } }
 
+/* 578PX - SMALL TABLETS */
 @media screen and (max-width: 578px) {
+  /* DECREASE EM/REM UNITS */
+  /* 
+    */
+  html {
+    font-size: 9px; }
+  .float-buttons {
+    font-size: 9px; } }
+  @media screen and (max-width: 578px) and (max-width: 480px) {
+    .float-buttons {
+      font-size: calc(9px - 30%) !important; } }
+
+@media screen and (max-width: 578px) {
+  .top-bar {
+    font-size: unset; }
+  .header {
+    font-size: 8px; }
+  .footer {
+    font-size: unset; }
+  /* 
+    */
+  /* DECREASE EM/REM UNITS END */
   .float-buttons {
     right: 2em;
     bottom: -1em;
@@ -1466,19 +1602,45 @@ textarea {
       font-size: 3rem; }
     .content-text, .content-span {
       font-size: 1.6rem; }
+    .content .video__wrapper iframe {
+      height: 35rem; }
   .big-btn-arrow {
-    font-size: 1.8rem;
-    width: 100% !important; } }
+    font-size: 2.5rem;
+    width: 100% !important;
+    height: unset; } }
 
 @media screen and (max-width: 480px) {
+  /* DECREASE EM/REM UNITS */
+  /* 
+    */
+  html {
+    font-size: 8px; }
+  .float-buttons {
+    font-size: 8px; } }
+  @media screen and (max-width: 480px) and (max-width: 480px) {
+    .float-buttons {
+      font-size: calc(8px - 30%) !important; } }
+
+@media screen and (max-width: 480px) {
+  .top-bar {
+    font-size: inherit; }
+  .header {
+    font-size: inherit; }
+  .footer {
+    font-size: inherit; }
+  /* 
+    */
+  /* DECREASE EM/REM UNITS END */
   .home-modal__content {
     padding: 0.8rem 1.5rem 3rem 1.5rem; }
+  .float-buttons {
+    font-size: 6px; }
   .content-title {
     font-size: 3rem; }
   .content-text, .content-span {
-    font-size: 1.3rem; }
+    font-size: 1.6rem; }
   .big-btn-arrow {
-    font-size: 1.6rem;
+    font-size: 2.5rem;
     width: 100% !important;
     padding: 1rem 5rem 1.3rem 2rem; }
     .big-btn-arrow:after {
@@ -1487,3 +1649,31 @@ textarea {
       height: 3rem;
       right: 2rem;
       top: 58%; } }
+
+/* 360px - SMALL MOBILE */
+@media screen and (max-width: 360px) {
+  /* DECREASE EM/REM UNITS */
+  /* 
+    */
+  html {
+    font-size: 7px; }
+  .float-buttons {
+    font-size: 7px; } }
+  @media screen and (max-width: 360px) and (max-width: 480px) {
+    .float-buttons {
+      font-size: calc(7px - 30%) !important; } }
+
+@media screen and (max-width: 360px) {
+  .top-bar {
+    font-size: inherit; }
+  .header {
+    font-size: inherit; }
+  .footer {
+    font-size: inherit; }
+  /* 
+    */
+  /* DECREASE EM/REM UNITS END */
+  .content-text, .content-span {
+    font-size: 1.8rem; }
+  .how-section__right-text {
+    font-size: 1.8rem; } }

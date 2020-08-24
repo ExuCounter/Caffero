@@ -1,6 +1,5 @@
-/* <-- BASE --> */
 body {
-  font-family: "Poppins", sans-serif, sans-serif; }
+  font-family: "Poppins", "Poppins", sans-serif; }
 
 * {
   margin: 0;
@@ -76,15 +75,14 @@ textarea {
 
 .big-btn-arrow {
   background-color: #000;
-  color: #FFF !important;
+  color: #FFF;
   font-weight: bold;
   font-style: italic;
   font-size: 2.8rem;
   padding: 2rem 6rem 2.3rem 2rem;
   border: none;
   text-align: left;
-  position: relative;
-  text-decoration: none !important; }
+  position: relative; }
   .big-btn-arrow:after {
     position: absolute;
     content: '';

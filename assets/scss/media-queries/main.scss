@@ -1,6 +1,16 @@
 /* COMMON MEDIA QUERIES */
 
-@media screen and (max-width: 1400px) {
+
+/* 1400px - LARGE DESKTOP */
+
+@media screen and (max-width: map-get($breakpoints, 'large-desktop')) {
+    /* DECREASE EM/REM UNITS */
+    /* 
+    */
+    @include responsive-font-size(10px, 8px, 9px, 8px);
+    /* 
+    */
+    /* DECREASE EM/REM UNITS END */
     .float-buttons {
         font-size: 8px;
         top: 25em;
@@ -8,26 +18,60 @@
     }
 }
 
-@media screen and (max-width: map-get($breakpoints, 'large-desktop')) {
+
+/* 1200px - DEFAULT DESKTOP */
+
+@media screen and (max-width: map-get($breakpoints, 'default-desktop')) {
+    /* DECREASE EM/REM UNITS */
+    /* 
+    */
+    @include responsive-font-size(9px, 9px, 8px, 8px);
+    /* 
+    */
+    /* DECREASE EM/REM UNITS END */
     .float-buttons {
         top: 20em;
         font-size: 7px;
     }
 }
 
+
+/* UNEXPECTED FOR DEFAULT BREAKPOINTS MEDIA QUERIES */
+
+@media screen and (max-width: 1060px) {
+    @include responsive-font-size(8px, 8px, 8px, 6.5px);
+}
+
+
+/* 992px - SMALL DESKTOP */
+
 @media screen and (max-width: map-get($breakpoints, 'small-desktop')) {
+    /* DECREASE EM/REM UNITS */
+    /* 
+    */
+    @include responsive-font-size(6.5px, 10px, 7px, 6px);
+    /* 
+    */
+    /* DECREASE EM/REM UNITS END */
     .float-buttons {
         top: 22em;
         font-size: 6px;
     }
 }
 
+
+/* 768PX - TABLETS */
+
 @media screen and (max-width: map-get($breakpoints, 'default-tablet')) {
+    /* DECREASE EM/REM UNITS */
+    /* 
+    */
+    @include responsive-font-size(7px, 10px, 8px, 8px);
+    /* 
+    */
+    /* DECREASE EM/REM UNITS END */
     .float-buttons {
-        right: 7em;
-        top: 25em;
-        font-size: 5px;
-        z-index: 555;
+        @include float-position($fixed, $unset, 3em, 1em, $unset, 0, 555);
     }
     .contact-btn {
         display: none;
@@ -65,7 +109,17 @@
     }
 }
 
+
+/* 578PX - SMALL TABLETS */
+
 @media screen and (max-width: map-get($breakpoints, 'small-tablet')) {
+    /* DECREASE EM/REM UNITS */
+    /* 
+    */
+    @include responsive-font-size(9px, $unset, 8px, $unset);
+    /* 
+    */
+    /* DECREASE EM/REM UNITS END */
     .float-buttons {
         right: 2em;
         bottom: -1em;
@@ -82,18 +136,33 @@
         &-span {
             font-size: 1.6rem;
         }
+        .video__wrapper {
+            iframe {
+                height: 35rem;
+            }
+        }
     }
     .big-btn-arrow {
-        font-size: 1.8rem;
-        width: 100% !important;
+        font-size: 2.5rem;
+        @include size(100% !important);
     }
 }
 
 @media screen and (max-width: map-get($breakpoints, 'huge-mobile')) {
+    /* DECREASE EM/REM UNITS */
+    /* 
+    */
+    @include responsive-font-size(8px);
+    /* 
+    */
+    /* DECREASE EM/REM UNITS END */
     .home-modal {
         &__content {
             padding: 0.8rem 1.5rem 3rem 1.5rem;
         }
+    }
+    .float-buttons {
+        font-size: 6px;
     }
     .content {
         &-title {
@@ -101,11 +170,11 @@
         }
         &-text,
         &-span {
-            font-size: 1.3rem;
+            font-size: 1.6rem;
         }
     }
     .big-btn-arrow {
-        font-size: 1.6rem;
+        font-size: 2.5rem;
         width: 100% !important;
         padding: 1rem 5rem 1.3rem 2rem;
         &:after {
@@ -114,6 +183,32 @@
             height: 3rem;
             right: 2rem;
             top: 58%;
+        }
+    }
+}
+
+
+/* 360px - SMALL MOBILE */
+
+@media screen and (max-width: map-get($breakpoints, 'small-mobile')) {
+    /* DECREASE EM/REM UNITS */
+    /* 
+    */
+    @include responsive-font-size(7px);
+    /* 
+    */
+    /* DECREASE EM/REM UNITS END */
+    .content {
+        &-text,
+        &-span {
+            font-size: 1.8rem;
+        }
+    }
+    .how-section {
+        &__right {
+            &-text {
+                font-size: 1.8rem;
+            }
         }
     }
 }

@@ -1,0 +1,67 @@
+/* ABSTRACTS USE */
+
+@import '../abstracts/_use';
+
+/* PAGE STYLING */
+
+
+/* 768PX - TABLETS */
+
+@media screen and (max-width: map-get($breakpoints, 'default-tablet')) {
+    .content {
+        &-yellow {
+            &__bg {
+                @include size(100%, calc(100% - 17.5rem));
+                top: 17.5rem;
+                transform: translate(0);
+            }
+            &__block {
+                max-width: 39rem;
+            }
+            &__col {
+                &:last-child {
+                    >div {
+                        display: $block;
+                        margin-bottom: 0rem;
+                        max-width: none;
+                        button {
+                            @include size(80%);
+                            @include margin-position($element-center);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* 578PX - SMALL TABLETS */
+
+@media screen and (max-width: map-get($breakpoints, 'small-tablet')) {
+    .video__wrapper {
+        margin-bottom: -1.5rem;
+        iframe {
+            @include size(100%, 33rem);
+        }
+    }
+}
+
+
+/* 420PX - LARGE MOBILES */
+
+@media screen and (max-width: map-get($breakpoints, 'large-mobile')) {
+    .content {
+        &-yellow {
+            padding: 0px 15px;
+            &__col {
+                div {
+                    max-width: none;
+                }
+            }
+            &__block {
+                margin-bottom: 4rem;
+            }
+        }
+    }
+}

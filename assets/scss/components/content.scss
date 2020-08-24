@@ -1,6 +1,6 @@
 .content {
     &-text {
-        @include font-sm-style(1.6rem, $regular, $normal, $unset, 1.67);
+        @include font-sm-style(1.6rem, $regular, $normal, unset, 1.67);
     }
     &-span {
         @include font-sm-style(1.6rem, $bold, $normal);

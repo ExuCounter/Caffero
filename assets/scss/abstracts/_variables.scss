@@ -13,6 +13,12 @@ $second-color: #1d1d1b;
 $white: #FFF;
 $black: #000;
 
+/* FONT-SIZE (EM/REM) */
+
+$html-font-size: 10px;
+$footer-font-size: 10px;
+$header-font-size: 10px;
+
 /* FONTS WEIGHT */
 
 $light: 300;
@@ -55,6 +61,13 @@ $fixed: fixed;
 
 $inherit: inherit;
 $unset: unset;
+
+/* DISPLAY */
+
+$block: block;
+$flex: flex;
+$inline-block: inline-block;
+$inline-flex: inline-flex;
 
 /* BREAKPOINTS */
 
