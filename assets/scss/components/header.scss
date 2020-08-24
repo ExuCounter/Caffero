@@ -1,75 +1,68 @@
 .header {
     font-size: 10px;
     &-nav {
-        background-color: #fcc200;
-        position: relative;
+        background-color: $main-color;
+        position: $relative;
         z-index: 12;
-        transition: 0.3s ease-in-out;
+        @include transition(all, 0.3s, ease-in-out);
         &__logo {
-            position: absolute;
-            left: 50%;
-            bottom: -4.8em;
+            @include float-position($absolute, $unset, $unset, -4.8em, 50%);
             transform: translate(-50%, 0%);
             img {
+                @include size(9.7em, 9.7em);
                 height: 9.7em;
                 width: 9.7em;
             }
         }
     }
     &-mobile-nav {
-        padding: 16px 0px 16px 0px;
-        background-color: #fcc200;
-        display: flex;
-        position: relative;
+        padding: 16px 0px;
+        background-color: $main-color;
+        display: $flex;
+        position: $relative;
         z-index: 11;
         &__menu {
-            display: flex;
-            align-items: center;
+            @include flex(row, center);
             font-size: 1.9em;
             p {
-                margin-bottom: 0;
-                margin-left: 1rem;
+                @include margin-bottom(0rem);
+                @include margin-left(1rem);
             }
         }
         &__logo {
-            position: absolute;
-            left: 50%;
-            bottom: -2.5em;
+            @include float-position($absolute, $unset, $unset, -2.5em, 50%);
             transform: translate(-50%, 0%);
             z-index: 111;
             img {
-                height: 5em;
-                width: 5em;
+                @include size(5em, 5em);
             }
         }
     }
     &-menu {
         list-style: none;
-        padding-left: 0;
-        padding: 1.5em 0rem 4.2em;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 0;
+        padding: 1.5em 0rem 4.2em 0rem;
+        @include margin-bottom(0rem);
+        @include flex(row, flex-start, center);
         a {
             color: $second-color;
             text-decoration: none;
             text-transform: uppercase;
-            transition: 0.1s ease-in-out;
             white-space: nowrap;
+            @include transition(all, 0.1s, ease-in-out);
             &.active {
                 color: $white !important;
             }
             &:hover~.header-menu__sub {
                 max-height: 500px;
-                position: absolute;
+                position: $absolute;
                 li:nth-child(1) {
-                    padding-top: 10px;
+                    @include padding-top(10px);
                 }
                 li:last-child {
-                    padding-bottom: 10px;
+                    @include padding-bottom(10px);
                 }
                 &:after {
-                    height: 100%;
+                    @include size(auto, 100%);
                 }
             }
             &:hover {
@@ -77,208 +70,126 @@
             }
         }
         li {
-            transition: 0.2s ease-in-out;
             font-size: 1.9rem;
+            position: $relative;
             cursor: pointer;
-            position: relative;
+            @include transition(all, 0.2s, ease-in-out);
             &.header-menu__splitter {
                 margin: 0rem 1.1rem;
                 color: $white !important;
             }
         }
         &__sub {
-            padding-left: 1rem;
             list-style: none;
-            max-height: 0;
-            padding-top: 0.5rem;
             overflow: hidden;
-            transition: 0.6s ease-in-out;
-            position: absolute;
-            padding: 0px 20px 0px 20px;
-            background-color: #fcc200;
+            background-color: $main-color;
+            padding: 0px 20px;
+            max-height: 0;
             z-index: 13;
-            border-radius: 5px;
-            left: -10px;
+            @include transition(all, 0.6s, ease-in-out);
+            @include float-position($absolute, $unset, $unset, $unset, -10px);
+            @include border-radius(0.5rem);
             a {
                 font-size: 1em;
             }
             &:hover {
                 max-height: 500px;
                 a {
-                    transition: 0.1s ease-in-out;
+                    @include transition(all, 0.1s, ease-in-out);
                     &:hover {
                         color: $white !important;
                     }
                 }
             }
             li {
-                position: relative;
+                position: $relative;
             }
-            // &:after {
-            //     position: absolute;
-            //     right: -100vw;
-            //     top: 0;
-            //     background-color: #fcc200;
-            //     content: '';
-            //     width: 200vw;
-            //     height: 0%;
-            // }
         }
     }
     &-banner {
         padding: 6.4rem 0rem 0rem;
-        background-size: cover !important;
-        background-position: center center !important;
-        position: relative;
+        position: $relative;
         overflow: hidden;
-        background-repeat: no-repeat !important;
+        @include background('', cover !important, center !important, no-repeat !important);
         &__name {
-            font-size: 3.5em;
             text-transform: uppercase;
-            color: $white;
-            text-align: center;
-            padding-bottom: 4.6rem;
-            display: block;
+            display: $block;
+            @include font-style(3.5rem, $white, $regular, $normal, $text-center);
+            @include padding-bottom(4.6rem);
         }
         &__title {
-            font-size: 6em;
-            padding-bottom: 9.1rem;
-            text-align: center;
-            font-weight: bold;
-            color: $white;
             text-shadow: 3px 3px 0px rgba(0, 0, 0, 1);
-            font-style: italic;
             text-transform: uppercase;
+            @include padding-bottom(9.1rem);
+            @include font-style(6em, $white, $bold, $italic, $text-center);
         }
         &__breadcrumbs {
-            position: absolute;
-            left: 15px;
-            bottom: 1.2em;
-            font-size: 1.2rem;
-            color: #919191;
-            z-index: 1;
-            a {
-                color: #919191;
-            }
-            p {
-                display: inline;
-            }
-            span {
-                color: #f4ba00;
-            }
+            @include float-position($absolute, $unset, $unset, 1.2em, 15px, 0, 1);
+            @extend %breadcrumbs-text-styling;
+            @include font-style(1.2rem, #919191);
         }
         &__cover {
-            content: '';
-            background-image: url(../img/header-cover.png);
-            height: 47px;
-            width: 100%;
-            background-size: cover;
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            background-position: center;
-            &:after {
-                content: '';
-                width: 10000px;
-                height: 47px;
-                left: -9992px;
-                top: 0;
-                position: absolute;
+            @include float-position($absolute, $unset, $unset, -5px, 0, 1);
+            @include background('/img/header-cover.png', cover, center);
+            @include size(100%, 49px);
+            &:after,
+            &:before {
+                @include size(calc(100px * 100), 47px);
                 background-color: $white;
             }
-            &::before {
-                content: '';
-                width: 10000px;
-                height: 47px;
-                right: -9992px;
-                top: 0;
-                position: absolute;
-                background-color: $white;
+            &:after {
+                @include float-position($absolute, 0, $unset, $unset, -9950px, 1);
+            }
+            &:before {
+                @include float-position($absolute, 0, -9950px, $unset, $unset, 1);
             }
         }
     }
     &-video {
         overflow: hidden;
-        position: relative;
+        position: $relative;
         .container {
-            position: absolute;
-            top: 0;
-            left: 50%;
+            @include float-position($absolute, 0, $unset, $unset, 50%);
+            @include size(100%, 100%);
             transform: translate(-50%, 0%);
-            height: 100%;
         }
         video {
+            @include size(100%, 32.5em);
             object-fit: cover;
-            width: 100%;
-            height: 32.5em;
         }
         &__name {
-            position: absolute;
-            top: 6.4rem;
-            left: 50%;
+            @include float-position($absolute, 6.4rem, $unset, $unset, 50%, 0, 1);
+            @include font-style(3.5em, $white);
             transform: translate(-50%, 0%);
-            font-size: 3.5em;
             text-transform: uppercase;
-            color: $white;
-            z-index: 1;
         }
         &__title {
-            position: absolute;
-            top: 15.2rem;
-            left: 50%;
+            @include float-position($absolute, 15.2rem, $unset, $unset, 50%, 0, 1);
+            @include font-style(6em, $white, $bold, $italic);
+            @include padding-bottom(9.1rem);
             transform: translate(-50%, 0%);
-            font-size: 6em;
-            padding-bottom: 9.1rem;
-            font-weight: bold;
-            color: $white;
             text-shadow: 3px 3px 0px rgba(0, 0, 0, 1);
-            font-style: italic;
             text-transform: uppercase;
         }
         &__breadcrumbs {
-            position: absolute;
-            left: 15px;
-            bottom: 1.4rem;
-            font-size: 1.2em;
-            color: #919191;
-            z-index: 3;
-            a {
-                color: #919191;
-            }
-            p {
-                display: inline;
-            }
-            span {
-                color: #f4ba00;
-            }
+            @include float-position($absolute, $unset, $unset, 1.4rem, 15px, 0, 3);
+            @include font-style(1.2em, #919191);
+            @extend %breadcrumbs-text-styling;
         }
         &__cover {
-            content: '';
-            background-image: url(../img/header-cover.png);
-            height: 47px;
-            width: 100%;
-            background-size: cover;
-            position: absolute;
-            bottom: 2px;
-            left: 0;
-            background-position: center bottom;
-            &:after {
-                content: '';
-                width: 10000px;
-                height: 47px;
-                left: -9992px;
-                top: 0;
-                position: absolute;
+            @include float-position($absolute, $unset, $unset, 3px, 0, 1);
+            @include background('/img/header-cover.png', cover, center);
+            @include size(100%, 47px);
+            &:after,
+            &:before {
+                @include size(calc(100px * 100), 47px);
                 background-color: $white;
             }
-            &::before {
-                content: '';
-                width: 10000px;
-                height: 47px;
-                right: -9992px;
-                top: 0;
-                position: absolute;
-                background-color: $white;
+            &:after {
+                @include float-position($absolute, 0, $unset, $unset, -9992px, 1);
+            }
+            &:before {
+                @include float-position($absolute, 0, -9992px, $unset, $unset, 1);
             }
         }
     }

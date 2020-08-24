@@ -45,6 +45,18 @@ textarea {
     }
 }
 
+%breadcrumbs-text-styling {
+    a {
+        color: #919191;
+    }
+    p {
+        display: inline;
+    }
+    span {
+        color: #f4ba00;
+    }
+}
+
 %default-btn-arrow {
     position: relative;
     &:after {

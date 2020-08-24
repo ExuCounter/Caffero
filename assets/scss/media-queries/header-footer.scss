@@ -45,13 +45,13 @@
     .header {
         &-banner {
             &__cover {
-                bottom: unset;
-                height: 33px;
+                height: 27px;
             }
         }
         &-video {
             &__cover {
-                height: 33px;
+                height: 27px;
+                bottom: 4px;
             }
         }
     }
@@ -101,7 +101,7 @@
         &-video {
             &__cover {
                 height: 28px;
-                bottom: 1.5px;
+                bottom: 3px;
             }
         }
     }
@@ -254,6 +254,12 @@
                 }
             }
         }
+        &-video {
+            &__cover {
+                height: 28px;
+                bottom: 2.5px;
+            }
+        }
         &-menu {
             flex-direction: column;
             align-items: flex-start;
@@ -342,10 +348,11 @@
                 height: 19rem;
             }
             &__cover {
-                height: 27px;
+                height: 23px;
+                bottom: 4.5px;
             }
             &__title {
-                top: 11.4rem;
+                top: 10rem;
                 font-size: 3rem;
             }
             &__name {
@@ -469,6 +476,9 @@
     }
 }
 
+
+/* 480PX - HUGE MOBILES */
+
 @media screen and (max-width: map-get($breakpoints, 'huge-mobile')) {
     .footer {
         &-slider {
@@ -515,6 +525,7 @@
         &-video {
             &__cover {
                 height: 20px;
+                bottom: 3px;
             }
             &__title {
                 top: 10.2rem;
