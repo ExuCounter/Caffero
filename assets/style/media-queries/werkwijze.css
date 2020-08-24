@@ -34,7 +34,7 @@
 /* 578PX - SMALL TABLETS */
 @media screen and (max-width: 578px) {
   .werkwijze-main-content .col-md-6 {
-    padding: 0rem 15px;
+    padding: 0rem;
     margin: 3.3rem auto 3.7rem auto; }
     .werkwijze-main-content .col-md-6 img {
       width: 10rem;

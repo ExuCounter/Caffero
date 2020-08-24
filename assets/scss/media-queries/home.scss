@@ -58,7 +58,7 @@
         }
         .video__wrapper {
             iframe {
-                @include size(100%, 40rem);
+                @include size(100%, 100%);
             }
         }
     }
@@ -79,12 +79,18 @@
         }
         &__right {
             margin-left: 0;
-            &-text {
-                font-size: 2.1rem;
-            }
         }
         &__bg {
             @include size(100%, 94%);
+        }
+        &__right {
+            &-media {
+                >div {
+                    &:nth-child(1) {
+                        flex: 1 1 100%;
+                    }
+                }
+            }
         }
     }
     .home {
@@ -182,7 +188,7 @@
                 margin-right: 2rem !important;
             }
             span {
-                font-size: 2.3rem;
+                font-size: 2.2rem;
             }
             &:after {
                 background-size: 1.2rem 2.6rem !important;

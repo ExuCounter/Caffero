@@ -10,7 +10,7 @@
 @media screen and (max-width: map-get($breakpoints, 'small-tablet')) {
     .werkwijze-main-content {
         .col-md-6 {
-            padding: 0rem 15px;
+            padding: 0rem;
             margin: 3.3rem auto 3.7rem auto;
             img {
                 @include size(10rem);

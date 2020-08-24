@@ -23,17 +23,18 @@
     position: $relative;
     iframe {
         @include margin(-24.5rem);
-        @include size(100%, 50rem);
+        @include size(auto, 50rem);
     }
 }
 
 .werkwijze-main-content {
     .row {
         max-width: 1030px;
-        @include margin(5.2rem, $unset, 0rem, auto);
+        @include margin(5.2rem, auto, 0rem, auto);
+        @include flex(row);
     }
     .col-md-6 {
-        @include margin(4.3rem, auto, 4.7rem, auto);
+        @include margin(4.3rem, 0, 4.7rem, 0);
         @include flex(row);
         img {
             margin-right: 2.5rem;

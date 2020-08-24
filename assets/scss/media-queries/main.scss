@@ -60,6 +60,18 @@
 }
 
 
+/* 992px - SMALL DESKTOP <=> 768PX - TABLETS */
+
+@media screen and (min-width: map-get($breakpoints, 'default-tablet')) and (max-width: map-get($breakpoints, 'small-desktop')) {
+    .content {
+        &-text,
+        &-span {
+            font-size: 2rem;
+        }
+    }
+}
+
+
 /* 768PX - TABLETS */
 
 @media screen and (max-width: map-get($breakpoints, 'default-tablet')) {
@@ -104,7 +116,7 @@
     .content {
         &-text,
         &-span {
-            font-size: 2.1rem;
+            font-size: 2rem;
         }
     }
 }
@@ -132,13 +144,9 @@
         &-title {
             font-size: 3rem;
         }
-        &-text,
-        &-span {
-            font-size: 1.6rem;
-        }
         .video__wrapper {
             iframe {
-                height: 35rem;
+                @include size(100%, 35rem);
             }
         }
     }
@@ -201,14 +209,7 @@
     .content {
         &-text,
         &-span {
-            font-size: 1.8rem;
-        }
-    }
-    .how-section {
-        &__right {
-            &-text {
-                font-size: 1.8rem;
-            }
+            font-size: 1.85rem;
         }
     }
 }
