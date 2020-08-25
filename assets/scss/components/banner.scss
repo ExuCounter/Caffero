@@ -1,5 +1,6 @@
 .banner {
     &__inner {
+        padding: 0px 20px;
         @include padding-top(14.6rem);
         @include padding-bottom(10rem);
     }
@@ -26,6 +27,7 @@
     .banner {
         &__inner {
             position: $relative;
+            @extend %default-shadow;
             @include background('img/portfolio-banner-bg.png', cover, center center !important);
             &-dark {
                 @include float-position($absolute, 0, 0, 0, 0);

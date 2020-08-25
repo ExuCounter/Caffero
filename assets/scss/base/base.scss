@@ -90,7 +90,7 @@ textarea {
 }
 
 .default-shadow {
-    @include box-shadow(8px, 7px, 0px, 1px $main-color);
+    @extend %default-shadow;
 }
 
 .big-btn-arrow {

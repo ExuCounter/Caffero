@@ -117,6 +117,11 @@
         font-size: 2.1rem;
         max-width: 50rem;
     }
+    .banner {
+        &-title {
+            font-size: 3rem;
+        }
+    }
     /* HOME MODAL FOR ALL PAGES /* NOT MENTIONED HOME PAGE */
     .home-modal {
         &__content {
@@ -166,7 +171,7 @@
     /* DECREASE EM/REM UNITS */
     /* 
     */
-    @include responsive-font-size(9px, $unset, 8px, $unset);
+    @include responsive-font-size(10px, $unset, 8px, $unset);
     /* 
     */
     /* DECREASE EM/REM UNITS END */
@@ -220,6 +225,14 @@
             @include size(100%, 30rem !important);
         }
     }
+    .banner {
+        &-title {
+            font-size: 2.2rem;
+        }
+        &-text {
+            display: none;
+        }
+    }
 }
 
 
@@ -229,7 +242,7 @@
     /* DECREASE EM/REM UNITS */
     /* 
     */
-    @include responsive-font-size(8px);
+    @include responsive-font-size(9px);
     /* 
     */
     /* DECREASE EM/REM UNITS END */
@@ -251,13 +264,39 @@
 }
 
 
+/* 420PX - LARGE MOBILES */
+
+@media screen and (max-width: map-get($breakpoints, 'large-mobile')) {
+    /* DECREASE EM/REM UNITS */
+    /* 
+    */
+    @include responsive-font-size(8.5px);
+    /* 
+    */
+    /* DECREASE EM/REM UNITS END */
+}
+
+
+/* 375PX - DEFAULT MOBILES */
+
+@media screen and (max-width: map-get($breakpoints, 'default-mobile')) {
+    /* DECREASE EM/REM UNITS */
+    /* 
+    */
+    @include responsive-font-size(8px);
+    /* 
+    */
+    /* DECREASE EM/REM UNITS END */
+}
+
+
 /* 360PX - SMALL MOBILES */
 
 @media screen and (max-width: map-get($breakpoints, 'small-mobile')) {
     /* DECREASE EM/REM UNITS */
     /* 
     */
-    @include responsive-font-size(7px);
+    @include responsive-font-size(7.5px);
     /* 
     */
     /* DECREASE EM/REM UNITS END */
@@ -267,4 +306,17 @@
             font-size: 1.85rem;
         }
     }
+}
+
+
+/* 340PX - TINY MOBILES */
+
+@media screen and (max-width: map-get($breakpoints, 'tiny-mobile')) {
+    /* DECREASE EM/REM UNITS */
+    /* 
+    */
+    @include responsive-font-size(7px);
+    /* 
+    */
+    /* DECREASE EM/REM UNITS END */
 }

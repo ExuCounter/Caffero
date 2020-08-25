@@ -10,10 +10,60 @@
 @media screen and (max-width: map-get($breakpoints, 'default-tablet')) {
     .portfolio {
         &-contact {
+            @include margin-bottom(4rem !important);
+            &__left {
+                flex: 0 0 35%;
+            }
+            &__right {
+                @include margin-left(4rem);
+            }
+        }
+    }
+}
+
+
+/* 578PX - SMALL TABLETS */
+
+@media screen and (max-width: map-get($breakpoints, 'small-tablet')) {
+    .portfolio {
+        &-contact {
             flex-direction: column;
+            @include margin-bottom(0rem !important);
+            &__right {
+                @include margin-left(0 !important);
+                @include size(100%);
+            }
+            &__left {
+                @include margin-bottom(4rem !important);
+                @include size(100%);
+                button {
+                    @include size(100%);
+                }
+            }
         }
         &-gallery {
             flex-direction: column;
+            &__left {
+                @include size(100%);
+            }
+            &__item {
+                @include margin-left(0 !important);
+                @include margin-bottom(5rem !important);
+                img {
+                    @include size(100%);
+                    &.show-mobile {
+                        display: block;
+                    }
+                    &.hide-mobile {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    .content-yellow {
+        .container {
+            padding: 0px 21px;
         }
     }
 }

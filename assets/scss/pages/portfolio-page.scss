@@ -54,6 +54,12 @@
         }
         &__item {
             @include margin-bottom(5.2rem);
+            img {
+                @extend %default-shadow;
+                &.show-mobile {
+                    display: none;
+                }
+            }
         }
         img {
             @include size(100%);

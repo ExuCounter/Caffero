@@ -41,12 +41,49 @@
 /* 420PX - LARGE MOBILES */
 /* 375PX - DEFAULT MOBILES */
 /* 360PX - SMALL MOBILES */
+/* 320PX - TINY MOBILES */
 /* IMPORT SASS FEATURES */
 /* % NON-RENDERED COMPONENTS FOR PAGES */
 /* PAGE STYLING */
 /* 768PX - DEFAULT TABLETS */
 @media screen and (max-width: 768px) {
   .portfolio-contact {
-    flex-direction: column; }
+    margin-bottom: 4rem !important; }
+    .portfolio-contact__left {
+      flex: 0 0 35%; }
+    .portfolio-contact__right {
+      margin-left: 4rem; } }
+
+/* 578PX - SMALL TABLETS */
+@media screen and (max-width: 578px) {
+  .portfolio-contact {
+    flex-direction: column;
+    margin-bottom: 0rem !important; }
+    .portfolio-contact__right {
+      margin-left: 0 !important;
+      width: 100%;
+      height: unset; }
+    .portfolio-contact__left {
+      margin-bottom: 4rem !important;
+      width: 100%;
+      height: unset; }
+      .portfolio-contact__left button {
+        width: 100%;
+        height: unset; }
   .portfolio-gallery {
-    flex-direction: column; } }
+    flex-direction: column; }
+    .portfolio-gallery__left {
+      width: 100%;
+      height: unset; }
+    .portfolio-gallery__item {
+      margin-left: 0 !important;
+      margin-bottom: 5rem !important; }
+      .portfolio-gallery__item img {
+        width: 100%;
+        height: unset; }
+        .portfolio-gallery__item img.show-mobile {
+          display: block; }
+        .portfolio-gallery__item img.hide-mobile {
+          display: none; }
+  .content-yellow .container {
+    padding: 0px 21px; } }

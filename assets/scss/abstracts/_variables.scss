@@ -71,7 +71,7 @@ $inline-flex: inline-flex;
 
 /* BREAKPOINTS */
 
-$breakpoints: ( "large-desktop": 1400px, "default-desktop": 1200px, "small-desktop": 992px, 'default-tablet': 768px, 'small-tablet': 578px, 'tiny-tablet': 480px, 'large-mobile': 420px, 'default-mobile': 375px, 'small-mobile': 360px);
+$breakpoints: ( "large-desktop": 1400px, "default-desktop": 1200px, "small-desktop": 992px, 'default-tablet': 768px, 'small-tablet': 578px, 'tiny-tablet': 480px, 'large-mobile': 420px, 'default-mobile': 375px, 'small-mobile': 360px, 'tiny-mobile': 320px);
 
 /* YELLOW BACKGROUND GLOBAL VARIABLE FOR ALL PAGES */
 
@@ -119,3 +119,8 @@ $yellow-bg-space-bottom: 0;
 /* 360PX - SMALL MOBILES */
 
 @media screen and (max-width: map-get($breakpoints, 'small-mobile')) {}
+
+
+/* 320PX - TINY MOBILES */
+
+@media screen and (max-width: map-get($breakpoints, 'tiny-mobile')) {}

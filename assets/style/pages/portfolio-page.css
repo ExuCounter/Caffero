@@ -41,6 +41,7 @@
 /* 420PX - LARGE MOBILES */
 /* 375PX - DEFAULT MOBILES */
 /* 360PX - SMALL MOBILES */
+/* 320PX - TINY MOBILES */
 /* IMPORT SASS FEATURES */
 /* % NON-RENDERED COMPONENTS FOR PAGES */
 .portfolio-contact__left button {
@@ -66,6 +67,11 @@
   .portfolio-contact__left button.active {
     font-size: 2.6rem;
     background: #000; }
+
+.portfolio-gallery__item img {
+  -webkit-box-shadow: 8px 7px 0px 1px #fcc200;
+  -moz-box-shadow: 8px 7px 0px 1px #fcc200;
+  box-shadow: 8px 7px 0px 1px #fcc200; }
 
 /* PAGE STYLING */
 .content-yellow {
@@ -119,6 +125,8 @@
     margin-left: 4.2rem; }
   .portfolio-gallery__item {
     margin-bottom: 5.2rem; }
+    .portfolio-gallery__item img.show-mobile {
+      display: none; }
   .portfolio-gallery img {
     width: 100%;
     height: unset; }
