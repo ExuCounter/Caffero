@@ -33,12 +33,79 @@
 /* BREAKPOINTS */
 /* YELLOW BACKGROUND GLOBAL VARIABLE FOR ALL PAGES */
 /* IMPORT SASS FEATURES */
+/* % NON-RENDERED COMPONENTS FOR PAGES */
+.portfolio-contact__left button {
+  font-size: 1.6rem;
+  background-color: #4d4d4d;
+  color: #FFF;
+  padding: 1rem 1.9rem 1.2rem 1.9rem;
+  margin: 0;
+  text-decoration: none !important;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-style: italic;
+  text-align: left;
+  line-height: 1.15;
+  margin-bottom: 1.3rem;
+  width: 100%;
+  height: unset;
+  cursor: pointer; }
+  .portfolio-contact__left button.active {
+    font-size: 2.6rem;
+    background: #000; }
+
 /* PAGE STYLING */
 .content-yellow {
-  margin-top: 4.7rem; }
+  margin-top: 5.4rem; }
   .content-yellow__bg {
     /* CHANGE SPACE FOR YELLOW BG HERE */
-    top: 5rem;
+    top: 12.7rem;
     transform: unset;
     width: auto;
-    height: calc(100% - 5rem*2); }
+    height: calc(100% - 16.7rem*2); }
+
+.portfolio-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start; }
+  .portfolio-contact__left {
+    flex: 0 0 273px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start; }
+    .portfolio-contact__left button {
+      padding: 0.9rem 1.9rem 0.9rem 1.9rem !important; }
+      .portfolio-contact__left button.contact-btn {
+        color: #FFF !important;
+        background-color: #000 !important;
+        font-size: 2.6rem; }
+        .portfolio-contact__left button.contact-btn:after {
+          background: url(../../img/arrow-right.svg);
+          background-size: cover;
+          background-position: unset;
+          background-repeat: no-repeat; }
+  .portfolio-contact__right {
+    flex: 0 1 auto;
+    margin-left: 6.6rem; }
+  .portfolio-contact img {
+    width: 100%;
+    height: unset; }
+
+.portfolio-gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start; }
+  .portfolio-gallery__right .portfolio-gallery__item {
+    margin-left: 4.2rem; }
+  .portfolio-gallery__item {
+    margin-bottom: 5.2rem; }
+  .portfolio-gallery img {
+    width: 100%;
+    height: unset; }

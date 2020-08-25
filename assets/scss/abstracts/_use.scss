@@ -5,3 +5,18 @@
 @import '../abstracts/_variables';
 
 /* IMPORT SASS FEATURES */
+
+
+/* % NON-RENDERED COMPONENTS FOR PAGES */
+
+%column-gray-buttons {
+    @include button(1.6rem, #4d4d4d, $white, 1rem 1.9rem 1.2rem 1.9rem);
+    @include font-sm-style(1.6rem, $bold, $italic, $text-left, 1.15);
+    @include margin-bottom(1.3rem);
+    @include size(100%);
+    cursor: pointer;
+    &.active {
+        font-size: 2.6rem;
+        background: $black;
+    }
+}

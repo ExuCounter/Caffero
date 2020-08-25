@@ -49,10 +49,10 @@
         &-header {
             padding-bottom: 8rem;
             &__buttons {
-                display: block;
+                display: $block;
             }
             .container {
-                display: flex;
+                display: $flex;
             }
             &__img {
                 flex: 0 1 35%;

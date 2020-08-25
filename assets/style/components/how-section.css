@@ -33,33 +33,36 @@
 /* BREAKPOINTS */
 /* YELLOW BACKGROUND GLOBAL VARIABLE FOR ALL PAGES */
 /* IMPORT SASS FEATURES */
+/* % NON-RENDERED COMPONENTS FOR PAGES */
+.how-section__left button {
+  font-size: 1.6rem;
+  background-color: #4d4d4d;
+  color: #FFF;
+  padding: 1rem 1.9rem 1.2rem 1.9rem;
+  margin: 0;
+  text-decoration: none !important;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-style: italic;
+  text-align: left;
+  line-height: 1.15;
+  margin-bottom: 1.3rem;
+  width: 100%;
+  height: unset;
+  cursor: pointer; }
+  .how-section__left button.active {
+    font-size: 2.6rem;
+    background: #000; }
+
 /* STYLING */
 .how-section {
   padding-top: 3rem;
   margin-bottom: 12.5rem;
   position: relative; }
-  .how-section__left button {
-    font-size: 1.6rem;
-    background-color: #4d4d4d;
-    color: #FFF;
-    padding: 0.3rem 2.1rem 0.5rem 2.1rem;
-    margin: 0rem 0rem 1.3rem 0rem;
-    text-decoration: none !important;
-    border: none;
-    text-align: left;
-    cursor: pointer;
-    position: relative;
-    width: 100%;
-    height: unset;
-    font-size: 1.6rem;
-    font-weight: 700;
-    font-style: italic;
-    text-align: unset;
-    line-height: unset;
-    cursor: pointer; }
-    .how-section__left button.active {
-      font-size: 2.6rem;
-      background-color: #000; }
   .how-section__right {
     margin-left: 4.7rem; }
     .how-section__right-title {

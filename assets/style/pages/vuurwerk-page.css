@@ -33,6 +33,7 @@
 /* BREAKPOINTS */
 /* YELLOW BACKGROUND GLOBAL VARIABLE FOR ALL PAGES */
 /* IMPORT SASS FEATURES */
+/* % NON-RENDERED COMPONENTS FOR PAGES */
 /* PAGE STYLING */
 .content-yellow {
   position: relative;
@@ -40,8 +41,9 @@
   .content-yellow .container {
     z-index: 11; }
   .content-yellow img {
-    width: 100%;
     max-width: 400px;
+    width: 100%;
+    height: unset;
     margin-bottom: 4.7rem; }
   .content-yellow .content-sub-title {
     margin-bottom: 2.9rem; }

@@ -31,12 +31,12 @@
         @include margin(4.3rem, 0, 4.7rem, 0);
         @include flex(row);
         img {
-            margin-right: 2.5rem;
+            @include margin-right(2.5rem);
             @include size(16rem, auto);
         }
         .content-title {
             @include font-style(3.6rem, $second-color, $bold, $italic, $unset, 1.1);
-            margin-bottom: 0;
+            @include margin-bottom(0rem);
         }
         p {
             @include font-style(1.6rem, $second-color);

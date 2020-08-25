@@ -7,17 +7,17 @@
 .content {
     &-yellow {
         position: $relative;
-        padding-top: 3.2rem;
+        @include padding-top(3.2rem);
         .container {
             z-index: 11;
         }
         img {
-            width: 100%;
             max-width: 400px;
-            margin-bottom: 4.7rem;
+            @include size(100%);
+            @include margin-bottom(4.7rem);
         }
         .content-sub-title {
-            margin-bottom: 2.9rem;
+            @include margin-bottom(2.9rem);
         }
         .big-btn-arrow {
             width: 85%;

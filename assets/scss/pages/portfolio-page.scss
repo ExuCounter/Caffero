@@ -6,10 +6,52 @@
 
 .content {
     &-yellow {
-        margin-top: 4.7rem;
+        @include margin-top(5.4rem);
         &__bg {
             /* CHANGE SPACE FOR YELLOW BG HERE */
-            @include yellow-bg-gaps(5rem, 5rem);
+            @include yellow-bg-gaps(12.7rem, 16.7rem);
+        }
+    }
+}
+
+.portfolio {
+    &-contact {
+        @include flex();
+        &__left {
+            flex: 0 0 273px;
+            @include flex(column);
+            button {
+                @extend %column-gray-buttons;
+                padding: 0.9rem 1.9rem 0.9rem 1.9rem !important;
+                &.contact-btn {
+                    @include color($white !important, $black !important);
+                    font-size: 2.6rem;
+                    &:after {
+                        @include background('../img/arrow-right.svg', cover);
+                    }
+                }
+            }
+        }
+        &__right {
+            flex: 0 1 auto;
+            @include margin-left(6.6rem);
+        }
+        img {
+            @include size(100%);
+        }
+    }
+    &-gallery {
+        @include flex();
+        &__right {
+            .portfolio-gallery__item {
+                @include margin-left(4.2rem);
+            }
+        }
+        &__item {
+            @include margin-bottom(5.2rem);
+        }
+        img {
+            @include size(100%);
         }
     }
 }

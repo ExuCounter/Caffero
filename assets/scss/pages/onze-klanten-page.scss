@@ -5,15 +5,13 @@
 /* PAGE STYLING */
 
 .logo-row {
-    display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 6rem;
+    @include flex(row, flex-start, space-between);
+    @include margin-top(6rem);
     div {
         flex: 0 1 20%;
-        margin-bottom: 5.6rem;
-        display: flex;
-        justify-content: center;
+        @include flex(row, flex-start, center);
+        @include margin-bottom(5.6rem);
     }
 }
 
@@ -24,7 +22,7 @@
     .video__wrapper {
         @include size(100%);
         iframe {
-            height: 47.5rem;
+            @include size(100%, 47.5rem);
         }
     }
     .contact-btn {
@@ -49,6 +47,6 @@
         }
     }
     &__bg {
-        height: 73.3%;
+        @include size(auto, 73.3%);
     }
 }
