@@ -2,7 +2,7 @@
 
 @import '../abstracts/_use';
 
-/* 992PX - SMALL DESKTOP */
+/* 992PX - SMALL DESKTOPS */
 
 @media screen and (max-width: map-get($breakpoints, 'small-desktop')) {
     .how-section {
@@ -15,7 +15,7 @@
 }
 
 
-/* 768PX - DEFAULT TABLET */
+/* 768PX - DEFAULT TABLETS */
 
 @media screen and (max-width: map-get($breakpoints, 'default-tablet')) {
     .how-section {
@@ -50,7 +50,10 @@
     }
 }
 
-@media screen and (max-width: map-get($breakpoints, 'huge-mobile')) {
+
+/* 480PX - TINY TABLETS */
+
+@media screen and (max-width: map-get($breakpoints, 'tiny-tablet')) {
     .logo-row {
         div {
             flex: 0 1 50%;

@@ -32,10 +32,19 @@
 /* DISPLAY */
 /* BREAKPOINTS */
 /* YELLOW BACKGROUND GLOBAL VARIABLE FOR ALL PAGES */
+/* TEMPLATES FOR MEDIA QUERIES */
+/* 1200PX - DEFAULT DESKTOPS */
+/* 992PX - SMALL DESKTOPS */
+/* 768PX - DEFAULT TABLETS */
+/* 578PX - SMALL TABLETS */
+/* 480PX - TINY TABLETS */
+/* 420PX - LARGE MOBILES */
+/* 375PX - DEFAULT MOBILES */
+/* 360PX - SMALL MOBILES */
 /* IMPORT SASS FEATURES */
 /* % NON-RENDERED COMPONENTS FOR PAGES */
 /* COMMON MEDIA QUERIES */
-/* 1400px - LARGE DESKTOP */
+/* 1400px - LARGE DESKTOPS */
 @media screen and (max-width: 1400px) {
   /* DECREASE EM/REM UNITS */
   /* 
@@ -67,7 +76,7 @@
     left: unset;
     z-index: 111111; } }
 
-/* 1200px - DEFAULT DESKTOP */
+/* 1200PX - DEFAULT DESKTOPS */
 @media screen and (max-width: 1200px) {
   /* DECREASE EM/REM UNITS */
   /* 
@@ -117,7 +126,7 @@
   .footer {
     font-size: 8px; } }
 
-/* 992px - SMALL DESKTOP */
+/* 992PX - SMALL DESKTOPS */
 @media screen and (max-width: 992px) {
   /* DECREASE EM/REM UNITS */
   /* 
@@ -158,7 +167,7 @@
   .how-section__sm-block:nth-child(2) {
     margin: 2rem 0rem 0rem 0rem; } }
 
-/* 768PX - TABLETS */
+/* 768PX - DEFAULT TABLETS */
 @media screen and (max-width: 768px) {
   /* DECREASE EM/REM UNITS */
   /* 
@@ -295,6 +304,7 @@
     width: 100%;
     height: 30rem !important; } }
 
+/* 480PX - TINY TABLETS */
 @media screen and (max-width: 480px) {
   /* DECREASE EM/REM UNITS */
   /* 
@@ -335,7 +345,7 @@
       left: unset;
       z-index: unset; } }
 
-/* 360px - SMALL MOBILE */
+/* 360PX - SMALL MOBILES */
 @media screen and (max-width: 360px) {
   /* DECREASE EM/REM UNITS */
   /* 

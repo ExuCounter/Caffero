@@ -32,39 +32,51 @@
 /* DISPLAY */
 /* BREAKPOINTS */
 /* YELLOW BACKGROUND GLOBAL VARIABLE FOR ALL PAGES */
+/* TEMPLATES FOR MEDIA QUERIES */
+/* 1200PX - DEFAULT DESKTOPS */
+/* 992PX - SMALL DESKTOPS */
+/* 768PX - DEFAULT TABLETS */
+/* 578PX - SMALL TABLETS */
+/* 480PX - TINY TABLETS */
+/* 420PX - LARGE MOBILES */
+/* 375PX - DEFAULT MOBILES */
+/* 360PX - SMALL MOBILES */
 /* IMPORT SASS FEATURES */
 /* % NON-RENDERED COMPONENTS FOR PAGES */
 /* PAGE STYLING */
-/* 1200PX - DESKTOP */
-@media screen and (max-width: 1200px) {
-  .content-yellow {
-    padding-top: 5rem;
-    padding-bottom: 1rem; }
-    .content-yellow__bg {
-      width: 100%;
-      height: 100%; }
-  .big-btn-arrow {
-    margin-top: 2rem; } }
-
-/* 768PX - TABLETS */
+/* 768PX - DEFAULT TABLETS */
 @media screen and (max-width: 768px) {
-  .content-yellow .video__wrapper {
-    margin-bottom: 6rem; }
-  .content-yellow img {
-    margin: 0rem auto 4rem auto !important;
-    display: block; }
   .content-yellow__bg {
     width: 100%;
-    height: 100%; } }
+    height: calc(100% - 17.5rem);
+    top: 17.5rem;
+    transform: translate(0); }
+  .content-yellow__block {
+    max-width: 39rem; }
+  .content-yellow__col:last-child > div {
+    display: block;
+    margin-bottom: 0rem;
+    max-width: none; }
+    .content-yellow__col:last-child > div button {
+      width: 80%;
+      height: unset;
+      display: block;
+      text-align: left;
+      margin: 0 auto; } }
 
 /* 578PX - SMALL TABLETS */
 @media screen and (max-width: 578px) {
   .video__wrapper {
-    margin-bottom: -5.5rem;
-    margin-top: 2rem; }
+    margin-bottom: -1.5rem; }
     .video__wrapper iframe {
       width: 100%;
-      height: 33rem; }
-  .content-yellow .big-btn-arrow {
-    width: 100%;
-    margin-top: 1rem; } }
+      height: 33rem; } }
+
+/* 420PX - LARGE MOBILES */
+@media screen and (max-width: 420px) {
+  .content-yellow {
+    padding: 0px 15px; }
+    .content-yellow__col div {
+      max-width: none; }
+    .content-yellow__block {
+      margin-bottom: 4rem; } }

@@ -19,7 +19,9 @@
 @import 'components/banner';
 @import 'components/how-section';
 
-/* MEDIA QUERIES */
+/* COMPONENTS MEDIA QUERIES */
 
-@import 'media-queries/header-footer';
+@import 'media-queries/header';
+@import 'media-queries/footer';
+@import 'media-queries/top-bar';
 @import 'media-queries/main';

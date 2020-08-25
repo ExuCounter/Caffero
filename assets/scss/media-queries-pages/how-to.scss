@@ -41,9 +41,9 @@
 }
 
 
-/* 480PX - HUGE MOBILE */
+/* 480PX - TINY TABLETS */
 
-@media screen and (max-width: map-get($breakpoints, 'huge-mobile')) {
+@media screen and (max-width: map-get($breakpoints, 'tiny-tablet')) {
     .content-yellow {
         .col-md-6 {
             img {

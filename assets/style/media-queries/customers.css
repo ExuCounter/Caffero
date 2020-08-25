@@ -32,9 +32,18 @@
 /* DISPLAY */
 /* BREAKPOINTS */
 /* YELLOW BACKGROUND GLOBAL VARIABLE FOR ALL PAGES */
+/* TEMPLATES FOR MEDIA QUERIES */
+/* 1200PX - DEFAULT DESKTOPS */
+/* 992PX - SMALL DESKTOPS */
+/* 768PX - DEFAULT TABLETS */
+/* 578PX - SMALL TABLETS */
+/* 480PX - TINY TABLETS */
+/* 420PX - LARGE MOBILES */
+/* 375PX - DEFAULT MOBILES */
+/* 360PX - SMALL MOBILES */
 /* IMPORT SASS FEATURES */
 /* % NON-RENDERED COMPONENTS FOR PAGES */
-/* 992PX - SMALL DESKTOP */
+/* 992PX - SMALL DESKTOPS */
 @media screen and (max-width: 992px) {
   .how-section {
     margin-bottom: 0rem;
@@ -42,7 +51,7 @@
     .how-section__bg {
       height: 100%; } }
 
-/* 768PX - DEFAULT TABLET */
+/* 768PX - DEFAULT TABLETS */
 @media screen and (max-width: 768px) {
   .how-section__inner {
     flex-direction: column; }
@@ -62,6 +71,7 @@
     width: 100%;
     height: calc(100% - 8.5rem); } }
 
+/* 480PX - TINY TABLETS */
 @media screen and (max-width: 480px) {
   .logo-row div {
     flex: 0 1 50%;

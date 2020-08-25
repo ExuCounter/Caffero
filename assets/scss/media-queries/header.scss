@@ -1,0 +1,197 @@
+/* 1200PX - DEFAULT DESKTOPS */
+
+@media screen and (max-width: map-get($breakpoints, 'small-desktop')) {
+    .header {
+        &-banner {
+            &__cover {
+                height: 27px;
+            }
+        }
+        &-video {
+            &__cover {
+                height: 27px;
+                bottom: 4px;
+            }
+        }
+    }
+}
+
+
+/* 992PX - SMALL DESKTOPS */
+
+@media screen and (max-width: map-get($breakpoints, 'small-desktop')) {
+    .header {
+        &-video {
+            &__cover {
+                height: 28px;
+                bottom: 3px;
+            }
+        }
+    }
+}
+
+
+/* 768PX - DEFAULT TABLETS */
+
+@media screen and (max-width: map-get($breakpoints, 'default-tablet')) {
+    .header {
+        &-nav {
+            position: fixed;
+            left: 0;
+            top: 0px;
+            background-color: #fcc200;
+            width: 100vw;
+            z-index: 555;
+            transform: translateX(-110%);
+            transition: 0.6s ease;
+            align-items: center;
+            display: flex;
+            &.active {
+                transform: translateX(0);
+                img {
+                    display: none;
+                }
+            }
+        }
+        &-video {
+            &__cover {
+                height: 28px;
+                bottom: 2.5px;
+            }
+        }
+        &-menu {
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            &__splitter {
+                margin: 0 !important;
+            }
+            li {
+                text-align: $text-left;
+            }
+            &__sub {
+                max-height: 1500px;
+                opacity: 1;
+                padding-left: 2rem;
+                position: relative;
+                padding: 5px 20px 0px 20px;
+            }
+            &__container {
+                overflow-y: scroll;
+                height: calc(100vh - 100px);
+                margin-top: 100px;
+                padding-bottom: 45px;
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+            }
+        }
+        &-mobile-nav {
+            display: flex !important;
+            z-index: 1111111 !important;
+            .top-bar__language {
+                display: flex !important;
+            }
+            .burger-menu {
+                display: block;
+            }
+            a {
+                transition: 0.5s;
+            }
+            &.active {
+                a {
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}
+
+
+/* 578PX - SMALL TABLETS */
+
+@media screen and (max-width: map-get($breakpoints, 'small-tablet')) {
+    .header {
+        &-banner {
+            padding-top: 3.6rem;
+            &__title {
+                font-size: 3rem;
+                text-shadow: 3px 3px 0px black;
+                padding-bottom: 4rem;
+            }
+            &__name {
+                font-size: 2.5rem;
+            }
+            &__breadcrumbs {
+                display: none;
+            }
+        }
+        &-video {
+            video {
+                height: 19rem;
+            }
+            &__cover {
+                height: 23px;
+                bottom: 4.5px;
+            }
+            &__title {
+                top: 10rem;
+                font-size: 3rem;
+            }
+            &__name {
+                top: 3.7rem;
+                font-size: 2.5rem;
+            }
+            &__breadcrumbs {
+                display: none;
+            }
+        }
+        &-nav {
+            &__logo {
+                bottom: -2.8rem;
+                display: none;
+                img {
+                    width: 5.6rem;
+                    height: 5.6rem;
+                }
+            }
+        }
+    }
+}
+
+
+/* 480PX - TINY TABLETS */
+
+@media screen and (max-width: map-get($breakpoints, 'tiny-tablet')) {}
+
+
+/* 420PX - LARGE MOBILES */
+
+@media screen and (max-width: map-get($breakpoints, 'large-mobile')) {}
+
+
+/* 375PX - DEFAULT MOBILES */
+
+@media screen and (max-width: map-get($breakpoints, 'default-mobile')) {}
+
+
+/* 360PX - SMALL MOBILES */
+
+@media screen and (max-width: map-get($breakpoints, 'small-mobile')) {
+    .header {
+        &-banner {
+            &__name {
+                padding-bottom: 2.6rem;
+            }
+        }
+        &-video {
+            &__cover {
+                height: 20px;
+                bottom: 3px;
+            }
+            &__title {
+                top: 10.2rem;
+            }
+        }
+    }
+}

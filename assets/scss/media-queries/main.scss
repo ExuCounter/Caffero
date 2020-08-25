@@ -5,7 +5,7 @@
 /* COMMON MEDIA QUERIES */
 
 
-/* 1400px - LARGE DESKTOP */
+/* 1400px - LARGE DESKTOPS */
 
 @media screen and (max-width: map-get($breakpoints, 'large-desktop')) {
     /* DECREASE EM/REM UNITS */
@@ -21,7 +21,7 @@
 }
 
 
-/* 1200px - DEFAULT DESKTOP */
+/* 1200PX - DEFAULT DESKTOPS */
 
 @media screen and (max-width: map-get($breakpoints, 'default-desktop')) {
     /* DECREASE EM/REM UNITS */
@@ -44,7 +44,7 @@
 }
 
 
-/* 992px - SMALL DESKTOP */
+/* 992PX - SMALL DESKTOPS */
 
 @media screen and (max-width: map-get($breakpoints, 'small-desktop')) {
     /* DECREASE EM/REM UNITS */
@@ -94,7 +94,7 @@
 }
 
 
-/* 768PX - TABLETS */
+/* 768PX - DEFAULT TABLETS */
 
 @media screen and (max-width: map-get($breakpoints, 'default-tablet')) {
     /* DECREASE EM/REM UNITS */
@@ -222,7 +222,10 @@
     }
 }
 
-@media screen and (max-width: map-get($breakpoints, 'huge-mobile')) {
+
+/* 480PX - TINY TABLETS */
+
+@media screen and (max-width: map-get($breakpoints, 'tiny-tablet')) {
     /* DECREASE EM/REM UNITS */
     /* 
     */
@@ -248,7 +251,7 @@
 }
 
 
-/* 360px - SMALL MOBILE */
+/* 360PX - SMALL MOBILES */
 
 @media screen and (max-width: map-get($breakpoints, 'small-mobile')) {
     /* DECREASE EM/REM UNITS */

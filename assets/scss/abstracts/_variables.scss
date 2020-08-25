@@ -71,9 +71,51 @@ $inline-flex: inline-flex;
 
 /* BREAKPOINTS */
 
-$breakpoints: ( "large-desktop": 1400px, "default-desktop": 1200px, "small-desktop": 992px, 'default-tablet': 768px, 'small-tablet': 578px, 'huge-mobile': 480px, 'large-mobile': 420px, 'default-mobile': 375px, 'small-mobile': 360px);
+$breakpoints: ( "large-desktop": 1400px, "default-desktop": 1200px, "small-desktop": 992px, 'default-tablet': 768px, 'small-tablet': 578px, 'tiny-tablet': 480px, 'large-mobile': 420px, 'default-mobile': 375px, 'small-mobile': 360px);
 
 /* YELLOW BACKGROUND GLOBAL VARIABLE FOR ALL PAGES */
 
 $yellow-bg-space-top: 0;
 $yellow-bg-space-bottom: 0;
+
+/* TEMPLATES FOR MEDIA QUERIES */
+
+
+/* 1200PX - DEFAULT DESKTOPS */
+
+@media screen and (max-width: map-get($breakpoints, 'small-desktop')) {}
+
+
+/* 992PX - SMALL DESKTOPS */
+
+@media screen and (max-width: map-get($breakpoints, 'small-desktop')) {}
+
+
+/* 768PX - DEFAULT TABLETS */
+
+@media screen and (max-width: map-get($breakpoints, 'default-tablet')) {}
+
+
+/* 578PX - SMALL TABLETS */
+
+@media screen and (max-width: map-get($breakpoints, 'small-tablet')) {}
+
+
+/* 480PX - TINY TABLETS */
+
+@media screen and (max-width: map-get($breakpoints, 'tiny-tablet')) {}
+
+
+/* 420PX - LARGE MOBILES */
+
+@media screen and (max-width: map-get($breakpoints, 'large-mobile')) {}
+
+
+/* 375PX - DEFAULT MOBILES */
+
+@media screen and (max-width: map-get($breakpoints, 'default-mobile')) {}
+
+
+/* 360PX - SMALL MOBILES */
+
+@media screen and (max-width: map-get($breakpoints, 'small-mobile')) {}
