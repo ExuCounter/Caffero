@@ -3,3 +3,17 @@
 @import '../abstracts/_use';
 
 /* PAGE STYLING */
+
+
+/* 768PX - DEFAULT TABLETS */
+
+@media screen and (max-width: map-get($breakpoints, 'default-tablet')) {
+    .portfolio {
+        &-contact {
+            flex-direction: column;
+        }
+        &-gallery {
+            flex-direction: column;
+        }
+    }
+}
