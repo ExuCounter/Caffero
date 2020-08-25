@@ -71,7 +71,9 @@
     margin-bottom: -1.5rem; }
     .video__wrapper iframe {
       width: 100%;
-      height: 33rem; } }
+      height: 33rem; }
+  .content-yellow__block {
+    margin-bottom: 4rem; } }
 
 /* 420PX - LARGE MOBILES */
 @media screen and (max-width: 420px) {

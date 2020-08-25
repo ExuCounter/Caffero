@@ -44,6 +44,19 @@
 /* 320PX - TINY MOBILES */
 /* IMPORT SASS FEATURES */
 /* % NON-RENDERED COMPONENTS FOR PAGES */
+.content-yellow__block:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: unset;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.3); }
+
 /* PAGE STYLING */
 .content-title {
   max-width: 72rem;
@@ -128,18 +141,11 @@
       transition: all 0.3s; }
     .content-yellow__block-link:hover:after {
       right: 0.4rem; }
-  .content-yellow__block-dark {
-    position: absolute;
-    top: 0;
-    left: 0px;
-    right: 0px;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.3);
-    opacity: 0;
-    transition: 0.3s ease-in-out; }
+  .content-yellow__block:after {
+    opacity: 0; }
   .content-yellow__block:hover .content-yellow__block-link {
     bottom: 2.5rem; }
-  .content-yellow__block:hover .content-yellow__block-dark {
+  .content-yellow__block:hover:after {
     opacity: 1; }
 
 .content-yellow__bg {
@@ -147,4 +153,4 @@
   top: 50%;
   transform: translate(0, -50%);
   width: auto;
-  height: calc(100% - 17.5rem*2); }
+  height: calc(100% - 35rem); }

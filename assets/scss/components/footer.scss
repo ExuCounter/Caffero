@@ -7,7 +7,7 @@
         &__inner {
             &-title {
                 @include font-style(3.8rem, $main-color, $bold, $italic, $text-center, 1.67);
-                text-shadow: 2px 2.5px 0px rgba(0, 0, 0, 1);
+                text-shadow: 0.2rem 0.25rem 0px rgba(0, 0, 0, 1);
                 margin: 2.9rem 0em 3.2rem;
             }
             &-item {

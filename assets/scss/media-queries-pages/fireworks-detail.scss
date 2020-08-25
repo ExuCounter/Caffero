@@ -45,6 +45,13 @@
             @include size(100%, 33rem);
         }
     }
+    .content {
+        &-yellow {
+            &__block {
+                margin-bottom: 4rem;
+            }
+        }
+    }
 }
 
 

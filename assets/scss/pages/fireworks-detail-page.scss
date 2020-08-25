@@ -42,7 +42,7 @@
         &__block {
             background-size: cover;
             background-position: center center !important;
-            position: relative;
+            position: $relative;
             overflow: hidden;
             cursor: pointer;
             max-height: 34rem;
@@ -89,21 +89,15 @@
                     right: 0.4rem;
                 }
             }
-            &-dark {
-                position: absolute;
-                top: 0;
-                left: 0px;
-                right: 0px;
-                bottom: 0;
-                background-color: rgba(0, 0, 0, 0.3);
+            &:after {
+                @extend %dark-bg;
                 opacity: 0;
-                transition: 0.3s ease-in-out;
             }
             &:hover {
                 .content-yellow__block-link {
                     bottom: 2.5rem;
                 }
-                .content-yellow__block-dark {
+                &:after {
                     opacity: 1;
                 }
             }

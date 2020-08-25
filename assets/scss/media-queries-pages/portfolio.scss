@@ -34,7 +34,7 @@
                 @include size(100%);
             }
             &__left {
-                @include margin-bottom(4rem !important);
+                @include margin-bottom(2.25rem !important);
                 @include size(100%);
                 button {
                     @include size(100%);
@@ -48,7 +48,7 @@
             }
             &__item {
                 @include margin-left(0 !important);
-                @include margin-bottom(5rem !important);
+                @include margin-bottom(3.5rem !important);
                 img {
                     @include size(100%);
                     &.show-mobile {
@@ -58,12 +58,20 @@
                         display: none;
                     }
                 }
+                a,
+                span,
+                &:after {
+                    display: block;
+                }
             }
         }
     }
     .content-yellow {
         .container {
             padding: 0px 21px;
+        }
+        &__bg {
+            @include yellow-bg-gaps(4rem, 10rem);
         }
     }
 }

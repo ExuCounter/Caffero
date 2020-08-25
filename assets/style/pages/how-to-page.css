@@ -50,7 +50,7 @@
   top: 0rem;
   transform: unset;
   width: auto;
-  height: calc(100% - 0rem*2); }
+  height: calc(100%); }
 
 .video__wrapper {
   max-width: 820px;

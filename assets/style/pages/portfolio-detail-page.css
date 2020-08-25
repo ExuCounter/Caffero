@@ -68,7 +68,7 @@
   top: 15rem;
   transform: unset;
   width: auto;
-  height: calc(100% - 15rem*2); }
+  height: calc(100% - 30rem); }
 
 .big-btn-arrow {
   max-width: 51rem; }

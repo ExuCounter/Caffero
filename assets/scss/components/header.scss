@@ -118,7 +118,7 @@
             @include padding-bottom(4.6rem);
         }
         &__title {
-            text-shadow: 3px 3px 0px rgba(0, 0, 0, 1);
+            text-shadow: 0.3rem 0.3rem 0px rgba(0, 0, 0, 1);
             text-transform: uppercase;
             @include padding-bottom(9.1rem);
             @include font-style(6em, $white, $bold, $italic, $text-center);
@@ -168,7 +168,7 @@
             @include font-style(6em, $white, $bold, $italic);
             @include padding-bottom(9.1rem);
             transform: translate(-50%, 0%);
-            text-shadow: 3px 3px 0px rgba(0, 0, 0, 1);
+            text-shadow: 0.3rem 0.3rem 0px rgba(0, 0, 0, 1);
             text-transform: uppercase;
         }
         &__breadcrumbs {

@@ -451,7 +451,7 @@ textarea {
       line-height: unset;
       padding-bottom: 4.6rem; }
     .header-banner__title {
-      text-shadow: 3px 3px 0px black;
+      text-shadow: 0.3rem 0.3rem 0px black;
       text-transform: uppercase;
       padding-bottom: 9.1rem;
       font-family: "Poppins", sans-serif;
@@ -561,7 +561,7 @@ textarea {
       line-height: unset;
       padding-bottom: 9.1rem;
       transform: translate(-50%, 0%);
-      text-shadow: 3px 3px 0px black;
+      text-shadow: 0.3rem 0.3rem 0px black;
       text-transform: uppercase; }
     .header-video__breadcrumbs {
       content: '';
@@ -710,7 +710,7 @@ textarea {
       color: #fcc200;
       text-align: center;
       line-height: 1.67;
-      text-shadow: 2px 2.5px 0px black;
+      text-shadow: 0.2rem 0.25rem 0px black;
       margin: 2.9rem 0em 3.2rem; }
     .footer-slider__inner-item {
       cursor: pointer; }
@@ -1639,7 +1639,6 @@ textarea {
     padding-top: 3.6rem; }
     .header-banner__title {
       font-size: 3rem;
-      text-shadow: 3px 3px 0px black;
       padding-bottom: 4rem; }
     .header-banner__name {
       font-size: 2.5rem; }
@@ -2206,6 +2205,19 @@ textarea {
     bottom: 0em;
     left: unset;
     z-index: 111; }
+  .banner__inner {
+    padding: 0px 15px;
+    padding-top: 6rem;
+    padding-bottom: 6rem; }
+  .banner-title {
+    margin-bottom: 3rem; }
+  .banner-link {
+    font-size: 2rem;
+    padding: 0.4rem 5.5rem 0.4rem 2.2rem; }
+    .banner-link:after {
+      background-size: contain !important;
+      width: 2.2rem;
+      height: 2.4rem; }
   .content {
     margin-left: 0rem;
     margin-right: 0rem; }
@@ -2214,7 +2226,7 @@ textarea {
     .content-title, .content-text {
       text-align: left !important; }
   .big-btn-arrow {
-    font-size: 2.2rem;
+    font-size: 2.7rem;
     max-width: none;
     width: 100%;
     height: unset; }
@@ -2239,11 +2251,7 @@ textarea {
       height: 3.2rem; }
   .video__wrapper iframe {
     width: 100%;
-    height: 30rem !important; }
-  .banner-title {
-    font-size: 2.2rem; }
-  .banner-text {
-    display: none; } }
+    height: 30rem !important; } }
 
 /* 480PX - TINY TABLETS */
 @media screen and (max-width: 480px) {
@@ -2316,12 +2324,12 @@ textarea {
   /* 
     */
   html {
-    font-size: 8px; }
+    font-size: 8.15px; }
   .float-buttons {
-    font-size: 8px; } }
+    font-size: 8.15px; } }
   @media screen and (max-width: 375px) and (max-width: 578px) {
     .float-buttons {
-      font-size: calc(8px - 30%) !important; } }
+      font-size: calc(8.15px - 30%) !important; } }
 
 @media screen and (max-width: 375px) {
   .top-bar {
@@ -2340,12 +2348,12 @@ textarea {
   /* 
     */
   html {
-    font-size: 7.5px; }
+    font-size: 7.65px; }
   .float-buttons {
-    font-size: 7.5px; } }
+    font-size: 7.65px; } }
   @media screen and (max-width: 360px) and (max-width: 578px) {
     .float-buttons {
-      font-size: calc(7.5px - 30%) !important; } }
+      font-size: calc(7.65px - 30%) !important; } }
 
 @media screen and (max-width: 360px) {
   .top-bar {
@@ -2366,12 +2374,12 @@ textarea {
   /* 
     */
   html {
-    font-size: 7px; }
+    font-size: 7.15px; }
   .float-buttons {
-    font-size: 7px; } }
+    font-size: 7.15px; } }
   @media screen and (max-width: 320px) and (max-width: 578px) {
     .float-buttons {
-      font-size: calc(7px - 30%) !important; } }
+      font-size: calc(7.15px - 30%) !important; } }
 
 @media screen and (max-width: 320px) {
   .top-bar {

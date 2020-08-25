@@ -24,3 +24,9 @@
 %default-shadow {
     @include box-shadow(8px, 7px, 0px, 1px $main-color);
 }
+
+%dark-bg {
+    @include float-position($absolute, 0, 0, 0, 0, 1);
+    @include transition(all, 0.3s, ease-in-out);
+    background-color: rgba(0, 0, 0, 0.3);
+}

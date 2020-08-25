@@ -243,5 +243,10 @@
 @mixin yellow-bg-gaps($top: 0, $bottom: 0, $transform: unset) {
     top: $top;
     transform: $transform;
-    @include size(auto, calc(100% - #{$bottom}*2));
+    @if $bottom!=0 {
+        @include size(auto, calc(100% - #{$bottom*2}));
+    }
+    @else {
+        @include size(auto, calc(100%));
+    }
 }

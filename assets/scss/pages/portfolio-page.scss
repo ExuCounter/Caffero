@@ -54,11 +54,32 @@
         }
         &__item {
             @include margin-bottom(5.2rem);
+            position: $relative;
+            a {
+                @include float-position($absolute, $unset, $unset, 18%, 50%, 1, 1);
+                transform: translate(-50%, 0);
+                white-space: nowrap;
+            }
+            span {
+                @include float-position($absolute, 28%, $unset, 0rem, 50%, 1, 1);
+                @include size(90%);
+                transform: translate(-50%, 0);
+                line-height: 1;
+            }
             img {
                 @extend %default-shadow;
                 &.show-mobile {
                     display: none;
                 }
+            }
+            &:after {
+                content: '';
+                @extend %dark-bg;
+            }
+            a,
+            span,
+            &:after {
+                display: none;
             }
         }
         img {
