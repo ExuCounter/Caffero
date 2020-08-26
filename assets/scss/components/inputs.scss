@@ -2,7 +2,7 @@
     position: $relative;
     @include flex(row, center, flex-start);
     cursor: pointer;
-    p {
+    .checkbox-text {
         font-size: 1.6rem;
         margin: 0rem 0rem 0rem 1rem;
     }

@@ -1163,7 +1163,7 @@ textarea {
   justify-content: flex-start;
   align-items: center;
   cursor: pointer; }
-  .checkbox-container p {
+  .checkbox-container .checkbox-text {
     font-size: 1.6rem;
     margin: 0rem 0rem 0rem 1rem; }
 
