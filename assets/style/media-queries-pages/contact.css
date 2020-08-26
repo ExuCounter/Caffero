@@ -1,0 +1,105 @@
+/* ABSTRACTS USE */
+/* IMPORT ABSTRACTS */
+/* PREFIXES */
+/* FONT STYLE */
+/* FONTS DISPLAY */
+/* ELEMENT FLOAT POSITION */
+/* SIZE */
+/* BACKGROUND */
+/* BORDER */
+/* BUTTON */
+/* COLOR WITH BACKGROUND */
+/* MARGINS */
+/* PADDINGS */
+/* SHADOWS */
+/* MARGIN HORIZONTAL CENTER ALIGN */
+/* MARGIN */
+/* PADDING */
+/* BORDER RADIUS */
+/* TRANSITION */
+/* RESPONSIVNESS MIXIN */
+/* YELLOW BACKGROUND GAPS */
+/* BASE PATH */
+/* COLORS */
+/* FONT-SIZE (EM/REM) */
+/* FONTS WEIGHT */
+/* FONTS STYLES */
+/* MAIN FONT FAMILY */
+/* TEXT POSITIONS */
+/* ELEMENT POSITION */
+/* POSITIONS */
+/* PROPERTIES */
+/* DISPLAY */
+/* BREAKPOINTS */
+/* YELLOW BACKGROUND GLOBAL VARIABLE FOR ALL PAGES */
+/* TEMPLATES FOR MEDIA QUERIES */
+/* 1200PX - DEFAULT DESKTOPS */
+/* 992PX - SMALL DESKTOPS */
+/* 768PX - DEFAULT TABLETS */
+/* 578PX - SMALL TABLETS */
+/* 480PX - TINY TABLETS */
+/* 420PX - LARGE MOBILES */
+/* 375PX - DEFAULT MOBILES */
+/* 360PX - SMALL MOBILES */
+/* 320PX - TINY MOBILES */
+/* IMPORT SASS FEATURES */
+/* % NON-RENDERED COMPONENTS FOR PAGES */
+/* PAGE STYLING */
+/* 1200PX - DEFAULT DESKTOPS */
+@media screen and (max-width: 1200px) {
+  .contact-diction-row img {
+    max-width: 60%; }
+  .map-row > div:nth-child(2) {
+    margin: 0px 35px; } }
+
+/* 992PX - SMALL DESKTOPS */
+@media screen and (max-width: 992px) {
+  .contact-diction-row img {
+    max-width: 55%; } }
+
+/* 768PX - DEFAULT TABLETS */
+/* NON DEFAULT MEDIA QUERIE */
+@media screen and (max-width: 650px) {
+  .contact-diction-row img {
+    bottom: 0;
+    max-width: 50%; } }
+
+/* 578PX - SMALL TABLETS */
+@media screen and (max-width: 578px) {
+  .map-row {
+    flex-direction: column; }
+    .map-row__block {
+      width: 100%;
+      padding-right: 7px;
+      margin: 0 0px 3.5rem 0rem !important; }
+      .map-row__block img {
+        margin-top: 1.5rem; }
+  .contact-form {
+    margin-top: 8rem; }
+    .contact-form__row {
+      flex-direction: column; }
+      .contact-form__row input {
+        margin-right: 0 !important; }
+    .contact-form__title, .contact-form__text {
+      display: none; }
+      .contact-form__title.show-mobile, .contact-form__text.show-mobile {
+        display: block; }
+    .contact-form__text {
+      margin-bottom: 21rem; }
+    .contact-form button {
+      margin-right: auto; }
+  .contact-diction-row {
+    flex-direction: column; }
+    .contact-diction-row .contact-form__title,
+    .contact-diction-row .contact-form__text {
+      color: #000; }
+    .contact-diction-row img {
+      display: none; }
+      .contact-diction-row img.show-mobile {
+        display: block;
+        max-width: none;
+        bottom: -6rem;
+        right: -2.5rem;
+        width: calc(100% + 40px); }
+  .content-yellow__bg {
+    top: 65.5%; } }

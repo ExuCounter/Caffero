@@ -1,0 +1,126 @@
+/* ABSTRACTS USE */
+
+@import '../abstracts/_use';
+
+/* PAGE STYLING */
+
+
+/* 1200PX - DEFAULT DESKTOPS */
+
+@media screen and (max-width: map-get($breakpoints, 'default-desktop')) {
+    .contact {
+        &-diction {
+            &-row {
+                img {
+                    max-width: 60%;
+                }
+            }
+        }
+    }
+    .map-row {
+        >div {
+            &:nth-child(2) {
+                margin: 0px 35px;
+            }
+        }
+    }
+}
+
+
+/* 992PX - SMALL DESKTOPS */
+
+@media screen and (max-width: map-get($breakpoints, 'small-desktop')) {
+    .contact {
+        &-diction {
+            &-row {
+                img {
+                    max-width: 55%;
+                }
+            }
+        }
+    }
+}
+
+
+/* 768PX - DEFAULT TABLETS */
+
+@media screen and (max-width: map-get($breakpoints, 'default-tablet')) {}
+
+
+/* NON DEFAULT MEDIA QUERIE */
+
+@media screen and (max-width: 650px) {
+    .contact {
+        &-diction {
+            &-row {
+                img {
+                    bottom: 0;
+                    max-width: 50%;
+                }
+            }
+        }
+    }
+}
+
+
+/* 578PX - SMALL TABLETS */
+
+@media screen and (max-width: map-get($breakpoints, 'small-tablet')) {
+    .map-row {
+        flex-direction: column;
+        &__block {
+            width: 100%;
+            padding-right: 7px;
+            margin: 0 0px 3.5rem 0rem !important;
+            img {
+                margin-top: 1.5rem;
+            }
+        }
+    }
+    .contact {
+        &-form {
+            margin-top: 8rem;
+            &__row {
+                flex-direction: column;
+                input {
+                    margin-right: 0 !important;
+                }
+            }
+            &__title,
+            &__text {
+                display: none;
+                &.show-mobile {
+                    display: block;
+                }
+            }
+            &__text {
+                margin-bottom: 21rem;
+            }
+            button {
+                margin-right: auto;
+            }
+        }
+        &-diction-row {
+            .contact-form__title,
+            .contact-form__text {
+                color: $black;
+            }
+            img {
+                display: none;
+                &.show-mobile {
+                    display: block;
+                    max-width: none;
+                    bottom: -6rem;
+                    right: -2.5rem;
+                    width: calc(100% + 40px);
+                }
+            }
+            flex-direction: column;
+        }
+    }
+    .content-yellow {
+        &__bg {
+            top: 65.5%;
+        }
+    }
+}

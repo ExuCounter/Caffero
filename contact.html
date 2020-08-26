@@ -44,40 +44,84 @@
         </div>
     </div>
 
-    <div class="content-yellow">
+    <div class="content-yellow mt-5">
         <div class="container">
             <div class="map-row">
                 <div class="map-row__block">
-                    <span class="map-row__block-title">
+                    <span class="map-row__block-title content-title yellow-title">
                         NEDERLAND
                     </span>
-                    <p>Postbus 13, 5258 ZG Berlicum Nederland T: +3130 320 0420 M: +316 53 49 17 75</p>
+                    <p class='content-text'>Postbus 13,<br> 5258 ZG Berlicum<br> Nederland<br> T: +3130 320 0420<br> M: +316 53 49 17 75</p>
                     <img src="assets/img/nederland-map.png" alt="Nederland Map">
                 </div>
                 <div class="map-row__block">
-                    <span class="map-row__block-title">
+                    <span class="map-row__block-title content-title yellow-title">
                         DUITSLAND
                     </span>
-                    <p>Wasserstrasse 18 47533 Kleve Nordrhein-Westfalen Duitsland M: +316 53 49 17 75</p>
+                    <p class='content-text'>Wasserstrasse 18<br> 47533 Kleve<br> Nordrhein-Westfalen<br> Duitsland<br> M: +316 53 49 17 75</p>
                     <img src="assets/img/duitsland-map.png" alt="Duitsland Map">
                 </div>
                 <div class="map-row__block">
-                    <span class="map-row__block-title">
+                    <span class="map-row__block-title content-title yellow-title">
                         BELGIË
                     </span>
-                    <p>Kapelsesteenweg 292 2930 Brasschaat België T: +32 380 873 14 M: +316 53 49 17 75</p>
+                    <p class='content-text'>Kapelsesteenweg 292<br> 2930 Brasschaat<br> België<br> T: +32 380 873 14<br> M: +316 53 49 17 75</p>
                     <img src="assets/img/belgie-map.png" alt="Belgie Map">
                 </div>
             </div>
             <div class='contact-diction-row'>
-                <p class="contact-diction-text">
+                <p class="contact-diction-title content-title">
                     NEVENVESTIGINGEN<br> NEDERLAND<br> <span>SITTARD,</span><br><span>HAARLEM,</span><br><span>MEPPEL.</span>
                 </p>
+                <h3 class="contact-form__title content-title yellow-title show-mobile">
+                    CONTACTFORMULIER
+                </h3>
+                <p class="contact-form__text content-text show-mobile">
+                    Laat een bericht achter en één van deze<br> pyroheroes reageert daar zo spoedig<br> mogelijk op!
+                </p>
                 <img src="assets/img/contact-team.png" alt="Contact Team">
+                <img src="assets/img/contact-team-mobile.png" class='show-mobile' alt="Contact Team">
             </div>
         </div>
         <div class="content-yellow__bg"></div>
     </div>
+
+    <form action='#' id='contact-form' class="contact-form">
+        <div class="container">
+            <h3 class="contact-form__title content-title yellow-title">
+                CONTACTFORMULIER
+            </h3>
+            <p class="contact-form__text content-text">
+                Laat een bericht achter en één van deze<br> pyroheroes reageert daar zo spoedig<br> mogelijk op!
+            </p>
+            <input type="text" placeholder="Naam*" required>
+            <input type="text" placeholder="Adres">
+            <div class="contact-form__row">
+                <input type="number" placeholder="Postcode">
+                <input type="text" placeholder="Woonplaats">
+            </div>
+            <div class="contact-form__row">
+                <input type="number" placeholder="Telefoon">
+                <input type="email" placeholder="E-mail*" required>
+            </div>
+            <textarea rows="6" placeholder="Uw bericht*" required></textarea>
+            <button class="submit-btn">Verstuur</button>
+        </div>
+    </form>
+
+    <script>
+        let contactForm = document.getElementById('contact-form');
+        contactForm.addEventListener('submit', (e) => {
+            /* Put validation functions here
+            /*
+            */
+            e.preventDefault();
+            /* REDIRECT */
+            if (location.href.includes('github')) {
+                location.href = '/Caffero/success';
+            } else location.href = '/success';
+        })
+    </script>
 
 </body>
 

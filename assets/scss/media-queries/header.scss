@@ -1,8 +1,16 @@
 /* 1200PX - DEFAULT DESKTOPS */
 
-@media screen and (max-width: map-get($breakpoints, 'small-desktop')) {
+@media screen and (max-width: map-get($breakpoints, 'default-desktop')) {
     .header {
         &-banner {
+            &__breadcrumbs {
+                bottom: 1rem;
+                p,
+                a,
+                span {
+                    font-size: 1.5rem;
+                }
+            }
             &__cover {
                 height: 27px;
             }
@@ -25,6 +33,16 @@
             &__cover {
                 height: 28px;
                 bottom: 3px;
+            }
+        }
+        &-banner {
+            &__breadcrumbs {
+                bottom: 0.5rem;
+                p,
+                a,
+                span {
+                    font-size: 1.9rem;
+                }
             }
         }
     }
@@ -50,6 +68,16 @@
                 transform: translateX(0);
                 img {
                     display: none;
+                }
+            }
+        }
+        &-banner {
+            &__breadcrumbs {
+                bottom: 0.7rem;
+                p,
+                a,
+                span {
+                    font-size: 1.6rem;
                 }
             }
         }
@@ -104,6 +132,11 @@
                 }
             }
         }
+        &-banner {
+            &__title {
+                font-size: 5.2rem;
+            }
+        }
     }
 }
 
@@ -115,11 +148,11 @@
         &-banner {
             padding-top: 3.6rem;
             &__title {
-                font-size: 3rem;
+                font-size: 3.7rem;
                 padding-bottom: 4rem;
             }
             &__name {
-                font-size: 2.5rem;
+                font-size: 3.2rem;
             }
             &__breadcrumbs {
                 display: none;

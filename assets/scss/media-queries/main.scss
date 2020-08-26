@@ -150,7 +150,7 @@
         }
         &-text,
         &-span {
-            font-size: 1.6rem !important;
+            font-size: 1.9rem;
         }
     }
 }
@@ -178,6 +178,15 @@
     .float-buttons {
         @include float-position($fixed, $unset, 2em, 0em, $unset, 0, 111);
     }
+    .content {
+        &-title {
+            font-size: 3.65rem;
+        }
+        &-text,
+        &-span {
+            font-size: 1.6rem;
+        }
+    }
     .banner {
         &__inner {
             padding: 0px 15px;
@@ -200,9 +209,6 @@
     .content {
         @include margin-left(0rem);
         @include margin-right(0rem);
-        &-title {
-            font-size: 3rem;
-        }
         &-title,
         &-text {
             text-align: $text-left !important;

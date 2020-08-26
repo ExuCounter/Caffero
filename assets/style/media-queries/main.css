@@ -234,7 +234,7 @@
   .content-title {
     font-size: 3rem; }
   .content-text, .content-span {
-    font-size: 1.6rem !important; } }
+    font-size: 1.9rem; } }
 
 /* 767PX -1PX IPAD */
 @media screen and (max-width: 768px) {
@@ -272,6 +272,10 @@
     bottom: 0em;
     left: unset;
     z-index: 111; }
+  .content-title {
+    font-size: 3.65rem; }
+  .content-text, .content-span {
+    font-size: 1.6rem; }
   .banner__inner {
     padding: 0px 15px;
     padding-top: 6rem;
@@ -289,8 +293,6 @@
   .content {
     margin-left: 0rem;
     margin-right: 0rem; }
-    .content-title {
-      font-size: 3rem; }
     .content-title, .content-text {
       text-align: left !important; }
   .big-btn-arrow {

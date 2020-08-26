@@ -83,7 +83,7 @@ $yellow-bg-space-bottom: 0;
 
 /* 1200PX - DEFAULT DESKTOPS */
 
-@media screen and (max-width: map-get($breakpoints, 'small-desktop')) {}
+@media screen and (max-width: map-get($breakpoints, 'default-desktop')) {}
 
 
 /* 992PX - SMALL DESKTOPS */

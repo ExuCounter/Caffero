@@ -1,0 +1,125 @@
+/* ABSTRACTS USE */
+
+@import '../abstracts/_use';
+
+/* PAGE STYLING */
+
+.contact {
+    &-form {
+        &__row {
+            @include flex();
+            input {
+                &:nth-child(1) {
+                    margin-right: 2rem;
+                }
+            }
+        }
+        &__title {
+            margin-top: 4rem;
+            margin-bottom: 0rem;
+            &.show-mobile {
+                display: none;
+            }
+        }
+        &__text {
+            margin-bottom: 5.2rem;
+            margin-top: 0.75rem;
+            &.show-mobile {
+                display: none;
+            }
+        }
+        input {
+            background-color: #ececec;
+            font-size: 1.6rem;
+            color: #000;
+            border: none;
+            margin-bottom: 1.9rem;
+            padding: 1.1rem 1rem 1.1rem 1.5rem;
+            width: 100%;
+            &::placeholder {
+                color: #000;
+            }
+        }
+        textarea {
+            padding: 1.1rem 1rem 1.1rem 1.5rem;
+            background-color: #ececec;
+            font-size: 1.6rem;
+            width: 100%;
+            color: #000;
+            border: none;
+            resize: none;
+            &::placeholder {
+                color: #000;
+            }
+        }
+        button {
+            position: relative;
+            background-color: #fcc200;
+            display: flex;
+            color: #000;
+            padding: 0.6rem 7.1rem 0.6rem 2.3rem;
+            font-size: 2.8rem;
+            font-weight: bold;
+            font-style: italic;
+            border: none;
+            margin-top: 3rem;
+            margin-left: auto;
+            text-transform: uppercase;
+            &:after {
+                position: absolute;
+                content: '';
+                background-image: url(../../img/button-right-arrow.svg);
+                background-size: 2.2rem 4rem !important;
+                width: 2.2rem;
+                height: 4rem;
+                right: 1.4rem;
+                top: 50%;
+                transform: translate(0%, -50%);
+                transition: all 0.3s;
+            }
+            &:hover:after {
+                right: 0.7rem;
+            }
+        }
+    }
+    &-diction {
+        &-title {
+            span {
+                color: $white;
+                font-weight: $bold;
+            }
+        }
+        &-row {
+            @include flex();
+            position: relative;
+            padding-bottom: 4rem;
+            img {
+                @include float-position($absolute, $unset, 0, -77%, $unset);
+                &.show-mobile {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.map-row {
+    @include flex(row, flex-start, space-between);
+    margin-bottom: 4rem;
+    &__block {
+        p {
+            margin-top: 0.5rem;
+        }
+        img {
+            margin-top: 3rem;
+            @extend %default-shadow;
+            width: 100%;
+        }
+    }
+}
+
+.content-yellow {
+    &__bg {
+        top: 45%;
+    }
+}
