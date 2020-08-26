@@ -127,9 +127,9 @@ textarea {
 .header-banner__breadcrumbs span, .header-video__breadcrumbs span {
   color: #f4ba00; }
 
-.contact-btn, .big-btn-arrow, .banner-link {
+.contact-btn, .home-btn, .big-btn-arrow, .banner-link {
   position: relative; }
-  .contact-btn:after, .big-btn-arrow:after, .banner-link:after {
+  .contact-btn:after, .home-btn:after, .big-btn-arrow:after, .banner-link:after {
     background: url(../img/button-right-arrow.svg);
     background-size: 2.2rem 4rem !important;
     background-position: unset;
@@ -145,10 +145,10 @@ textarea {
     height: 4rem;
     transform: translate(0%, -50%);
     transition: all 0.3s; }
-  .contact-btn:hover:after, .big-btn-arrow:hover:after, .banner-link:hover:after {
+  .contact-btn:hover:after, .home-btn:hover:after, .big-btn-arrow:hover:after, .banner-link:hover:after {
     right: 0.8rem; }
 
-.contact-btn {
+.contact-btn, .home-btn {
   font-size: inherit;
   font-weight: 700;
   font-style: italic;
@@ -175,6 +175,16 @@ textarea {
   height: unset;
   margin-top: 3.5rem;
   text-transform: uppercase; }
+
+.home-btn {
+  color: #FFF !important;
+  background-color: #000 !important;
+  text-transform: uppercase; }
+  .home-btn:after {
+    background: url(../img/arrow-right.svg);
+    background-size: 2.2rem 4rem !important;
+    background-position: unset;
+    background-repeat: no-repeat; }
 
 .big-btn-arrow {
   font-size: inherit;

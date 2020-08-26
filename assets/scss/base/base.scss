@@ -90,6 +90,16 @@ textarea {
     text-transform: uppercase;
 }
 
+.home-btn {
+    @extend %default-btn;
+    @extend %default-btn-arrow;
+    @include color($white !important, $black !important);
+    text-transform: uppercase;
+    &:after {
+        @include background('img/arrow-right.svg', 2.2rem 4rem !important);
+    }
+}
+
 .default-shadow {
     @extend %default-shadow;
 }

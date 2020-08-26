@@ -1,0 +1,55 @@
+/* ABSTRACTS USE */
+
+@import '../abstracts/_use';
+
+/* PAGE STYLING */
+
+.success-header {
+    &__content {}
+    &__title {
+        @include font-style(4rem, #1d1d1b, $regular, $normal, $text-center);
+        text-transform: uppercase;
+        padding-top: 6rem;
+    }
+    &__text {
+        @include font-style(3.8rem, #1d1d1b, $bold, $italic, $text-center, 1);
+        text-transform: uppercase;
+        padding-top: 4.3rem;
+        span {
+            font-weight: $bold;
+            color: $main-color;
+        }
+    }
+    &__agitation {
+        @include font-style(1.6rem, $black, $regular, $normal, $text-center);
+        padding-top: 2.5rem;
+    }
+    &__speaker {
+        @include font-style(2.4rem, $black, $bold, $normal, $text-center);
+        padding: 1.3rem 0rem 1.7rem;
+    }
+    &__img {
+        @include float-position($absolute, $unset, 0, -32rem, 4rem);
+        img {
+            max-height: 62rem;
+        }
+    }
+}
+
+.content-yellow {
+    .video__wrapper {
+        @include flex(row, flex-start, center);
+        display: flex;
+        justify-content: center;
+        iframe {
+            max-width: 50rem;
+            height: 34rem;
+        }
+    }
+    .home-btn {
+        margin-top: 4rem;
+    }
+    &__bg {
+        @include yellow-bg-gaps(4.4rem, 3.4rem);
+    }
+}
