@@ -1,0 +1,148 @@
+/* ABSTRACTS USE */
+
+@import '../abstracts/_use';
+
+/* PAGE STYLING */
+
+.content {
+    &-yellow {
+        @include margin-top(5.5rem);
+        &__bg {
+            /* CHANGE SPACE FOR YELLOW BG HERE */
+            @include yellow-bg-gaps(25rem, 20rem);
+        }
+        &.team {
+            .row {
+                justify-content: space-between;
+            }
+        }
+    }
+    &-title {
+        @include margin-bottom(3.5rem);
+    }
+}
+
+.about-top-img {
+    width: 100%;
+}
+
+.team-row {
+    @include flex(row, flex-start, space-between);
+    flex-wrap: wrap;
+}
+
+.team-member {
+    &__col {
+        flex: 0 0 33.333%;
+        padding: 0;
+        @include margin-bottom(6.5rem);
+        @for $i from 1 through 21 {
+            &:nth-child(#{$i}) {
+                .team-member__block {
+                    &:nth-child(1) {
+                        &:after {
+                            @include background('../img/team-member-#{$i}.png', contain);
+                        }
+                    }
+                }
+            }
+        }
+        &-inner {
+            max-width: 35rem;
+        }
+        &:nth-child(3n + 1) {
+            .team-member__col-inner {
+                margin-right: auto;
+            }
+        }
+        &:nth-child(3n + 2) {
+            .team-member__col-inner {
+                margin: 0 auto;
+            }
+        }
+        &:nth-child(3n + 3) {
+            .team-member__col-inner {
+                margin-left: auto;
+            }
+        }
+    }
+    &__block {
+        position: $relative;
+        overflow: hidden;
+        padding: 17.5rem 0rem;
+        &:after {
+            @include float-position($absolute, 0, 0, 0, 0, 1);
+            @include size(100%, auto);
+        }
+        &:before {
+            @extend %dark-bg;
+            opacity: 0;
+            z-index: 1;
+        }
+        &:hover:before {
+            opacity: 1;
+        }
+        &:hover {
+            .team-member__contacts {
+                bottom: 3.3rem;
+            }
+            .team-member__initials {
+                top: 2rem;
+            }
+            .team-member__position {
+                opacity: 1;
+            }
+        }
+    }
+    &__initials {
+        @include float-position($absolute, calc(100% - 8rem), $unset, $unset, 2.8rem, 0, 2);
+        @include flex(column);
+        @include transition(all, 0.3s, ease-in-out);
+    }
+    &__name {
+        @include font-style(2.8rem, $white, $bold, $italic, $text-left, 1);
+        text-transform: uppercase;
+    }
+    &__surname {
+        @include font-style(2rem, $main-color, $bold, $italic, $text-left, 1);
+    }
+    &__position {
+        @include font-style(1.6rem, $white, $light, $italic, $text-left, 1);
+        @include padding-top(1rem);
+        @include transition(all, 0.3s, ease-in-out);
+        display: $block;
+        opacity: 0;
+    }
+    &__contacts {
+        @include float-position($absolute, $unset, $unset, 3.3rem, 7.25rem, 0, 2);
+        @include flex(column);
+        @include transition(all, 0.3s, ease-in-out);
+        bottom: -100%;
+    }
+    &__contacts-phone,
+    &__contacts-email {
+        @include float-position($relative);
+        @include font-style(1.6rem, $white !important, $light, $normal, $text-left, 1);
+        text-decoration: none !important;
+        &:after {
+            @include float-position($absolute, 50%, $unset, $unset, -4rem, 1, 1);
+            transform: translate(0, -50%);
+        }
+    }
+    &__contacts-phone {
+        &:after {
+            @include size(2.4rem, 2.4rem);
+            left: -4.2rem;
+            @include background('../img/team-member-phone-icon.svg', contain !important);
+        }
+    }
+    &__contacts-email {
+        @include margin-top(2rem);
+        @include margin-left(0.25rem);
+        &:after {
+            left: -4.75rem;
+            @include size(3.2rem, 2.4rem);
+            @include background('../img/team-member-mail-icon.svg', contain !important);
+        }
+    }
+}

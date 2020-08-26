@@ -1,0 +1,78 @@
+/* ABSTRACTS USE */
+
+@import '../abstracts/_use';
+
+/* 1200PX - DEFAULT DESKTOPS */
+
+@media screen and (max-width: map-get($breakpoints, 'default-desktop')) {
+    .team {
+        .row {
+            padding: 0px 15px;
+        }
+    }
+}
+
+
+/* 992PX - SMALL DESKTOPS */
+
+@media screen and (max-width: map-get($breakpoints, 'small-desktop')) {
+    .team {
+        &-member {
+            &__col {
+                justify-content: center;
+            }
+        }
+        .row {
+            justify-content: center;
+        }
+    }
+}
+
+
+/* 768PX - DEFAULT TABLETS */
+
+@media screen and (max-width: map-get($breakpoints, 'default-tablet')) {
+    .team {
+        &-row {
+            flex-direction: column;
+        }
+        &-member {
+            &__col {
+                flex: 0 0 50% !important;
+                &-inner {
+                    margin: 0 auto !important;
+                }
+            }
+        }
+    }
+    .about-top-img {
+        max-width: 70%;
+        margin: 2rem auto 0rem auto;
+        display: $block;
+    }
+}
+
+
+/* 578PX - SMALL TABLETS */
+
+@media screen and (max-width: map-get($breakpoints, 'small-tablet')) {
+    .team {
+        &-member {
+            &__col {
+                margin-bottom: 4.5rem !important;
+                flex: 0 0 100% !important;
+            }
+        }
+    }
+    .about-top-img {
+        max-width: 100%;
+    }
+    .content {
+        &-yellow {
+            &__bg {
+                height: calc(100% + 20rem) !important;
+                top: -20rem !important;
+            }
+        }
+    }
+}
