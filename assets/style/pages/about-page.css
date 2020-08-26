@@ -74,6 +74,10 @@
   .team-member__col {
     margin-bottom: 4.5rem !important;
     flex: 0 0 100% !important; }
+    .team-member__col-inner {
+      max-width: 42rem !important; }
+  .team-member__block {
+    padding: 21rem 0rem !important; }
   .about-top-img {
     max-width: 100%; }
   .content-yellow__bg {

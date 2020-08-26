@@ -61,6 +61,12 @@
             &__col {
                 margin-bottom: 4.5rem !important;
                 flex: 0 0 100% !important;
+                &-inner {
+                    max-width: 42rem !important;
+                }
+            }
+            &__block {
+                padding: 21rem 0rem !important;
             }
         }
     }
