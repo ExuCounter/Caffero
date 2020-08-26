@@ -78,6 +78,8 @@
       max-width: 42rem !important; }
   .team-member__block {
     padding: 21rem 0rem !important; }
+  .team-member__initials {
+    top: calc(100% - 9rem); }
   .about-top-img {
     max-width: 100%; }
   .content-yellow__bg {
