@@ -2208,7 +2208,8 @@ textarea {
   .banner__inner {
     padding: 0px 15px;
     padding-top: 6rem;
-    padding-bottom: 6rem; }
+    padding-bottom: 6rem;
+    margin: 0px 15px 0px 5px; }
   .banner-title {
     margin-bottom: 3rem; }
   .banner-link {
