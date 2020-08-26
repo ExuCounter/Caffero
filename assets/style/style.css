@@ -173,7 +173,8 @@ textarea {
   background-color: #fcc200 !important;
   width: 100%;
   height: unset;
-  margin-top: 3.5rem; }
+  margin-top: 3.5rem;
+  text-transform: uppercase; }
 
 .big-btn-arrow {
   font-size: inherit;

@@ -87,6 +87,7 @@ textarea {
     @include color($black !important, $main-color !important);
     @include size(100%);
     margin-top: 3.5rem;
+    text-transform: uppercase;
 }
 
 .default-shadow {
