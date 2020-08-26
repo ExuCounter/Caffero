@@ -50,6 +50,7 @@
             @include float-position($absolute, $yellow-bg-space-top, 0, 0, 0, 0, 1);
             @include size(auto, calc(100% - #{$yellow-bg-space-bottom}*2));
             @include color(transparent, $main-color);
+            @include box-shadow(1px, 5px, 10px, #00000040);
             &:after {
                 @include background('img/romb.jpg', auto, $unset, repeat);
                 @include float-position($absolute, $unset, $unset, $unset, $unset, 1);

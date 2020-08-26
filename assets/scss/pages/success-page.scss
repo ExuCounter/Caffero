@@ -10,6 +10,9 @@
         @include font-style(4rem, #1d1d1b, $regular, $normal, $text-center);
         text-transform: uppercase;
         padding-top: 6rem;
+        &.show-mobile {
+            display: none;
+        }
     }
     &__text {
         @include font-style(3.8rem, #1d1d1b, $bold, $italic, $text-center, 1);
@@ -18,6 +21,9 @@
         span {
             font-weight: $bold;
             color: $main-color;
+        }
+        &.show-mobile {
+            display: none;
         }
     }
     &__agitation {

@@ -77,7 +77,7 @@
         @include float-position($absolute, 0, 0, 0, 0, 0, 1);
         @include size(100%, 91.4%);
         @include color(transparent, $main-color);
-        @include box-shadow(3px, 3px, 3px, #e2e2e2, $inset: false);
+        @include box-shadow(1px, 5px, 10px, #00000040);
         &:after {
             @include background('img/romb.jpg', auto, center, repeat);
             @include size(100%, 100%);

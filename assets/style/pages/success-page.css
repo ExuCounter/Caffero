@@ -55,6 +55,8 @@
   line-height: unset;
   text-transform: uppercase;
   padding-top: 6rem; }
+  .success-header__title.show-mobile {
+    display: none; }
 
 .success-header__text {
   font-family: "Poppins", sans-serif;
@@ -69,6 +71,8 @@
   .success-header__text span {
     font-weight: 700;
     color: #fcc200; }
+  .success-header__text.show-mobile {
+    display: none; }
 
 .success-header__agitation {
   font-family: "Poppins", sans-serif;

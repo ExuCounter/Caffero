@@ -161,9 +161,9 @@
     height: 91.4%;
     color: transparent;
     background-color: #fcc200;
-    -webkit-box-shadow: 3px 3px 3px #e2e2e2;
-    -moz-box-shadow: 3px 3px 3px #e2e2e2;
-    box-shadow: 3px 3px 3px #e2e2e2; }
+    -webkit-box-shadow: 1px 5px 10px #00000040;
+    -moz-box-shadow: 1px 5px 10px #00000040;
+    box-shadow: 1px 5px 10px #00000040; }
     .how-section__bg:after {
       background: url(../img/romb.jpg);
       background-size: auto;

@@ -47,5 +47,74 @@
 /* PAGE STYLING */
 /* 768PX - DEFAULT TABLETS */
 @media screen and (max-width: 768px) {
-  .success-header__content {
-    width: 50%; } }
+  .success-header {
+    margin-bottom: 3rem; }
+    .success-header__inner {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start; }
+    .success-header__content {
+      width: 72.5%; }
+    .success-header__text {
+      font-size: 3.6rem; }
+    .success-header__img {
+      position: relative;
+      top: unset;
+      right: unset;
+      bottom: unset;
+      left: unset;
+      z-index: unset;
+      width: 27.5%;
+      top: 2rem; }
+      .success-header__img img {
+        width: 100%;
+        max-width: 22rem; } }
+
+/* 578PX - SMALL TABLETS */
+@media screen and (max-width: 578px) {
+  .success-header {
+    margin-bottom: 0rem; }
+    .success-header__inner {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start; }
+    .success-header__content {
+      width: 57.5%; }
+      .success-header__content h4 {
+        display: none; }
+    .success-header__img {
+      position: relative;
+      top: unset;
+      right: unset;
+      bottom: unset;
+      left: unset;
+      z-index: unset;
+      width: 42.5%;
+      left: -7.75rem;
+      margin-bottom: -13rem;
+      top: -2rem; }
+      .success-header__img img {
+        width: auto; }
+    .success-header__text, .success-header__agitation {
+      text-align: left; }
+    .success-header__text {
+      font-size: 3rem;
+      display: none; }
+      .success-header__text.show-mobile {
+        display: block; }
+    .success-header__speaker {
+      display: none; }
+    .success-header__agitation {
+      margin-bottom: 0; }
+    .success-header__title {
+      padding-top: 3.6rem;
+      font-size: 3.3rem; }
+      .success-header__title.show-mobile {
+        display: block; }
+  .content-yellow__bg {
+    top: 3.4rem;
+    height: calc(100% - 5.8rem); }
+  .content-yellow .video__wrapper {
+    padding-top: 15rem; } }
