@@ -44,7 +44,8 @@
 /* 320PX - TINY MOBILES */
 /* IMPORT SASS FEATURES */
 /* % NON-RENDERED COMPONENTS FOR PAGES */
-.map-row__block img {
+.map-row__block img,
+.map-row__block iframe {
   -webkit-box-shadow: 8px 7px 0px 1px #fcc200;
   -moz-box-shadow: 8px 7px 0px 1px #fcc200;
   box-shadow: 8px 7px 0px 1px #fcc200; }
@@ -148,9 +149,11 @@
   margin-bottom: 4rem; }
   .map-row__block p {
     margin-top: 0.5rem; }
-  .map-row__block img {
+  .map-row__block img,
+  .map-row__block iframe {
     margin-top: 3rem;
-    width: 100%; }
+    width: 100%;
+    height: 31rem; }
 
 .content-yellow__bg {
   top: 45%; }

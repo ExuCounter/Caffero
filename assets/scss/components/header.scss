@@ -104,6 +104,12 @@
             li {
                 position: $relative;
             }
+            // &:after {
+            //     @include float-position($absolute, 0, $unset, $unset, 0);
+            //     content: '';
+            //     background-color: $main-color;
+            //     @include size(100vw, 100%);
+            // }
         }
     }
     &-banner {
