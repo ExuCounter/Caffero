@@ -17,7 +17,7 @@
 
 .how-section {
     @include padding-top(6.4rem);
-    @include margin-bottom(12.5rem);
+    @include margin-bottom(3.5rem);
     position: $relative;
     .video__wrapper {
         @include size(100%);

@@ -128,6 +128,12 @@
   .portfolio-contact img {
     width: 100%;
     height: unset; }
+  .portfolio-contact .contact-btn {
+    background-color: #000 !important;
+    color: #fcc200 !important;
+    margin-top: 0; }
+    .portfolio-contact .contact-btn:after {
+      background: url(../../img/arrow-right.svg); }
 
 .portfolio-gallery {
   display: flex;
