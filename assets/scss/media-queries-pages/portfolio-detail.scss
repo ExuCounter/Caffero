@@ -8,24 +8,23 @@
 /* 768PX - DEFAULT TABLETS */
 
 @media screen and (max-width: map-get($breakpoints, 'default-tablet')) {
-    body {
-        display: none !important;
-    }
-    .portfolio-gallery {
-        @include flex(column);
-        div {
-            @include margin-bottom(0rem);
-        }
-        img {
-            @include margin-bottom(4rem);
-        }
-        &__right {
-            @include margin-left(0rem);
-        }
-    }
     .video__wrapper {
         iframe {
             @include size(100%, 30rem);
+        }
+    }
+    .portfolio-gallery {
+        .row,
+        div,
+        .col-md-6 {
+            margin-bottom: 0rem;
+        }
+        &__left,
+        &__right {
+            width: 50%;
+            .portfolio-gallery__item {
+                margin-bottom: 3rem;
+            }
         }
     }
 }
@@ -36,14 +35,45 @@
 @media screen and (max-width: map-get($breakpoints, 'small-tablet')) {
     .portfolio-gallery {
         @include flex(column);
-        div {
-            @include margin-bottom(0rem);
+        &__item {
+            margin: 0 auto 2rem auto !important;
         }
-        img {
-            @include margin-bottom(4rem);
+        &__left,
+        &__right {
+            margin: 0 auto !important;
+        }
+        .col-md-6 {
+            margin-bottom: 0 !important;
         }
         &__right {
             @include margin-left(0rem);
+        }
+    }
+    .content-yellow {
+        margin-bottom: 3rem;
+        &__bg {
+            @include yellow-bg-gaps(11rem, 11rem);
+        }
+    }
+}
+
+
+/* TINY TABLETS */
+
+@media screen and (max-width: map-get($breakpoints, 'tiny-tablet')) {
+    .portfolio-gallery {
+        &__left,
+        &__right {
+            width: 80%;
+        }
+    }
+}
+
+@media screen and (max-width: map-get($breakpoints, 'large-mobile')) {
+    .portfolio-gallery {
+        &__left,
+        &__right {
+            width: 100%;
         }
     }
 }
