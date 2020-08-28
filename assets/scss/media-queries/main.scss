@@ -176,7 +176,7 @@
     */
     /* DECREASE EM/REM UNITS END */
     .float-buttons {
-        @include float-position($fixed, $unset, 2em, 0em, $unset, 0, 111);
+        @include float-position($fixed, $unset, 2em, 0em, $unset, 0, 555);
     }
     .content {
         &-title {
