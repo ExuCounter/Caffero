@@ -8,6 +8,9 @@
 /* 768PX - DEFAULT TABLETS */
 
 @media screen and (max-width: map-get($breakpoints, 'default-tablet')) {
+    body {
+        display: none !important;
+    }
     .portfolio-gallery {
         @include flex(column);
         div {
@@ -23,6 +26,24 @@
     .video__wrapper {
         iframe {
             @include size(100%, 30rem);
+        }
+    }
+}
+
+
+/* 568PX - SMALL TABLETS */
+
+@media screen and (max-width: map-get($breakpoints, 'small-tablet')) {
+    .portfolio-gallery {
+        @include flex(column);
+        div {
+            @include margin-bottom(0rem);
+        }
+        img {
+            @include margin-bottom(4rem);
+        }
+        &__right {
+            @include margin-left(0rem);
         }
     }
 }
