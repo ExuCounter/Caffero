@@ -130,7 +130,7 @@
     height: unset; }
   .portfolio-contact .contact-btn {
     background-color: #000 !important;
-    color: #fcc200 !important;
+    color: #FFF !important;
     margin-top: 0; }
     .portfolio-contact .contact-btn:after {
       background: url(../../img/arrow-right.svg); }

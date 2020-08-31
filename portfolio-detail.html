@@ -364,7 +364,7 @@
     <div class="content">
         <div class="container">
             <div class='d-flex justify-content-center'>
-                <a href="#" class="big-btn-arrow">
+                <a href="contact.html" class="big-btn-arrow enveloppe-cta">
                     OOK ZO’N GAVE SHOW? NEEM CONTACT MET ONS OP.
                 </a>
             </div>
@@ -725,6 +725,18 @@
         let homeModalFormPhone = document.querySelector('.home-modal-phone form');
 
         floatEmailButton.addEventListener('click', (e) => {
+            e.preventDefault();
+
+            if (!bodyCover.classList.contains('active')) {
+                bodyCover.classList.add('active');
+                homeModalEmail.classList.add('active');
+            } else {
+                bodyCover.classList.remove('active')
+                homeModalEmail.classList.remove('active');
+            }
+        })
+
+        document.querySelector('.enveloppe-cta').addEventListener('click', (e) => {
             e.preventDefault();
 
             if (!bodyCover.classList.contains('active')) {

@@ -430,9 +430,9 @@
                     </div>
                     <div class="col-md-6 col-12">
                         <div class='d-flex align-items-start'>
-                            <button class="big-btn-arrow">
+                            <a href='contact.html' class="big-btn-arrow enveloppe-cta">
                                 INTERESSE GEWEKT? NEEM<br> DAN CONTACT MET ONS OP.
-                            </button>
+                            </a>
                         </div>
                     </div>
 
@@ -829,6 +829,18 @@
         let homeModalFormPhone = document.querySelector('.home-modal-phone form');
 
         floatEmailButton.addEventListener('click', (e) => {
+            e.preventDefault();
+
+            if (!bodyCover.classList.contains('active')) {
+                bodyCover.classList.add('active');
+                homeModalEmail.classList.add('active');
+            } else {
+                bodyCover.classList.remove('active')
+                homeModalEmail.classList.remove('active');
+            }
+        })
+
+        document.querySelector('.enveloppe-cta').addEventListener('click', (e) => {
             e.preventDefault();
 
             if (!bodyCover.classList.contains('active')) {

@@ -359,7 +359,7 @@
                         optimaal kunnen genieten van de vuurw- erkshow. Wilt u meer weten over wat Caffero met haar vuurwerk bruiloft kan beteke- nen: kosten, capaciteit, vergunning vuurwerk en voorwaarden? Neem dan voor meer informatie of vragen gerust
                         geheel vrijblijvend contact met ons op, of laat uw telefoonnummer achter via het ‘bel me terug’ <strong>formulier</strong>.
                     </p>
-                    <button class="big-btn-arrow">
+                    <button class="big-btn-arrow enveloppe-cta">
                         INTERESSE GEWEKT? NEEM<br> DAN CONTACT MET ONS OP.
                     </button>
                 </div>
@@ -755,6 +755,18 @@
         let homeModalFormPhone = document.querySelector('.home-modal-phone form');
 
         floatEmailButton.addEventListener('click', (e) => {
+            e.preventDefault();
+
+            if (!bodyCover.classList.contains('active')) {
+                bodyCover.classList.add('active');
+                homeModalEmail.classList.add('active');
+            } else {
+                bodyCover.classList.remove('active')
+                homeModalEmail.classList.remove('active');
+            }
+        })
+
+        document.querySelector('.enveloppe-cta').addEventListener('click', (e) => {
             e.preventDefault();
 
             if (!bodyCover.classList.contains('active')) {
