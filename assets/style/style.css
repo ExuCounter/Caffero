@@ -1898,7 +1898,9 @@ textarea {
     right: -30px;
     top: 20px; }
   .footer h3 {
-    font-size: 3rem; } }
+    font-size: 3rem;
+    line-height: 1;
+    margin-top: 4.9rem; } }
 
 /* 480PX - TINY TABLETS */
 @media screen and (max-width: 480px) {
