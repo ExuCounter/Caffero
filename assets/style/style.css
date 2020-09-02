@@ -948,8 +948,7 @@ textarea {
           margin-top: 1rem;
           transition: all 0.5s ease-in-out;
           -webkit-transition: all 0.5s ease-in-out;
-          -moz-transition: all 0.5s ease-in-out;
-          max-height: 0px; }
+          -moz-transition: all 0.5s ease-in-out; }
         .footer-info__bottom-item:last-child.active img {
           max-height: 500px; }
     .footer-info__nav {

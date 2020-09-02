@@ -160,7 +160,6 @@
                         @include size(16.3rem, auto);
                         @include margin-top(1rem);
                         @include transition(all, 0.5s, ease-in-out);
-                        max-height: 0px;
                     }
                     &.active {
                         img {
