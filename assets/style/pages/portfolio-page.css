@@ -127,7 +127,8 @@
       margin-bottom: 0rem; }
   .portfolio-contact img {
     width: 100%;
-    height: unset; }
+    height: unset;
+    height: 483px; }
   .portfolio-contact .contact-btn {
     background-color: #000 !important;
     color: #FFF !important;

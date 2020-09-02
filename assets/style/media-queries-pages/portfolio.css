@@ -45,6 +45,14 @@
 /* IMPORT SASS FEATURES */
 /* % NON-RENDERED COMPONENTS FOR PAGES */
 /* PAGE STYLING */
+@media screen and (max-width: 1200px) {
+  .portfolio-contact__right img {
+    height: 382px; } }
+
+@media screen and (max-width: 992px) {
+  .portfolio-contact__right img {
+    height: 275px; } }
+
 /* 768PX - DEFAULT TABLETS */
 @media screen and (max-width: 768px) {
   .portfolio-contact {
@@ -52,7 +60,9 @@
     .portfolio-contact__left {
       flex: 0 0 35%; }
     .portfolio-contact__right {
-      margin-left: 4rem; } }
+      margin-left: 4rem; }
+      .portfolio-contact__right img {
+        height: 280px; } }
 
 /* 578PX - SMALL TABLETS */
 @media screen and (max-width: 578px) {

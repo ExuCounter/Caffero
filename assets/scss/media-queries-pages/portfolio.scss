@@ -4,6 +4,30 @@
 
 /* PAGE STYLING */
 
+@media screen and (max-width: map-get($breakpoints, 'default-desktop')) {
+    .portfolio {
+        &-contact {
+            &__right {
+                img {
+                    height: 382px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: map-get($breakpoints, 'small-desktop')) {
+    .portfolio {
+        &-contact {
+            &__right {
+                img {
+                    height: 275px;
+                }
+            }
+        }
+    }
+}
+
 
 /* 768PX - DEFAULT TABLETS */
 
@@ -16,6 +40,9 @@
             }
             &__right {
                 @include margin-left(4rem);
+                img {
+                    height: 280px;
+                }
             }
         }
     }
