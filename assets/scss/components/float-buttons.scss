@@ -1,5 +1,5 @@
 .float-buttons {
-    @include float-position($fixed, 38.8em, 10.1em, unset, unset, 0, 111);
+    @include float-position($fixed, 38.8em, 10.1em, unset, unset, 0, 11111);
     @include size(24.7em, 28.4em);
     /* TEMPORARY FONT SIZE UNSET */
     font-size: $unset;
