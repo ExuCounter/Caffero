@@ -1486,7 +1486,7 @@ textarea {
 /* STYLING */
 .how-section {
   padding-top: 3rem;
-  margin-bottom: 12.5rem;
+  margin-bottom: 3.5rem;
   position: relative; }
   .how-section__right {
     margin-left: 4.7rem; }
@@ -1794,6 +1794,8 @@ textarea {
         cursor: pointer; }
       .footer-info__bottom-item__container.active ~ p img {
         max-height: 500px; }
+    .footer-info__bottom-item img {
+      max-height: 0; }
     .footer-info__bottom-item p {
       max-height: 0;
       opacity: 0;

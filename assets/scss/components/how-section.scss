@@ -6,7 +6,7 @@
 
 .how-section {
     @include padding-top(3rem);
-    @include margin-bottom(12.5rem);
+    @include margin-bottom(3.5rem);
     position: $relative;
     &__left {
         button {
