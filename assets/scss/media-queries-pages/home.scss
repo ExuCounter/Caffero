@@ -48,13 +48,13 @@
                 display: $flex;
             }
             &__img {
-                flex: 0 1 35%;
+                flex: 0 1 30%;
                 img {
-                    max-height: 72rem;
+                    max-height: 80rem;
                 }
             }
             &__content {
-                flex: 0 1 65%;
+                flex: 0 1 70%;
                 margin-left: auto;
             }
             &__speaker {
@@ -148,28 +148,37 @@
         }
     }
     .home-header {
+        .container {
+            padding-right: 0;
+        }
         &__welcome {
             font-size: 2.2rem;
-            padding-top: 3.3rem;
+            padding-top: 12.3rem;
         }
         &__title {
-            font-size: 2.6rem;
+            font-size: 3.6rem;
+            position: absolute;
+            left: 50%;
+            top: -2.5rem;
+            transform: translate(-50%, 0%);
+            letter-spacing: 2px;
         }
         &__speaker {
-            font-size: 1.5rem;
-            padding-bottom: 1rem;
+            font-size: 1.7rem;
+            padding-bottom: 3rem;
             text-align: $text-left;
             font-family: 'Colors Of Autumn';
         }
         &__text {
-            font-size: 2.4rem;
+            font-size: 3.1rem;
         }
         &__buttons {
             margin-right: 2rem;
             button {
                 padding: 0.5rem 1.2rem;
                 text-align: $text-left;
-                font-size: 1.5rem;
+                font-size: 1.3rem;
+                font-weight: 600;
                 &.active {
                     font-size: 2.1rem;
                 }
@@ -185,12 +194,13 @@
     }
 }
 
-@media screen and (max-width: map-get($breakpoints, 'default-mobile')) {
+@media screen and (max-width: map-get($breakpoints, 'tiny-tablet')) {
     .home-header {
         &__img {
-            left: -6rem;
+            left: -9rem;
+            bottom: -11rem;
             img {
-                max-height: 54rem;
+                max-height: 70rem;
             }
         }
     }
