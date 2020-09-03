@@ -108,6 +108,7 @@
             }
             &__bottom {
                 flex-direction: column;
+                overflow: hidden;
                 &-item {
                     &__container {
                         border-top: solid 1px #6f6f6e;
@@ -319,6 +320,9 @@
             line-height: 1;
             margin-top: 4.9rem;
         }
+    }
+    .footer-info__nav {
+        padding: 1.6rem 0rem 0.8rem 0rem;
     }
 }
 
