@@ -147,6 +147,9 @@
 .how-section__right {
   flex: 0 1 auto; }
 
+.how-section button {
+  padding: 0.8rem 1.9rem 0.7rem 1.9rem; }
+
 .how-section__sm-block:nth-child(1) {
   background: url(../../img/home-page-sm-1.jpg);
   background-size: cover;

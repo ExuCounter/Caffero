@@ -63,6 +63,9 @@
     &__right {
         flex: 0 1 auto;
     }
+    button {
+        padding: 0.8rem 1.9rem 0.7rem 1.9rem;
+    }
     &__sm-block {
         &:nth-child(1) {
             @include background('../img/home-page-sm-1.jpg', cover, auto);
