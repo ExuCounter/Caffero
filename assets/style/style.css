@@ -483,7 +483,7 @@ textarea {
       top: 80%;
       color: #FFF;
       transform: translate(-50%, 0%);
-      font-size: 1em; }
+      font-size: 10px; }
     .header-banner__name {
       text-transform: uppercase;
       display: block;
@@ -1698,7 +1698,10 @@ textarea {
     .header-mobile-nav.active a {
       opacity: 0; }
   .header-banner__title {
-    font-size: 5.2rem; } }
+    font-size: 5.2rem; }
+  .header-banner::after {
+    width: 3.4rem;
+    height: 1.9rem; } }
 
 /* 578PX - SMALL TABLETS */
 @media screen and (max-width: 578px) {
@@ -1732,11 +1735,6 @@ textarea {
       height: 5.6rem; } }
 
 /* 480PX - TINY TABLETS */
-@media screen and (max-width: 480px) {
-  .header-banner::after {
-    width: 3.4rem;
-    height: 1.9rem; } }
-
 /* 420PX - LARGE MOBILES */
 /* 375PX - DEFAULT MOBILES */
 /* 360PX - SMALL MOBILES */

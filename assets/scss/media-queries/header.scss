@@ -138,6 +138,10 @@
             }
         }
     }
+    .header-banner::after {
+        width: 3.4rem;
+        height: 1.9rem;
+    }
 }
 
 
@@ -194,12 +198,7 @@
 
 /* 480PX - TINY TABLETS */
 
-@media screen and (max-width: map-get($breakpoints, 'tiny-tablet')) {
-    .header-banner::after {
-        width: 3.4rem;
-        height: 1.9rem;
-    }
-}
+@media screen and (max-width: map-get($breakpoints, 'tiny-tablet')) {}
 
 
 /* 420PX - LARGE MOBILES */
