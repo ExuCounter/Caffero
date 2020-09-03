@@ -1,6 +1,11 @@
 /* ABSTRACTS USE FOR NON-COMMON COMPONENTS */
 
 @import '../abstracts/_use';
+@font-face {
+    font-family: 'Colors Of Autumn';
+    src: url(../../fonts/colors-of-autumn.woff) format('woff');
+}
+
 
 /* PAGE STYLING */
 
@@ -8,6 +13,7 @@
     @include background('../img/wedding.jpg', cover, center);
     position: $relative;
     z-index: 11;
+    font-family: 'Colors Of Autumn';
     &__title {
         @include font-style(3.5rem, $white, $regular, $normal, $text-center);
         @include padding-top(6.5rem);
@@ -38,6 +44,7 @@
         @include padding-bottom(18.2rem);
         @include margin-bottom(0rem);
         text-shadow: 1px 1px 0px $black;
+        font-family: 'Colors Of Autumn';
     }
     &__img {
         @include float-position($absolute, $unset, $unset, -18rem, 0);

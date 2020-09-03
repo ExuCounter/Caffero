@@ -77,7 +77,8 @@
       flex: 0 1 65%;
       margin-left: auto; }
     .home-header__speaker {
-      padding-bottom: 4rem; }
+      padding-bottom: 4rem;
+      font-family: 'Colors Of Autumn'; }
     .home-header__text, .home-header__welcome, .home-header__title {
       text-align: left; }
     .home-header__img {
@@ -135,7 +136,8 @@
   .home-header__speaker {
     font-size: 1.5rem;
     padding-bottom: 1rem;
-    text-align: left; }
+    text-align: left;
+    font-family: 'Colors Of Autumn'; }
   .home-header__text {
     font-size: 2.4rem; }
   .home-header__buttons {

@@ -68,6 +68,10 @@
     font-size: 2.6rem;
     background: #000; }
 
+@font-face {
+  font-family: 'Colors Of Autumn';
+  src: url(../../fonts/colors-of-autumn.woff) format("woff"); }
+
 /* PAGE STYLING */
 .home-header {
   background: url(../../img/wedding.jpg);
@@ -75,7 +79,8 @@
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  z-index: 11; }
+  z-index: 11;
+  font-family: 'Colors Of Autumn'; }
   .home-header__title {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -121,7 +126,8 @@
     line-height: 1;
     padding-bottom: 18.2rem;
     margin-bottom: 0rem;
-    text-shadow: 1px 1px 0px #000; }
+    text-shadow: 1px 1px 0px #000;
+    font-family: 'Colors Of Autumn'; }
   .home-header__img {
     position: absolute;
     top: unset;
