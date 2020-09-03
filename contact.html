@@ -110,7 +110,7 @@
                 <div class="header-menu__container">
                     <ul class='header-menu'>
                         <li>
-                            <a href="/home.html">
+                            <a href="/home.html" class='mobile-prevent-default'>
                                 TEST MENU
                             </a>
                             <ul class='header-menu__sub'>
@@ -135,7 +135,7 @@
                             x
                         </li>
                         <li>
-                            <a href="/over-caffero.html">
+                            <a href="/over-caffero.html" class='mobile-prevent-default'>
                                 Over Caffero
                             </a>
                             <ul class='header-menu__sub'>
@@ -160,7 +160,7 @@
                             x
                         </li>
                         <li>
-                            <a class='active' href="/vuurwer.html">
+                            <a class='active mobile-prevent-default' href="/fireworks.html">
                                 Vuurwerk
                             </a>
                             <ul class='header-menu__sub'>
@@ -185,7 +185,7 @@
                             x
                         </li>
                         <li>
-                            <a href="/special-effects.html">
+                            <a href="/special-effects.html" class='mobile-prevent-default'>
                                 Special effects
                             </a>
                             <ul class='header-menu__sub'>
@@ -210,7 +210,7 @@
                             x
                         </li>
                         <li>
-                            <a href="/portfolio.html">
+                            <a href="/portfolio.html" class='mobile-prevent-default'>
                                 Portfolio
                             </a>
                             <ul class='header-menu__sub'>
@@ -234,8 +234,8 @@
                         <li class='header-menu__splitter'>
                             x
                         </li>
-                        <li>
-                            <a href="/contact.html">
+                        <li class='last-menu-child'>
+                            <a href="/contact.html" class='mobile-prevent-default'>
                                 Contact
                             </a>
                             <ul class='header-menu__sub'>
@@ -257,6 +257,17 @@
                             </ul>
                         </li>
                     </ul>
+                    <div class='d-md-none d-flex header-menu-mobile__bottom'>
+                        <div class="header-menu__socials d-md-none d-flex align-items-center">
+                            <a href='javascript:void(0)' target='_blank'><img src="assets/img/black-youtube-icon.svg" alt="Youtube"></a>
+                            <a href='javascript:void(0)' target='_blank'><img src="assets/img/black-instagram-icon.png" alt="Instagram"></a>
+                            <a href='javascript:void(0)' target='_blank'><img src="assets/img/black-facebook-icon.svg" alt="Facebook"></a>
+                            <a href='javascript:void(0)' target='_blank'><img src="assets/img/black-email-icon.svg" alt="Email"></a>
+                        </div>
+                        <div class="header-menu__rate">
+                            <img src="assets/img/header-menu-rate.png" alt="Header Menu Rate">
+                        </div>
+                    </div>
                 </div>
                 <div class="header-nav__logo">
                     <a href='/'>
@@ -444,7 +455,7 @@
             <div class="container">
                 <div class="footer-info__top">
                     <div class="row">
-                        <div class="col-lg-3 col-md-6 col-12">
+                        <div class="col-md-3 col-sm-4 col-12 pl-lg-2 pl-0">
                             <span>
                             Bereikbaar   
                         </span>
@@ -452,7 +463,7 @@
                             09.00 - 21.00 uur
                         </a>
                         </div>
-                        <div class="col-lg-3 col-12 pl-md-0 pr-md-0">
+                        <div class="col-md-3 col-sm-4">
                             <span>
                             Tel 
                         </span>
@@ -460,7 +471,7 @@
                             +3130 320 0420
                         </a>
                         </div>
-                        <div class="col-lg-3 col-12 pl-md-0">
+                        <div class="col-md-3 col-sm-4 col-6 pl-md-0">
                             <span>
                             Email   
                         </span>
@@ -468,10 +479,10 @@
                             info@caffero.com
                         </a>
                         </div>
-                        <div class="col-lg-3 col-12">
+                        <div class="col-md-3 col-6 pl-0 pl-md-2 footer-social-media">
                             <span>
                             Social media 
-                        </span>
+                            </span>
                             <div class="footer-info__top-socials">
                                 <a href='javascript:void(0)'><img src="assets/img/footer-youtube-icon.svg" alt="Footer Youtube Icon"></a>
                                 <a href='javascript:void(0)'><img src="assets/img/footer-instagram-icon.svg" alt="Footer Instagram Icon"></a>
@@ -494,11 +505,11 @@
                     </div>
                     <div class="footer-info__bottom-item">
                         <div class='footer-info__bottom-item__container' data-id='2'>
-                            <span class="footer-info__bottem-item__title">
+                            <span class="footer-info__bottem-item__title d-none d-md-flex">
                             Nevenvestigingen<br>
                             Nederland
                         </span>
-                            <span class="footer-info__bottem-item__title d-md-none">
+                            <span class="footer-info__bottem-item__title d-flex d-md-none">
                             Nevenvestigingen Nederland
                         </span>
                         </div>
@@ -531,16 +542,38 @@
                             <br> T: <a href='tel:+3238087314'>+32 380 873 14</a><br> M: <a href="tel:+31653491775">+316 - 53 49 17 75</a>
                         </p>
                     </div>
-                    <div class="footer-info__bottom-item">
-                        <div class='footer-info__bottom-item__container' data-id='5'>
-                            <span class="footer-info__bottem-item__title">
-                            Klanttevredenheid
-                        </span>
+                    <div class="footer-info__bottom-item not-accord">
+                        <div class='flex-column d-flex-tiny'>
+                            <div>
+                                <span class="footer-info__bottem-item__title">
+                                Klanttevredenheid
+                                </span>
+                            </div>
+                            <p> Beoordeel ons op <br>The Feedback Company
+                                <a href='/'><img src="assets/img/reviews-rate-footer.svg" class='reviews-rate-img' alt=""></a>
+                            </p>
                         </div>
-                        <p>
-                            Beoordeel ons op <br>The Feedback Company
+                        <div class="d-none-tiny footer-klantte">
+                            <div class='d-flex flex-column'>
+                                <p class='footer-info__bottem-item__mobile-title'>
+                                    Klanttevredenheid
+                                </p>
+                                <p>
+                                    Beoordeel ons op <br>The Feedback Company
+                                </p>
+                            </div>
                             <a href='/'><img src="assets/img/reviews-rate-footer.svg" class='reviews-rate-img' alt=""></a>
-                        </p>
+                        </div>
+                    </div>
+                    <div class="footer-info__bottom-item">
+                        <span>
+                        Social media 
+                        </span>
+                        <div class="footer-info__top-socials">
+                            <a href='javascript:void(0)'><img src="assets/img/footer-youtube-icon.svg" alt="Footer Youtube Icon"></a>
+                            <a href='javascript:void(0)'><img src="assets/img/footer-instagram-icon.svg" alt="Footer Instagram Icon"></a>
+                            <a href='javascript:void(0)'><img src="assets/img/footer-facebook-icon.svg" alt="Footer Facebook Icon"></a>
+                        </div>
                     </div>
                 </div>
                 <nav class="footer-info__nav">
