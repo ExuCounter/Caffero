@@ -2235,10 +2235,6 @@ textarea {
     bottom: 1em;
     left: unset;
     z-index: 555; }
-  .contact-btn {
-    display: none; }
-  .top-bar {
-    padding: 1rem 0rem; }
   .big-btn-arrow {
     font-size: 2.1rem;
     max-width: 50rem; }
@@ -2270,12 +2266,16 @@ textarea {
   .content-title {
     font-size: 3rem; }
   .content-text, .content-span {
-    font-size: 1.9rem; } }
+    font-size: 1.9rem; }
+  .top-bar {
+    padding: 1rem 0rem; } }
 
 /* 767PX -1PX IPAD */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .top-bar {
-    padding: 0rem; } }
+    padding: 0rem; }
+  .contact-btn {
+    display: none; } }
 
 /* 578PX - SMALL TABLETS */
 @media screen and (max-width: 578px) {
@@ -2422,7 +2422,9 @@ textarea {
     font-size: inherit; }
   /* 
     */
-  /* DECREASE EM/REM UNITS END */ }
+  /* DECREASE EM/REM UNITS END */
+  .top-bar {
+    font-size: 9px; } }
 
 /* 375PX - DEFAULT MOBILES */
 @media screen and (max-width: 375px) {
@@ -2446,7 +2448,9 @@ textarea {
     font-size: inherit; }
   /* 
     */
-  /* DECREASE EM/REM UNITS END */ }
+  /* DECREASE EM/REM UNITS END */
+  .top-bar {
+    font-size: 8.5px; } }
 
 /* 360PX - SMALL MOBILES */
 @media screen and (max-width: 360px) {
@@ -2472,7 +2476,9 @@ textarea {
     */
   /* DECREASE EM/REM UNITS END */
   .content-text, .content-span {
-    font-size: 1.85rem; } }
+    font-size: 1.85rem; }
+  .top-bar {
+    font-size: 8.1px; } }
 
 /* 340PX - TINY MOBILES */
 @media screen and (max-width: 320px) {

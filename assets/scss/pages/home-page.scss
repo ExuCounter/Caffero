@@ -59,9 +59,16 @@
     &__left {
         flex: 0 0 315px;
         @include padding-top(17rem);
+        &-desc {
+            display: none;
+        }
     }
     &__right {
         flex: 0 1 auto;
+        &-desc {
+            display: flex;
+            flex-direction: column;
+        }
     }
     button {
         padding: 0.8rem 1.9rem 0.7rem 1.9rem;

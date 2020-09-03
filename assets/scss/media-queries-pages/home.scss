@@ -38,11 +38,35 @@
 /* 768PX - DEFAULT TABLETS */
 
 @media screen and (max-width: map-get($breakpoints, 'default-tablet')) {
+    .how-section {
+        &__left {
+            padding-top: 0;
+            button {
+                display: none;
+            }
+            &-desc {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        &__right {
+            flex: 0 1 100%;
+            &-desc {
+                display: none;
+            }
+        }
+    }
     .home {
         &-header {
             padding-bottom: 8rem;
             &__buttons {
                 display: $block;
+                button {
+                    font-size: 2.05rem;
+                    &.active {
+                        font-size: 3.5rem;
+                    }
+                }
             }
             .container {
                 display: $flex;
@@ -53,6 +77,9 @@
                     max-height: 80rem;
                 }
             }
+            &__welcome {
+                padding-top: 4rem;
+            }
             &__content {
                 flex: 0 1 70%;
                 margin-left: auto;
@@ -60,6 +87,10 @@
             &__speaker {
                 padding-bottom: 4rem;
                 font-family: 'Colors Of Autumn';
+                text-align: $text-left;
+            }
+            &__title {
+                font-size: 5rem;
             }
             &__text,
             &__welcome,
@@ -84,12 +115,22 @@
             margin-bottom: 4rem;
         }
     }
+    .content {
+        .container {
+            padding-right: 0;
+        }
+    }
 }
 
 
 /* 767PX -1PX IPAD */
 
 @media screen and (max-width: 767px) {
+    .content {
+        .container {
+            padding: 0px 20px;
+        }
+    }
     .how-section {
         margin-bottom: 6rem;
         &__inner {
@@ -101,6 +142,9 @@
         }
         &__right {
             margin-left: 0;
+            &-desc {
+                display: flex;
+            }
         }
         &__bg {
             @include size(100%, 91%);
@@ -114,6 +158,9 @@
                 }
             }
         }
+    }
+    .home-header__img {
+        left: -3%;
     }
 }
 
@@ -162,6 +209,9 @@
             top: -2.5rem;
             transform: translate(-50%, 0%);
             letter-spacing: 2px;
+            &.hide {
+                display: none;
+            }
         }
         &__speaker {
             font-size: 1.7rem;

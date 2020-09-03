@@ -143,9 +143,14 @@
 .how-section__left {
   flex: 0 0 315px;
   padding-top: 17rem; }
+  .how-section__left-desc {
+    display: none; }
 
 .how-section__right {
   flex: 0 1 auto; }
+  .how-section__right-desc {
+    display: flex;
+    flex-direction: column; }
 
 .how-section button {
   padding: 0.8rem 1.9rem 0.7rem 1.9rem; }
