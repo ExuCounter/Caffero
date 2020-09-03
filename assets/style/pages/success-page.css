@@ -49,6 +49,10 @@
   src: url(../../fonts/colors-of-autumn.woff) format("woff"); }
 
 /* PAGE STYLING */
+.success-header__content {
+  position: relative;
+  z-index: 11; }
+
 .success-header__title {
   font-family: "Poppins", sans-serif;
   font-weight: 400;

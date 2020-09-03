@@ -10,7 +10,10 @@
 /* PAGE STYLING */
 
 .success-header {
-    &__content {}
+    &__content {
+        position: relative;
+        z-index: 11;
+    }
     &__title {
         @include font-style(4rem, #1d1d1b, $regular, $normal, $text-center);
         text-transform: uppercase;
