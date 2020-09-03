@@ -194,7 +194,12 @@
 
 /* 480PX - TINY TABLETS */
 
-@media screen and (max-width: map-get($breakpoints, 'tiny-tablet')) {}
+@media screen and (max-width: map-get($breakpoints, 'tiny-tablet')) {
+    .header-banner::after {
+        width: 3.4rem;
+        height: 1.9rem;
+    }
+}
 
 
 /* 420PX - LARGE MOBILES */

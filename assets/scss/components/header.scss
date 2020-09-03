@@ -99,6 +99,7 @@
             }
             a {
                 font-size: 1em;
+                border-bottom: 1px solid #ffffff;
             }
             &:hover {
                 max-height: 500px;
@@ -126,6 +127,26 @@
         position: $relative;
         overflow: hidden;
         @include background('', cover !important, center !important, no-repeat !important);
+        &::after {
+            position: absolute;
+            content: '';
+            @include background('/img/scroll.svg', cover, center);
+            @include size(4.4rem, 2.9rem);
+            left: 50%;
+            top: 87%;
+            color: #FFF;
+            transform: translate(-47%, 0%);
+            font-family: 'Poppins' !important;
+        }
+        &::before {
+            position: absolute;
+            content: 'scroll';
+            left: 50%;
+            top: 80%;
+            color: #FFF;
+            transform: translate(-50%, 0%);
+            font-size: 1em;
+        }
         &__name {
             text-transform: uppercase;
             display: $block;

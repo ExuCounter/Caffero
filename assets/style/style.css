@@ -437,7 +437,8 @@ textarea {
       .header-menu__sub li:last-child {
         padding-bottom: 10px; }
       .header-menu__sub a {
-        font-size: 1em; }
+        font-size: 1em;
+        border-bottom: 1px solid #ffffff; }
       .header-menu__sub:hover {
         max-height: 500px; }
         .header-menu__sub:hover li:nth-child(1) {
@@ -461,6 +462,28 @@ textarea {
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important; }
+    .header-banner::after {
+      position: absolute;
+      content: '';
+      background: url(..//img/scroll.svg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 4.4rem;
+      height: 2.9rem;
+      left: 50%;
+      top: 87%;
+      color: #FFF;
+      transform: translate(-47%, 0%);
+      font-family: 'Poppins' !important; }
+    .header-banner::before {
+      position: absolute;
+      content: 'scroll';
+      left: 50%;
+      top: 80%;
+      color: #FFF;
+      transform: translate(-50%, 0%);
+      font-size: 1em; }
     .header-banner__name {
       text-transform: uppercase;
       display: block;
@@ -1709,6 +1732,11 @@ textarea {
       height: 5.6rem; } }
 
 /* 480PX - TINY TABLETS */
+@media screen and (max-width: 480px) {
+  .header-banner::after {
+    width: 3.4rem;
+    height: 1.9rem; } }
+
 /* 420PX - LARGE MOBILES */
 /* 375PX - DEFAULT MOBILES */
 /* 360PX - SMALL MOBILES */
