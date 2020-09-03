@@ -106,7 +106,7 @@
         z-index: 2;
         &__top {
             position: $relative;
-            padding: 1.4rem 0em 3.4rem;
+            padding: 1.4rem 0em 3.4rem 10px;
             div {
                 @include flex(row, center);
                 &:nth-child(2),
@@ -156,16 +156,12 @@
                     @include font-style(1.7rem, $white);
                 }
                 &:last-child {
-                    img {
-                        @include size(16.3rem, auto);
-                        @include margin-top(1rem);
-                        @include transition(all, 0.5s, ease-in-out);
-                    }
-                    &.active {
-                        img {
-                            max-height: 500px;
-                        }
-                    }
+                    display: none;
+                }
+                .reviews-rate-img {
+                    @include size(16.3rem, auto);
+                    @include margin-top(1rem);
+                    @include transition(all, 0.5s, ease-in-out);
                 }
             }
         }

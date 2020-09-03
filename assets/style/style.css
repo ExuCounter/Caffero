@@ -219,6 +219,18 @@ textarea {
   border: none !important;
   outline: none !important; }
 
+.d-flex-tiny {
+  display: flex; }
+
+.d-none-tiny {
+  display: none; }
+
+@media screen and (max-width: 578px) {
+  .d-flex-tiny {
+    display: none; }
+  .d-none-tiny {
+    display: flex; } }
+
 /* COMPONENTS */
 .top-bar {
   background-color: #000;
@@ -886,7 +898,7 @@ textarea {
     z-index: 2; }
     .footer-info__top {
       position: relative;
-      padding: 1.4rem 0em 3.4rem; }
+      padding: 1.4rem 0em 3.4rem 10px; }
       .footer-info__top div {
         display: flex;
         flex-direction: row;
@@ -966,15 +978,15 @@ textarea {
           color: #FFF;
           text-align: left;
           line-height: unset; }
-        .footer-info__bottom-item:last-child img {
+        .footer-info__bottom-item:last-child {
+          display: none; }
+        .footer-info__bottom-item .reviews-rate-img {
           width: 16.3rem;
           height: auto;
           margin-top: 1rem;
           transition: all 0.5s ease-in-out;
           -webkit-transition: all 0.5s ease-in-out;
           -moz-transition: all 0.5s ease-in-out; }
-        .footer-info__bottom-item:last-child.active img {
-          max-height: 500px; }
     .footer-info__nav {
       padding: 3.1rem 0em 1.7rem 0em; }
       .footer-info__nav ul {
@@ -1830,27 +1842,81 @@ textarea {
     .footer-slider__nav-container-btn:last-child {
       right: -30px;
       top: 26px; }
-  .footer-info__top .col-12 {
-    display: flex;
-    justify-content: flex-start !important;
-    padding: 0px 15px 3px 15px !important; }
+  .footer-info__top {
+    padding-left: 0; }
+    .footer-info__top .col-12 {
+      display: flex;
+      justify-content: flex-start !important;
+      padding: 0px 15px 3px 15px !important; }
+    .footer-info__top:after {
+      height: 5.3rem;
+      width: 5.3rem;
+      right: 2.2rem;
+      top: -2.5rem;
+      background-size: cover !important; } }
+
+@media screen and (max-width: 768px) and (min-width: 768px) {
+  .footer-info__top .col-md-3 {
+    flex: 0 0 33.3%;
+    max-width: 33.3%; }
   .footer-info__top:after {
-    height: 5.3rem;
-    width: 5.3rem;
-    right: 2.2rem;
-    top: -2.5rem;
+    height: 7.3rem;
+    width: 7.3rem;
+    right: 4.2rem;
+    top: -3.5rem;
     background-size: cover !important; } }
 
 /* 768PX - DEFAULT TABLETS */
+@media screen and (max-width: 768px) and (min-width: 578px) {
+  .footer-info__top {
+    padding: 15px 0px; }
+  .footer-info__bottom {
+    flex-wrap: wrap; }
+    .footer-info__bottom-item {
+      flex: 0 1 33%; }
+      .footer-info__bottom-item:nth-child(1) {
+        order: -4; }
+      .footer-info__bottom-item:nth-child(2) {
+        order: -3; }
+      .footer-info__bottom-item:nth-child(3) {
+        order: -2; }
+      .footer-info__bottom-item:nth-child(4) {
+        order: -1; }
+      .footer-info__bottom-item:nth-child(5) {
+        order: 0; }
+      .footer-info__bottom-item:nth-child(4), .footer-info__bottom-item:nth-child(5), .footer-info__bottom-item:nth-child(6) {
+        margin-top: 3rem; }
+      .footer-info__bottom-item:last-child {
+        display: flex;
+        flex-direction: column; }
+  .footer-social-media {
+    display: none !important; } }
+
 @media screen and (max-width: 768px) {
   .footer-slider {
     width: 80%; }
+  .footer-info__top div:nth-child(2), .footer-info__top div:nth-child(3) {
+    justify-content: flex-start;
+    padding-left: 0; }
+  .footer-info__top div:nth-child(2) {
+    padding-left: 5px; }
+  .footer-slider__nav-container-btn:first-child {
+    left: -30px;
+    top: 25px; }
+  .footer-slider__nav-container-btn:last-child {
+    right: -30px;
+    top: 25px; } }
+
+/* 578PX - SMALL TABLETS */
+@media screen and (max-width: 578px) {
+  .footer-klantte {
+    padding-top: 2.7rem; }
   .footer-info .container {
     padding: 0; }
   .footer-info__top {
-    padding: 15px 15px; }
-    .footer-info__top div:nth-child(2), .footer-info__top div:nth-child(3) {
-      justify-content: flex-start; }
+    padding: 15px 20px 15px 40px; }
+    .footer-info__top .col-md-3 {
+      padding-left: 0 !important; }
   .footer-info__bottom {
     flex-direction: column;
     overflow: hidden; }
@@ -1886,6 +1952,31 @@ textarea {
       display: none; }
     .footer-info__bottom-item:nth-child(2) span:nth-child(2) {
       display: block !important; }
+    .footer-info__bottom .reviews-rate-img {
+      width: 20.3rem; }
+    .footer-info__bottom-item.not-accord .footer-info__bottem-item__title {
+      display: none; }
+    .footer-info__bottom-item.not-accord p {
+      max-height: none;
+      opacity: 1;
+      flex-direction: column;
+      display: flex;
+      font-size: 11px; }
+    .footer-info__bottom-item.not-accord img {
+      max-height: none; }
+    .footer-info__bottom-item .footer-info__bottem-item__mobile-title {
+      font-size: 11px;
+      font-weight: bold;
+      font-style: italic;
+      text-transform: uppercase; }
+    .footer-info__bottom-item .footer-klantte {
+      padding-right: 15px;
+      justify-content: space-between;
+      align-items: center; }
+      .footer-info__bottom-item .footer-klantte > .d-flex {
+        margin-top: 5px; }
+      .footer-info__bottom-item .footer-klantte img {
+        margin-top: 0px; }
     .footer-info__bottom div span {
       background-color: #000;
       text-align: center;
@@ -1914,15 +2005,6 @@ textarea {
     .footer-info__bottom div:last-child p {
       flex-direction: column;
       display: flex; }
-  .footer-slider__nav-container-btn:first-child {
-    left: -30px;
-    top: 25px; }
-  .footer-slider__nav-container-btn:last-child {
-    right: -30px;
-    top: 25px; } }
-
-/* 578PX - SMALL TABLETS */
-@media screen and (max-width: 578px) {
   .footer-info__bottom div span {
     font-size: 1.8rem; }
   .footer-info__nav ul li {
@@ -1994,6 +2076,8 @@ textarea {
   .footer-slider__nav-container-btn:last-child {
     right: -40px;
     top: 30px; }
+  .footer-info__top {
+    padding: 15px 10px 15px 30px; }
   .footer-reviews__content {
     width: auto; }
     .footer-reviews__content span {
@@ -2001,8 +2085,17 @@ textarea {
     .footer-reviews__content p {
       font-size: 1.7rem !important; } }
 
+@media screen and (max-width: 450px) {
+  .footer-info__top {
+    padding: 15px 15px 15px 25px; }
+    .footer-info__top .col-md-3 {
+      padding-right: 5px; } }
+
 /* 360PX - SMALL MOBILES */
 @media screen and (max-width: 360px) {
+  .footer-info__top .col-md-3 {
+    max-width: 100%;
+    flex: 0 1 100%; }
   .footer-slider {
     width: 80%; }
     .footer-slider__nav-container-btn img {

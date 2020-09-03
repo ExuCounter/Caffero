@@ -126,3 +126,20 @@ textarea {
         outline: none !important;
     }
 }
+
+.d-flex-tiny {
+    display: flex;
+}
+
+.d-none-tiny {
+    display: none;
+}
+
+@media screen and (max-width: 578px) {
+    .d-flex-tiny {
+        display: none;
+    }
+    .d-none-tiny {
+        display: flex;
+    }
+}
