@@ -44,6 +44,11 @@
 /* 320PX - TINY MOBILES */
 /* IMPORT SASS FEATURES */
 /* % NON-RENDERED COMPONENTS FOR PAGES */
+.team-member__col-inner {
+  -webkit-box-shadow: 8px 7px 0px 1px #fcc200;
+  -moz-box-shadow: 8px 7px 0px 1px #fcc200;
+  box-shadow: 8px 7px 0px 1px #fcc200; }
+
 .team-member__block:before {
   content: '';
   position: absolute;

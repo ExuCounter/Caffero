@@ -49,6 +49,7 @@
         }
         &-inner {
             max-width: 35rem;
+            @extend %default-shadow;
         }
         &:nth-child(3n + 1) {
             .team-member__col-inner {
