@@ -53,6 +53,9 @@
 
 @media screen and (max-width: map-get($breakpoints, 'default-tablet')) {
     .header {
+        &-menu {
+            padding-top: 0;
+        }
         &-nav {
             position: fixed;
             left: 0;
@@ -66,9 +69,9 @@
             display: flex;
             &.active {
                 transform: translateX(0);
-                img {
-                    display: none;
-                }
+            }
+            .container {
+                padding: 0;
             }
         }
         &-banner {
@@ -93,9 +96,34 @@
             justify-content: center;
             &__splitter {
                 margin: 0 !important;
+                display: none;
+            }
+            &-mobile__bottom {
+                padding: 0px 20px 32.5px 20px;
+                justify-content: space-between;
+                a {
+                    margin: 0px 5px 0px 0px;
+                }
             }
             li {
                 text-align: $text-left;
+                border-top: solid 1px #FFF;
+                padding: 0px 20px 0px 59px;
+                padding-top: 3px;
+                a {
+                    font-size: 2.5rem;
+                }
+                &.last-menu-child {
+                    border-bottom: solid 1px #FFF;
+                }
+            }
+            a {
+                &:hover~.header-menu__sub {
+                    position: relative;
+                    li:nth-child(1) {
+                        padding-top: 0 !important;
+                    }
+                }
             }
             &__sub {
                 max-height: 1500px;
@@ -103,12 +131,19 @@
                 padding-left: 2rem;
                 position: relative;
                 padding: 5px 20px 0px 20px;
+                max-height: 0;
+                li {
+                    border-top: none;
+                    padding-left: 0;
+                    &:nth-child(1) {
+                        padding-top: 0;
+                    }
+                }
             }
             &__container {
                 overflow-y: scroll;
-                height: calc(100vh - 100px);
-                margin-top: 100px;
-                padding-bottom: 45px;
+                height: auto;
+                margin-top: 95px;
                 &::-webkit-scrollbar {
                     display: none;
                 }
@@ -119,6 +154,12 @@
             z-index: 1111111 !important;
             .top-bar__language {
                 display: flex !important;
+                &-selected {
+                    img {
+                        max-width: 3.8rem;
+                        margin-top: 0.25rem;
+                    }
+                }
             }
             .burger-menu {
                 display: block;
@@ -130,6 +171,9 @@
                 a {
                     opacity: 0;
                 }
+            }
+            &__menu {
+                font-size: 2.5rem;
             }
         }
         &-banner {
@@ -185,7 +229,6 @@
         &-nav {
             &__logo {
                 bottom: -2.8rem;
-                display: none;
                 img {
                     width: 5.6rem;
                     height: 5.6rem;
