@@ -100,7 +100,8 @@
     color: #fcc200;
     text-align: center;
     line-height: unset;
-    text-shadow: 3px 3px 0px black; }
+    text-shadow: 3px 3px 0px black;
+    font-family: 'Colors Of Autumn'; }
   .home-header__buttons {
     display: none; }
   .home-header__text {

@@ -44,6 +44,10 @@
 /* 320PX - TINY MOBILES */
 /* IMPORT SASS FEATURES */
 /* % NON-RENDERED COMPONENTS FOR PAGES */
+@font-face {
+  font-family: 'Colors Of Autumn';
+  src: url(../../fonts/colors-of-autumn.woff) format("woff"); }
+
 /* PAGE STYLING */
 .success-header__title {
   font-family: "Poppins", sans-serif;

@@ -105,8 +105,7 @@
       .success-header__text.show-mobile {
         display: block; }
     .success-header__speaker {
-      display: none;
-      font-family: 'Colors Of Autumn'; }
+      display: none; }
     .success-header__agitation {
       margin-bottom: 0; }
     .success-header__title {

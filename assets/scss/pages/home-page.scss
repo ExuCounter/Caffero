@@ -23,6 +23,7 @@
         @include padding-top(7.6rem);
         @include font-style(5rem, $main-color, $regular, $normal, $text-center);
         text-shadow: 3px 3px 0px black;
+        font-family: 'Colors Of Autumn';
     }
     &__buttons {
         display: none;
