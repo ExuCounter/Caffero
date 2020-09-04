@@ -1661,14 +1661,14 @@ textarea {
   .header-banner__cover {
     height: 27px; }
   .header-video__cover {
-    height: 27px;
-    bottom: 4px; } }
+    height: 45px;
+    bottom: 3px; } }
 
 /* 992PX - SMALL DESKTOPS */
 @media screen and (max-width: 992px) {
   .header-video__cover {
-    height: 28px;
-    bottom: 3px; }
+    height: 35px;
+    bottom: 1px; }
   .header-banner__breadcrumbs {
     bottom: 0.5rem; }
     .header-banner__breadcrumbs p,
@@ -1703,7 +1703,7 @@ textarea {
       font-size: 1.6rem; }
   .header-video__cover {
     height: 28px;
-    bottom: 2.5px; }
+    bottom: 3.5px; }
   .header-menu {
     flex-direction: column;
     align-items: flex-start;
@@ -1784,7 +1784,7 @@ textarea {
     height: 19rem; }
   .header-video__cover {
     height: 23px;
-    bottom: 4.5px; }
+    bottom: 2.5px; }
   .header-video__title {
     top: 10rem;
     font-size: 3rem; }
